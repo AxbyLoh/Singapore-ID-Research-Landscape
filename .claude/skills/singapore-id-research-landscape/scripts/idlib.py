@@ -24,6 +24,8 @@ REFERENCE_DIR = os.path.join(SKILL_DIR, "reference")
 DATA_DIR = os.path.join(SKILL_DIR, "data")
 
 TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "domain-taxonomy.md")
+SUBDOMAIN_TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "subdomain-taxonomy.md")
+RESEARCH_TYPE_TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "research-type-taxonomy.md")
 CRITERIA_PATH = os.path.join(REFERENCE_DIR, "screening-criteria.md")
 EXPERTS_PATH = os.path.join(DATA_DIR, "directory_of_experts.csv")
 INSTITUTIONS_PATH = os.path.join(DATA_DIR, "institution_aliases.csv")
@@ -151,6 +153,38 @@ def load_taxonomy():
 def load_mechanical_rules():
     """Machine-applicable rules from reference/screening-criteria.md."""
     return [b for b in _json_blocks(CRITERIA_PATH) if "rule_id" in b]
+
+
+def load_subdomain_taxonomy():
+    """Curated sub-domain blocks from reference/subdomain-taxonomy.md.
+
+    Returns {domain_id: [subdomain_block, ...]} in file order. Each block is
+    shaped for score_taxa(..., id_field='subdomain_id'): subdomain_id, label,
+    threshold, terms, mesh_terms, blockers, plus its parent 'domain_id'.
+    """
+    blocks = [b for b in _json_blocks(SUBDOMAIN_TAXONOMY_PATH) if "subdomain_id" in b]
+    by_domain = OrderedDict()
+    for b in blocks:
+        b.setdefault("terms", {})
+        b.setdefault("mesh_terms", {})
+        b.setdefault("blockers", [])
+        b.setdefault("threshold", 3)
+        by_domain.setdefault(b.get("domain_id", ""), []).append(b)
+    return by_domain
+
+
+def load_research_type_taxonomy():
+    """Cross-cutting research-type blocks from reference/research-type-taxonomy.md.
+
+    Each block is shaped for score_taxa(..., id_field='type_id').
+    """
+    blocks = [b for b in _json_blocks(RESEARCH_TYPE_TAXONOMY_PATH) if "type_id" in b]
+    for b in blocks:
+        b.setdefault("terms", {})
+        b.setdefault("mesh_terms", {})
+        b.setdefault("blockers", [])
+        b.setdefault("threshold", 3)
+    return blocks
 
 
 def load_experts():
@@ -384,24 +418,39 @@ def score_domain(rec, domain, fields=None):
     return score, matched
 
 
-def score_domains(rec, domains):
-    """{domain_id: {'score': int, 'matched': [...], 'assigned': bool}} for all domains."""
+def score_taxa(rec, taxa, id_field="domain_id"):
+    """{taxon_id: {'score', 'matched', 'assigned', 'label'}} for a list of
+    domain-shaped taxonomy blocks (terms/mesh_terms/threshold/blockers).
+
+    Generic over id_field so the same scorer drives domains, sub-domains
+    (id_field='subdomain_id') and research types (id_field='type_id').
+    """
     fields = record_fields(rec)
     out = OrderedDict()
-    for d in domains:
-        score, matched = score_domain(rec, d, fields)
-        out[d["domain_id"]] = {
+    for t in taxa:
+        score, matched = score_domain(rec, t, fields)
+        out[t[id_field]] = {
             "score": score,
             "matched": matched,
-            "assigned": score >= d.get("threshold", 4),
-            "label": d.get("label", d["domain_id"]),
+            "assigned": score >= t.get("threshold", 4),
+            "label": t.get("label", t[id_field]),
         }
     return out
 
 
-def assigned_domains(scores):
-    """Assigned domain ids, highest score first."""
+def assigned_taxa(scores):
+    """Assigned taxon ids from a score_taxa() result, highest score first."""
     return [k for k, v in sorted(scores.items(), key=lambda kv: -kv[1]["score"]) if v["assigned"]]
+
+
+def score_domains(rec, domains):
+    """{domain_id: {...}} for all domains. Thin wrapper over score_taxa()."""
+    return score_taxa(rec, domains, id_field="domain_id")
+
+
+def assigned_domains(scores):
+    """Assigned domain ids, highest score first. Alias of assigned_taxa()."""
+    return assigned_taxa(scores)
 
 
 # --------------------------------------------------------------------------

@@ -57,6 +57,34 @@ def check_taxonomy():
         len(domains), n_terms, ", ".join(d["domain_id"] for d in domains))
 
 
+def check_subdomain_taxonomy():
+    try:
+        by_domain = idlib.load_subdomain_taxonomy()
+    except SystemExit as exc:
+        return FAIL, str(exc)
+    try:
+        domain_ids = {d["domain_id"] for d in idlib.load_taxonomy()}
+    except SystemExit:
+        domain_ids = set()
+    n_blocks = sum(len(v) for v in by_domain.values())
+    missing = sorted(domain_ids - set(by_domain))
+    if missing:
+        return WARN, ("%d sub-domain blocks across %d domains, but no blocks for: %s "
+                      "-- those domains' donut slices will all be 'Other/unspecified'"
+                      % (n_blocks, len(by_domain), ", ".join(missing)))
+    return OK, "%d sub-domain blocks across %d domains" % (n_blocks, len(by_domain))
+
+
+def check_research_type_taxonomy():
+    try:
+        types = idlib.load_research_type_taxonomy()
+    except SystemExit as exc:
+        return FAIL, str(exc)
+    if not types:
+        return WARN, "research-type-taxonomy.md has no blocks -- research_types will be empty"
+    return OK, "%d research types" % len(types)
+
+
 def check_criteria():
     if not os.path.exists(idlib.CRITERIA_PATH):
         return FAIL, "screening-criteria.md missing"
@@ -116,6 +144,8 @@ def main():
     checks = [
         ("Python runtime", check_python()),
         ("Domain taxonomy", check_taxonomy()),
+        ("Sub-domain taxonomy", check_subdomain_taxonomy()),
+        ("Research-type taxonomy", check_research_type_taxonomy()),
         ("Screening criteria", check_criteria()),
         ("Expert directory", check_experts()),
         ("Alias tables", check_aliases()),

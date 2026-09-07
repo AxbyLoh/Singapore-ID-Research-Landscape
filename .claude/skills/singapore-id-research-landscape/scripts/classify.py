@@ -1,16 +1,28 @@
 #!/usr/bin/env python3
-"""Assign domains and resolve affiliations for every included record.
+"""Assign domains, sub-domains, research types and affiliations for every
+included record.
 
 Reads screening/included.jsonl, writes:
 
-  classification/classified.jsonl        records + domains + resolved authors
+  classification/classified.jsonl        records + all classification + resolved authors
   classification/unassigned.jsonl        included records matching no domain
+  classification/unassigned_subdomain.jsonl   records with no sub-domain match (per domain)
+  classification/unassigned_research_type.jsonl  records matching no research type
   classification/unmapped_affiliations.csv   affiliation strings needing an alias
   classification/classification_report.md
 
-Domains come from reference/domain-taxonomy.md; institution and country come
-from data/institution_aliases.csv and data/country_aliases.csv. Editing those
-files and re-running is the whole tuning loop -- no code changes.
+Three taxonomies drive this, all human-maintained and read at runtime -- no
+code change needed to retune:
+
+  reference/domain-taxonomy.md         the 5 domains (all records)
+  reference/subdomain-taxonomy.md      named sub-domains WITHIN each domain
+                                        (e.g. "Dengue virus" within vector_borne)
+  reference/research-type-taxonomy.md  cross-cutting "what kind of research"
+                                        tags (multi-label, e.g. Genomics +
+                                        Surveillance and epidemiology)
+
+Institution and country come from data/institution_aliases.csv and
+data/country_aliases.csv.
 """
 
 from __future__ import annotations
@@ -52,7 +64,39 @@ def resolve_authors(rec, resolver):
     return out
 
 
-def classify_record(rec, domains, resolver):
+def classify_subdomain(rec, subdomains_by_domain):
+    """Sub-domain within rec['primary_domain'], scoped to that domain's blocks.
+
+    primary_subdomain drives the donut chart (mutually exclusive slices);
+    subdomains (pipe-joined at dataset build time) keeps the full multi-label
+    view for anyone who wants it.
+    """
+    blocks = subdomains_by_domain.get(rec["primary_domain"]) or []
+    if not blocks:
+        rec["subdomain_scores"] = {}
+        rec["subdomains"] = []
+        rec["primary_subdomain"] = "Other/unspecified"
+        return
+
+    scores = idlib.score_taxa(rec, blocks, id_field="subdomain_id")
+    assigned = idlib.assigned_taxa(scores)
+    rec["subdomain_scores"] = {k: v["score"] for k, v in scores.items()}
+    rec["subdomains"] = assigned
+    label_by_id = {b["subdomain_id"]: b.get("label", b["subdomain_id"]) for b in blocks}
+    rec["primary_subdomain"] = label_by_id.get(assigned[0]) if assigned else "Other/unspecified"
+
+
+def classify_research_types(rec, type_blocks):
+    """Cross-cutting, multi-label 'what kind of research' tags. No primary."""
+    scores = idlib.score_taxa(rec, type_blocks, id_field="type_id")
+    assigned = idlib.assigned_taxa(scores)
+    label_by_id = {b["type_id"]: b.get("label", b["type_id"]) for b in type_blocks}
+    rec["research_type_scores"] = {k: v["score"] for k, v in scores.items()}
+    rec["research_types"] = assigned
+    rec["research_type_labels"] = [label_by_id.get(t, t) for t in assigned]
+
+
+def classify_record(rec, domains, subdomains_by_domain, type_blocks, resolver):
     scores = idlib.score_domains(rec, domains)
     assigned = idlib.assigned_domains(scores)
 
@@ -67,6 +111,9 @@ def classify_record(rec, domains, resolver):
     rec["domains"] = assigned or [OTHER]
     rec["primary_domain"] = rec["domains"][0]
     rec["is_multi_domain"] = len(assigned) > 1
+
+    classify_subdomain(rec, subdomains_by_domain)
+    classify_research_types(rec, type_blocks)
 
     authors = resolve_authors(rec, resolver)
     rec["authors_resolved"] = authors
@@ -92,7 +139,8 @@ def classify_record(rec, domains, resolver):
 
 
 def write_report(path, records, unassigned, domain_counts, unmapped_inst,
-                 unmapped_ctry, multi, no_aff):
+                 unmapped_ctry, multi, no_aff, subdomain_counts, type_counts,
+                 unassigned_subdomain, unassigned_type):
     L = ["# Classification report", ""]
     L.append("Included records classified: **%d**" % len(records))
     L.append("")
@@ -107,6 +155,41 @@ def write_report(path, records, unassigned, domain_counts, unmapped_inst,
     L.append("Domains overlap by design, so shares sum above 100%%. "
              "%d record(s) carry more than one domain." % multi)
     L.append("")
+    L.append("## Sub-domain distribution (`primary_subdomain`, mutually exclusive per domain)")
+    L.append("")
+    L.append("This is the field for the \"Sub-domains of X\" donut chart -- one slice per")
+    L.append("`(domain, primary_subdomain)` pair, summing to that domain's total.")
+    L.append("")
+    L.append("| Domain | Sub-domain | Records | Share of domain |")
+    L.append("|---|---|---|---|")
+    domain_totals = Counter()
+    for (dom, _sd), n in subdomain_counts.items():
+        domain_totals[dom] += n
+    for (dom, sd), n in sorted(subdomain_counts.items(), key=lambda kv: (kv[0][0], -kv[1])):
+        dt = domain_totals[dom] or 1
+        L.append("| %s | %s | %d | %.1f%% |" % (dom, sd, n, 100.0 * n / dt))
+    L.append("")
+    if unassigned_subdomain:
+        L.append("`Other/unspecified` records: **%d**. Read "
+                 "`unassigned_subdomain.jsonl` -- a recurring theme there is a gap "
+                 "in `reference/subdomain-taxonomy.md`, not a data problem. "
+                 "`topic_model.py` can help find the missing name." % len(unassigned_subdomain))
+        L.append("")
+    L.append("## Research-type distribution (multi-label)")
+    L.append("")
+    L.append("Feeds the \"Types of research\" bar chart. Each publication may carry")
+    L.append("several types, so counts sum above the publication total.")
+    L.append("")
+    L.append("| Research type | Records |")
+    L.append("|---|---|")
+    for t, n in type_counts.most_common():
+        L.append("| %s | %d |" % (t, n))
+    L.append("")
+    if unassigned_type:
+        L.append("**%d** record(s) matched no research type -- read "
+                 "`unassigned_research_type.jsonl` and consider adding a term to "
+                 "`reference/research-type-taxonomy.md`." % len(unassigned_type))
+        L.append("")
     if unassigned:
         L.append("## Unassigned (`other_id`) — %d record(s)" % len(unassigned))
         L.append("")
@@ -152,15 +235,21 @@ def main():
         raise SystemExit("No included records at %s -- run screen.py first." % src)
 
     domains = idlib.load_taxonomy()
+    subdomains_by_domain = idlib.load_subdomain_taxonomy()
+    type_blocks = idlib.load_research_type_taxonomy()
     resolver = idlib.AffiliationResolver()
 
     domain_counts = Counter()
+    subdomain_counts = Counter()
+    type_counts = Counter()
     unassigned = []
+    unassigned_subdomain = []
+    unassigned_type = []
     multi = 0
     no_aff = 0
 
     for rec in records:
-        classify_record(rec, domains, resolver)
+        classify_record(rec, domains, subdomains_by_domain, type_blocks, resolver)
         for d in rec["domains"]:
             domain_counts[d] += 1
         if rec["domains"] == [OTHER]:
@@ -170,9 +259,20 @@ def main():
         if not rec["institutions"] and not rec["countries"]:
             no_aff += 1
 
+        subdomain_counts[(rec["primary_domain"], rec["primary_subdomain"])] += 1
+        if rec["primary_subdomain"] == "Other/unspecified":
+            unassigned_subdomain.append(rec)
+
+        for t in rec["research_type_labels"]:
+            type_counts[t] += 1
+        if not rec["research_types"]:
+            unassigned_type.append(rec)
+
     idlib.ensure_dirs(p["classification"])
     idlib.write_jsonl(os.path.join(p["classification"], "classified.jsonl"), records)
     idlib.write_jsonl(os.path.join(p["classification"], "unassigned.jsonl"), unassigned)
+    idlib.write_jsonl(os.path.join(p["classification"], "unassigned_subdomain.jsonl"), unassigned_subdomain)
+    idlib.write_jsonl(os.path.join(p["classification"], "unassigned_research_type.jsonl"), unassigned_type)
 
     rows = []
     for seg, n in sorted(resolver.unmapped_institution.items(), key=lambda kv: -kv[1]):
@@ -186,12 +286,16 @@ def main():
 
     write_report(os.path.join(p["classification"], "classification_report.md"),
                  records, unassigned, domain_counts,
-                 resolver.unmapped_institution, resolver.unmapped_country, multi, no_aff)
+                 resolver.unmapped_institution, resolver.unmapped_country, multi, no_aff,
+                 subdomain_counts, type_counts, unassigned_subdomain, unassigned_type)
 
     print("Classification complete: %d records" % len(records))
     for dom, n in domain_counts.most_common():
         print("  %-14s %4d" % (dom, n))
     print("  (%d multi-domain, %d unassigned -> other_id)" % (multi, len(unassigned)))
+    print("")
+    print("Sub-domains: %d Other/unspecified (of %d)" % (len(unassigned_subdomain), len(records)))
+    print("Research types: %d record(s) with none assigned" % len(unassigned_type))
     print("")
     print("Unresolved affiliation strings: %d institution, %d country"
           % (len(resolver.unmapped_institution), len(resolver.unmapped_country)))

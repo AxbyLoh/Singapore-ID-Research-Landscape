@@ -27,10 +27,20 @@ preflight → search → ingest → screen → classify → dataset → topic mo
 6. **Dataset** — emits the publication fact table plus long author, institution,
    country and co-authorship edge tables, with pre-computed network coordinates
    so Tableau can draw the collaboration graph directly.
-7. **Topic model** — clusters sub-domains within each domain by semantic
-   similarity.
+7. **Topic model** — clusters records within each domain by semantic
+   similarity, as a QA pass to find gaps in the curated sub-domain list.
 
-## The five domains
+## Three classification axes
+
+| Axis | Answers | Cardinality | Drives |
+|---|---|---|---|
+| Domain | Which of the 5 ID areas? | Multi-label | Domain trend / filter views |
+| Sub-domain | Which named pathogen/theme within that domain? | One primary per domain | "Sub-domains of X" donut chart |
+| Research type | What kind of research — method, not disease? | Multi-label, no primary | "Types of research" bar chart |
+
+All three are curated term lists read at runtime, not machine learning.
+
+### The five domains
 
 | Domain | Covers |
 |---|---|
@@ -40,18 +50,29 @@ preflight → search → ingest → screen → classify → dataset → topic mo
 | Respiratory-tract infections | Influenza, COVID-19, RSV, pneumonia, pertussis |
 | AMR and healthcare-associated infections | Resistance, stewardship, HAI, IPC |
 
-Anything included but outside these five is kept and tagged `other_id`.
+Anything included but outside these five is kept and tagged `other_id`. Each
+domain has its own named sub-domains (e.g. Vector-borne diseases → Dengue
+virus, Malaria, Flavivirus, Chikungunya virus, ...) in `subdomain-taxonomy.md`.
+
+### The sixteen research types
+
+Basic research, Case study, Clinical studies, Detection, Disease management,
+Entomology, Genomics, Immunology, Infection prevention and control, Modelling,
+Outbreak management, Surveillance and epidemiology, Transmission, Treatment,
+Vaccine, Virology — each publication can carry several.
 
 ## What humans maintain
 
-These three files drive behaviour and are meant to be edited. No script
+These five files drive behaviour and are meant to be edited. No script
 hardcodes their contents; editing one changes the next run.
 
 | File | Controls |
 |---|---|
 | [`reference/screening-criteria.md`](.claude/skills/singapore-id-research-landscape/reference/screening-criteria.md) | Inclusion/exclusion rules, plus the amendment log |
 | [`data/directory_of_experts.csv`](.claude/skills/singapore-id-research-landscape/data/directory_of_experts.csv) | The CDA expert roster searched by name |
-| [`reference/domain-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/domain-taxonomy.md) | Domain definitions, terms and MeSH mappings |
+| [`reference/domain-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/domain-taxonomy.md) | The 5 domains: terms and MeSH mappings |
+| [`reference/subdomain-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/subdomain-taxonomy.md) | Named sub-domains within each domain (donut chart) |
+| [`reference/research-type-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/research-type-taxonomy.md) | Cross-cutting research-type tags (bar chart) |
 
 Two alias tables tune affiliation resolution:
 [`institution_aliases.csv`](.claude/skills/singapore-id-research-landscape/data/institution_aliases.csv)

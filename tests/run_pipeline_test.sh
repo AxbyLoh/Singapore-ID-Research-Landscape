@@ -36,9 +36,14 @@ d = idlib.load_taxonomy(); r = idlib.load_mechanical_rules()
 assert len(d) == 5, "expected 5 domains, got %d" % len(d)
 assert {x["domain_id"] for x in d} == {"vector_borne","sti","tb","rti","amr_hai"}
 assert len(r) >= 4, "expected >=4 mechanical rules"
+sub = idlib.load_subdomain_taxonomy()
+assert set(sub) == {"vector_borne","sti","tb","rti","amr_hai"}, "subdomain domains: %s" % set(sub)
+assert sum(len(v) for v in sub.values()) >= 30, "expected >=30 subdomain blocks"
+types = idlib.load_research_type_taxonomy()
+assert len(types) == 16, "expected 16 research types, got %d" % len(types)
 print("ok")
 PY
-check "taxonomy + criteria parse" "$?" "0"
+check "taxonomy + criteria + subdomain + research-type parse" "$?" "0"
 
 echo "== build_queries =="
 python3 "$SK/scripts/build_queries.py" --run-dir "$RUN" --from-year 2015 --to-year 2026 >/dev/null
@@ -87,9 +92,19 @@ assert hep["domains"] == ["other_id"], "hepatitis should be other_id: %s" % hep[
 assert all(r["primary_domain"] for r in recs), "every record needs a primary_domain"
 sg = [r for r in recs if r["singapore_led"]]
 assert len(sg) >= 10, "expected most fixture records Singapore-led, got %d" % len(sg)
+
+dengue = next(r for r in recs if "Spatiotemporal clustering of dengue" in r["title"])
+assert dengue["primary_subdomain"] == "Dengue virus", "dengue subdomain: %s" % dengue["primary_subdomain"]
+gono = next(r for r in recs if "Neisseria gonorrhoeae" in r["title"])
+assert gono["primary_subdomain"] == "Gonorrhoea", "gonorrhoea subdomain: %s" % gono["primary_subdomain"]
+influenza = next(r for r in recs if "Influenza vaccine effectiveness" in r["title"])
+assert "Vaccine" in influenza["research_type_labels"], "influenza research types: %s" % influenza["research_type_labels"]
+assert all("primary_subdomain" in r and r["primary_subdomain"] for r in recs), \
+    "every record needs a non-empty primary_subdomain"
+assert all("research_type_labels" in r for r in recs), "every record needs a research_type_labels list"
 print("ok")
 PY
-check "domain assignment invariants" "$?" "0"
+check "domain/subdomain/research-type assignment invariants" "$?" "0"
 
 echo "== topic model =="
 python3 "$SK/scripts/topic_model.py" --run-dir "$RUN" --min-docs 3 >/dev/null 2>&1
@@ -100,9 +115,12 @@ echo "== build_dataset =="
 python3 "$SK/scripts/build_dataset.py" --run-dir "$RUN" >/dev/null
 check "build_dataset exit code" "$?" "0"
 check "publications.csv rows" "$(csv_rows "$RUN/dataset/publications.csv")" "14"
-for f in publications publication_domains publication_authors publication_institutions \
-         publication_countries coauthor_institution_edges network_institution_nodes \
-         network_institution_paths summary_by_domain_year; do
+for f in publications publication_domains publication_subdomains publication_research_types \
+         publication_authors publication_institutions publication_countries \
+         coauthor_institution_edges coauthor_author_edges network_institution_nodes \
+         network_institution_paths network_author_nodes network_author_paths \
+         summary_top_authors summary_by_domain_year summary_subdomain_year \
+         summary_research_type_year; do
   if [ -s "$RUN/dataset/$f.csv" ]; then pass "$f.csv present"; else fail "$f.csv missing/empty"; fi
 done
 
@@ -117,10 +135,16 @@ uids = [p["uid"] for p in pubs]
 assert len(uids) == len(set(uids)), "publications.csv has duplicate uids"
 
 known = set(uids)
-for f in ("publication_domains.csv", "publication_authors.csv",
+for f in ("publication_domains.csv", "publication_subdomains.csv",
+          "publication_research_types.csv", "publication_authors.csv",
           "publication_institutions.csv", "publication_countries.csv"):
     for r in rd(f):
         assert r["uid"] in known, "%s references unknown uid %s" % (f, r["uid"])
+
+subdom = rd("publication_subdomains.csv")
+prim_sd = [r for r in subdom if r["is_primary"] == "1"]
+assert len(prim_sd) == len(pubs), \
+    "exactly one primary subdomain row per publication, got %d for %d pubs" % (len(prim_sd), len(pubs))
 
 edges = rd("coauthor_institution_edges.csv")
 ids = [e["edge_id"] for e in edges]
@@ -142,6 +166,39 @@ for p in paths:
 dom = rd("publication_domains.csv")
 prim = [r for r in dom if r["is_primary"] == "1"]
 assert len(prim) == len(pubs), "exactly one primary domain row per publication"
+
+# author network: same shape checks as institution, plus edges split by domain
+anodes = {n["node_id"] for n in rd("network_author_nodes.csv")}
+apaths = rd("network_author_paths.csv")
+aper = collections.Counter(p["edge_id"] for p in apaths)
+assert aper and max(aper.values()) == 2 and min(aper.values()) == 2, \
+    "every author path edge must have exactly 2 rows"
+assert "ALL" in {p["domain"] for p in apaths}, "author network missing the ALL aggregate layer"
+for p in apaths:
+    assert p["node_id"] in anodes, "author path references unknown node %s" % p["node_id"]
+    assert 0.0 <= float(p["x"]) <= 1.0 and 0.0 <= float(p["y"]) <= 1.0
+
+aedges = rd("coauthor_author_edges.csv")
+aeids = [e["edge_id"] for e in aedges]
+assert len(aeids) == len(set(aeids)), "duplicate edge_id in coauthor_author_edges.csv"
+assert {e["domain"] for e in aedges} <= (
+    {"vector_borne","sti","tb","rti","amr_hai","other_id"}), "unexpected author edge domain"
+
+# summary_top_authors: ALL-domain n_publications must equal node table's n_publications
+top = rd("summary_top_authors.csv")
+top_all = {r["author_key"]: int(r["n_publications"]) for r in top if r["domain_id"] == "ALL"}
+node_pubs = {n["node_id"]: int(n["n_publications"]) for n in rd("network_author_nodes.csv")}
+mismatches = [k for k, v in node_pubs.items() if top_all.get(k) != v]
+assert not mismatches, "author node n_publications disagrees with summary_top_authors ALL: %s" % mismatches
+assert any(r["domain_id"] == "vector_borne" for r in top), "expected a vector_borne row in top authors"
+
+subsum = rd("summary_subdomain_year.csv")
+assert any(r["subdomain_label"] == "Dengue virus" for r in subsum), \
+    "expected a Dengue virus row in summary_subdomain_year.csv"
+
+typesum = rd("summary_research_type_year.csv")
+assert any(r["type_label"] == "Vaccine" for r in typesum), \
+    "expected a Vaccine row in summary_research_type_year.csv"
 print("ok")
 PY
 check "dataset referential integrity" "$?" "0"

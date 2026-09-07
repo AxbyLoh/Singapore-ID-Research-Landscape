@@ -1,6 +1,6 @@
 ---
 name: singapore-id-research-landscape
-description: Build and refresh a screened, categorised dataset of infectious disease research publications from Singapore. Searches PubMed/MEDLINE, Google Scholar and the CDA Directory of Experts roster; screens titles/abstracts against maintained inclusion/exclusion criteria; categorises into the five ID domains (vector-borne, STI, TB, respiratory tract infection, AMR/HAI); labels co-authorship, institutions and countries for Tableau network and map visualisations; and runs topic modelling to surface sub-domains. Use for requests about the Singapore ID research landscape, ID bibliometrics or co-authorship/collaboration mapping, screening ID literature, refreshing the expert directory, or building a Tableau-ready publication dataset.
+description: Build and refresh a screened, categorised dataset of infectious disease research publications from Singapore. Searches PubMed/MEDLINE, Google Scholar and the CDA Directory of Experts roster; screens titles/abstracts against maintained inclusion/exclusion criteria; categorises into the five ID domains (vector-borne, STI, TB, respiratory tract infection, AMR/HAI) plus named sub-domains within each (e.g. Dengue virus, Malaria) and cross-cutting research types (Genomics, Surveillance, Clinical studies, ...); labels co-authorship, institutions and countries for Tableau network, donut and bar-chart visualisations; and runs topic modelling to sanity-check the sub-domain taxonomy. Use for requests about the Singapore ID research landscape, ID bibliometrics or co-authorship/collaboration mapping, screening ID literature, refreshing the expert directory, or building a Tableau-ready publication dataset.
 ---
 
 # Singapore Infectious Disease Research Landscape
@@ -17,6 +17,8 @@ The three things a human owns and edits directly:
 | `reference/screening-criteria.md` | Inclusion/exclusion rules, and the amendment log |
 | `data/directory_of_experts.csv` | The CDA expert roster searched by name |
 | `reference/domain-taxonomy.md` | The 5 domains and their term/MeSH definitions |
+| `reference/subdomain-taxonomy.md` | Named sub-domains within each domain (donut chart) |
+| `reference/research-type-taxonomy.md` | Cross-cutting research-type tags (bar chart) |
 
 Never hardcode criteria, expert names, or domain terms into a script or into
 your own reasoning. Read them from these files every run, so a human edit
@@ -151,29 +153,44 @@ amend `reference/screening-criteria.md`:
 Never edit the criteria file to match a decision you made alone — only a user
 ruling, or an explicit request, justifies an amendment.
 
-## Step 4 — Classify domains and parse affiliations
+## Step 4 — Classify domains, sub-domains, research types and affiliations
 
 ```bash
 python3 .../scripts/classify.py --run-dir runs/<DATE>
 ```
 
-Assigns each included record to one or more of the five domains using the
-weighted terms and MeSH mappings in `reference/domain-taxonomy.md`, and parses
-every author affiliation string into institution and country using
+Assigns each included record to:
+
+- one or more of the **5 domains**, from `reference/domain-taxonomy.md`;
+- a **named sub-domain within its primary domain** (e.g. "Dengue virus" within
+  Vector-borne diseases), from `reference/subdomain-taxonomy.md` — this is a
+  curated list, not a machine cluster, so the donut chart's legend stays
+  stable across runs;
+- zero or more **research types** (Genomics, Clinical studies, Surveillance
+  and epidemiology, …), from `reference/research-type-taxonomy.md` — a
+  cross-cutting, multi-label tag orthogonal to domain;
+
+and parses every author affiliation string into institution and country using
 `data/institution_aliases.csv`.
 
-Two things need your judgement afterwards:
+Three things need your judgement afterwards:
 
 - `<run-dir>/classification/unassigned.jsonl` — records no domain claimed.
   Read title/abstract/MeSH and either assign a domain, mark `other_id`, or add
   the missing term to `domain-taxonomy.md` (preferred, if it generalises).
+- `<run-dir>/classification/unassigned_subdomain.jsonl` and
+  `unassigned_research_type.jsonl` — records that matched no sub-domain (within
+  their domain) or no research type at all. A recurring theme here is a gap in
+  `subdomain-taxonomy.md` or `research-type-taxonomy.md`, not a data problem —
+  add the term (`topic_model.py`'s report can suggest the missing name for
+  sub-domains) and re-run, rather than leaving records as "Other/unspecified."
 - `<run-dir>/classification/unmapped_affiliations.csv` — affiliation strings
   whose institution or country could not be resolved, ordered by frequency.
   Add real mappings to `data/institution_aliases.csv`. Resolve the frequent ones
   before building the dataset; an unmapped institution is a missing node in the
   network viz.
 
-Re-run `classify.py` after editing either file.
+Re-run `classify.py` after editing any of these files.
 
 ## Step 5 — Build the Tableau-ready dataset
 
@@ -187,21 +204,30 @@ tables Tableau can draw directly. `reference/dataset-schema.md` documents every
 column and gives the field/mark setup for each chart type. Read it before
 advising the user on the Tableau side.
 
-## Step 6 — Topic model the sub-domains
+## Step 6 — Topic model, to QA the sub-domain taxonomy
 
 ```bash
 python3 .../scripts/topic_model.py --run-dir runs/<DATE> --min-docs 12
 ```
 
-Clusters records **within each domain** by semantic similarity of title +
-abstract + keywords, so sub-domains are domain-specific. It uses
-`sentence-transformers` embeddings if installed, else TF-IDF + SVD, else a
-pure-standard-library TF-IDF; the method used is recorded in the output.
+This is **not** what feeds the sub-domain donut chart — `primary_subdomain`
+from Step 4 does that, from the curated `subdomain-taxonomy.md`. Topic
+modelling instead clusters records **within each domain** by unsupervised
+semantic similarity, as a QA pass: it finds themes your curated sub-domain
+list hasn't named yet. It uses `sentence-transformers` embeddings if
+installed, else TF-IDF + SVD, else a pure-standard-library TF-IDF; the method
+used is recorded in the output.
 
-Cluster labels come out as top distinguishing terms. Improve them: read
-`<run-dir>/topics/topics_report.md` for each cluster's terms and exemplar
-titles, write a readable sub-domain name into the `topic_label` column of
-`<run-dir>/topics/topic_labels.csv`, then:
+Read `<run-dir>/topics/topics_report.md`. A cluster whose terms and exemplar
+titles clearly belong to one named pathogen or theme that has no block in
+`subdomain-taxonomy.md` is a taxonomy gap — add the block there (following the
+existing shape) and re-run `classify.py`; the discovered cluster becomes a
+proper named slice in the donut chart next time, instead of falling into
+"Other/unspecified."
+
+If you still want readable cluster labels for the supplementary
+`topic_id`/`topic_label` fields (e.g. for the exploratory treemap in Recipe
+10), write them into `<run-dir>/topics/topic_labels.csv` and re-apply:
 
 ```bash
 python3 .../scripts/topic_model.py --run-dir runs/<DATE> --relabel-only
@@ -241,8 +267,21 @@ entries** — an invented expert silently poisons every downstream search and
 network. The script never overwrites existing rows it did not fetch; it merges
 on `profile_url` and preserves manual edits and the `notes` column.
 
-## Adding a new domain
+## Adding a new domain, sub-domain, or research type
 
-Add a section to `reference/domain-taxonomy.md` following the existing shape
-(terms with weights, MeSH terms, exclusions). Every script reads the taxonomy at
-runtime, so no code change is needed.
+All three taxonomies are read at runtime, so adding a block is a data edit,
+never a code change:
+
+- **New domain** — add a section to `reference/domain-taxonomy.md` (terms with
+  weights, MeSH terms, exclusions), following the existing shape. Add a
+  matching set of sub-domain blocks to `subdomain-taxonomy.md` too, or the new
+  domain's donut chart will be entirely "Other/unspecified."
+- **New sub-domain** — add a `json` block to the relevant domain's section of
+  `reference/subdomain-taxonomy.md`. Triggered by a recurring theme in
+  `unassigned_subdomain.jsonl` or a named cluster in `topics_report.md`
+  (Step 6).
+- **New research type** — add a `json` block to
+  `reference/research-type-taxonomy.md`. Triggered by a recurring theme in
+  `unassigned_research_type.jsonl`.
+
+After any edit, re-run `classify.py` then `build_dataset.py`.

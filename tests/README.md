@@ -31,6 +31,9 @@ The fixture deliberately covers the awkward cases:
 | Scholar-only hit | kept, flagged `needs_manual_metadata` |
 | TB/HIV co-infection | two domains (`tb`, `sti`) |
 | Ventilator-associated pneumonia | two domains (`rti`, `amr_hai`) |
+| Dengue transmission record | `primary_subdomain = "Dengue virus"` |
+| Gonorrhoea AMR record | `primary_subdomain = "Gonorrhoea"` |
+| Influenza vaccine effectiveness | `research_types` includes `Vaccine` |
 
 ## `run_pipeline_test.sh`
 
@@ -42,5 +45,12 @@ block in either is the most common way to break the pipeline.
 ```bash
 bash tests/run_pipeline_test.sh
 ```
+
+Covers, in addition to the table above: sub-domain and research-type
+classification (scoped correctly to `primary_domain` for sub-domains,
+multi-label for research types), the domain-scoped author collaboration
+network (`network_author_*`, split by `domain` plus an `ALL` aggregate), and
+`summary_top_authors.csv` / `summary_subdomain_year.csv` /
+`summary_research_type_year.csv` referential integrity.
 
 It writes to `runs/fixture-test/` and cleans up on success.

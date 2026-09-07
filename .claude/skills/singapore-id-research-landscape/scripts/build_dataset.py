@@ -5,18 +5,25 @@ Writes <run-dir>/dataset/:
 
   publications.csv                 fact table, one row per publication
   publication_domains.csv          long: publication x domain
+  publication_subdomains.csv       long: publication x sub-domain (within primary_domain)
+  publication_research_types.csv   long: publication x research type (multi-label)
   publication_authors.csv          long: publication x author
   publication_author_affiliations.csv  long: publication x author x affiliation
   publication_institutions.csv     long: publication x institution (deduped)
   publication_countries.csv        long: publication x country (deduped)
   coauthor_institution_edges.csv   institution pairs, per domain, weighted
   coauthor_country_edges.csv       country pairs, per domain, weighted
-  coauthor_author_edges.csv        author pairs, weighted
+  coauthor_author_edges.csv        author pairs, per domain, weighted
   network_institution_nodes.csv    node table with x/y for a network view
   network_institution_paths.csv    edge table in Tableau path form
   network_country_nodes.csv        "
   network_country_paths.csv        "
-  summary_by_domain_year.csv       convenience aggregate
+  network_author_nodes.csv         "  -- x/y stable across domains; filter edges by domain
+  network_author_paths.csv         "
+  summary_top_authors.csv          author x domain, ranked by publication count
+  summary_by_domain_year.csv       domain x year aggregate
+  summary_subdomain_year.csv       domain x sub-domain x year -- the donut chart's data
+  summary_research_type_year.csv   research type x year -- the "Types of research" bar chart's data
   README.md                        what each file is and how to join them
 
 Every table keys on `uid`. See reference/dataset-schema.md for column meanings
@@ -75,6 +82,10 @@ def build_publications(records, domain_labels, topics):
             "primary_domain_label": domain_labels.get(r.get("primary_domain", ""), ""),
             "domains": pipe(r.get("domains") or []),
             "is_multi_domain": int(bool(r.get("is_multi_domain"))),
+            "primary_subdomain": r.get("primary_subdomain", ""),
+            "subdomains": pipe(r.get("subdomains") or []),
+            "research_types": pipe(r.get("research_type_labels") or []),
+            "n_research_types": len(r.get("research_types") or []),
             "singapore_led": int(bool(r.get("singapore_led"))),
             "is_international": int(bool(r.get("is_international"))),
             "first_author": r.get("first_author", ""),
@@ -110,6 +121,46 @@ def build_domains(records, domain_labels):
                 "domain_score": (r.get("domain_scores") or {}).get(d, ""),
                 "year": r.get("year", ""),
                 "singapore_led": int(bool(r.get("singapore_led"))),
+            })
+    return rows
+
+
+def build_subdomains(records, subdomain_labels):
+    """Long: publication x sub-domain. is_primary marks the donut-chart slice.
+
+    subdomain_labels: {(domain_id, subdomain_id): label}
+    """
+    rows = []
+    for r in records:
+        dom = r.get("primary_domain", "")
+        all_ids = r.get("subdomains") or []
+        scores = r.get("subdomain_scores") or {}
+        ranked = sorted(all_ids, key=lambda k: -scores.get(k, 0))
+        for i, sid in enumerate(ranked):
+            rows.append({
+                "uid": r["uid"], "domain_id": dom, "subdomain_id": sid,
+                "subdomain_label": subdomain_labels.get((dom, sid), sid),
+                "is_primary": int(i == 0), "subdomain_score": scores.get(sid, ""),
+                "year": r.get("year", ""),
+            })
+        if not ranked:
+            rows.append({
+                "uid": r["uid"], "domain_id": dom, "subdomain_id": "other",
+                "subdomain_label": r.get("primary_subdomain") or "Other/unspecified",
+                "is_primary": 1, "subdomain_score": "", "year": r.get("year", ""),
+            })
+    return rows
+
+
+def build_research_types(records):
+    """Long: publication x research type. Multi-label, no primary."""
+    rows = []
+    for r in records:
+        for t, label in zip(r.get("research_types") or [], r.get("research_type_labels") or []):
+            rows.append({
+                "uid": r["uid"], "type_id": t, "type_label": label,
+                "type_score": (r.get("research_type_scores") or {}).get(t, ""),
+                "year": r.get("year", ""), "primary_domain": r.get("primary_domain", ""),
             })
     return rows
 
@@ -220,12 +271,16 @@ def build_edges(records, key, extra_lookup, min_weight=1, max_edges=None):
     return rows
 
 
-def build_author_edges(records, min_weight=1, max_edges=5000):
+def build_author_edges(records, min_weight=1, max_edges=8000):
+    """Author co-publication pairs, split by primary_domain (plus 'ALL' via
+    build_network's aggregation), mirroring build_edges() for institutions.
+    """
     counts = Counter()
     names = {}
     meta = {}
     for r in records:
         authors = r.get("authors_resolved") or []
+        dom = r.get("primary_domain", "")
         keys = []
         for a in authors:
             if a["author_key"]:
@@ -235,23 +290,65 @@ def build_author_edges(records, min_weight=1, max_edges=5000):
                     "institution": a["institutions"][0] if a["institutions"] else "",
                     "country": a["countries"][0] if a["countries"] else ""})
         for a, b in itertools.combinations(sorted(set(keys)), 2):
-            counts[(a, b)] += 1
+            counts[(a, b, dom)] += 1
     rows = []
-    for (a, b), w in counts.items():
+    for (a, b, dom), w in counts.items():
         if w < min_weight:
             continue
         rows.append({
-            "edge_id": "%s--%s" % (a, b),
-            "source": a, "target": b,
+            "edge_id": "%s--%s#%s" % (a, b, dom or "none"),
+            "pair_id": "%s--%s" % (a, b),
+            "source": a, "target": b, "domain": dom, "weight": w,
             "source_name": names.get(a, a), "target_name": names.get(b, b),
             "source_institution": meta.get(a, {}).get("institution", ""),
             "target_institution": meta.get(b, {}).get("institution", ""),
             "source_country": meta.get(a, {}).get("country", ""),
             "target_country": meta.get(b, {}).get("country", ""),
-            "weight": w,
         })
     rows.sort(key=lambda r: -r["weight"])
     return rows[:max_edges]
+
+
+def build_top_authors(records, domain_labels):
+    """Ranked author x domain publication counts, plus an 'ALL' domain.
+
+    This is the table behind the reference dashboard's "top N authors" list:
+    filter to one domain_id, sort by n_publications descending.
+    """
+    counts = Counter()
+    meta = {}
+    for r in records:
+        seen_authors = set()
+        for a in r.get("authors_resolved") or []:
+            if not a["author_key"] or a["author_key"] in seen_authors:
+                continue
+            seen_authors.add(a["author_key"])
+            meta.setdefault(a["author_key"], {
+                "author_name": a["author_name"],
+                "institution": a["institutions"][0] if a["institutions"] else "",
+                "country": a["countries"][0] if a["countries"] else ""})
+            for dom in (r.get("domains") or []):
+                counts[(dom, a["author_key"])] += 1
+            counts[("ALL", a["author_key"])] += 1
+
+    by_domain = defaultdict(list)
+    for (dom, key), n in counts.items():
+        by_domain[dom].append((key, n))
+
+    rows = []
+    for dom, entries in by_domain.items():
+        entries.sort(key=lambda kv: -kv[1])
+        for rank, (key, n) in enumerate(entries, 1):
+            m = meta.get(key, {})
+            rows.append({
+                "domain_id": dom,
+                "domain_label": "All domains" if dom == "ALL" else domain_labels.get(dom, dom),
+                "author_key": key, "author_name": m.get("author_name", key),
+                "institution": m.get("institution", ""), "country": m.get("country", ""),
+                "n_publications": n, "rank_in_domain": rank,
+            })
+    rows.sort(key=lambda r: (r["domain_id"], r["rank_in_domain"]))
+    return rows
 
 
 def build_network(edge_rows, node_meta, node_pubs, max_nodes):
@@ -324,6 +421,40 @@ def build_network(edge_rows, node_meta, node_pubs, max_nodes):
     return nodes, paths, truncated
 
 
+def build_subdomain_summary(records, domain_labels):
+    """domain x primary_subdomain x year -- the donut chart's data, pre-aggregated.
+
+    Mutually exclusive within a domain (uses primary_subdomain only), so
+    values sum to that domain's publication count for a given year.
+    """
+    counts = Counter()
+    for r in records:
+        dom = r.get("primary_domain", "")
+        sd = r.get("primary_subdomain") or "Other/unspecified"
+        y = r.get("year", "")
+        counts[(dom, sd, y)] += 1
+    rows = []
+    for (dom, sd, y), n in sorted(counts.items()):
+        rows.append({
+            "domain_id": dom, "domain_label": domain_labels.get(dom, dom),
+            "subdomain_label": sd, "year": y, "publications": n,
+        })
+    return rows
+
+
+def build_research_type_summary(records):
+    """type x year, multi-label -- the "Types of research" bar chart's data."""
+    counts = Counter()
+    for r in records:
+        y = r.get("year", "")
+        for label in r.get("research_type_labels") or []:
+            counts[(label, y)] += 1
+    rows = []
+    for (label, y), n in sorted(counts.items()):
+        rows.append({"type_label": label, "year": y, "publications": n})
+    return rows
+
+
 def build_summary(records, domain_labels):
     counts = Counter()
     sg_led = Counter()
@@ -356,16 +487,21 @@ One run of the Singapore ID research landscape pipeline. Every table keys on
 |---|---|---|
 | `publications.csv` | one publication | primary table, key `uid` |
 | `publication_domains.csv` | publication x domain | `uid` |
+| `publication_subdomains.csv` | publication x sub-domain | `uid` |
+| `publication_research_types.csv` | publication x research type | `uid` |
 | `publication_authors.csv` | publication x author | `uid` |
 | `publication_author_affiliations.csv` | publication x author x affiliation | `uid`, `author_key` |
 | `publication_institutions.csv` | publication x institution | `uid` |
 | `publication_countries.csv` | publication x country | `uid` |
 | `coauthor_institution_edges.csv` | institution pair x domain | standalone |
 | `coauthor_country_edges.csv` | country pair x domain | standalone |
-| `coauthor_author_edges.csv` | author pair | standalone |
+| `coauthor_author_edges.csv` | author pair x domain | standalone |
 | `network_*_nodes.csv` | node | `node_id` |
 | `network_*_paths.csv` | edge x endpoint | `edge_id`, join nodes on `node_id` |
+| `summary_top_authors.csv` | author x domain | standalone -- ranked, for a "top N" list |
 | `summary_by_domain_year.csv` | domain x year | standalone |
+| `summary_subdomain_year.csv` | domain x sub-domain x year | standalone -- donut chart source |
+| `summary_research_type_year.csv` | research type x year | standalone -- research-type bar chart source |
 
 ## Counting rule
 
@@ -373,6 +509,17 @@ Use `publications.csv` for totals. Use `publication_domains.csv` (or the other
 long tables) when slicing by domain, institution or country -- a publication
 with three countries appears three times there, so `COUNTD([uid])` is the
 correct measure, never `SUM(1)`.
+
+## Sub-domain vs. domain vs. research type
+
+Three independent classification axes, all in `publications.csv`:
+
+- `primary_domain` / `domains` -- the 5 domains (a publication can be multi-domain)
+- `primary_subdomain` / `subdomains` -- named sub-domain **within** the primary
+  domain (e.g. "Dengue virus" within Vector-borne diseases); `primary_subdomain`
+  is mutually exclusive per domain and is what the donut chart should use
+- `research_types` -- cross-cutting "what kind of research" tags (Genomics,
+  Surveillance and epidemiology, ...), multi-label, no primary
 """
 
 
@@ -381,7 +528,9 @@ def main():
     ap.add_argument("--run-dir", required=True)
     ap.add_argument("--min-edge-weight", type=int, default=1)
     ap.add_argument("--max-network-nodes", type=int, default=150,
-                    help="nodes kept in the laid-out network tables (by weighted degree)")
+                    help="nodes kept in the laid-out institution/country network tables")
+    ap.add_argument("--max-author-network-nodes", type=int, default=250,
+                    help="nodes kept in the laid-out author network table")
     args = ap.parse_args()
 
     p = idlib.run_paths(args.run_dir)
@@ -394,6 +543,11 @@ def main():
                      for d in idlib.load_taxonomy()}
     domain_labels.setdefault("other_id", "Other infectious disease")
 
+    subdomain_labels = {}
+    for dom, blocks in idlib.load_subdomain_taxonomy().items():
+        for b in blocks:
+            subdomain_labels[(dom, b["subdomain_id"])] = b.get("label", b["subdomain_id"])
+
     topics = {}
     topics_path = os.path.join(p["topics"], "publication_topics.csv")
     for row in idlib.read_csv(topics_path):
@@ -404,6 +558,8 @@ def main():
 
     pubs = build_publications(records, domain_labels, topics)
     doms = build_domains(records, domain_labels)
+    subdoms = build_subdomains(records, subdomain_labels)
+    rtypes = build_research_types(records)
     auths, auth_affs = build_authors(records)
     inst_rows, ctry_rows = build_institution_country(records)
 
@@ -422,9 +578,26 @@ def main():
     inst_edges = build_edges(records, "institutions", inst_meta, args.min_edge_weight)
     ctry_edges = build_edges(records, "countries", ctry_meta, args.min_edge_weight)
     auth_edges = build_author_edges(records, args.min_edge_weight)
+    top_authors = build_top_authors(records, domain_labels)
+
+    author_meta = {}
+    for a in auth_affs:
+        if a["author_key"] not in author_meta and a["institution"]:
+            author_meta[a["author_key"]] = {
+                "country": a["country"], "region": a["region"],
+                "sector": a["sector"], "iso3": a["iso3"]}
+    author_pubs = Counter(r["author_key"] for r in auths)
 
     inodes, ipaths, itrunc = build_network(inst_edges, inst_meta, inst_pubs, args.max_network_nodes)
     cnodes, cpaths, ctrunc = build_network(ctry_edges, ctry_meta, ctry_pubs, args.max_network_nodes)
+    anodes, apaths, atrunc = build_network(auth_edges, author_meta, author_pubs,
+                                           args.max_author_network_nodes)
+    # build_network labels nodes by node_id (author_key); swap in the display name
+    author_names = {a["author_key"]: a["author_name"] for a in auths}
+    for n in anodes:
+        n["label"] = author_names.get(n["node_id"], n["node_id"])
+    for pr in apaths:
+        pr["label"] = author_names.get(pr["node_id"], pr["node_id"])
 
     written = []
     def w(name, rows, fields=None):
@@ -433,6 +606,8 @@ def main():
 
     w("publications.csv", pubs)
     w("publication_domains.csv", doms)
+    w("publication_subdomains.csv", subdoms)
+    w("publication_research_types.csv", rtypes)
     w("publication_authors.csv", auths)
     w("publication_author_affiliations.csv", auth_affs)
     w("publication_institutions.csv", inst_rows)
@@ -444,7 +619,12 @@ def main():
     w("network_institution_paths.csv", ipaths)
     w("network_country_nodes.csv", cnodes)
     w("network_country_paths.csv", cpaths)
+    w("network_author_nodes.csv", anodes)
+    w("network_author_paths.csv", apaths)
+    w("summary_top_authors.csv", top_authors)
     w("summary_by_domain_year.csv", build_summary(records, domain_labels))
+    w("summary_subdomain_year.csv", build_subdomain_summary(records, domain_labels))
+    w("summary_research_type_year.csv", build_research_type_summary(records))
 
     with open(os.path.join(out, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(README)
@@ -456,11 +636,12 @@ def main():
         print("")
         print("topic_id/topic_label are empty: run topic_model.py, then re-run this")
         print("script to fold the topics into publications.csv.")
-    if itrunc or ctrunc:
+    if itrunc or ctrunc or atrunc:
         print("")
-        print("Network truncated to the top %d nodes by weighted degree "
-              "(%d institution, %d country nodes dropped)."
-              % (args.max_network_nodes, itrunc, ctrunc))
+        print("Network truncated to the top nodes by weighted degree: %d institution "
+              "(cap %d), %d country (cap %d), %d author (cap %d) dropped."
+              % (itrunc, args.max_network_nodes, ctrunc, args.max_network_nodes,
+                 atrunc, args.max_author_network_nodes))
         print("Edge tables are complete; only the laid-out network_* tables are capped.")
     return 0
 

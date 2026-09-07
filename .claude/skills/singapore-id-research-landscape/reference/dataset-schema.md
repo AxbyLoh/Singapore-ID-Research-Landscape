@@ -44,7 +44,11 @@ One row per publication. Join everything else to it on `uid`.
 | `first_author_country`, `last_author_country` | string | Leadership geography |
 | `sg_institutions` | pipe-list | Singapore institutions on the paper |
 | `countries`, `institutions` | pipe-list | All resolved, deduped |
-| `topic_id`, `topic_label`, `topic_terms` | string | Sub-domain from `topic_model.py`; blank until it has run |
+| `primary_subdomain` | string | Named sub-domain within `primary_domain` (e.g. "Dengue virus"), from `reference/subdomain-taxonomy.md` — mutually exclusive per domain, this is the donut chart's field |
+| `subdomains` | pipe-list | All sub-domains that cleared threshold, multi-label view |
+| `research_types` | pipe-list | Cross-cutting "kind of research" tags (Genomics, Surveillance and epidemiology, …), from `reference/research-type-taxonomy.md` — multi-label, no primary |
+| `n_research_types` | int | `len(research_types)` |
+| `topic_id`, `topic_label`, `topic_terms` | string | **Unsupervised** cluster from `topic_model.py`, blank until it has run. Supplementary to `primary_subdomain` — see "Three classification axes" below |
 | `screening_decision` | string | `include` (all rows here are includes) |
 | `screening_decided_by` | string | `mechanical`, `agent` or `user` |
 | `screening_rules` | pipe-list | Rule IDs that fired |
@@ -59,6 +63,27 @@ reliable affiliations and will distort every network and map.
 
 ---
 
+## Three classification axes
+
+The dataset carries three independent classifications. Keep them straight —
+they answer different questions and drive different charts:
+
+| Axis | Question | Field | Cardinality | Source |
+|---|---|---|---|---|
+| **Domain** | Which of the 5 ID areas? | `primary_domain` / `domains` | Multi-label (TB/HIV → both) | `reference/domain-taxonomy.md`, curated |
+| **Sub-domain** | Which named pathogen/theme within that domain? | `primary_subdomain` / `subdomains` | One primary, mutually exclusive per domain | `reference/subdomain-taxonomy.md`, curated |
+| **Research type** | What kind of research — method, not disease? | `research_types` | Multi-label, no primary | `reference/research-type-taxonomy.md`, curated |
+
+All three are **curated term lists**, not machine learning — deliberately, so
+the donut and bar chart legends stay stable and meaningful run over run.
+`topic_model.py`'s unsupervised clusters (`topic_id`/`topic_label`) are a
+fourth, *supplementary* field: use its report to find named themes that
+`subdomain-taxonomy.md` is missing, then add them there as a proper curated
+block. Don't build the sub-domain donut chart from `topic_label` — it drifts
+between runs and its cluster count changes with corpus size.
+
+---
+
 ## Long tables
 
 ### `publication_domains.csv` — publication × domain
@@ -68,6 +93,24 @@ Use for domain breakdowns. `is_primary = 1` gives a mutually exclusive view
 (each publication once); leaving it unfiltered gives the overlapping view where
 a TB/HIV paper counts in both domains. **Say which one a chart uses** — the two
 give different totals and the difference is real, not an error.
+
+### `publication_subdomains.csv` — publication × sub-domain
+`uid`, `domain_id`, `subdomain_id`, `subdomain_label`, `is_primary`,
+`subdomain_score`, `year`
+
+Scoped to the publication's `primary_domain` only — a paper's sub-domain is
+always read within its main domain. `is_primary = 1` is the row that matches
+`publications.csv`'s `primary_subdomain`; this is the table behind the "Sub-
+domains of X" donut chart (filter `domain_id` to one value and `is_primary = 1`,
+then `COUNTD([uid])` by `subdomain_label`).
+
+### `publication_research_types.csv` — publication × research type
+`uid`, `type_id`, `type_label`, `type_score`, `year`, `primary_domain`
+
+Multi-label, no `is_primary` — a publication legitimately carries several
+research types. `COUNTD([uid])` by `type_label` sums above the total
+publication count; that is expected and matches the reference "Types of
+research" chart, which is a plain count per type, not a share of 100%.
 
 ### `publication_authors.csv` — publication × author
 `uid`, `author_key`, `author_name`, `position`, `is_first`, `is_last`,
@@ -107,24 +150,44 @@ number of co-publications. Sum `weight` across domains for the overall figure,
 or filter to one domain.
 
 ### `coauthor_author_edges.csv`
-Author pairs with names, institutions and countries. Subject to the
-`author_key` caveat above.
+Author pairs, **split by `domain`** (plus `ALL`, like the institution/country
+edges), with `edge_id`, `pair_id`, `weight`, names, institutions, countries.
+Subject to the `author_key` caveat above.
+
+### `summary_top_authors.csv`
+`domain_id`, `domain_label`, `author_key`, `author_name`, `institution`,
+`country`, `n_publications`, `rank_in_domain`
+
+One row per (domain, author), pre-ranked. `domain_id = "ALL"` gives the
+cross-domain ranking. This is exactly the reference dashboard's "top 10
+authors" list: filter `domain_id` to one value, sort by `rank_in_domain`, take
+the top N. A parameter action on `author_key`, driven by a click on this
+table, is how the reference "select an author to view their collaborations"
+interaction is built (see Recipe 7).
 
 ### `network_*_nodes.csv` and `network_*_paths.csv`
 Pre-laid-out graphs, so Tableau can draw a network without a layout extension.
+Three families: `network_institution_*`, `network_country_*`, `network_author_*`.
 
-`network_institution_nodes.csv`: `node_id`, `label`, `country`, `region`,
-`sector`, `iso3`, `is_singapore`, `x`, `y`, `degree`, `weighted_degree`,
-`n_publications`.
+`network_institution_nodes.csv` (and the author/country equivalents):
+`node_id`, `label`, `country`, `region`, `sector`, `iso3`, `is_singapore`, `x`,
+`y`, `degree`, `weighted_degree`, `n_publications`.
 
-`network_institution_paths.csv`: two rows per edge (`path_order` 1 and 2), each
-carrying that endpoint's `x`/`y`, plus `edge_id`, `pair_id`, `domain`,
-`weight`, `source`, `target`.
+For the **author** network, `node_id` is `author_key`, `label` is the display
+name, and `n_publications` is the author's total across *all* domains (the
+same figure as `summary_top_authors.csv`'s `domain_id = "ALL"` row) — the
+layout and node sizing stay stable as you switch the domain filter; only the
+edges drawn (and the top-N ranking table) change.
+
+`network_institution_paths.csv` (and the author/country equivalents): two rows
+per edge (`path_order` 1 and 2), each carrying that endpoint's `x`/`y`, plus
+`edge_id`, `pair_id`, `domain`, `weight`, `source`, `target`.
 
 Coordinates come from a deterministic force-directed layout, so the same data
-always yields the same picture. The node tables are capped at
-`--max-network-nodes` (default 150) by weighted degree; the edge CSVs are
-never capped.
+always yields the same picture. Institution/country node tables are capped at
+`--max-network-nodes` (default 150), the author node table at
+`--max-author-network-nodes` (default 250), both by weighted degree; the edge
+CSVs are never capped.
 
 **`domain` includes a special value `ALL`** — one path per pair with weights
 summed across domains. Always apply a `domain` filter to a network view: with
@@ -135,22 +198,74 @@ other.
 
 ## Tableau recipes
 
-### 1. Co-authorship network (institutions)
+### 1. Author collaboration network with a top-N selector
 
-1. Connect to `network_institution_paths.csv`; add `network_institution_nodes.csv`
-   as a second source if you want node marks styled separately.
-2. `x` → Columns, `y` → Rows. Set both to **Dimension** and **Continuous** (right-click → Dimension, then Continuous). If you leave them as measures Tableau aggregates them to a single point.
-3. Mark type **Line**.
-4. `edge_id` → Detail. `path_order` → Path.
-5. `weight` → Size. `is_cross_border` or `domain` → Colour.
-6. **Filter `domain`** to one value (or `ALL`).
-7. For node circles: duplicate `y` on Rows, set the second axis to mark type
-   **Circle** with `node_id` on Detail and `n_publications` on Size, then
-   dual-axis and synchronise.
-8. Hide both axes and the gridlines — the coordinates are arbitrary layout
-   space, not data.
+This is the reference dashboard's flagship view: a domain-scoped author
+network, nodes coloured/sized by publication count on a green→yellow→red
+scale, with a ranked author list that filters the network on selection.
 
-### 2. Country collaboration map
+**The network:**
+1. Connect to `network_author_paths.csv`.
+2. `x` → Columns, `y` → Rows, both set to **Dimension** and **Continuous**
+   (right-click each pill → Dimension, then Continuous — leaving them as
+   aggregated Measures collapses the whole graph to one point).
+3. Mark type **Line**. `edge_id` → Detail, `path_order` → Path.
+4. `weight` → Size.
+5. **Filter `domain`** to one value, e.g. `vector_borne` (never leave it open —
+   see the `ALL` note above).
+6. For node circles: duplicate `y` on Rows, set the second pane's mark type to
+   **Circle**, put `node_id` on Detail and `n_publications` on both **Size**
+   and **Colour**, then combine the two axes (right-click the second y-axis →
+   Dual Axis) and Synchronize Axis.
+7. On the circle mark's Colour shelf, edit the color legend to a 3-stop
+   **stepped/sequential** palette matching the reference — green at the low
+   end, yellow at the midpoint, red at the high end — with the legend's
+   min/max set to your data's actual `n_publications` range (the reference
+   dashboard runs 1 to 51; yours will differ by corpus size). Tableau's
+   built-in "Orange-Blue Diverging" won't match; build a custom 3-color
+   sequential palette instead (Edit Colors → enter hex stops).
+8. Hide both axes and gridlines — the coordinates are layout space, not data.
+
+**The top-N author list and select/deselect interaction:**
+1. New sheet on `summary_top_authors.csv`: filter `domain_id` to the same
+   domain as the network, filter `rank_in_domain <= 10`, sort ascending. Put
+   `author_name` and `n_publications` as columns — this is the sidebar table.
+2. Add a **dashboard**, place both sheets on it.
+3. Add a **Filter action**: source sheet = the top-authors table, target
+   sheet = the network (both node and edge pane), field `author_key` →
+   matching `source`/`target` on the network's underlying data (a calculated
+   field `[source] = [Selected Author] OR [target] = [Selected Author]` driving
+   an edge-level filter is the usual way to highlight just that author's
+   collaborations). Set "Clear selection" behaviour to **Show all values** —
+   that reproduces "deselect the author to return to the original view."
+
+### 2. Sub-domain donut chart
+
+The reference "Sub-domains of X" chart. Use `summary_subdomain_year.csv`
+(pre-aggregated) or `publication_subdomains.csv` with `is_primary = 1`.
+
+1. Filter `domain_id` to one domain.
+2. Mark type **Pie**.
+3. `subdomain_label` → Colour and Label. `SUM([publications])` (from the
+   summary table) or `COUNTD([uid])` (from the long table) → Angle.
+4. Add a **Year filter** (Recipe 5) to the same dashboard so the donut updates
+   per year, matching the reference layout.
+5. Convert to a donut by layering a second pie mark of a fixed size at 0%
+   transparency in the centre, or use a "Pie chart donut" template — purely
+   cosmetic, no data implication.
+
+### 3. "Types of research" bar chart
+
+`summary_research_type_year.csv` or `publication_research_types.csv`.
+
+1. `type_label` → Rows, sorted by `SUM([publications])` / `COUNTD([uid])`
+   descending. Horizontal bar (swap axes).
+2. Filter by `year` (Recipe 5) to match the reference's per-year view.
+3. Do **not** filter to `primary_domain` unless you want research types within
+   one domain only — the reference chart appears to be corpus-wide; state
+   which scope you used.
+
+### 4. Country collaboration map
 `publication_countries.csv`. `country` → Detail, set its geographic role to
 Country/Region. `COUNTD([uid])` → Colour for a choropleth. Filter
 `is_singapore = 0` to show *partner* countries rather than the near-universal
@@ -159,25 +274,43 @@ Singapore.
 For collaboration flows, use `coauthor_country_edges.csv` with
 `involves_singapore = 1` and draw lines between country centroids.
 
-### 3. Domain trend over time
+### 5. Year filter as single-select buttons
+
+The reference dashboard uses a row of year buttons (2015…2025), not a range
+slider. In Tableau: put `year` on a filter shelf, right-click the filter card
+→ **Single Value (List)**, then in "Customize" set it to display as buttons
+rather than a dropdown. Apply the same filter (or a linked one via a filter
+action) across every sheet on the dashboard so one click updates the donut,
+the bar chart and any trend view together.
+
+### 6. Domain trend over time
 `publication_domains.csv`. `year` → Columns, `COUNTD([uid])` → Rows,
 `domain_label` → Colour. Area chart for share-of-output, line chart for volume.
 Decide and state whether `is_primary = 1` is applied.
 
-### 4. Top institutions
+### 7. Top institutions
 `publication_institutions.csv`. `institution` → Rows sorted by
 `COUNTD([uid])` descending, `sector` → Colour. Filter `is_singapore = 1` for
 the domestic view, `= 0` for the international-partner view.
 
-### 5. Sub-domain treemap
-`publications.csv` (after `topic_model.py` and a rebuild).
-`primary_domain_label` then `topic_label` → Detail, `COUNTD([uid])` → Size,
-`primary_domain_label` → Colour. Filter out
-`topic_label = "(too few records to cluster)"`.
+### 8. Institution/country collaboration network
+Same construction as Recipe 1, but on `network_institution_paths.csv` /
+`network_country_paths.csv`. Colour by `is_cross_border` or `domain` rather
+than a publication-count gradient — these two networks answer "who
+collaborates with whom," not "who is most prolific," so a categorical colour
+reads better than the author network's sequential one.
 
-### 6. Singapore-led vs participating
+### 9. Singapore-led vs participating
 `publications.csv`. `singapore_led` → Colour on a `year` × `COUNTD([uid])` bar
 chart. Cross-reference `screening_flags` containing `regional_participation`.
+
+### 10. Discovered-cluster exploration (supplementary, not the donut)
+`publications.csv` (after `topic_model.py` and a rebuild).
+`primary_domain_label` then `topic_label` → Detail, `COUNTD([uid])` → Size,
+`primary_domain_label` → Colour, in a treemap. Filter out
+`topic_label = "(too few records to cluster)"`. Use this to sanity-check
+`subdomain-taxonomy.md`, not as the published sub-domain chart — see "Three
+classification axes" above.
 
 ---
 
@@ -195,3 +328,12 @@ chart. Cross-reference `screening_flags` containing `regional_participation`.
    publication count.
 6. **Topic clusters** are unsupervised and only as good as the corpus size —
    check the silhouette score in `topics_report.md` before trusting them.
+7. **Sub-domain and research-type coverage is only as good as the curated
+   lists.** A domain with many `primary_subdomain = "Other/unspecified"`
+   records, or many publications with `research_types` empty, means
+   `subdomain-taxonomy.md` / `research-type-taxonomy.md` need more terms for
+   your corpus — check `classification/unassigned_subdomain.jsonl` and
+   `unassigned_research_type.jsonl` before publishing either chart.
+8. **The vector-borne sub-domain list ships calibrated against the reference
+   dashboard's screenshot**, not against your own corpus. Recalibrate it —
+   and build out the other four domains' lists — after your first real run.
