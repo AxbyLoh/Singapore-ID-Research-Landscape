@@ -155,6 +155,44 @@ echo "== topic model =="
 python3 "$SK/scripts/topic_model.py" --run-dir "$RUN" --min-docs 3 >/dev/null 2>&1
 check "topic_model exit code" "$?" "0"
 if [ -f "$RUN/topics/publication_topics.csv" ]; then pass "topic assignments written"; else fail "no topic assignments"; fi
+if [ -f "$RUN/topics/topic_centroids.csv" ]; then pass "topic centroids written"; else fail "no topic centroids"; fi
+
+python3 - "$RUN" <<'PY'
+import csv, math, sys
+run = sys.argv[1]
+rows = list(csv.DictReader(open(run + "/topics/publication_topics.csv")))
+placed = [r for r in rows if r["map_x"] and r["map_y"]]
+assert placed, "expected at least one record with map coordinates"
+for r in placed:
+    x, y = float(r["map_x"]), float(r["map_y"])
+    assert 0.0 <= x <= 1.0 and 0.0 <= y <= 1.0, "map coordinate out of [0,1] range: %r" % r
+
+# clustered records should be spatially close: pick a cluster with >=2 placed
+# members and check they're each closer to their own centroid than to a
+# different cluster's centroid in the same domain (the actual point of a map).
+centroids = {(r["domain_id"], r["topic_id"]): (float(r["x"]), float(r["y"]))
+             for r in csv.DictReader(open(run + "/topics/topic_centroids.csv")) if r["x"]}
+by_topic = {}
+for r in placed:
+    by_topic.setdefault((r["domain_id"], r["topic_id"]), []).append(r)
+checked = 0
+for (dom, tid), members in by_topic.items():
+    other_centroids = [xy for (d2, t2), xy in centroids.items() if d2 == dom and t2 != tid]
+    if not other_centroids or (dom, tid) not in centroids:
+        continue
+    own = centroids[(dom, tid)]
+    for r in members:
+        x, y = float(r["map_x"]), float(r["map_y"])
+        d_own = math.hypot(x - own[0], y - own[1])
+        d_other_min = min(math.hypot(x - ox, y - oy) for ox, oy in other_centroids)
+        assert d_own <= d_other_min + 1e-9, (
+            "record %s sits closer to another cluster's centroid than its own "
+            "(own=%.3f, nearest other=%.3f) -- map is not clustering" % (r["uid"], d_own, d_other_min))
+        checked += 1
+assert checked > 0, "no multi-cluster domain available to check spatial separation"
+print("ok (%d records checked for own-cluster proximity)" % checked)
+PY
+check "topic map spatially separates clusters" "$?" "0"
 
 echo "== build_dataset =="
 python3 "$SK/scripts/build_dataset.py" --run-dir "$RUN" >/dev/null
@@ -165,7 +203,7 @@ for f in publications publication_domains publication_subdomains publication_res
          coauthor_institution_edges coauthor_author_edges network_institution_nodes \
          network_institution_paths network_author_nodes network_author_paths \
          summary_top_authors summary_by_domain_year summary_subdomain_year \
-         summary_research_type_year; do
+         summary_research_type_year topic_map_centroids; do
   if [ -s "$RUN/dataset/$f.csv" ]; then pass "$f.csv present"; else fail "$f.csv missing/empty"; fi
 done
 
@@ -260,6 +298,14 @@ if diff -q "$RUN/nodes_first.csv" "$RUN/dataset/network_institution_nodes.csv" >
   pass "network layout is deterministic"
 else
   fail "network layout changed between identical runs"
+fi
+
+cp "$RUN/topics/publication_topics.csv" "$RUN/topics_first.csv"
+python3 "$SK/scripts/topic_model.py" --run-dir "$RUN" --min-docs 3 >/dev/null 2>&1
+if diff -q "$RUN/topics_first.csv" "$RUN/topics/publication_topics.csv" >/dev/null; then
+  pass "topic map layout is deterministic"
+else
+  fail "topic map coordinates changed between identical runs"
 fi
 
 echo

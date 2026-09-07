@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Cluster sub-domains of research WITHIN each domain, by semantic similarity.
+"""Cluster records WITHIN each domain by semantic similarity, and lay them out
+as a 2D topic MAP -- not a bar chart -- so that similar topics sit near each
+other and dissimilar ones sit apart, the way a document/cluster landscape
+should read.
 
 Backends, best first -- whichever is installed is used, and the choice is
 recorded in the output:
@@ -8,13 +11,26 @@ recorded in the output:
   2. scikit-learn TF-IDF + TruncatedSVD (good: latent semantic space)
   3. pure standard-library TF-IDF       (always available; lexical only)
 
+The map itself is a k-nearest-neighbour similarity graph (each record linked
+to its most similar records in the same domain) laid out with the same
+deterministic force-directed layout used for the co-authorship networks
+(idlib.force_layout): records pulled together by many strong similarity
+edges cluster spatially; records with few edges to a group drift away from
+it. This is a lightweight, dependency-free stand-in for a UMAP/t-SNE plot,
+not a size-ranked bar chart of cluster counts.
+
 Writes <run-dir>/topics/:
-  publication_topics.csv   uid -> topic_id, topic_label, topic_terms
+  publication_topics.csv   uid -> topic_id, topic_label, topic_terms, map_x, map_y
+  topic_centroids.csv      one row per topic: its label, top terms, size,
+                            and (x, y) -- the mean position of its members,
+                            for placing a text label on the map
   topic_labels.csv         EDITABLE: rewrite topic_label, then --relabel-only
   topics_report.md         cluster sizes, terms, exemplar titles
 
-Clustering runs per domain, so a topic is always a sub-domain of one of the
-five domains rather than a cross-cutting theme.
+Clustering (and the map) run per domain, so a topic is always a sub-domain of
+one of the five domains rather than a cross-cutting theme, and coordinates
+from different domains are not comparable to each other -- always filter a
+map view to one domain.
 """
 
 from __future__ import annotations
@@ -275,6 +291,69 @@ def auto_label(terms):
 
 
 # --------------------------------------------------------------------------
+# Topic map (2D layout by similarity, NOT a bar chart)
+# --------------------------------------------------------------------------
+
+def similarity_knn_edges(vecs, k_neighbors):
+    """Undirected k-NN graph over document vectors: each doc linked to its
+    most similar other docs (cosine > 0), for force_layout to cluster on.
+    """
+    n = len(vecs)
+    edges = {}
+    for i in range(n):
+        sims = []
+        for j in range(n):
+            if i == j:
+                continue
+            s = cosine(vecs[i], vecs[j])
+            if s > 0:
+                sims.append((s, j))
+        sims.sort(reverse=True)
+        for s, j in sims[:k_neighbors]:
+            key = (i, j) if i < j else (j, i)
+            if key not in edges or s > edges[key]:
+                edges[key] = s
+    return [(a, b, w) for (a, b), w in edges.items()]
+
+
+def stratified_sample(assign, cap, seed):
+    """Deterministic, cluster-proportional sample of doc indices, so a large
+    domain's map still shows every cluster rather than truncating arbitrarily.
+    """
+    n = len(assign)
+    if n <= cap:
+        return list(range(n))
+    groups = defaultdict(list)
+    for i, a in enumerate(assign):
+        groups[a].append(i)
+    rng = random.Random(seed)
+    keep = []
+    remaining = cap
+    for gi, (cluster, members) in enumerate(sorted(groups.items())):
+        share = max(1, round(cap * len(members) / n))
+        share = min(share, len(members), remaining - (len(groups) - gi - 1))
+        share = max(share, 1)
+        keep.extend(sorted(rng.sample(members, min(share, len(members)))))
+        remaining -= share
+    return sorted(set(keep))[:cap]
+
+
+def layout_topic_map(vecs, assign, k_neighbors, max_docs, seed):
+    """{doc_index: (x, y)} for docs actually placed on the map (up to
+    max_docs, stratified by cluster if the domain is larger than that).
+    """
+    idx = stratified_sample(assign, max_docs, seed)
+    if len(idx) < 2:
+        return {i: (0.5, 0.5) for i in idx}
+    sub_vecs = [vecs[i] for i in idx]
+    edges = similarity_knn_edges(sub_vecs, k_neighbors)
+    # force_layout works on arbitrary node ids; use local positions 0..len(idx)-1
+    local_edges = edges  # already (local_i, local_j, w) since sub_vecs is 0-indexed
+    pos = idlib.force_layout(list(range(len(idx))), local_edges, seed=seed)
+    return {idx[local_i]: xy for local_i, xy in pos.items()}
+
+
+# --------------------------------------------------------------------------
 # Main
 # --------------------------------------------------------------------------
 
@@ -308,20 +387,30 @@ def run_domain(domain_id, records, args):
     for i, a in enumerate(assign):
         groups[a].append(i)
 
+    xy = layout_topic_map(vecs, assign, args.map_neighbors, args.map_max_docs, args.seed)
+
     topics = []
     for ci in sorted(groups, key=lambda c: -len(groups[c])):
         members = groups[ci]
         terms = cluster_terms(docs, assign, ci)
         exemplars = sorted(members, key=lambda i: -cosine(vecs[i], centres[ci]))[:3]
+        placed = [i for i in members if i in xy]
+        if placed:
+            cx = sum(xy[i][0] for i in placed) / len(placed)
+            cy = sum(xy[i][1] for i in placed) / len(placed)
+        else:
+            cx = cy = None
         topics.append({
             "topic_id": "%s_t%d" % (domain_id, len(topics) + 1),
             "members": members,
             "terms": terms,
             "exemplars": [records[i].get("title", "") for i in exemplars],
             "size": len(members),
+            "centroid_xy": (cx, cy),
         })
     return {"domain_id": domain_id, "backend": backend, "k": k,
-            "silhouette": score, "topics": topics, "n": n}
+            "silhouette": score, "topics": topics, "n": n, "xy": xy,
+            "map_placed": len(xy), "map_total": n}
 
 
 def main():
@@ -332,6 +421,13 @@ def main():
     ap.add_argument("--topics", type=int, help="force this many topics per domain")
     ap.add_argument("--max-topics", type=int, help="upper bound when choosing k automatically")
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--map-neighbors", type=int, default=8,
+                    help="k-NN graph size for the topic map layout: how many "
+                         "similar records each record links to")
+    ap.add_argument("--map-max-docs", type=int, default=300,
+                    help="cap on records laid out per domain (O(n^2) similarity "
+                         "+ layout cost); large domains are stratified-sampled "
+                         "by cluster so every cluster still appears on the map")
     ap.add_argument("--no-embeddings", action="store_true", help="skip sentence-transformers")
     ap.add_argument("--no-sklearn", action="store_true", help="skip the sklearn backend")
     ap.add_argument("--relabel-only", action="store_true",
@@ -342,6 +438,7 @@ def main():
     idlib.ensure_dirs(p["topics"])
     assign_path = os.path.join(p["topics"], "publication_topics.csv")
     labels_path = os.path.join(p["topics"], "topic_labels.csv")
+    centroids_path = os.path.join(p["topics"], "topic_centroids.csv")
 
     human_labels = {}
     for row in idlib.read_csv(labels_path):
@@ -374,6 +471,7 @@ def main():
 
     assignments = []
     label_rows = []
+    centroid_rows = []
     results = []
     skipped = []
 
@@ -387,6 +485,7 @@ def main():
                     "topic_label": "(too few records to cluster)",
                     "topic_terms": "", "topic_size": len(recs),
                     "title": r.get("title", ""), "year": r.get("year", ""),
+                    "map_x": "", "map_y": "",
                 })
             continue
 
@@ -396,7 +495,8 @@ def main():
             skipped.append((domain_id, len(recs)))
             continue
         results.append(res)
-        print("  backend=%s  k=%d  silhouette=%.3f" % (res["backend"], res["k"], res["silhouette"]))
+        print("  backend=%s  k=%d  silhouette=%.3f  map: %d/%d records placed"
+              % (res["backend"], res["k"], res["silhouette"], res["map_placed"], res["map_total"]))
 
         for t in res["topics"]:
             key = (domain_id, t["topic_id"])
@@ -404,6 +504,7 @@ def main():
             auto = auto_label(t["terms"])
             label = (human.get("topic_label") or "").strip() or auto
             is_human = bool((human.get("topic_label") or "").strip()) and label != auto
+            cx, cy = t["centroid_xy"]
             label_rows.append({
                 "domain_id": domain_id, "topic_id": t["topic_id"],
                 "topic_label": label, "auto_label": auto,
@@ -412,21 +513,32 @@ def main():
                 "human_edited": int(is_human),
                 "notes": human.get("notes", ""),
             })
+            centroid_rows.append({
+                "domain_id": domain_id, "topic_id": t["topic_id"],
+                "topic_label": label, "top_terms": ", ".join(t["terms"]),
+                "size": t["size"], "x": round(cx, 6) if cx is not None else "",
+                "y": round(cy, 6) if cy is not None else "",
+            })
             for i in t["members"]:
                 r = recs[i]
+                x, y = res["xy"].get(i, (None, None))
                 assignments.append({
                     "uid": r["uid"], "domain_id": domain_id, "topic_id": t["topic_id"],
                     "topic_label": label, "topic_terms": ", ".join(t["terms"]),
                     "topic_size": t["size"], "title": r.get("title", ""),
                     "year": r.get("year", ""),
+                    "map_x": round(x, 6) if x is not None else "",
+                    "map_y": round(y, 6) if y is not None else "",
                 })
 
     idlib.write_csv(assign_path, assignments,
                     ["uid", "domain_id", "topic_id", "topic_label", "topic_terms",
-                     "topic_size", "title", "year"])
+                     "topic_size", "title", "year", "map_x", "map_y"])
     idlib.write_csv(labels_path, label_rows,
                     ["domain_id", "topic_id", "topic_label", "auto_label", "top_terms",
                      "size", "exemplar_title", "human_edited", "notes"])
+    idlib.write_csv(centroids_path, centroid_rows,
+                    ["domain_id", "topic_id", "topic_label", "top_terms", "size", "x", "y"])
     write_report(os.path.join(p["topics"], "topics_report.md"), results, skipped, args)
 
     print("")
@@ -436,6 +548,8 @@ def main():
         print("Skipped (fewer than --min-docs=%d records): %s"
               % (args.min_docs, ", ".join("%s(%d)" % s for s in skipped)))
     print("")
+    print("  -> %s (map_x/map_y for a scatter map)" % assign_path)
+    print("  -> %s (cluster label positions for the map)" % centroids_path)
     print("Next: read %s, replace each machine `topic_label` with a readable" % labels_path)
     print("sub-domain name, then run this script with --relabel-only and re-run")
     print("build_dataset.py.")
@@ -449,7 +563,14 @@ def write_report(path, results, skipped, args):
     for res in results:
         L.append("## %s — %d records, %d topics" % (res["domain_id"], res["n"], res["k"]))
         L.append("")
-        L.append("Backend: `%s` · mean silhouette: %.3f" % (res["backend"], res["silhouette"]))
+        L.append("Backend: `%s` · mean silhouette: %.3f · map: %d/%d records placed"
+                 % (res["backend"], res["silhouette"], res["map_placed"], res["map_total"]))
+        if res["map_placed"] < res["map_total"]:
+            L.append("")
+            L.append("> This domain exceeds `--map-max-docs` (%d); the map shows a "
+                     "cluster-proportional sample so every cluster is still visible. "
+                     "Cluster assignments themselves used all %d records."
+                     % (args.map_max_docs, res["map_total"]))
         if res["silhouette"] < 0.05:
             L.append("")
             L.append("> Silhouette is very low: these clusters barely separate. Treat them as")
@@ -469,6 +590,18 @@ def write_report(path, results, skipped, args):
         L.append("")
         for d, n in skipped:
             L.append("- `%s`: %d record(s), below --min-docs=%d" % (d, n, args.min_docs))
+    L.append("")
+    L.append("## The map")
+    L.append("")
+    L.append("`publication_topics.csv` carries `map_x`/`map_y` per record and")
+    L.append("`topic_centroids.csv` carries a label position per cluster -- plot both")
+    L.append("as a scatter (records) with cluster-label text overlaid (centroids), never")
+    L.append("as a bar chart of cluster sizes. Coordinates come from a k-NN similarity")
+    L.append("graph over the domain's own records, laid out with the same deterministic")
+    L.append("force-directed layout used for the co-authorship networks -- records with")
+    L.append("many strong similarity links pull together, so the map's spatial layout")
+    L.append("*is* the clustering, not a decoration on top of it. Coordinates are")
+    L.append("domain-local: never compare or overlay two domains' maps on the same axes.")
     L.append("")
     L.append("## Labelling")
     L.append("")

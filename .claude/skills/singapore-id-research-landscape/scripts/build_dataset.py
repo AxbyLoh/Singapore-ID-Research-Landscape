@@ -24,6 +24,10 @@ Writes <run-dir>/dataset/:
   summary_by_domain_year.csv       domain x year aggregate
   summary_subdomain_year.csv       domain x sub-domain x year -- the donut chart's data
   summary_research_type_year.csv   research type x year -- the "Types of research" bar chart's data
+  topic_map_centroids.csv          one row per topic cluster: label + (x, y) centroid,
+                                    for labelling the topic map (publications.csv carries
+                                    topic_map_x/topic_map_y per record; see topic_model.py --
+                                    this is a scatter/cluster map, NOT a bar chart)
   README.md                        what each file is and how to join them
 
 Every table keys on `uid`. See reference/dataset-schema.md for column meanings
@@ -98,6 +102,8 @@ def build_publications(records, domain_labels, topics):
             "topic_id": t.get("topic_id", ""),
             "topic_label": t.get("topic_label", ""),
             "topic_terms": t.get("topic_terms", ""),
+            "topic_map_x": t.get("map_x", ""),
+            "topic_map_y": t.get("map_y", ""),
             "screening_decision": scr.get("decision", ""),
             "screening_decided_by": scr.get("decided_by", ""),
             "screening_rules": pipe(scr.get("rules_fired") or []),
@@ -505,6 +511,7 @@ One run of the Singapore ID research landscape pipeline. Every table keys on
 | `summary_by_domain_year.csv` | domain x year | standalone |
 | `summary_subdomain_year.csv` | domain x sub-domain x year | standalone -- donut chart source |
 | `summary_research_type_year.csv` | research type x year | standalone -- research-type bar chart source |
+| `topic_map_centroids.csv` | one row per topic cluster | standalone -- label positions for the topic map |
 
 ## Counting rule
 
@@ -525,6 +532,17 @@ Three independent classification axes, all in `publications.csv`:
   chart should use
 - `research_types` -- cross-cutting "what kind of research" tags (Genomics,
   Surveillance and epidemiology, ...), multi-label, no primary
+
+## Topic map (`topic_map_x`/`topic_map_y` in publications.csv, `topic_map_centroids.csv`)
+
+A supplementary QA view alongside sub-domain, from topic_model.py -- a 2D
+scatter where semantically similar publications sit close together and
+dissimilar ones sit apart, built from a k-NN similarity graph laid out with
+the same deterministic force-directed method as the co-authorship networks.
+**Plot it as a scatter with `topic_map_centroids.csv` labels overlaid, never
+as a bar chart** -- the point of a topic map is the spatial clustering, which
+a bar chart of cluster sizes throws away. Coordinates are domain-local: always
+filter to one `primary_domain` before plotting.
 """
 
 
@@ -552,6 +570,7 @@ def main():
     topics_path = os.path.join(p["topics"], "publication_topics.csv")
     for row in idlib.read_csv(topics_path):
         topics[row.get("uid", "")] = row
+    topic_centroids = idlib.read_csv(os.path.join(p["topics"], "topic_centroids.csv"))
 
     out = p["dataset"]
     idlib.ensure_dirs(out)
@@ -625,6 +644,8 @@ def main():
     w("summary_by_domain_year.csv", build_summary(records, domain_labels))
     w("summary_subdomain_year.csv", build_subdomain_summary(records, domain_labels))
     w("summary_research_type_year.csv", build_research_type_summary(records))
+    w("topic_map_centroids.csv", topic_centroids,
+      ["domain_id", "topic_id", "topic_label", "top_terms", "size", "x", "y"])
 
     with open(os.path.join(out, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(README)
@@ -634,8 +655,9 @@ def main():
         print("  %-40s %6d rows" % (name, n))
     if not topics:
         print("")
-        print("topic_id/topic_label are empty: run topic_model.py, then re-run this")
-        print("script to fold the topics into publications.csv.")
+        print("topic_id/topic_label/topic_map_x/topic_map_y are empty: run topic_model.py,")
+        print("then re-run this script to fold the topics and map coordinates into")
+        print("publications.csv (and topic_map_centroids.csv for the cluster labels).")
     if itrunc or ctrunc or atrunc:
         print("")
         print("Network truncated to the top nodes by weighted degree: %d institution "

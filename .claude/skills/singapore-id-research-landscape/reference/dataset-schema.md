@@ -51,6 +51,7 @@ One row per publication. Join everything else to it on `uid`.
 | `research_types` | pipe-list | Cross-cutting "kind of research" tags (Genomics, Surveillance and epidemiology, …), from `reference/research-type-taxonomy.md` — multi-label, no primary |
 | `n_research_types` | int | `len(research_types)` |
 | `topic_id`, `topic_label`, `topic_terms` | string | **Unsupervised** cluster from `topic_model.py`, blank until it has run. A second opinion alongside `primary_subdomain`, from a different signal (free text, not MeSH) — see "Three classification axes" below |
+| `topic_map_x`, `topic_map_y` | float | Position on the domain-local **topic map** — a 2D layout where semantically similar records sit close together (see "Topic map" below). Blank for records in a domain too small to cluster |
 | `screening_decision` | string | `include` (all rows here are includes) |
 | `screening_decided_by` | string | `mechanical`, `agent` or `user` |
 | `screening_rules` | pipe-list | Rule IDs that fired |
@@ -91,14 +92,40 @@ rename how a chosen term displays (edit `display_label` there and re-run
 `classify.py`), but you cannot make a term appear that isn't actually common
 in the corpus, and that is the point.
 
-`topic_model.py`'s unsupervised clusters (`topic_id`/`topic_label`) are a
-fourth, *supplementary* field, built from a different signal (free-text
-similarity, not MeSH headings). Use its report as a second opinion — a theme
-it finds that MeSH indexing missed is a sign of sparse/inconsistent MeSH
-tagging in that corner of the corpus, not something to hand-add to a taxonomy
-file, since sub-domain has none. Don't build the sub-domain donut chart from
-`topic_label` — it drifts between runs and its cluster count changes with
-corpus size, exactly what a stable donut chart needs to avoid.
+`topic_model.py`'s unsupervised clusters (`topic_id`/`topic_label`,
+`topic_map_x`/`topic_map_y`) are a fourth, *supplementary* field, built from a
+different signal (free-text similarity, not MeSH headings). Use its report as
+a second opinion — a theme it finds that MeSH indexing missed is a sign of
+sparse/inconsistent MeSH tagging in that corner of the corpus, not something
+to hand-add to a taxonomy file, since sub-domain has none. Don't build the
+sub-domain donut chart from `topic_label` — it drifts between runs and its
+cluster count changes with corpus size, exactly what a stable donut chart
+needs to avoid.
+
+## Topic map
+
+`topic_model.py` also lays its clusters out as a **2D map**: each record gets
+`topic_map_x`/`topic_map_y`, and each cluster gets a centroid position in
+`topic_map_centroids.csv`. This is deliberately a scatter/cluster landscape,
+not a bar chart of cluster sizes — the coordinates come from a k-NN
+similarity graph over the domain's own records, laid out with the same
+deterministic force-directed method used for the co-authorship networks
+(`idlib.force_layout`), so records with many strong similarity links pull
+together and records without them drift apart. **The spatial layout is the
+finding** — a bar chart of "cluster 1 has 12 records, cluster 2 has 8" throws
+away exactly the information a topic map exists to show: which topics sit
+near each other and which are far apart. Plot it as Recipe 10 below, never as
+a treemap or bar chart.
+
+Coordinates are domain-local: a map is built independently per domain, so
+`topic_map_x = 0.5` in `vector_borne` has no relationship to
+`topic_map_x = 0.5` in `sti`. Always filter to one `primary_domain` before
+plotting, exactly like the co-authorship networks' `domain` filter.
+
+A domain whose record count exceeds `--map-max-docs` (default 300) gets a
+cluster-proportional sample rather than every record, so the map stays
+readable and every cluster still appears — check `topics_report.md` for
+whether a domain was sampled.
 
 ---
 
@@ -340,13 +367,35 @@ reads better than the author network's sequential one.
 `publications.csv`. `singapore_led` → Colour on a `year` × `COUNTD([uid])` bar
 chart. Cross-reference `screening_flags` containing `regional_participation`.
 
-### 10. Discovered-cluster exploration (supplementary, not the donut)
-`publications.csv` (after `topic_model.py` and a rebuild).
-`primary_domain_label` then `topic_label` → Detail, `COUNTD([uid])` → Size,
-`primary_domain_label` → Colour, in a treemap. Filter out
-`topic_label = "(too few records to cluster)"`. Use this as a second opinion
-alongside `classification/subdomain_vocabulary.csv`, not as the published
-sub-domain chart — see "Three classification axes" above.
+### 10. Topic map (discovered clusters, supplementary to the donut)
+
+A scatter/cluster landscape, **not** a bar chart or treemap of cluster sizes
+— the whole point is showing which topics sit near each other. Use this as a
+second opinion alongside `classification/subdomain_vocabulary.csv`, not as
+the published sub-domain chart — see "Topic map" and "Three classification
+axes" above.
+
+1. Connect to `publications.csv` (after `topic_model.py` and a rebuild).
+   Filter `topic_label != "(too few records to cluster)"` and
+   **`primary_domain` to one domain** — coordinates from different domains
+   are not comparable.
+2. `topic_map_x` → Columns, `topic_map_y` → Rows, both **Dimension** and
+   **Continuous** (right-click each pill → Dimension, then Continuous — left
+   as aggregated Measures they collapse to one point, same pitfall as the
+   co-authorship network recipes).
+3. Mark type **Circle**. `topic_label` → Colour. `uid`/`title` → Detail and
+   Tooltip, so hovering a point shows which publication it is.
+4. Add `dataset/topic_map_centroids.csv` as a second data source. Blend or
+   union it in in on `domain_id`/`topic_id`, or just add it as a second sheet
+   layer on the dashboard positioned over the first: `x`/`y` → Columns/Rows
+   (Continuous), mark type **Text**, `topic_label` → Label and Text. This
+   places a readable cluster name at each cluster's centre, the way the
+   reference-style topic map should read.
+5. Hide both axes and gridlines on both layers — the coordinates are
+   similarity-graph layout space, not data with real units, exactly like the
+   co-authorship network views.
+6. If a domain was stratified-sampled (`--map-max-docs`), say so on the
+   chart — it shows a representative subset, not every record in that domain.
 
 ---
 

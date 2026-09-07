@@ -234,21 +234,31 @@ This is **not** what feeds the sub-domain donut chart — `primary_subdomain`
 from Step 4 does that, derived directly from the corpus's own MeSH-term
 frequency. Topic modelling instead clusters records **within each domain** by
 unsupervised semantic similarity over free text (title/abstract/keywords), a
-different signal from MeSH headings. Use it as a cross-check: if a cluster of
-records with a clear common theme all landed in "Other/unspecified" or scored
-low, that's a sign either the theme's MeSH indexing is sparse/inconsistent in
-this corpus, or `--subdomain-min-records`/`--subdomain-top-k` are too strict —
-not something to fix by hand-adding a taxonomy entry, since there is no
-taxonomy file to add one to. It uses `sentence-transformers` embeddings if
-installed, else TF-IDF + SVD, else a pure-standard-library TF-IDF; the method
-used is recorded in the output.
+different signal from MeSH headings, and — this is the point of the step —
+lays them out as a **2D map, not a bar chart of cluster sizes**: records
+pulled together by many strong similarity links sit close together, records
+without such links drift apart, so the spatial layout itself *is* the
+clustering, not decoration on top of a count. It uses `sentence-transformers`
+embeddings if installed, else TF-IDF + SVD, else a pure-standard-library
+TF-IDF; the method used is recorded in the output.
+
+Use it as a cross-check on Step 4: if a visually tight cluster on the map all
+landed in "Other/unspecified" or scored low, that's a sign either the theme's
+MeSH indexing is sparse/inconsistent in this corpus, or
+`--subdomain-min-records`/`--subdomain-top-k` are too strict — not something
+to fix by hand-adding a taxonomy entry, since there is no taxonomy file to add
+one to.
 
 Read `<run-dir>/topics/topics_report.md` alongside
-`<run-dir>/classification/subdomain_vocabulary.csv` for this comparison.
+`<run-dir>/classification/subdomain_vocabulary.csv` for this comparison. The
+map coordinates themselves are in `<run-dir>/topics/publication_topics.csv`
+(`map_x`/`map_y` per record) and `<run-dir>/topics/topic_centroids.csv`
+(one label position per cluster) — plot both together as a scatter with
+label text at the centroids (Recipe 10), never as a bar chart.
 
-If you still want readable cluster labels for the supplementary
-`topic_id`/`topic_label` fields (e.g. for the exploratory treemap in Recipe
-10), write them into `<run-dir>/topics/topic_labels.csv` and re-apply:
+If you still want readable cluster labels for the map and the supplementary
+`topic_id`/`topic_label` fields, write them into
+`<run-dir>/topics/topic_labels.csv` and re-apply:
 
 ```bash
 python3 .../scripts/topic_model.py --run-dir runs/<DATE> --relabel-only

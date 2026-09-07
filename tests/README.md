@@ -61,8 +61,14 @@ Covers, in addition to the table above: the MeSH-frequency sub-domain
 derivation (stoplist filtering, per-domain scoping, deterministic ranking,
 hand-edited `display_label` persistence across a re-run) and research-type
 classification (multi-label), the domain-scoped author collaboration network
-(`network_author_*`, split by `domain` plus an `ALL` aggregate), and
+(`network_author_*`, split by `domain` plus an `ALL` aggregate),
 `summary_top_authors.csv` / `summary_subdomain_year.csv` /
-`summary_research_type_year.csv` referential integrity.
+`summary_research_type_year.csv` referential integrity, and the topic
+**map** (not a bar chart): every placed record's `map_x`/`map_y` sits inside
+`[0,1]`, and — the actual point of a map — every record is checked to be
+closer to its own cluster's centroid than to any other cluster's centroid in
+the same domain, i.e. the layout genuinely groups similar records rather than
+just producing arbitrary coordinates. The map layout is also checked
+deterministic across an identical re-run, same as the co-authorship networks.
 
 It writes to `runs/fixture-test/` and cleans up on success.
