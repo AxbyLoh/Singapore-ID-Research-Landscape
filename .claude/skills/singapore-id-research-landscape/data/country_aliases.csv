@@ -1,0 +1,150 @@
+pattern,country_canonical,iso3,region
+singapore,Singapore,SGP,Southeast Asia
+malaysia,Malaysia,MYS,Southeast Asia
+indonesia,Indonesia,IDN,Southeast Asia
+thailand,Thailand,THA,Southeast Asia
+viet nam,Viet Nam,VNM,Southeast Asia
+vietnam,Viet Nam,VNM,Southeast Asia
+philippines,Philippines,PHL,Southeast Asia
+cambodia,Cambodia,KHM,Southeast Asia
+lao pdr,Lao PDR,LAO,Southeast Asia
+laos,Lao PDR,LAO,Southeast Asia
+myanmar,Myanmar,MMR,Southeast Asia
+burma,Myanmar,MMR,Southeast Asia
+brunei,Brunei Darussalam,BRN,Southeast Asia
+timor-leste,Timor-Leste,TLS,Southeast Asia
+china,China,CHN,East Asia
+p.r. china,China,CHN,East Asia
+pr china,China,CHN,East Asia
+people's republic of china,China,CHN,East Asia
+peoples republic of china,China,CHN,East Asia
+hong kong,Hong Kong SAR,HKG,East Asia
+macau,Macao SAR,MAC,East Asia
+macao,Macao SAR,MAC,East Asia
+taiwan,Taiwan,TWN,East Asia
+japan,Japan,JPN,East Asia
+south korea,Republic of Korea,KOR,East Asia
+republic of korea,Republic of Korea,KOR,East Asia
+korea,Republic of Korea,KOR,East Asia
+mongolia,Mongolia,MNG,East Asia
+india,India,IND,South Asia
+pakistan,Pakistan,PAK,South Asia
+bangladesh,Bangladesh,BGD,South Asia
+sri lanka,Sri Lanka,LKA,South Asia
+nepal,Nepal,NPL,South Asia
+bhutan,Bhutan,BTN,South Asia
+maldives,Maldives,MDV,South Asia
+afghanistan,Afghanistan,AFG,South Asia
+australia,Australia,AUS,Oceania
+new zealand,New Zealand,NZL,Oceania
+papua new guinea,Papua New Guinea,PNG,Oceania
+fiji,Fiji,FJI,Oceania
+usa,United States,USA,North America
+u.s.a,United States,USA,North America
+united states,United States,USA,North America
+canada,Canada,CAN,North America
+mexico,Mexico,MEX,Latin America
+brazil,Brazil,BRA,Latin America
+argentina,Argentina,ARG,Latin America
+colombia,Colombia,COL,Latin America
+chile,Chile,CHL,Latin America
+peru,Peru,PER,Latin America
+ecuador,Ecuador,ECU,Latin America
+venezuela,Venezuela,VEN,Latin America
+bolivia,Bolivia,BOL,Latin America
+uruguay,Uruguay,URY,Latin America
+paraguay,Paraguay,PRY,Latin America
+cuba,Cuba,CUB,Latin America
+costa rica,Costa Rica,CRI,Latin America
+panama,Panama,PAN,Latin America
+guatemala,Guatemala,GTM,Latin America
+honduras,Honduras,HND,Latin America
+nicaragua,Nicaragua,NIC,Latin America
+dominican republic,Dominican Republic,DOM,Latin America
+haiti,Haiti,HTI,Latin America
+puerto rico,Puerto Rico,PRI,Latin America
+jamaica,Jamaica,JAM,Latin America
+united kingdom,United Kingdom,GBR,Europe
+uk,United Kingdom,GBR,Europe
+u.k,United Kingdom,GBR,Europe
+england,United Kingdom,GBR,Europe
+scotland,United Kingdom,GBR,Europe
+wales,United Kingdom,GBR,Europe
+northern ireland,United Kingdom,GBR,Europe
+great britain,United Kingdom,GBR,Europe
+ireland,Ireland,IRL,Europe
+france,France,FRA,Europe
+germany,Germany,DEU,Europe
+italy,Italy,ITA,Europe
+spain,Spain,ESP,Europe
+portugal,Portugal,PRT,Europe
+netherlands,Netherlands,NLD,Europe
+the netherlands,Netherlands,NLD,Europe
+belgium,Belgium,BEL,Europe
+switzerland,Switzerland,CHE,Europe
+austria,Austria,AUT,Europe
+sweden,Sweden,SWE,Europe
+norway,Norway,NOR,Europe
+denmark,Denmark,DNK,Europe
+finland,Finland,FIN,Europe
+iceland,Iceland,ISL,Europe
+poland,Poland,POL,Europe
+czech republic,Czechia,CZE,Europe
+czechia,Czechia,CZE,Europe
+slovakia,Slovakia,SVK,Europe
+hungary,Hungary,HUN,Europe
+romania,Romania,ROU,Europe
+bulgaria,Bulgaria,BGR,Europe
+greece,Greece,GRC,Europe
+croatia,Croatia,HRV,Europe
+serbia,Serbia,SRB,Europe
+slovenia,Slovenia,SVN,Europe
+estonia,Estonia,EST,Europe
+latvia,Latvia,LVA,Europe
+lithuania,Lithuania,LTU,Europe
+ukraine,Ukraine,UKR,Europe
+russia,Russian Federation,RUS,Europe
+russian federation,Russian Federation,RUS,Europe
+turkey,Türkiye,TUR,Europe
+turkiye,Türkiye,TUR,Europe
+israel,Israel,ISR,Middle East
+saudi arabia,Saudi Arabia,SAU,Middle East
+united arab emirates,United Arab Emirates,ARE,Middle East
+uae,United Arab Emirates,ARE,Middle East
+qatar,Qatar,QAT,Middle East
+kuwait,Kuwait,KWT,Middle East
+oman,Oman,OMN,Middle East
+bahrain,Bahrain,BHR,Middle East
+jordan,Jordan,JOR,Middle East
+lebanon,Lebanon,LBN,Middle East
+iran,Iran,IRN,Middle East
+iraq,Iraq,IRQ,Middle East
+egypt,Egypt,EGY,Africa
+south africa,South Africa,ZAF,Africa
+kenya,Kenya,KEN,Africa
+nigeria,Nigeria,NGA,Africa
+ghana,Ghana,GHA,Africa
+ethiopia,Ethiopia,ETH,Africa
+tanzania,Tanzania,TZA,Africa
+uganda,Uganda,UGA,Africa
+zambia,Zambia,ZMB,Africa
+zimbabwe,Zimbabwe,ZWE,Africa
+malawi,Malawi,MWI,Africa
+mozambique,Mozambique,MOZ,Africa
+botswana,Botswana,BWA,Africa
+namibia,Namibia,NAM,Africa
+rwanda,Rwanda,RWA,Africa
+senegal,Senegal,SEN,Africa
+mali,Mali,MLI,Africa
+burkina faso,Burkina Faso,BFA,Africa
+cameroon,Cameroon,CMR,Africa
+cote d'ivoire,Côte d'Ivoire,CIV,Africa
+ivory coast,Côte d'Ivoire,CIV,Africa
+gambia,Gambia,GMB,Africa
+guinea,Guinea,GIN,Africa
+sudan,Sudan,SDN,Africa
+morocco,Morocco,MAR,Africa
+tunisia,Tunisia,TUN,Africa
+algeria,Algeria,DZA,Africa
+madagascar,Madagascar,MDG,Africa
+democratic republic of the congo,Democratic Republic of the Congo,COD,Africa

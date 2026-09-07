@@ -1,0 +1,80 @@
+pattern,institution_canonical,institution_short,sector,country,notes
+national university of singapore,National University of Singapore,NUS,university,Singapore,
+yong loo lin school of medicine,National University of Singapore,NUS,university,Singapore,Medical school of NUS
+saw swee hock school of public health,National University of Singapore,NUS,university,Singapore,Public health school of NUS
+duke-nus,Duke-NUS Medical School,Duke-NUS,university,Singapore,
+duke nus,Duke-NUS Medical School,Duke-NUS,university,Singapore,
+nanyang technological university,Nanyang Technological University,NTU,university,Singapore,
+lee kong chian school of medicine,Nanyang Technological University,NTU,university,Singapore,Medical school of NTU
+singapore management university,Singapore Management University,SMU,university,Singapore,
+singapore university of technology and design,Singapore University of Technology and Design,SUTD,university,Singapore,
+singapore institute of technology,Singapore Institute of Technology,SIT,university,Singapore,
+agency for science technology and research,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,
+a*star,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,
+genome institute of singapore,Genome Institute of Singapore,GIS,research_institute,Singapore,A*STAR institute
+singapore immunology network,Singapore Immunology Network,SIgN,research_institute,Singapore,A*STAR institute
+infectious diseases labs,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,A*STAR institute
+bioinformatics institute,Bioinformatics Institute,BII,research_institute,Singapore,A*STAR institute
+institute of molecular and cell biology,Institute of Molecular and Cell Biology,IMCB,research_institute,Singapore,A*STAR institute
+experimental drug development centre,Experimental Drug Development Centre,EDDC,research_institute,Singapore,A*STAR institute
+temasek life sciences,Temasek Life Sciences Laboratory,TLL,research_institute,Singapore,
+dso national laboratories,DSO National Laboratories,DSO,research_institute,Singapore,
+national centre for infectious diseases,National Centre for Infectious Diseases,NCID,hospital,Singapore,
+ncid,National Centre for Infectious Diseases,NCID,hospital,Singapore,
+national public health laboratory,National Public Health Laboratory,NPHL,government,Singapore,
+tan tock seng hospital,Tan Tock Seng Hospital,TTSH,hospital,Singapore,
+singapore general hospital,Singapore General Hospital,SGH,hospital,Singapore,
+national university hospital,National University Hospital,NUH,hospital,Singapore,
+national university health system,National University Health System,NUHS,hospital,Singapore,
+singhealth,SingHealth,SingHealth,hospital,Singapore,
+kk women's and children's hospital,KK Women's and Children's Hospital,KKH,hospital,Singapore,
+kk women,KK Women's and Children's Hospital,KKH,hospital,Singapore,
+changi general hospital,Changi General Hospital,CGH,hospital,Singapore,
+khoo teck puat hospital,Khoo Teck Puat Hospital,KTPH,hospital,Singapore,
+ng teng fong general hospital,Ng Teng Fong General Hospital,NTFGH,hospital,Singapore,
+sengkang general hospital,Sengkang General Hospital,SKGH,hospital,Singapore,
+alexandra hospital,Alexandra Hospital,AH,hospital,Singapore,
+woodlands health,Woodlands Health,WH,hospital,Singapore,
+national skin centre,National Skin Centre,NSC,hospital,Singapore,
+national heart centre singapore,National Heart Centre Singapore,NHCS,hospital,Singapore,
+national cancer centre singapore,National Cancer Centre Singapore,NCCS,hospital,Singapore,
+institute of mental health,Institute of Mental Health,IMH,hospital,Singapore,
+communicable diseases agency,Communicable Diseases Agency,CDA,government,Singapore,
+ministry of health singapore,Ministry of Health Singapore,MOH,government,Singapore,
+national environment agency,National Environment Agency,NEA,government,Singapore,
+environmental health institute,Environmental Health Institute,EHI,government,Singapore,Under NEA
+health sciences authority,Health Sciences Authority,HSA,government,Singapore,
+singapore food agency,Singapore Food Agency,SFA,government,Singapore,
+national parks board,National Parks Board,NParks,government,Singapore,
+saw swee hock,National University of Singapore,NUS,university,Singapore,
+university of oxford,University of Oxford,Oxford,university,United Kingdom,
+oxford university clinical research unit,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,Oxford overseas unit
+london school of hygiene,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,
+imperial college london,Imperial College London,Imperial,university,United Kingdom,
+university of cambridge,University of Cambridge,Cambridge,university,United Kingdom,
+uk health security agency,UK Health Security Agency,UKHSA,government,United Kingdom,
+harvard,Harvard University,Harvard,university,United States,
+johns hopkins,Johns Hopkins University,JHU,university,United States,
+centers for disease control and prevention,US Centers for Disease Control and Prevention,US CDC,government,United States,
+national institutes of health,National Institutes of Health,NIH,government,United States,
+university of melbourne,University of Melbourne,Melbourne,university,Australia,
+doherty institute,Peter Doherty Institute for Infection and Immunity,Doherty,research_institute,Australia,
+university of hong kong,University of Hong Kong,HKU,university,Hong Kong,
+mahidol university,Mahidol University,Mahidol,university,Thailand,
+university of malaya,University of Malaya,UM,university,Malaysia,
+universiti malaya,University of Malaya,UM,university,Malaysia,
+universitas indonesia,Universitas Indonesia,UI,university,Indonesia,
+eijkman,Eijkman Institute for Molecular Biology,Eijkman,research_institute,Indonesia,
+world health organization,World Health Organization,WHO,government,Switzerland,
+world health organisation,World Health Organization,WHO,government,Switzerland,
+who,World Health Organization,WHO,government,,"Abbreviation; remove this row if it produces false matches"
+nus,National University of Singapore,NUS,university,Singapore,Abbreviation
+ntu,Nanyang Technological University,NTU,university,Singapore,Abbreviation
+ttsh,Tan Tock Seng Hospital,TTSH,hospital,Singapore,Abbreviation
+sgh,Singapore General Hospital,SGH,hospital,Singapore,Abbreviation
+nuh,National University Hospital,NUH,hospital,Singapore,Abbreviation
+kkh,KK Women's and Children's Hospital,KKH,hospital,Singapore,Abbreviation
+takeda,Takeda Pharmaceuticals,Takeda,industry,,Multinational; country taken from the affiliation string
+gsk,GlaxoSmithKline,GSK,industry,,Multinational; country taken from the affiliation string
+pfizer,Pfizer,Pfizer,industry,,Multinational; country taken from the affiliation string
+sanofi,Sanofi,Sanofi,industry,,Multinational; country taken from the affiliation string
