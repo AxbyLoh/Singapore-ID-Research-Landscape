@@ -44,11 +44,13 @@ One row per publication. Join everything else to it on `uid`.
 | `first_author_country`, `last_author_country` | string | Leadership geography |
 | `sg_institutions` | pipe-list | Singapore institutions on the paper |
 | `countries`, `institutions` | pipe-list | All resolved, deduped |
-| `primary_subdomain` | string | Named sub-domain within `primary_domain` (e.g. "Dengue virus"), from `reference/subdomain-taxonomy.md` — mutually exclusive per domain, this is the donut chart's field |
-| `subdomains` | pipe-list | All sub-domains that cleared threshold, multi-label view |
+| `primary_subdomain` | string | Sub-domain within `primary_domain` (e.g. "Dengue"): the record's own highest-ranked MeSH term among this run's top MeSH terms for that domain — **derived from the corpus, not a predefined list** (see below); mutually exclusive per domain, this is the donut chart's field |
+| `primary_subdomain_mesh` | string | The raw MeSH heading behind `primary_subdomain`, before any display-label rename |
+| `subdomains` | pipe-list | All qualifying MeSH terms the record carries, best-ranked first (raw headings) |
+| `subdomain_labels` | pipe-list | Same list, with any hand-edited display labels applied |
 | `research_types` | pipe-list | Cross-cutting "kind of research" tags (Genomics, Surveillance and epidemiology, …), from `reference/research-type-taxonomy.md` — multi-label, no primary |
 | `n_research_types` | int | `len(research_types)` |
-| `topic_id`, `topic_label`, `topic_terms` | string | **Unsupervised** cluster from `topic_model.py`, blank until it has run. Supplementary to `primary_subdomain` — see "Three classification axes" below |
+| `topic_id`, `topic_label`, `topic_terms` | string | **Unsupervised** cluster from `topic_model.py`, blank until it has run. A second opinion alongside `primary_subdomain`, from a different signal (free text, not MeSH) — see "Three classification axes" below |
 | `screening_decision` | string | `include` (all rows here are includes) |
 | `screening_decided_by` | string | `mechanical`, `agent` or `user` |
 | `screening_rules` | pipe-list | Rule IDs that fired |
@@ -71,16 +73,32 @@ they answer different questions and drive different charts:
 | Axis | Question | Field | Cardinality | Source |
 |---|---|---|---|---|
 | **Domain** | Which of the 5 ID areas? | `primary_domain` / `domains` | Multi-label (TB/HIV → both) | `reference/domain-taxonomy.md`, curated |
-| **Sub-domain** | Which named pathogen/theme within that domain? | `primary_subdomain` / `subdomains` | One primary, mutually exclusive per domain | `reference/subdomain-taxonomy.md`, curated |
+| **Sub-domain** | Which named pathogen/theme within that domain? | `primary_subdomain` / `subdomains` | One primary, mutually exclusive per domain | **derived from this run's own MeSH-term frequency** — see below |
 | **Research type** | What kind of research — method, not disease? | `research_types` | Multi-label, no primary | `reference/research-type-taxonomy.md`, curated |
 
-All three are **curated term lists**, not machine learning — deliberately, so
-the donut and bar chart legends stay stable and meaningful run over run.
+Domain and research type are **curated term lists**, deliberately, so those
+chart legends stay stable and meaningful run over run. **Sub-domain is
+different: it is computed from the data, not predefined.** `classify.py`
+counts how often each MeSH heading appears across a domain's own included
+records (after excluding generic/demographic noise via
+`data/mesh_stoplist.csv`), keeps the headings common enough to clear
+`--subdomain-min-records`, takes the top `--subdomain-top-k` by frequency, and
+assigns each record to its own best-ranked match. The chosen vocabulary for a
+run is written to `classification/subdomain_vocabulary.csv` — read that file
+to see exactly which MeSH terms this run's donut chart is built from, and
+whether the corpus is big enough for the result to be meaningful. You can
+rename how a chosen term displays (edit `display_label` there and re-run
+`classify.py`), but you cannot make a term appear that isn't actually common
+in the corpus, and that is the point.
+
 `topic_model.py`'s unsupervised clusters (`topic_id`/`topic_label`) are a
-fourth, *supplementary* field: use its report to find named themes that
-`subdomain-taxonomy.md` is missing, then add them there as a proper curated
-block. Don't build the sub-domain donut chart from `topic_label` — it drifts
-between runs and its cluster count changes with corpus size.
+fourth, *supplementary* field, built from a different signal (free-text
+similarity, not MeSH headings). Use its report as a second opinion — a theme
+it finds that MeSH indexing missed is a sign of sparse/inconsistent MeSH
+tagging in that corner of the corpus, not something to hand-add to a taxonomy
+file, since sub-domain has none. Don't build the sub-domain donut chart from
+`topic_label` — it drifts between runs and its cluster count changes with
+corpus size, exactly what a stable donut chart needs to avoid.
 
 ---
 
@@ -96,13 +114,22 @@ give different totals and the difference is real, not an error.
 
 ### `publication_subdomains.csv` — publication × sub-domain
 `uid`, `domain_id`, `subdomain_id`, `subdomain_label`, `is_primary`,
-`subdomain_score`, `year`
+`vocabulary_rank`, `year`
 
 Scoped to the publication's `primary_domain` only — a paper's sub-domain is
-always read within its main domain. `is_primary = 1` is the row that matches
-`publications.csv`'s `primary_subdomain`; this is the table behind the "Sub-
-domains of X" donut chart (filter `domain_id` to one value and `is_primary = 1`,
-then `COUNTD([uid])` by `subdomain_label`).
+always read within its main domain. `subdomain_id` is the raw MeSH heading;
+`subdomain_label` is the same term with any hand-edited display label applied.
+`vocabulary_rank` is that term's frequency rank within the domain for this run
+(1 = most common) — blank for the `"other"` fallback row a record gets when
+none of its MeSH terms cleared the domain's threshold. `is_primary = 1` is the
+row that matches `publications.csv`'s `primary_subdomain`; this is the table
+behind the "Sub-domains of X" donut chart (filter `domain_id` to one value and
+`is_primary = 1`, then `COUNTD([uid])` by `subdomain_label`).
+
+The full vocabulary for a run — every MeSH term that qualified per domain,
+with its frequency and share of that domain — is in
+`classification/subdomain_vocabulary.csv` (not part of `dataset/`, since it is
+an audit/tuning file rather than a chart data source).
 
 ### `publication_research_types.csv` — publication × research type
 `uid`, `type_id`, `type_label`, `type_score`, `year`, `primary_domain`
@@ -241,8 +268,12 @@ scale, with a ranked author list that filters the network on selection.
 
 ### 2. Sub-domain donut chart
 
-The reference "Sub-domains of X" chart. Use `summary_subdomain_year.csv`
-(pre-aggregated) or `publication_subdomains.csv` with `is_primary = 1`.
+The reference "Sub-domains of X" chart. Its slices are `primary_subdomain`
+values — MeSH terms this run's own corpus actually uses most, per domain, not
+a fixed legend, so **the slice names can change between runs** as the corpus
+grows. That is expected; check `classification/subdomain_vocabulary.csv` if a
+slice looks unfamiliar. Use `summary_subdomain_year.csv` (pre-aggregated) or
+`publication_subdomains.csv` with `is_primary = 1`.
 
 1. Filter `domain_id` to one domain.
 2. Mark type **Pie**.
@@ -253,6 +284,11 @@ The reference "Sub-domains of X" chart. Use `summary_subdomain_year.csv`
 5. Convert to a donut by layering a second pie mark of a fixed size at 0%
    transparency in the centre, or use a "Pie chart donut" template — purely
    cosmetic, no data implication.
+6. If a slice's MeSH heading reads awkwardly for a chart legend (e.g.
+   "Tuberculosis, Multidrug-Resistant"), rename it: edit `display_label` in
+   `classification/subdomain_vocabulary.csv` and re-run `classify.py` then
+   `build_dataset.py` — don't rename it by hand in Tableau, or the rename is
+   lost on the next data refresh.
 
 ### 3. "Types of research" bar chart
 
@@ -308,9 +344,9 @@ chart. Cross-reference `screening_flags` containing `regional_participation`.
 `publications.csv` (after `topic_model.py` and a rebuild).
 `primary_domain_label` then `topic_label` → Detail, `COUNTD([uid])` → Size,
 `primary_domain_label` → Colour, in a treemap. Filter out
-`topic_label = "(too few records to cluster)"`. Use this to sanity-check
-`subdomain-taxonomy.md`, not as the published sub-domain chart — see "Three
-classification axes" above.
+`topic_label = "(too few records to cluster)"`. Use this as a second opinion
+alongside `classification/subdomain_vocabulary.csv`, not as the published
+sub-domain chart — see "Three classification axes" above.
 
 ---
 
@@ -328,12 +364,21 @@ classification axes" above.
    publication count.
 6. **Topic clusters** are unsupervised and only as good as the corpus size —
    check the silhouette score in `topics_report.md` before trusting them.
-7. **Sub-domain and research-type coverage is only as good as the curated
-   lists.** A domain with many `primary_subdomain = "Other/unspecified"`
-   records, or many publications with `research_types` empty, means
-   `subdomain-taxonomy.md` / `research-type-taxonomy.md` need more terms for
-   your corpus — check `classification/unassigned_subdomain.jsonl` and
-   `unassigned_research_type.jsonl` before publishing either chart.
-8. **The vector-borne sub-domain list ships calibrated against the reference
-   dashboard's screenshot**, not against your own corpus. Recalibrate it —
-   and build out the other four domains' lists — after your first real run.
+7. **Sub-domains depend on MeSH indexing.** A publication's sub-domain comes
+   entirely from its `mesh_terms`, and NLM's MeSH indexing typically lags
+   publication by weeks to months — a recent or ahead-of-print PubMed record
+   can have few or no MeSH terms yet, and will land in "Other/unspecified"
+   until it's re-fetched after indexing catches up. This is a real, expected
+   gap, not a bug; a run soon after publication will show more
+   "Other/unspecified" than the same corpus fetched later.
+8. **Sub-domain granularity is corpus-size-dependent.** A small domain (or an
+   early/exploratory run) may not clear `--subdomain-min-records` for
+   anything, leaving that whole domain's donut chart as "Other/unspecified."
+   Check `classification/subdomain_vocabulary.csv` — an empty or very short
+   vocabulary for a domain means lower `--subdomain-min-records` for that run,
+   not that the domain genuinely lacks sub-domains.
+9. **Research-type coverage is only as good as the curated list.** Many
+   publications with `research_types` empty means
+   `reference/research-type-taxonomy.md` needs more terms for your corpus —
+   check `classification/unassigned_research_type.jsonl` before publishing
+   that chart.

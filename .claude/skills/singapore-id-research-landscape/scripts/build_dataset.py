@@ -125,29 +125,32 @@ def build_domains(records, domain_labels):
     return rows
 
 
-def build_subdomains(records, subdomain_labels):
+def build_subdomains(records):
     """Long: publication x sub-domain. is_primary marks the donut-chart slice.
 
-    subdomain_labels: {(domain_id, subdomain_id): label}
+    Sub-domain is a MeSH heading from the record's own metadata (see
+    classify.py's build_mesh_vocabulary/assign_subdomain) -- classify.py
+    already ranks a record's matches best-first in `subdomains`, so this just
+    reshapes that into rows; no scoring or lookup happens here.
     """
     rows = []
     for r in records:
         dom = r.get("primary_domain", "")
-        all_ids = r.get("subdomains") or []
-        scores = r.get("subdomain_scores") or {}
-        ranked = sorted(all_ids, key=lambda k: -scores.get(k, 0))
-        for i, sid in enumerate(ranked):
+        mesh_ids = r.get("subdomains") or []
+        labels = r.get("subdomain_labels") or []
+        ranks = r.get("subdomain_ranks") or []
+        for i, (mesh_term, label) in enumerate(zip(mesh_ids, labels)):
             rows.append({
-                "uid": r["uid"], "domain_id": dom, "subdomain_id": sid,
-                "subdomain_label": subdomain_labels.get((dom, sid), sid),
-                "is_primary": int(i == 0), "subdomain_score": scores.get(sid, ""),
+                "uid": r["uid"], "domain_id": dom, "subdomain_id": mesh_term,
+                "subdomain_label": label, "is_primary": int(i == 0),
+                "vocabulary_rank": ranks[i] if i < len(ranks) else "",
                 "year": r.get("year", ""),
             })
-        if not ranked:
+        if not mesh_ids:
             rows.append({
                 "uid": r["uid"], "domain_id": dom, "subdomain_id": "other",
                 "subdomain_label": r.get("primary_subdomain") or "Other/unspecified",
-                "is_primary": 1, "subdomain_score": "", "year": r.get("year", ""),
+                "is_primary": 1, "vocabulary_rank": "", "year": r.get("year", ""),
             })
     return rows
 
@@ -515,9 +518,11 @@ correct measure, never `SUM(1)`.
 Three independent classification axes, all in `publications.csv`:
 
 - `primary_domain` / `domains` -- the 5 domains (a publication can be multi-domain)
-- `primary_subdomain` / `subdomains` -- named sub-domain **within** the primary
-  domain (e.g. "Dengue virus" within Vector-borne diseases); `primary_subdomain`
-  is mutually exclusive per domain and is what the donut chart should use
+- `primary_subdomain` / `subdomains` -- sub-domain **within** the primary
+  domain, derived from this run's own MeSH-term frequency (see
+  classify.py/subdomain_vocabulary.csv), NOT a predefined list;
+  `primary_subdomain` is mutually exclusive per domain and is what the donut
+  chart should use
 - `research_types` -- cross-cutting "what kind of research" tags (Genomics,
   Surveillance and epidemiology, ...), multi-label, no primary
 """
@@ -543,11 +548,6 @@ def main():
                      for d in idlib.load_taxonomy()}
     domain_labels.setdefault("other_id", "Other infectious disease")
 
-    subdomain_labels = {}
-    for dom, blocks in idlib.load_subdomain_taxonomy().items():
-        for b in blocks:
-            subdomain_labels[(dom, b["subdomain_id"])] = b.get("label", b["subdomain_id"])
-
     topics = {}
     topics_path = os.path.join(p["topics"], "publication_topics.csv")
     for row in idlib.read_csv(topics_path):
@@ -558,7 +558,7 @@ def main():
 
     pubs = build_publications(records, domain_labels, topics)
     doms = build_domains(records, domain_labels)
-    subdoms = build_subdomains(records, subdomain_labels)
+    subdoms = build_subdomains(records)
     rtypes = build_research_types(records)
     auths, auth_affs = build_authors(records)
     inst_rows, ctry_rows = build_institution_country(records)

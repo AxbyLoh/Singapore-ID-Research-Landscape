@@ -57,22 +57,15 @@ def check_taxonomy():
         len(domains), n_terms, ", ".join(d["domain_id"] for d in domains))
 
 
-def check_subdomain_taxonomy():
-    try:
-        by_domain = idlib.load_subdomain_taxonomy()
-    except SystemExit as exc:
-        return FAIL, str(exc)
-    try:
-        domain_ids = {d["domain_id"] for d in idlib.load_taxonomy()}
-    except SystemExit:
-        domain_ids = set()
-    n_blocks = sum(len(v) for v in by_domain.values())
-    missing = sorted(domain_ids - set(by_domain))
-    if missing:
-        return WARN, ("%d sub-domain blocks across %d domains, but no blocks for: %s "
-                      "-- those domains' donut slices will all be 'Other/unspecified'"
-                      % (n_blocks, len(by_domain), ", ".join(missing)))
-    return OK, "%d sub-domain blocks across %d domains" % (n_blocks, len(by_domain))
+def check_mesh_stoplist():
+    if not os.path.exists(idlib.MESH_STOPLIST_PATH):
+        return FAIL, "mesh_stoplist.csv missing"
+    stoplist = idlib.load_mesh_stoplist()
+    if not stoplist:
+        return WARN, ("mesh_stoplist.csv is empty -- generic MeSH headings (Humans, "
+                      "Female, Retrospective Studies, ...) will pollute the sub-domain "
+                      "vocabulary derived from MeSH-term frequency")
+    return OK, "%d generic MeSH terms excluded from sub-domain derivation" % len(stoplist)
 
 
 def check_research_type_taxonomy():
@@ -144,7 +137,7 @@ def main():
     checks = [
         ("Python runtime", check_python()),
         ("Domain taxonomy", check_taxonomy()),
-        ("Sub-domain taxonomy", check_subdomain_taxonomy()),
+        ("MeSH stoplist", check_mesh_stoplist()),
         ("Research-type taxonomy", check_research_type_taxonomy()),
         ("Screening criteria", check_criteria()),
         ("Expert directory", check_experts()),

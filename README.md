@@ -32,13 +32,21 @@ preflight → search → ingest → screen → classify → dataset → topic mo
 
 ## Three classification axes
 
-| Axis | Answers | Cardinality | Drives |
-|---|---|---|---|
-| Domain | Which of the 5 ID areas? | Multi-label | Domain trend / filter views |
-| Sub-domain | Which named pathogen/theme within that domain? | One primary per domain | "Sub-domains of X" donut chart |
-| Research type | What kind of research — method, not disease? | Multi-label, no primary | "Types of research" bar chart |
+| Axis | Answers | Cardinality | Drives | Source |
+|---|---|---|---|---|
+| Domain | Which of the 5 ID areas? | Multi-label | Domain trend / filter views | Curated (`domain-taxonomy.md`) |
+| Sub-domain | Which named pathogen/theme within that domain? | One primary per domain | "Sub-domains of X" donut chart | **Derived from this run's own MeSH-term frequency** |
+| Research type | What kind of research — method, not disease? | Multi-label, no primary | "Types of research" bar chart | Curated (`research-type-taxonomy.md`) |
 
-All three are curated term lists read at runtime, not machine learning.
+Domain and research type are curated term lists, read at runtime. **Sub-domain
+is not** — it's computed per run: for each domain, `classify.py` counts how
+often each MeSH heading appears on that domain's own included publications
+(after filtering generic/demographic noise via `mesh_stoplist.csv`), keeps the
+most common ones, and assigns each publication to its own best-matching term.
+The donut chart's slice names therefore come from what the corpus itself says
+it's about, not from a list written in advance — and can change as the corpus
+grows. See `classification/subdomain_vocabulary.csv` after a run for exactly
+which terms were chosen and why.
 
 ### The five domains
 
@@ -51,8 +59,9 @@ All three are curated term lists read at runtime, not machine learning.
 | AMR and healthcare-associated infections | Resistance, stewardship, HAI, IPC |
 
 Anything included but outside these five is kept and tagged `other_id`. Each
-domain has its own named sub-domains (e.g. Vector-borne diseases → Dengue
-virus, Malaria, Flavivirus, Chikungunya virus, ...) in `subdomain-taxonomy.md`.
+domain's sub-domains (e.g. Vector-borne diseases → Dengue, Malaria,
+Chikungunya, ...) are discovered per run from that domain's own MeSH terms,
+not predefined.
 
 ### The sixteen research types
 
@@ -63,16 +72,20 @@ Vaccine, Virology — each publication can carry several.
 
 ## What humans maintain
 
-These five files drive behaviour and are meant to be edited. No script
-hardcodes their contents; editing one changes the next run.
+These files drive behaviour and are meant to be edited. No script hardcodes
+their contents; editing one changes the next run.
 
 | File | Controls |
 |---|---|
 | [`reference/screening-criteria.md`](.claude/skills/singapore-id-research-landscape/reference/screening-criteria.md) | Inclusion/exclusion rules, plus the amendment log |
 | [`data/directory_of_experts.csv`](.claude/skills/singapore-id-research-landscape/data/directory_of_experts.csv) | The CDA expert roster searched by name |
 | [`reference/domain-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/domain-taxonomy.md) | The 5 domains: terms and MeSH mappings |
-| [`reference/subdomain-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/subdomain-taxonomy.md) | Named sub-domains within each domain (donut chart) |
+| [`data/mesh_stoplist.csv`](.claude/skills/singapore-id-research-landscape/data/mesh_stoplist.csv) | Generic/demographic MeSH terms excluded when deriving sub-domains |
 | [`reference/research-type-taxonomy.md`](.claude/skills/singapore-id-research-landscape/reference/research-type-taxonomy.md) | Cross-cutting research-type tags (bar chart) |
+
+Sub-domains have no file to maintain in advance — they're a `classify.py`
+output (`classification/subdomain_vocabulary.csv`) you can rename after the
+fact, not an input you edit before running.
 
 Two alias tables tune affiliation resolution:
 [`institution_aliases.csv`](.claude/skills/singapore-id-research-landscape/data/institution_aliases.csv)

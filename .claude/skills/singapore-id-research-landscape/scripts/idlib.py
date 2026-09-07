@@ -24,12 +24,12 @@ REFERENCE_DIR = os.path.join(SKILL_DIR, "reference")
 DATA_DIR = os.path.join(SKILL_DIR, "data")
 
 TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "domain-taxonomy.md")
-SUBDOMAIN_TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "subdomain-taxonomy.md")
 RESEARCH_TYPE_TAXONOMY_PATH = os.path.join(REFERENCE_DIR, "research-type-taxonomy.md")
 CRITERIA_PATH = os.path.join(REFERENCE_DIR, "screening-criteria.md")
 EXPERTS_PATH = os.path.join(DATA_DIR, "directory_of_experts.csv")
 INSTITUTIONS_PATH = os.path.join(DATA_DIR, "institution_aliases.csv")
 COUNTRIES_PATH = os.path.join(DATA_DIR, "country_aliases.csv")
+MESH_STOPLIST_PATH = os.path.join(DATA_DIR, "mesh_stoplist.csv")
 
 
 def run_paths(run_dir):
@@ -155,22 +155,21 @@ def load_mechanical_rules():
     return [b for b in _json_blocks(CRITERIA_PATH) if "rule_id" in b]
 
 
-def load_subdomain_taxonomy():
-    """Curated sub-domain blocks from reference/subdomain-taxonomy.md.
+def load_mesh_stoplist():
+    """Generic/demographic/methodological MeSH headings to exclude when
+    deriving sub-domains from MeSH-term frequency (see classify.py).
 
-    Returns {domain_id: [subdomain_block, ...]} in file order. Each block is
-    shaped for score_taxa(..., id_field='subdomain_id'): subdomain_id, label,
-    threshold, terms, mesh_terms, blockers, plus its parent 'domain_id'.
+    This is noise-filtering infrastructure, not domain content: it excludes
+    headings like "Humans", "Female", "Retrospective Studies" that would
+    otherwise dominate every domain's frequency ranking without describing
+    what the research is actually about. It contains no disease or pathogen
+    names, and it is never used to decide what a sub-domain IS -- that comes
+    only from which MeSH terms the corpus itself uses most.
+
+    Returns a lowercase set for case-insensitive matching.
     """
-    blocks = [b for b in _json_blocks(SUBDOMAIN_TAXONOMY_PATH) if "subdomain_id" in b]
-    by_domain = OrderedDict()
-    for b in blocks:
-        b.setdefault("terms", {})
-        b.setdefault("mesh_terms", {})
-        b.setdefault("blockers", [])
-        b.setdefault("threshold", 3)
-        by_domain.setdefault(b.get("domain_id", ""), []).append(b)
-    return by_domain
+    rows = read_csv(MESH_STOPLIST_PATH)
+    return {(r.get("mesh_term") or "").strip().lower() for r in rows if r.get("mesh_term")}
 
 
 def load_research_type_taxonomy():

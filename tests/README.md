@@ -31,9 +31,20 @@ The fixture deliberately covers the awkward cases:
 | Scholar-only hit | kept, flagged `needs_manual_metadata` |
 | TB/HIV co-infection | two domains (`tb`, `sti`) |
 | Ventilator-associated pneumonia | two domains (`rti`, `amr_hai`) |
-| Dengue transmission record | `primary_subdomain = "Dengue virus"` |
-| Gonorrhoea AMR record | `primary_subdomain = "Gonorrhoea"` |
 | Influenza vaccine effectiveness | `research_types` includes `Vaccine` |
+
+Sub-domain is derived from MeSH-term frequency, not predefined, so the fixture
+doesn't assert specific labels (e.g. "Dengue") for specific records — the
+actual assignment depends on which MeSH terms repeat across a domain's other
+included records, and is genuinely different at the default
+`--subdomain-min-records 3` (most of the tiny fixture's domains have too few
+records to produce any vocabulary) versus the `--subdomain-min-records 1`
+`run_pipeline_test.sh` uses to exercise the algorithm meaningfully. What the
+tests assert instead: every non-"Other/unspecified" `primary_subdomain_mesh`
+is a term the record's own `mesh_terms` actually contains; no stoplisted term
+(e.g. "Singapore", "Humans") ever appears as a sub-domain; and a hand-edited
+`display_label` in `subdomain_vocabulary.csv` survives a re-run of
+`classify.py`.
 
 ## `run_pipeline_test.sh`
 
@@ -46,10 +57,11 @@ block in either is the most common way to break the pipeline.
 bash tests/run_pipeline_test.sh
 ```
 
-Covers, in addition to the table above: sub-domain and research-type
-classification (scoped correctly to `primary_domain` for sub-domains,
-multi-label for research types), the domain-scoped author collaboration
-network (`network_author_*`, split by `domain` plus an `ALL` aggregate), and
+Covers, in addition to the table above: the MeSH-frequency sub-domain
+derivation (stoplist filtering, per-domain scoping, deterministic ranking,
+hand-edited `display_label` persistence across a re-run) and research-type
+classification (multi-label), the domain-scoped author collaboration network
+(`network_author_*`, split by `domain` plus an `ALL` aggregate), and
 `summary_top_authors.csv` / `summary_subdomain_year.csv` /
 `summary_research_type_year.csv` referential integrity.
 

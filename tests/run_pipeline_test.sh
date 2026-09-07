@@ -36,14 +36,15 @@ d = idlib.load_taxonomy(); r = idlib.load_mechanical_rules()
 assert len(d) == 5, "expected 5 domains, got %d" % len(d)
 assert {x["domain_id"] for x in d} == {"vector_borne","sti","tb","rti","amr_hai"}
 assert len(r) >= 4, "expected >=4 mechanical rules"
-sub = idlib.load_subdomain_taxonomy()
-assert set(sub) == {"vector_borne","sti","tb","rti","amr_hai"}, "subdomain domains: %s" % set(sub)
-assert sum(len(v) for v in sub.values()) >= 30, "expected >=30 subdomain blocks"
+stoplist = idlib.load_mesh_stoplist()
+assert len(stoplist) >= 30, "expected a substantial MeSH stoplist, got %d" % len(stoplist)
+assert "humans" in stoplist and "singapore" in stoplist, "stoplist missing expected generic terms"
+assert "dengue" not in stoplist, "stoplist must not contain disease-specific content"
 types = idlib.load_research_type_taxonomy()
 assert len(types) == 16, "expected 16 research types, got %d" % len(types)
 print("ok")
 PY
-check "taxonomy + criteria + subdomain + research-type parse" "$?" "0"
+check "taxonomy + criteria + mesh-stoplist + research-type parse" "$?" "0"
 
 echo "== build_queries =="
 python3 "$SK/scripts/build_queries.py" --run-dir "$RUN" --from-year 2015 --to-year 2026 >/dev/null
@@ -76,13 +77,15 @@ check "included after decisions"  "$(jl_count "$RUN/screening/included.jsonl")" 
 check "uncertain after decisions" "$(jl_count "$RUN/screening/uncertain.jsonl")" "1"
 
 echo "== classify =="
-python3 "$SK/scripts/classify.py" --run-dir "$RUN" >/dev/null
+# --subdomain-min-records 1: the fixture's domains have only 2-4 records each,
+# so the production default (3) would leave almost everything unspecified.
+python3 "$SK/scripts/classify.py" --run-dir "$RUN" --subdomain-top-k 12 --subdomain-min-records 1 >/dev/null
 check "classify exit code" "$?" "0"
 check "classified records" "$(jl_count "$RUN/classification/classified.jsonl")" "14"
 python3 - "$RUN" <<'PY'
-import json, sys
-recs = [json.loads(l) for l in open(sys.argv[1] + "/classification/classified.jsonl")]
-by_title = {r["title"][:40]: r for r in recs}
+import csv, json, sys
+run = sys.argv[1]
+recs = [json.loads(l) for l in open(run + "/classification/classified.jsonl")]
 tbhiv = next(r for r in recs if "HIV-tuberculosis" in r["title"])
 assert set(tbhiv["domains"]) == {"tb", "sti"}, "TB/HIV domains: %s" % tbhiv["domains"]
 vap = next(r for r in recs if "Ventilator-associated" in r["title"])
@@ -93,18 +96,60 @@ assert all(r["primary_domain"] for r in recs), "every record needs a primary_dom
 sg = [r for r in recs if r["singapore_led"]]
 assert len(sg) >= 10, "expected most fixture records Singapore-led, got %d" % len(sg)
 
-dengue = next(r for r in recs if "Spatiotemporal clustering of dengue" in r["title"])
-assert dengue["primary_subdomain"] == "Dengue virus", "dengue subdomain: %s" % dengue["primary_subdomain"]
-gono = next(r for r in recs if "Neisseria gonorrhoeae" in r["title"])
-assert gono["primary_subdomain"] == "Gonorrhoea", "gonorrhoea subdomain: %s" % gono["primary_subdomain"]
+# Sub-domain is derived from the corpus's own MeSH terms, not a predefined list,
+# so we check the ALGORITHM's invariants rather than hardcoding disease names.
+STOP = {"singapore", "humans", "cross infection", "vaccines"}
+for r in recs:
+    assert "primary_subdomain" in r and r["primary_subdomain"], \
+        "every record needs a non-empty primary_subdomain: %s" % r["uid"]
+    own_mesh_lower = {(m or "").strip().lower() for m in (r.get("mesh_terms") or [])}
+    if r["primary_subdomain"] != "Other/unspecified":
+        # the chosen term must be one the record itself actually carries
+        assert (r.get("primary_subdomain_mesh") or "").lower() in own_mesh_lower, \
+            "primary_subdomain_mesh %r not among %s's own mesh_terms" % (
+                r.get("primary_subdomain_mesh"), r["uid"])
+    for t in r.get("subdomains") or []:
+        assert t.lower() not in STOP, "stoplisted term %r leaked into subdomains" % t
+
+vocab = list(csv.DictReader(open(run + "/classification/subdomain_vocabulary.csv")))
+for row in vocab:
+    assert row["mesh_term"].lower() not in STOP, \
+        "stoplisted term %r leaked into subdomain_vocabulary.csv" % row["mesh_term"]
+    assert int(row["frequency"]) >= 1
+
 influenza = next(r for r in recs if "Influenza vaccine effectiveness" in r["title"])
 assert "Vaccine" in influenza["research_type_labels"], "influenza research types: %s" % influenza["research_type_labels"]
-assert all("primary_subdomain" in r and r["primary_subdomain"] for r in recs), \
-    "every record needs a non-empty primary_subdomain"
 assert all("research_type_labels" in r for r in recs), "every record needs a research_type_labels list"
 print("ok")
 PY
 check "domain/subdomain/research-type assignment invariants" "$?" "0"
+
+echo "== subdomain relabel persists across re-run =="
+RELABEL_TARGET=$(python3 - "$RUN" <<'PY'
+import csv, sys
+path = sys.argv[1] + "/classification/subdomain_vocabulary.csv"
+rows = list(csv.DictReader(open(path)))
+fn = list(rows[0].keys())
+target = rows[0]["mesh_term"]
+for r in rows:
+    if r["mesh_term"] == target:
+        r["display_label"] = "TEST-RELABELED-%s" % target
+w = csv.DictWriter(open(path, "w", newline=""), fieldnames=fn)
+w.writeheader(); w.writerows(rows)
+print(target)
+PY
+)
+python3 "$SK/scripts/classify.py" --run-dir "$RUN" --subdomain-top-k 12 --subdomain-min-records 1 >/dev/null
+python3 - "$RUN" "$RELABEL_TARGET" <<'PY'
+import csv, sys
+run, target = sys.argv[1], sys.argv[2]
+rows = list(csv.DictReader(open(run + "/classification/subdomain_vocabulary.csv")))
+row = next(r for r in rows if r["mesh_term"] == target)
+assert row["display_label"] == "TEST-RELABELED-%s" % target, \
+    "hand-edited display_label was not preserved across re-run: %r" % row["display_label"]
+print("ok")
+PY
+check "hand-edited subdomain label survives re-run" "$?" "0"
 
 echo "== topic model =="
 python3 "$SK/scripts/topic_model.py" --run-dir "$RUN" --min-docs 3 >/dev/null 2>&1
@@ -193,8 +238,13 @@ assert not mismatches, "author node n_publications disagrees with summary_top_au
 assert any(r["domain_id"] == "vector_borne" for r in top), "expected a vector_borne row in top authors"
 
 subsum = rd("summary_subdomain_year.csv")
-assert any(r["subdomain_label"] == "Dengue virus" for r in subsum), \
-    "expected a Dengue virus row in summary_subdomain_year.csv"
+assert any(r["domain_id"] == "vector_borne" for r in subsum), \
+    "expected at least one vector_borne row in summary_subdomain_year.csv"
+assert any(r["subdomain_label"].startswith("TEST-RELABELED-") for r in subsum), \
+    "the hand-edited display label should have propagated into summary_subdomain_year.csv"
+subdom_ranked = [r for r in subdom if r["is_primary"] == "1" and r["vocabulary_rank"]]
+assert subdom_ranked, "expected at least one primary subdomain row with a vocabulary_rank"
+assert all(int(r["vocabulary_rank"]) >= 1 for r in subdom_ranked)
 
 typesum = rd("summary_research_type_year.csv")
 assert any(r["type_label"] == "Vaccine" for r in typesum), \

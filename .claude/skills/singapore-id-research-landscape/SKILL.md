@@ -1,6 +1,6 @@
 ---
 name: singapore-id-research-landscape
-description: Build and refresh a screened, categorised dataset of infectious disease research publications from Singapore. Searches PubMed/MEDLINE, Google Scholar and the CDA Directory of Experts roster; screens titles/abstracts against maintained inclusion/exclusion criteria; categorises into the five ID domains (vector-borne, STI, TB, respiratory tract infection, AMR/HAI) plus named sub-domains within each (e.g. Dengue virus, Malaria) and cross-cutting research types (Genomics, Surveillance, Clinical studies, ...); labels co-authorship, institutions and countries for Tableau network, donut and bar-chart visualisations; and runs topic modelling to sanity-check the sub-domain taxonomy. Use for requests about the Singapore ID research landscape, ID bibliometrics or co-authorship/collaboration mapping, screening ID literature, refreshing the expert directory, or building a Tableau-ready publication dataset.
+description: Build and refresh a screened, categorised dataset of infectious disease research publications from Singapore. Searches PubMed/MEDLINE, Google Scholar and the CDA Directory of Experts roster; screens titles/abstracts against maintained inclusion/exclusion criteria; categorises into the five ID domains (vector-borne, STI, TB, respiratory tract infection, AMR/HAI) plus data-derived named sub-domains within each (the corpus's own most frequent MeSH terms per domain, e.g. Dengue, Malaria) and cross-cutting research types (Genomics, Surveillance, Clinical studies, ...); labels co-authorship, institutions and countries for Tableau network, donut and bar-chart visualisations; and runs topic modelling as a QA check on sub-domain coverage. Use for requests about the Singapore ID research landscape, ID bibliometrics or co-authorship/collaboration mapping, screening ID literature, refreshing the expert directory, or building a Tableau-ready publication dataset.
 ---
 
 # Singapore Infectious Disease Research Landscape
@@ -10,14 +10,14 @@ Singapore infectious disease (ID) research.
 
 Pipeline: **preflight → search → ingest → screen → classify → dataset → topic model.**
 
-The three things a human owns and edits directly:
+The files a human owns and edits directly:
 
 | File | What it controls |
 |---|---|
 | `reference/screening-criteria.md` | Inclusion/exclusion rules, and the amendment log |
 | `data/directory_of_experts.csv` | The CDA expert roster searched by name |
 | `reference/domain-taxonomy.md` | The 5 domains and their term/MeSH definitions |
-| `reference/subdomain-taxonomy.md` | Named sub-domains within each domain (donut chart) |
+| `data/mesh_stoplist.csv` | Generic/demographic MeSH terms excluded when deriving sub-domains |
 | `reference/research-type-taxonomy.md` | Cross-cutting research-type tags (bar chart) |
 
 Never hardcode criteria, expert names, or domain terms into a script or into
@@ -157,15 +157,24 @@ ruling, or an explicit request, justifies an amendment.
 
 ```bash
 python3 .../scripts/classify.py --run-dir runs/<DATE>
+# tune sub-domain granularity for small or exploratory corpora:
+python3 .../scripts/classify.py --run-dir runs/<DATE> --subdomain-top-k 12 --subdomain-min-records 3
 ```
 
 Assigns each included record to:
 
 - one or more of the **5 domains**, from `reference/domain-taxonomy.md`;
-- a **named sub-domain within its primary domain** (e.g. "Dengue virus" within
-  Vector-borne diseases), from `reference/subdomain-taxonomy.md` — this is a
-  curated list, not a machine cluster, so the donut chart's legend stays
-  stable across runs;
+- a **sub-domain within its primary domain, derived from the corpus's own
+  MeSH-term frequency** — not a predefined list. For each domain, `classify.py`
+  counts how often each MeSH heading appears across that domain's own included
+  records (excluding generic/demographic noise via `data/mesh_stoplist.csv`),
+  keeps the headings that appear on at least `--subdomain-min-records` records
+  (default 3), takes the top `--subdomain-top-k` (default 12) by frequency, and
+  assigns each record's `primary_subdomain` to its own highest-ranked matching
+  heading. The chosen vocabulary is written to
+  `<run-dir>/classification/subdomain_vocabulary.csv` for this run — it is a
+  genuine output of this corpus, not something read from a file you'd edit in
+  advance;
 - zero or more **research types** (Genomics, Clinical studies, Surveillance
   and epidemiology, …), from `reference/research-type-taxonomy.md` — a
   cross-cutting, multi-label tag orthogonal to domain;
@@ -173,17 +182,28 @@ Assigns each included record to:
 and parses every author affiliation string into institution and country using
 `data/institution_aliases.csv`.
 
-Three things need your judgement afterwards:
+Things that need your judgement afterwards:
 
 - `<run-dir>/classification/unassigned.jsonl` — records no domain claimed.
   Read title/abstract/MeSH and either assign a domain, mark `other_id`, or add
   the missing term to `domain-taxonomy.md` (preferred, if it generalises).
-- `<run-dir>/classification/unassigned_subdomain.jsonl` and
-  `unassigned_research_type.jsonl` — records that matched no sub-domain (within
-  their domain) or no research type at all. A recurring theme here is a gap in
-  `subdomain-taxonomy.md` or `research-type-taxonomy.md`, not a data problem —
-  add the term (`topic_model.py`'s report can suggest the missing name for
-  sub-domains) and re-run, rather than leaving records as "Other/unspecified."
+- `<run-dir>/classification/subdomain_vocabulary.csv` — the sub-domains this
+  run actually found, one row per `(domain, mesh_term)`, with `frequency` and
+  `rank`. **You can rename how a chart-ready sub-domain displays** by editing
+  its `display_label` column (e.g. "Tuberculosis, Multidrug-Resistant" →
+  "Multidrug-resistant TB") — re-running `classify.py` preserves any label you
+  changed, for any term that still qualifies. You cannot add a sub-domain that
+  isn't in the data; if you expect one and it's missing, the underlying MeSH
+  term isn't common enough in this corpus yet — lower `--subdomain-min-records`
+  or gather more records.
+- `<run-dir>/classification/unassigned_subdomain.jsonl` — records with no
+  sub-domain match. This means either their domain had too few records to
+  clear the threshold, or this record's own MeSH terms simply aren't common in
+  its domain — not a taxonomy gap to fill in by hand. If a whole domain comes
+  back mostly unspecified, lower `--subdomain-min-records` and re-run.
+- `<run-dir>/classification/unassigned_research_type.jsonl` — records matching
+  no research type. A recurring theme here is a genuine gap in
+  `research-type-taxonomy.md` — add the term and re-run.
 - `<run-dir>/classification/unmapped_affiliations.csv` — affiliation strings
   whose institution or country could not be resolved, ordered by frequency.
   Add real mappings to `data/institution_aliases.csv`. Resolve the frequent ones
@@ -204,26 +224,27 @@ tables Tableau can draw directly. `reference/dataset-schema.md` documents every
 column and gives the field/mark setup for each chart type. Read it before
 advising the user on the Tableau side.
 
-## Step 6 — Topic model, to QA the sub-domain taxonomy
+## Step 6 — Topic model, as a second opinion on sub-domain coverage
 
 ```bash
 python3 .../scripts/topic_model.py --run-dir runs/<DATE> --min-docs 12
 ```
 
 This is **not** what feeds the sub-domain donut chart — `primary_subdomain`
-from Step 4 does that, from the curated `subdomain-taxonomy.md`. Topic
-modelling instead clusters records **within each domain** by unsupervised
-semantic similarity, as a QA pass: it finds themes your curated sub-domain
-list hasn't named yet. It uses `sentence-transformers` embeddings if
+from Step 4 does that, derived directly from the corpus's own MeSH-term
+frequency. Topic modelling instead clusters records **within each domain** by
+unsupervised semantic similarity over free text (title/abstract/keywords), a
+different signal from MeSH headings. Use it as a cross-check: if a cluster of
+records with a clear common theme all landed in "Other/unspecified" or scored
+low, that's a sign either the theme's MeSH indexing is sparse/inconsistent in
+this corpus, or `--subdomain-min-records`/`--subdomain-top-k` are too strict —
+not something to fix by hand-adding a taxonomy entry, since there is no
+taxonomy file to add one to. It uses `sentence-transformers` embeddings if
 installed, else TF-IDF + SVD, else a pure-standard-library TF-IDF; the method
 used is recorded in the output.
 
-Read `<run-dir>/topics/topics_report.md`. A cluster whose terms and exemplar
-titles clearly belong to one named pathogen or theme that has no block in
-`subdomain-taxonomy.md` is a taxonomy gap — add the block there (following the
-existing shape) and re-run `classify.py`; the discovered cluster becomes a
-proper named slice in the donut chart next time, instead of falling into
-"Other/unspecified."
+Read `<run-dir>/topics/topics_report.md` alongside
+`<run-dir>/classification/subdomain_vocabulary.csv` for this comparison.
 
 If you still want readable cluster labels for the supplementary
 `topic_id`/`topic_label` fields (e.g. for the exploratory treemap in Recipe
@@ -267,21 +288,31 @@ entries** — an invented expert silently poisons every downstream search and
 network. The script never overwrites existing rows it did not fetch; it merges
 on `profile_url` and preserves manual edits and the `notes` column.
 
-## Adding a new domain, sub-domain, or research type
+## Adding a new domain or research type; tuning sub-domains
 
-All three taxonomies are read at runtime, so adding a block is a data edit,
-never a code change:
+Domain and research-type taxonomies are read at runtime, so adding a block is
+a data edit, never a code change:
 
 - **New domain** — add a section to `reference/domain-taxonomy.md` (terms with
-  weights, MeSH terms, exclusions), following the existing shape. Add a
-  matching set of sub-domain blocks to `subdomain-taxonomy.md` too, or the new
-  domain's donut chart will be entirely "Other/unspecified."
-- **New sub-domain** — add a `json` block to the relevant domain's section of
-  `reference/subdomain-taxonomy.md`. Triggered by a recurring theme in
-  `unassigned_subdomain.jsonl` or a named cluster in `topics_report.md`
-  (Step 6).
+  weights, MeSH terms, exclusions), following the existing shape. Its
+  sub-domains need no separate edit — `classify.py` will derive them from that
+  domain's own records' MeSH frequency on the next run, once it has enough
+  included records to clear `--subdomain-min-records`.
 - **New research type** — add a `json` block to
   `reference/research-type-taxonomy.md`. Triggered by a recurring theme in
   `unassigned_research_type.jsonl`.
+
+Sub-domains have **no taxonomy file to edit** — they come from the data. If a
+sub-domain seems wrong, too coarse, too sparse, or missing, the levers are:
+
+- **Rename how it displays** — edit `display_label` in this run's
+  `classification/subdomain_vocabulary.csv` and re-run `classify.py`.
+- **Get more/fewer sub-domains per domain** — adjust `--subdomain-top-k`.
+- **Include less-common MeSH terms** — lower `--subdomain-min-records`
+  (useful for a small or exploratory corpus; the production default is 3).
+- **Stop a generic MeSH heading from crowding out real sub-domains** — add it
+  to `data/mesh_stoplist.csv`. Only do this for headings that don't name a
+  pathogen or theme (demographics, study design, bare geography) — never to
+  suppress a real finding you'd rather not see.
 
 After any edit, re-run `classify.py` then `build_dataset.py`.
