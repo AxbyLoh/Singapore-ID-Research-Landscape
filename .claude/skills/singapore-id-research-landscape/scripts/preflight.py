@@ -19,7 +19,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import idlib  # noqa: E402
 
 OPTIONAL_PACKAGES = [
-    ("sentence_transformers", "best-quality topic embeddings"),
+    ("bertopic", "opt-in, heavy: HDBSCAN + c-TF-IDF topic modelling (also needs "
+                "network access to huggingface.co at run time to download its "
+                "embedding model -- installed does not guarantee usable)"),
+    ("sentence_transformers", "best-quality topic embeddings (also needs network "
+                             "access to huggingface.co at run time)"),
     ("sklearn", "TF-IDF + SVD + KMeans topic modelling"),
     ("numpy", "faster vector maths"),
 ]

@@ -7,6 +7,9 @@
     # offline: parse HTML the user saved or pasted
     python3 fetch_experts.py --from-html saved/*.html --out ../data/directory_of_experts.csv
 
+    # offline: import a CSV export (e.g. a manual copy of the directory table)
+    python3 fetch_experts.py --from-csv roster.csv --out ../data/directory_of_experts.csv
+
     # see what would change, without writing
     python3 fetch_experts.py --dry-run
 
@@ -23,6 +26,7 @@ supplied, it exits non-zero and changes nothing.
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
 import glob
 import os
@@ -283,7 +287,17 @@ def _resolver():
 
 
 def split_areas(value):
+    """For prose-ish bullet text scraped from HTML, where 'and' sometimes IS
+    the only separator (e.g. 'Vaccine Development and Immunology')."""
     parts = re.split(r"\s*[|;,]\s*|\s+and\s+", value)
+    return [p for p in (x.strip() for x in parts) if p]
+
+
+def split_areas_delimited(value):
+    """For already-delimited data (a CSV column), where 'and' is often part
+    of a single area's name (e.g. 'Detection and Characterisation of Emerging
+    Viruses') and must NOT be treated as a separator."""
+    parts = re.split(r"\s*[|;,]\s*", value)
     return [p for p in (x.strip() for x in parts) if p]
 
 
@@ -362,8 +376,72 @@ def crawl_html_files(paths, verbose):
     return [p for p in people if p["expert_id"] not in ("directory-of-experts", "")]
 
 
-def build_row(display_name, url, fields):
-    full, _title = strip_title(display_name)
+CSV_COLUMN_ALIASES = {
+    "full title & name": "display_name", "full title and name": "display_name",
+    "full name": "display_name",
+    "academic title": "designation", "title": "designation",
+    "expert name": "full_name", "name": "full_name",
+    "institution / organization": "institution", "institution/organization": "institution",
+    "institution": "institution", "organization": "institution", "organisation": "institution",
+    "research domains": "research_areas", "research areas": "research_areas",
+    "research interests": "research_areas", "expertise": "research_areas",
+}
+
+
+def crawl_csv_file(path, verbose):
+    """Import a directory export saved as CSV -- e.g. a manual copy from the
+    CDA website when live fetching is blocked. Column names are matched
+    case-insensitively via CSV_COLUMN_ALIASES; add an entry there if a real
+    export uses different headers. Never invents a profile_url: rows from a
+    CSV have none, so they merge on expert_id instead (see merge()).
+    """
+    with open(path, encoding="utf-8-sig", newline="") as fh:
+        rows = list(csv.DictReader(fh))
+    if not rows:
+        return []
+    header_map = {}
+    for col in rows[0]:
+        key = CSV_COLUMN_ALIASES.get((col or "").strip().lower())
+        if key:
+            header_map[col] = key
+    if verbose:
+        idlib.eprint("  %s: %d rows, columns mapped: %s"
+                     % (os.path.basename(path), len(rows), header_map))
+    missing = {"full_name"} - set(header_map.values())
+    if missing:
+        raise SystemExit(
+            "%s: could not find a column for %s among headers %r.\n"
+            "Add the real header text to CSV_COLUMN_ALIASES in fetch_experts.py."
+            % (path, ", ".join(sorted(missing)), list(rows[0].keys())))
+
+    people = []
+    for row in rows:
+        fields = {}
+        for col, key in header_map.items():
+            fields[key] = (row.get(col) or "").strip()
+        full_name = fields.get("full_name", "")
+        if not full_name:
+            continue
+        display_name = fields.get("display_name") or full_name
+        institution_raw = fields.get("institution", "")
+        resolver = _resolver()
+        resolved = resolver.resolve(institution_raw) if institution_raw else {"institution": ""}
+        institution = resolved["institution"] or institution_raw  # never drop real data
+        research_areas = "|".join(dict.fromkeys(
+            a.strip(" ,;.") for a in split_areas_delimited(fields.get("research_areas", "")) if a.strip()))
+        people.append(build_row(display_name, "", {
+            "designation": fields.get("designation", ""),
+            "institution": institution,
+            "research_areas": research_areas,
+        }, full_name_override=full_name, source="cda_directory_csv"))
+    return people
+
+
+def build_row(display_name, url, fields, full_name_override=None, source="cda_directory"):
+    if full_name_override:
+        full = " ".join(full_name_override.split())
+    else:
+        full, _title = strip_title(display_name)
     slug = url.rstrip("/").split("/")[-1] if url else slugify(full)
     return {
         "expert_id": slug or slugify(full),
@@ -378,7 +456,7 @@ def build_row(display_name, url, fields):
         "research_areas": fields.get("research_areas", ""),
         "domains": "",
         "profile_url": url,
-        "source": "cda_directory",
+        "source": source,
         "date_added": "",
         "last_verified": "",
         "active": "yes",
@@ -429,7 +507,7 @@ def merge(existing, fetched, today, preserve):
     for r in existing:
         if id(r) in seen_keys:
             continue
-        if r.get("source") == "cda_directory" and fetched:
+        if r.get("source") in ("cda_directory", "cda_directory_csv") and fetched:
             marker = "not seen in fetch on %s" % today
             if marker not in (r.get("notes") or ""):
                 r["notes"] = "; ".join(x for x in [r.get("notes", ""), marker] if x)
@@ -453,6 +531,9 @@ def main():
     ap.add_argument("--out", default=idlib.EXPERTS_PATH, help="CSV to write (default: skill data file)")
     ap.add_argument("--from-html", nargs="+", metavar="FILE",
                     help="parse saved HTML instead of fetching (globs allowed)")
+    ap.add_argument("--from-csv", metavar="FILE",
+                    help="import a directory export saved as CSV (e.g. a manual copy "
+                         "of the CDA website) instead of fetching or parsing HTML")
     ap.add_argument("--max-pages", type=int, default=25)
     ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests (be polite)")
     ap.add_argument("--preserve", nargs="*", default=DEFAULT_PRESERVE,
@@ -463,7 +544,13 @@ def main():
 
     today = dt.date.today().isoformat()
 
-    if args.from_html:
+    if args.from_csv:
+        if not os.path.exists(args.from_csv):
+            idlib.eprint("--from-csv file not found: %s" % args.from_csv)
+            return 1
+        print("Importing %s ..." % args.from_csv)
+        fetched = crawl_csv_file(args.from_csv, args.verbose)
+    elif args.from_html:
         paths = []
         for pat in args.from_html:
             paths.extend(sorted(glob.glob(pat)) or [pat])
@@ -485,7 +572,8 @@ def main():
             idlib.eprint("  1. Run this script from a machine/network that can reach cda.gov.sg.")
             idlib.eprint("  2. Save the directory listing and profile pages as HTML and re-run with")
             idlib.eprint("     --from-html page1.html page2.html profiles/*.html")
-            idlib.eprint("  3. Add rows to the CSV by hand (see data/directory_of_experts.EXAMPLE.csv).")
+            idlib.eprint("  3. Import a CSV export of the directory with --from-csv roster.csv")
+            idlib.eprint("  4. Add rows to the CSV by hand (see data/directory_of_experts.EXAMPLE.csv).")
             idlib.eprint("")
             idlib.eprint("Do NOT fabricate roster entries -- they silently corrupt every downstream")
             idlib.eprint("search, co-authorship edge and network view.")

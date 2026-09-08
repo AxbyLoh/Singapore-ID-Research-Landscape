@@ -71,4 +71,11 @@ the same domain, i.e. the layout genuinely groups similar records rather than
 just producing arbitrary coordinates. The map layout is also checked
 deterministic across an identical re-run, same as the co-authorship networks.
 
+`topic_model.py` always attempts BERTopic first (unless `--no-bertopic`), so
+the test also exercises its fail-clean-and-fall-through path: if BERTopic
+isn't installed, or is installed but can't reach huggingface.co for its
+embedding model (the common case in a network-restricted sandbox), the run
+still succeeds on the next backend down and the map invariants above still
+hold, whichever backend actually ran.
+
 It writes to `runs/fixture-test/` and cleans up on success.

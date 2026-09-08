@@ -45,25 +45,38 @@ Scholar family and present the result as complete.
 Python 3.8 or newer. Every script in `scripts/` runs on the **standard library
 alone** — no install step is needed for the pipeline to work end to end.
 
-Optional accelerators, only for `topic_model.py`:
+Optional accelerators, only for `topic_model.py`, best first:
 
 ```bash
-pip install scikit-learn            # TF-IDF + SVD topic backend
-pip install sentence-transformers   # embedding topic backend (best quality)
+pip install bertopic                # heaviest, best: HDBSCAN + c-TF-IDF (several GB --
+                                     # pulls in torch, transformers, umap-learn, hdbscan;
+                                     # also needs network access to huggingface.co at run
+                                     # time to download its embedding model)
+pip install sentence-transformers   # embedding topic backend (same huggingface.co need)
+pip install scikit-learn            # TF-IDF + SVD topic backend, local, no network
 ```
 
-`preflight.py` reports which are present. With none installed, topic modelling
-falls back to a pure-standard-library TF-IDF, which works and is deterministic
-but is lexical rather than semantic — near-synonyms ("antibiotic resistance"
-vs "antimicrobial resistance") land in different clusters more often.
+`preflight.py` reports which are *installed*. That is not the same as
+*usable*: BERTopic and plain `sentence-transformers` both need to reach
+`huggingface.co` at run time to download their embedding model, which some
+sandboxed environments block by organisation policy (distinct from whether
+the package itself installed successfully). When that happens
+`topic_model.py` fails that tier cleanly, logs the real reason, and falls
+through — with nothing installed at all, topic modelling falls back to a
+pure-standard-library TF-IDF, which works and is deterministic but is lexical
+rather than semantic — near-synonyms ("antibiotic resistance" vs
+"antimicrobial resistance") land in different clusters more often.
 
 ## 4. Network access — only for the expert directory
 
 The only script that needs the internet is `fetch_experts.py`, which reads
 `https://www.cda.gov.sg/professionals/research/directory-of-experts/`. Many
 sandboxed environments block it. When that happens the script writes nothing
-and exits non-zero; offer the user the documented alternatives (save the pages
-as HTML and use `--from-html`, or edit the CSV by hand).
+and exits non-zero; offer the user the documented alternatives: save the pages
+as HTML and use `--from-html`, import a CSV export of the directory with
+`--from-csv` (the most reliable offline path if the user can obtain one — it
+merges the same way a live fetch would, preserving hand edits), or edit the
+CSV by hand as a last resort.
 
 Never work around a blocked fetch by inventing roster entries.
 

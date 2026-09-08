@@ -238,9 +238,18 @@ different signal from MeSH headings, and — this is the point of the step —
 lays them out as a **2D map, not a bar chart of cluster sizes**: records
 pulled together by many strong similarity links sit close together, records
 without such links drift apart, so the spatial layout itself *is* the
-clustering, not decoration on top of a count. It uses `sentence-transformers`
-embeddings if installed, else TF-IDF + SVD, else a pure-standard-library
-TF-IDF; the method used is recorded in the output.
+clustering, not decoration on top of a count.
+
+Four backends, best first, whichever is actually usable: **BERTopic**
+(sentence-transformers + HDBSCAN + c-TF-IDF — opt-in and heavy, several GB,
+`pip install bertopic` yourself, never auto-installed; needs network access
+to huggingface.co at run time to download its embedding model, so it fails
+cleanly and falls through in a network-restricted sandbox) → plain
+`sentence-transformers` embeddings (same network caveat) → scikit-learn
+TF-IDF+SVD (local, no network) → pure-standard-library TF-IDF (always works).
+The run reports which one actually ran, and why a higher tier fell through if
+one did. Pass `--no-bertopic` to skip straight past tier 1 even when
+installed.
 
 Use it as a cross-check on Step 4: if a visually tight cluster on the map all
 landed in "Other/unspecified" or scored low, that's a sign either the theme's
@@ -293,7 +302,12 @@ python3 .../scripts/fetch_experts.py --out .../data/directory_of_experts.csv
 It walks the paginated listing and each expert's profile page. If the site is
 unreachable from your environment (blocked egress is common), say so plainly and
 offer the alternatives: the user pastes the page HTML into a file for
-`--from-html`, or adds rows to the CSV by hand. **Never fabricate roster
+`--from-html`, or gives you a CSV export of the directory (a manual copy is
+common when live fetching is blocked) for `--from-csv path.csv` — it maps
+common header spellings (Full Title & Name, Academic Title, Expert Name,
+Institution/Organization, Research Domains) automatically; add an entry to
+`CSV_COLUMN_ALIASES` in the script if a real export uses different headers.
+Adding rows to the CSV by hand is the last resort. **Never fabricate roster
 entries** — an invented expert silently poisons every downstream search and
 network. The script never overwrites existing rows it did not fetch; it merges
 on `profile_url` and preserves manual edits and the `notes` column.

@@ -4,20 +4,36 @@ as a 2D topic MAP -- not a bar chart -- so that similar topics sit near each
 other and dissimilar ones sit apart, the way a document/cluster landscape
 should read.
 
-Backends, best first -- whichever is installed is used, and the choice is
+Backends, best first -- whichever is installed (and actually works: a network-
+blocked embedding download falls through too) is used, and the choice is
 recorded in the output:
 
-  1. sentence-transformers embeddings  (best: true semantic similarity)
-  2. scikit-learn TF-IDF + TruncatedSVD (good: latent semantic space)
-  3. pure standard-library TF-IDF       (always available; lexical only)
+  0. BERTopic (sentence-transformers + HDBSCAN + c-TF-IDF)  -- opt-in, heavy
+  1. sentence-transformers embeddings, custom k-means        (best lightweight)
+  2. scikit-learn TF-IDF + TruncatedSVD, custom k-means       (good, no network)
+  3. pure standard-library TF-IDF, custom k-means        (always available)
 
-The map itself is a k-nearest-neighbour similarity graph (each record linked
-to its most similar records in the same domain) laid out with the same
-deterministic force-directed layout used for the co-authorship networks
-(idlib.force_layout): records pulled together by many strong similarity
-edges cluster spatially; records with few edges to a group drift away from
-it. This is a lightweight, dependency-free stand-in for a UMAP/t-SNE plot,
-not a size-ranked bar chart of cluster counts.
+BERTopic (tier 0) is a genuinely different, better-suited library for this
+job -- density-based HDBSCAN clustering that doesn't need a forced cluster
+count and can legitimately leave outlier records unclustered, plus principled
+c-TF-IDF topic terms -- but it pulls in torch, transformers, umap-learn and
+hdbscan: several GB, no GPU required but not a small ask. It is NEVER a
+required dependency and is never installed automatically; `pip install
+bertopic` yourself to enable it, or pass --no-bertopic to skip straight to
+tier 1 even if it is installed. Its own SentenceTransformer model also needs
+to download from huggingface.co on first use -- if that host is blocked (as
+in some sandboxed egress policies), tier 0 fails cleanly and tier 1/2 take
+over; the run reports which happened.
+
+For every backend, the map itself is the SAME k-nearest-neighbour similarity
+graph (each record linked to its most similar records in the same domain)
+laid out with the deterministic force-directed layout used for the
+co-authorship networks (idlib.force_layout) -- records pulled together by
+many strong similarity edges cluster spatially; records with few edges to a
+group drift away from it. This is a lightweight, dependency-free stand-in for
+a UMAP/t-SNE plot, not a size-ranked bar chart of cluster counts. (BERTopic's
+own embeddings feed this same layout rather than BERTopic's internal UMAP, so
+every backend's map is built the same way and stays comparable.)
 
 Writes <run-dir>/topics/:
   publication_topics.csv   uid -> topic_id, topic_label, topic_terms, map_x, map_y
@@ -155,6 +171,95 @@ def try_sklearn_svd(docs, n_components=64):
     except Exception as exc:  # noqa: BLE001
         idlib.eprint("  sklearn path failed (%s); falling back" % exc)
         return None, None
+
+
+def try_bertopic_cluster(docs, seed, min_cluster_size):
+    """Tier-0 backend: sentence-transformer embeddings + HDBSCAN density-based
+    clustering + BERTopic's own c-TF-IDF term extraction, in place of this
+    file's custom k-means + heuristic terms.
+
+    Returns None (never raises) if bertopic/its stack isn't installed, OR if
+    it fails at runtime for any reason -- most commonly the embedding model
+    being unable to download from huggingface.co under a restrictive network
+    policy. Either way the caller falls through to tier 1/2/3 exactly as if
+    this backend were never installed; the actual reason is logged to stderr
+    so a real failure (not just "not installed") is still visible.
+
+    Unlike this file's own k-means, cluster count is NOT chosen by us --
+    HDBSCAN decides it, and can legitimately leave some records as noise
+    (unclustered). Noise records are kept, never dropped, as their own
+    explicitly-labelled group -- see run_domain()'s handling of the returned
+    noise_id.
+
+    Returns (vecs, assign, backend_name, terms_by_cluster, noise_cluster_id):
+      vecs      dict-ified embeddings, same shape try_embeddings() returns,
+                so every downstream function (centroid, silhouette, the map's
+                similarity graph) works unmodified regardless of backend.
+      assign    per-doc cluster id, contiguous 0..k-1 (HDBSCAN's -1 noise
+                label is remapped to its own trailing id, not left as -1).
+      terms_by_cluster   {cluster_id: [term, ...]} from BERTopic's c-TF-IDF;
+                empty list for the noise cluster (it has no coherent topic).
+      noise_cluster_id   the id noise records were remapped to, or None.
+    """
+    try:
+        from bertopic import BERTopic
+        from sentence_transformers import SentenceTransformer
+        from hdbscan import HDBSCAN
+        from umap import UMAP
+        from sklearn.feature_extraction.text import CountVectorizer
+    except ImportError:
+        return None
+
+    n = len(docs)
+    try:
+        embedder = SentenceTransformer("all-MiniLM-L6-v2")
+        embeddings = embedder.encode(docs, normalize_embeddings=True, show_progress_bar=False)
+    except Exception as exc:  # noqa: BLE001
+        idlib.eprint("  BERTopic embedding model unavailable (%s) -- likely blocked network "
+                     "access to huggingface.co; falling back" % exc)
+        return None
+
+    try:
+        n_neighbors = max(2, min(15, n - 1))
+        n_components = max(2, min(5, n - 2))
+        umap_model = UMAP(n_neighbors=n_neighbors, n_components=n_components,
+                          min_dist=0.0, metric="cosine", random_state=seed)
+        hdbscan_model = HDBSCAN(min_cluster_size=max(2, min_cluster_size),
+                                metric="euclidean", cluster_selection_method="eom",
+                                prediction_data=False)
+        vectorizer_model = CountVectorizer(stop_words=sorted(STOPWORDS), ngram_range=(1, 2),
+                                           token_pattern=r"[a-z][a-z0-9\-]{2,}")
+        topic_model = BERTopic(embedding_model=embedder, umap_model=umap_model,
+                               hdbscan_model=hdbscan_model, vectorizer_model=vectorizer_model,
+                               calculate_probabilities=False, verbose=False)
+        raw_topics, _ = topic_model.fit_transform(docs, embeddings)
+    except Exception as exc:  # noqa: BLE001
+        idlib.eprint("  BERTopic clustering failed (%s); falling back" % exc)
+        return None
+
+    labels = sorted(set(raw_topics))
+    if labels in ([], [-1]):
+        idlib.eprint("  BERTopic found no clusters (all noise or empty); falling back")
+        return None
+
+    real = [l for l in labels if l != -1]
+    remap = {l: i for i, l in enumerate(real)}
+    noise_id = None
+    if -1 in labels:
+        noise_id = len(real)
+        remap[-1] = noise_id
+    assign = [remap[t] for t in raw_topics]
+
+    terms_by_cluster = {}
+    for old_id in real:
+        words = topic_model.get_topic(old_id) or []
+        terms_by_cluster[remap[old_id]] = [w for w, _ in words[:8]]
+    if noise_id is not None:
+        terms_by_cluster[noise_id] = []
+
+    vecs = [dict(enumerate(map(float, row))) for row in embeddings]
+    backend = "BERTopic (sentence-transformers + HDBSCAN + c-TF-IDF)"
+    return vecs, assign, backend, terms_by_cluster, noise_id
 
 
 # --------------------------------------------------------------------------
@@ -362,26 +467,47 @@ def run_domain(domain_id, records, args):
     n = len(docs)
 
     vecs, backend = (None, None)
-    if not args.no_embeddings:
+    assign, centres = None, None
+    bertopic_terms, noise_id = None, None
+
+    # BERTopic decides its own cluster count via HDBSCAN, so it's skipped
+    # when the user explicitly forces a cluster count with --topics.
+    if not args.no_bertopic and not args.topics:
+        result = try_bertopic_cluster(docs, args.seed, args.bertopic_min_cluster_size)
+        if result is not None:
+            vecs, assign, backend, bertopic_terms, noise_id = result
+
+    if vecs is None and not args.no_embeddings:
         vecs, backend = try_embeddings(docs)
     if vecs is None and not args.no_sklearn:
         vecs, backend = try_sklearn_svd(docs)
     if vecs is None:
         vecs, backend = tfidf_vectors(docs), "stdlib TF-IDF"
 
-    kmax = args.max_topics or max(2, min(8, int(round(math.sqrt(n / 2.0)))))
-    kmax = max(2, min(kmax, n - 1))
-    kmin = min(2, kmax)
-
-    if args.topics:
-        k = max(2, min(args.topics, n - 1))
-        assign, centres = kmeans(vecs, k, seed=args.seed)
-        score = silhouette(vecs, assign)
+    if assign is not None:
+        # BERTopic already clustered; just compute silhouette + centroids
+        # with this file's own functions so downstream code (exemplar
+        # picking, the map layout) is identical regardless of backend.
+        k = len(set(assign))
+        score = silhouette(vecs, assign) if k >= 2 else -1.0
+        groups_for_centres = defaultdict(list)
+        for i, a in enumerate(assign):
+            groups_for_centres[a].append(i)
+        centres = [centroid(vecs, groups_for_centres[ci]) for ci in range(k)]
     else:
-        k, score, result = choose_k(vecs, kmin, kmax, args.seed)
-        if result is None:
-            return None
-        assign, centres = result
+        kmax = args.max_topics or max(2, min(8, int(round(math.sqrt(n / 2.0)))))
+        kmax = max(2, min(kmax, n - 1))
+        kmin = min(2, kmax)
+
+        if args.topics:
+            k = max(2, min(args.topics, n - 1))
+            assign, centres = kmeans(vecs, k, seed=args.seed)
+            score = silhouette(vecs, assign)
+        else:
+            k, score, result = choose_k(vecs, kmin, kmax, args.seed)
+            if result is None:
+                return None
+            assign, centres = result
 
     groups = defaultdict(list)
     for i, a in enumerate(assign):
@@ -392,7 +518,13 @@ def run_domain(domain_id, records, args):
     topics = []
     for ci in sorted(groups, key=lambda c: -len(groups[c])):
         members = groups[ci]
-        terms = cluster_terms(docs, assign, ci)
+        is_noise = (ci == noise_id)
+        if bertopic_terms is not None and bertopic_terms.get(ci):
+            terms = bertopic_terms[ci]
+        elif is_noise:
+            terms = []
+        else:
+            terms = cluster_terms(docs, assign, ci)
         exemplars = sorted(members, key=lambda i: -cosine(vecs[i], centres[ci]))[:3]
         placed = [i for i in members if i in xy]
         if placed:
@@ -407,10 +539,11 @@ def run_domain(domain_id, records, args):
             "exemplars": [records[i].get("title", "") for i in exemplars],
             "size": len(members),
             "centroid_xy": (cx, cy),
+            "is_noise": is_noise,
         })
     return {"domain_id": domain_id, "backend": backend, "k": k,
             "silhouette": score, "topics": topics, "n": n, "xy": xy,
-            "map_placed": len(xy), "map_total": n}
+            "map_placed": len(xy), "map_total": n, "has_noise": noise_id is not None}
 
 
 def main():
@@ -428,6 +561,12 @@ def main():
                     help="cap on records laid out per domain (O(n^2) similarity "
                          "+ layout cost); large domains are stratified-sampled "
                          "by cluster so every cluster still appears on the map")
+    ap.add_argument("--no-bertopic", action="store_true",
+                    help="skip BERTopic even if installed (it's opt-in and heavy -- "
+                         "see the module docstring)")
+    ap.add_argument("--bertopic-min-cluster-size", type=int, default=3,
+                    help="HDBSCAN's minimum records to form a real cluster; smaller "
+                         "groups become noise rather than a forced cluster")
     ap.add_argument("--no-embeddings", action="store_true", help="skip sentence-transformers")
     ap.add_argument("--no-sklearn", action="store_true", help="skip the sklearn backend")
     ap.add_argument("--relabel-only", action="store_true",
@@ -501,7 +640,7 @@ def main():
         for t in res["topics"]:
             key = (domain_id, t["topic_id"])
             human = human_labels.get(key, {})
-            auto = auto_label(t["terms"])
+            auto = "(noise / unclustered)" if t.get("is_noise") else auto_label(t["terms"])
             label = (human.get("topic_label") or "").strip() or auto
             is_human = bool((human.get("topic_label") or "").strip()) and label != auto
             cx, cy = t["centroid_xy"]
