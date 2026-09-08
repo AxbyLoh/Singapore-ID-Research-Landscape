@@ -94,16 +94,18 @@ Date limits are **not** put in the query string — pass them as the connector's
 {
   "block_id": "build_options",
   "term_weight_floor": 3,
-  "max_terms_per_query": 60,
+  "max_terms_per_query": 15,
   "max_results_per_query": 400,
   "page_size": 100,
   "medline_only_suffix": " AND medline[sb]",
-  "notes": "Weight-3 terms only: weight-1 terms like 'outbreak' or 'mask' are context words that explode the result set when used for retrieval. They still count during classification."
+  "notes": "Weight-3 terms only: weight-1 terms like 'outbreak' or 'mask' are context words that explode the result set when used for retrieval. They still count during classification. max_terms_per_query=15 keeps every generated query at or under ~17 boolean operators (n terms -> n-1 ORs, +2 ORs and +1 AND for the Singapore filter): the PubMed MCP connector used by this skill enforces a hard cap of 20 operators per query, tighter than PubMed's own native limit -- confirmed empirically (a 47-operator query was rejected with INVALID_QUERY/'too many boolean operators'). Raise this only if you have confirmed your connector accepts more."
 }
 ```
 
 `max_terms_per_query` chunks an over-long domain into several queries
-(`geo_<domain>_1`, `_2`, …); results are pooled at ingest.
+(`geo_<domain>_1`, `_2`, …); results are pooled at ingest. The same cap also
+chunks the `id_hedge` block below (already 21 clauses on its own, over the
+connector limit unchunked).
 
 ## Expert queries
 

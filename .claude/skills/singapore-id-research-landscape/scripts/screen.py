@@ -164,7 +164,7 @@ def triage(rec, facts, rules, window, domains):
                            "Singapore in title, abstract, keywords or MeSH"], flags)
 
     if facts["sg_sectors"] and set(facts["sg_sectors"]) <= {"industry"}:
-        return ("uncertain", rules_fired, reasons + [INDUSTRY_ONLY_NOTE],
+        return ("exclude", rules_fired, reasons + ["EXC-GEO-02: " + INDUSTRY_ONLY_NOTE],
                 flags + ["industry_regional_office"])
 
     if facts["n_countries"] > 3 and not facts["sg_leading"]:
@@ -172,10 +172,6 @@ def triage(rec, facts, rules, window, domains):
 
     # --- type --------------------------------------------------------------
     types = set(facts["article_types"])
-    if "Case Reports" in types:
-        return ("uncertain", rules_fired,
-                reasons + ["EXC-TYP-02: case report — exclude if a single patient, "
-                           "include if a series of 5 or more"], flags)
     if "Letter" in types:
         return ("uncertain", rules_fired,
                 reasons + ["EXC-TYP-01 note: letters are not auto-excluded — include "

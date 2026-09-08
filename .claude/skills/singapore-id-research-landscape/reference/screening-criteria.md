@@ -107,8 +107,10 @@ author, data or setting.
 A Singapore address that is only a company's regional/branch office (e.g. a
 pharmaceutical firm's "…International AG Singapore Branch"), on a study with no
 Singapore data, setting or academic collaborator, does not make it Singapore
-research. Exclude, or include flagged `industry_regional_office` if the user
-prefers to keep these — see the amendment log before deciding.
+research. **Exclude** — confirmed by the user on the first real run (see
+amendment log). `screen.py` applies this mechanically: a record whose only
+Singapore-linked author sector is `industry` is auto-excluded, tagged
+`industry_regional_office` for auditability.
 
 ---
 
@@ -140,8 +142,11 @@ editor frequently carry original outbreak or surveillance data in ID journals,
 so they are routed to uncertain for a human read rather than auto-excluded.
 
 ### EXC-TYP-02 — Case reports
-Exclude single-patient case reports by default: they inflate counts without
-representing research programmes. Case **series** (n >= 5) are included.
+**Include all case reports**, single-patient and series alike — confirmed by
+the user on the first real run (see amendment log), overriding the original
+single-patient default. A case report still has to clear the topic and
+geography gates like any other record; `screen.py` no longer routes
+`Case Reports`-typed records to uncertain on that basis alone.
 
 ### EXC-TYP-03 — Language
 Exclude publications not available in English, since title/abstract screening
@@ -216,6 +221,32 @@ Format:
 - **User ruling:** <what the user decided>
 - **Change made:** <rule ID added or edited, and what it now says>
 ```
+
+### 2026-09-08 — Case reports included regardless of size
+- **Prompted by:** PMID 42583836, "Rapid initiation of standard-volume plasma
+  exchange for acute liver failure from dengue infection" (single-patient case
+  report), one of 10 case-report records in the first real run's uncertain
+  bucket.
+- **Question asked:** Keep the default of excluding single-patient case
+  reports (include only series of 5+)?
+- **User ruling:** No — include all case reports, single-patient and series
+  alike.
+- **Change made:** `EXC-TYP-02` reworded to include all case reports.
+  `screen.py`'s `triage()` no longer routes `Case Reports`-typed records to
+  uncertain; they fall through to the normal topic/geography gates.
+
+### 2026-09-08 — Industry regional-office affiliation confirmed excluded
+- **Prompted by:** PMID 42697351, "Unlocking the value of RSV vaccination in
+  Japan..." (GSK, Singapore, one non-leading co-author of 7, no Singapore
+  data/setting) and 3 similar Sanofi-affiliated influenza-vaccine records, all
+  in the first real run's uncertain bucket.
+- **Question asked:** Does a Singapore address that is only a company's
+  regional/branch office count as Singapore research?
+- **User ruling:** No — exclude.
+- **Change made:** `EXC-GEO-02` confirmed as exclude (was previously phrased
+  as an open choice). `screen.py`'s `triage()` now auto-excludes a record
+  whose only Singapore-linked author sector is `industry`, tagged
+  `industry_regional_office`, instead of routing it to uncertain.
 
 ### 2026-09-07 — Initial version
 - **Prompted by:** n/a — first authoring of the criteria.
