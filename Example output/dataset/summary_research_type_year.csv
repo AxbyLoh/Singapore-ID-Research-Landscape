@@ -1,0 +1,43 @@
+type_label,year,publications
+Basic research,2024,1
+Basic research,2025,3
+Basic research,2026,16
+Case study,2025,1
+Case study,2026,11
+Clinical studies,2024,2
+Clinical studies,2025,6
+Clinical studies,2026,30
+Detection,2024,2
+Detection,2025,6
+Detection,2026,9
+Disease management,2024,1
+Disease management,2025,2
+Disease management,2026,10
+Entomology,2024,5
+Entomology,2025,5
+Entomology,2026,19
+Genomics,2025,5
+Genomics,2026,32
+Immunology,2024,1
+Immunology,2025,3
+Immunology,2026,15
+Infection prevention and control,2025,5
+Infection prevention and control,2026,17
+Modelling,2024,2
+Modelling,2025,2
+Modelling,2026,9
+Outbreak management,2025,2
+Outbreak management,2026,7
+Surveillance and epidemiology,2024,5
+Surveillance and epidemiology,2025,16
+Surveillance and epidemiology,2026,52
+Transmission,2025,2
+Transmission,2026,6
+Treatment,2024,4
+Treatment,2025,6
+Treatment,2026,27
+Vaccine,2025,1
+Vaccine,2026,22
+Virology,2024,2
+Virology,2025,5
+Virology,2026,14

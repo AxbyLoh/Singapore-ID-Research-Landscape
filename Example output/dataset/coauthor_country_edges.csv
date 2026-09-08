@@ -1,0 +1,1587 @@
+edge_id,pair_id,source,target,domain,weight,source_country,target_country,source_region,target_region,is_cross_border,involves_singapore
+Singapore--United States#tb,Singapore--United States,Singapore,United States,tb,35,Singapore,United States,Southeast Asia,North America,1,1
+Singapore--United Kingdom#tb,Singapore--United Kingdom,Singapore,United Kingdom,tb,27,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+United Kingdom--United States#tb,United Kingdom--United States,United Kingdom,United States,tb,21,United Kingdom,United States,Europe,North America,1,0
+Singapore--United Kingdom#amr_hai,Singapore--United Kingdom,Singapore,United Kingdom,amr_hai,19,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+Australia--Singapore#amr_hai,Australia--Singapore,Australia,Singapore,amr_hai,17,Australia,Singapore,Oceania,Southeast Asia,1,1
+Singapore--United States#sti,Singapore--United States,Singapore,United States,sti,17,Singapore,United States,Southeast Asia,North America,1,1
+France--Singapore#tb,France--Singapore,France,Singapore,tb,14,France,Singapore,Europe,Southeast Asia,1,1
+France--United Kingdom#tb,France--United Kingdom,France,United Kingdom,tb,14,France,United Kingdom,Europe,Europe,1,0
+France--United States#tb,France--United States,France,United States,tb,14,France,United States,Europe,North America,1,0
+Singapore--United States#vector_borne,Singapore--United States,Singapore,United States,vector_borne,14,Singapore,United States,Southeast Asia,North America,1,1
+Singapore--United States#rti,Singapore--United States,Singapore,United States,rti,14,Singapore,United States,Southeast Asia,North America,1,1
+Singapore--United Kingdom#rti,Singapore--United Kingdom,Singapore,United Kingdom,rti,14,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+Singapore--United Kingdom#vector_borne,Singapore--United Kingdom,Singapore,United Kingdom,vector_borne,13,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+China--Singapore#amr_hai,China--Singapore,China,Singapore,amr_hai,13,China,Singapore,East Asia,Southeast Asia,1,1
+Singapore--Switzerland#tb,Singapore--Switzerland,Singapore,Switzerland,tb,13,Singapore,Switzerland,Southeast Asia,Europe,1,1
+Australia--Singapore#vector_borne,Australia--Singapore,Australia,Singapore,vector_borne,12,Australia,Singapore,Oceania,Southeast Asia,1,1
+Australia--Singapore#tb,Australia--Singapore,Australia,Singapore,tb,12,Australia,Singapore,Oceania,Southeast Asia,1,1
+China--Singapore#sti,China--Singapore,China,Singapore,sti,12,China,Singapore,East Asia,Southeast Asia,1,1
+Singapore--South Africa#tb,Singapore--South Africa,Singapore,South Africa,tb,12,Singapore,South Africa,Southeast Asia,Africa,1,1
+Singapore--United Kingdom#sti,Singapore--United Kingdom,Singapore,United Kingdom,sti,12,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+China--Singapore#rti,China--Singapore,China,Singapore,rti,11,China,Singapore,East Asia,Southeast Asia,1,1
+South Africa--United States#tb,South Africa--United States,South Africa,United States,tb,11,South Africa,United States,Africa,North America,1,0
+Singapore--United States#amr_hai,Singapore--United States,Singapore,United States,amr_hai,11,Singapore,United States,Southeast Asia,North America,1,1
+India--Singapore#tb,India--Singapore,India,Singapore,tb,11,India,Singapore,South Asia,Southeast Asia,1,1
+Pakistan--Singapore#tb,Pakistan--Singapore,Pakistan,Singapore,tb,11,Pakistan,Singapore,South Asia,Southeast Asia,1,1
+Canada--Singapore#tb,Canada--Singapore,Canada,Singapore,tb,10,Canada,Singapore,North America,Southeast Asia,1,1
+Switzerland--United States#tb,Switzerland--United States,Switzerland,United States,tb,10,Switzerland,United States,Europe,North America,1,0
+Indonesia--Singapore#tb,Indonesia--Singapore,Indonesia,Singapore,tb,10,Indonesia,Singapore,Southeast Asia,Southeast Asia,1,1
+South Africa--United Kingdom#tb,South Africa--United Kingdom,South Africa,United Kingdom,tb,10,South Africa,United Kingdom,Africa,Europe,1,0
+Malaysia--Singapore#vector_borne,Malaysia--Singapore,Malaysia,Singapore,vector_borne,9,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+Singapore--Switzerland#vector_borne,Singapore--Switzerland,Singapore,Switzerland,vector_borne,9,Singapore,Switzerland,Southeast Asia,Europe,1,1
+China--Singapore#vector_borne,China--Singapore,China,Singapore,vector_borne,9,China,Singapore,East Asia,Southeast Asia,1,1
+Singapore--Thailand#amr_hai,Singapore--Thailand,Singapore,Thailand,amr_hai,9,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+Ethiopia--Singapore#tb,Ethiopia--Singapore,Ethiopia,Singapore,tb,9,Ethiopia,Singapore,Africa,Southeast Asia,1,1
+Ethiopia--United States#tb,Ethiopia--United States,Ethiopia,United States,tb,9,Ethiopia,United States,Africa,North America,1,0
+France--Pakistan#tb,France--Pakistan,France,Pakistan,tb,9,France,Pakistan,Europe,South Asia,1,0
+Pakistan--United Kingdom#tb,Pakistan--United Kingdom,Pakistan,United Kingdom,tb,9,Pakistan,United Kingdom,South Asia,Europe,1,0
+Pakistan--United States#tb,Pakistan--United States,Pakistan,United States,tb,9,Pakistan,United States,South Asia,North America,1,0
+France--South Africa#tb,France--South Africa,France,South Africa,tb,9,France,South Africa,Europe,Africa,1,0
+Australia--United States#tb,Australia--United States,Australia,United States,tb,8,Australia,United States,Oceania,North America,1,0
+Canada--United Kingdom#tb,Canada--United Kingdom,Canada,United Kingdom,tb,8,Canada,United Kingdom,North America,Europe,1,0
+Australia--United Kingdom#amr_hai,Australia--United Kingdom,Australia,United Kingdom,amr_hai,8,Australia,United Kingdom,Oceania,Europe,1,0
+India--Singapore#amr_hai,India--Singapore,India,Singapore,amr_hai,8,India,Singapore,South Asia,Southeast Asia,1,1
+China--Singapore#tb,China--Singapore,China,Singapore,tb,8,China,Singapore,East Asia,Southeast Asia,1,1
+Ethiopia--France#tb,Ethiopia--France,Ethiopia,France,tb,8,Ethiopia,France,Africa,Europe,1,0
+Ethiopia--United Kingdom#tb,Ethiopia--United Kingdom,Ethiopia,United Kingdom,tb,8,Ethiopia,United Kingdom,Africa,Europe,1,0
+Indonesia--United Kingdom#tb,Indonesia--United Kingdom,Indonesia,United Kingdom,tb,8,Indonesia,United Kingdom,Southeast Asia,Europe,1,0
+Indonesia--United States#tb,Indonesia--United States,Indonesia,United States,tb,8,Indonesia,United States,Southeast Asia,North America,1,0
+Philippines--Singapore#tb,Philippines--Singapore,Philippines,Singapore,tb,8,Philippines,Singapore,Southeast Asia,Southeast Asia,1,1
+Singapore--Viet Nam#tb,Singapore--Viet Nam,Singapore,Viet Nam,tb,8,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+Singapore--Thailand#vector_borne,Singapore--Thailand,Singapore,Thailand,vector_borne,7,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+Canada--United States#tb,Canada--United States,Canada,United States,tb,7,Canada,United States,North America,North America,1,0
+Netherlands--Singapore#tb,Netherlands--Singapore,Netherlands,Singapore,tb,7,Netherlands,Singapore,Europe,Southeast Asia,1,1
+Italy--Singapore#tb,Italy--Singapore,Italy,Singapore,tb,7,Italy,Singapore,Europe,Southeast Asia,1,1
+Japan--Singapore#sti,Japan--Singapore,Japan,Singapore,sti,7,Japan,Singapore,East Asia,Southeast Asia,1,1
+Thailand--United Kingdom#amr_hai,Thailand--United Kingdom,Thailand,United Kingdom,amr_hai,7,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+China--Singapore#other_id,China--Singapore,China,Singapore,other_id,7,China,Singapore,East Asia,Southeast Asia,1,1
+Singapore--United States#other_id,Singapore--United States,Singapore,United States,other_id,7,Singapore,United States,Southeast Asia,North America,1,1
+China--United States#sti,China--United States,China,United States,sti,7,China,United States,East Asia,North America,1,0
+France--Singapore#vector_borne,France--Singapore,France,Singapore,vector_borne,7,France,Singapore,Europe,Southeast Asia,1,1
+Ethiopia--Indonesia#tb,Ethiopia--Indonesia,Ethiopia,Indonesia,tb,7,Ethiopia,Indonesia,Africa,Southeast Asia,1,0
+Ethiopia--Pakistan#tb,Ethiopia--Pakistan,Ethiopia,Pakistan,tb,7,Ethiopia,Pakistan,Africa,South Asia,1,0
+India--United States#tb,India--United States,India,United States,tb,7,India,United States,South Asia,North America,1,0
+Switzerland--United Kingdom#tb,Switzerland--United Kingdom,Switzerland,United Kingdom,tb,7,Switzerland,United Kingdom,Europe,Europe,1,0
+United Kingdom--Viet Nam#tb,United Kingdom--Viet Nam,United Kingdom,Viet Nam,tb,7,United Kingdom,Viet Nam,Europe,Southeast Asia,1,0
+United States--Viet Nam#tb,United States--Viet Nam,United States,Viet Nam,tb,7,United States,Viet Nam,North America,Southeast Asia,1,0
+France--Peru#tb,France--Peru,France,Peru,tb,7,France,Peru,Europe,Latin America,1,0
+Pakistan--Peru#tb,Pakistan--Peru,Pakistan,Peru,tb,7,Pakistan,Peru,South Asia,Latin America,1,0
+Peru--Singapore#tb,Peru--Singapore,Peru,Singapore,tb,7,Peru,Singapore,Latin America,Southeast Asia,1,1
+Peru--United Kingdom#tb,Peru--United Kingdom,Peru,United Kingdom,tb,7,Peru,United Kingdom,Latin America,Europe,1,0
+Peru--United States#tb,Peru--United States,Peru,United States,tb,7,Peru,United States,Latin America,North America,1,0
+Australia--United Kingdom#tb,Australia--United Kingdom,Australia,United Kingdom,tb,6,Australia,United Kingdom,Oceania,Europe,1,0
+Italy--United States#tb,Italy--United States,Italy,United States,tb,6,Italy,United States,Europe,North America,1,0
+Singapore--Thailand#sti,Singapore--Thailand,Singapore,Thailand,sti,6,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+Australia--Thailand#amr_hai,Australia--Thailand,Australia,Thailand,amr_hai,6,Australia,Thailand,Oceania,Southeast Asia,1,0
+Singapore--Viet Nam#amr_hai,Singapore--Viet Nam,Singapore,Viet Nam,amr_hai,6,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+Singapore--United Kingdom#other_id,Singapore--United Kingdom,Singapore,United Kingdom,other_id,6,Singapore,United Kingdom,Southeast Asia,Europe,1,1
+United Kingdom--United States#sti,United Kingdom--United States,United Kingdom,United States,sti,6,United Kingdom,United States,Europe,North America,1,0
+France--Indonesia#tb,France--Indonesia,France,Indonesia,tb,6,France,Indonesia,Europe,Southeast Asia,1,0
+India--United Kingdom#tb,India--United Kingdom,India,United Kingdom,tb,6,India,United Kingdom,South Asia,Europe,1,0
+Indonesia--Pakistan#tb,Indonesia--Pakistan,Indonesia,Pakistan,tb,6,Indonesia,Pakistan,Southeast Asia,South Asia,1,0
+Canada--Pakistan#tb,Canada--Pakistan,Canada,Pakistan,tb,6,Canada,Pakistan,North America,South Asia,1,0
+Canada--France#tb,Canada--France,Canada,France,tb,6,Canada,France,North America,Europe,1,0
+Canada--South Africa#tb,Canada--South Africa,Canada,South Africa,tb,6,Canada,South Africa,North America,Africa,1,0
+Ethiopia--Peru#tb,Ethiopia--Peru,Ethiopia,Peru,tb,6,Ethiopia,Peru,Africa,Latin America,1,0
+Ethiopia--South Africa#tb,Ethiopia--South Africa,Ethiopia,South Africa,tb,6,Ethiopia,South Africa,Africa,Africa,1,0
+Pakistan--South Africa#tb,Pakistan--South Africa,Pakistan,South Africa,tb,6,Pakistan,South Africa,South Asia,Africa,1,0
+Peru--South Africa#tb,Peru--South Africa,Peru,South Africa,tb,6,Peru,South Africa,Latin America,Africa,1,0
+Switzerland--United Kingdom#vector_borne,Switzerland--United Kingdom,Switzerland,United Kingdom,vector_borne,5,Switzerland,United Kingdom,Europe,Europe,1,0
+Netherlands--United States#tb,Netherlands--United States,Netherlands,United States,tb,5,Netherlands,United States,Europe,North America,1,0
+Germany--Singapore#tb,Germany--Singapore,Germany,Singapore,tb,5,Germany,Singapore,Europe,Southeast Asia,1,1
+Italy--United Kingdom#tb,Italy--United Kingdom,Italy,United Kingdom,tb,5,Italy,United Kingdom,Europe,Europe,1,0
+Japan--Singapore#tb,Japan--Singapore,Japan,Singapore,tb,5,Japan,Singapore,East Asia,Southeast Asia,1,1
+United Kingdom--Viet Nam#amr_hai,United Kingdom--Viet Nam,United Kingdom,Viet Nam,amr_hai,5,United Kingdom,Viet Nam,Europe,Southeast Asia,1,0
+Japan--Singapore#vector_borne,Japan--Singapore,Japan,Singapore,vector_borne,5,Japan,Singapore,East Asia,Southeast Asia,1,1
+New Zealand--Singapore#rti,New Zealand--Singapore,New Zealand,Singapore,rti,5,New Zealand,Singapore,Oceania,Southeast Asia,1,1
+Bangladesh--Singapore#tb,Bangladesh--Singapore,Bangladesh,Singapore,tb,5,Bangladesh,Singapore,South Asia,Southeast Asia,1,1
+Bangladesh--United States#tb,Bangladesh--United States,Bangladesh,United States,tb,5,Bangladesh,United States,South Asia,North America,1,0
+Belgium--India#tb,Belgium--India,Belgium,India,tb,5,Belgium,India,Europe,South Asia,1,0
+Belgium--Singapore#tb,Belgium--Singapore,Belgium,Singapore,tb,5,Belgium,Singapore,Europe,Southeast Asia,1,1
+Belgium--United States#tb,Belgium--United States,Belgium,United States,tb,5,Belgium,United States,Europe,North America,1,0
+France--India#tb,France--India,France,India,tb,5,France,India,Europe,South Asia,1,0
+France--Switzerland#tb,France--Switzerland,France,Switzerland,tb,5,France,Switzerland,Europe,Europe,1,0
+India--Netherlands#tb,India--Netherlands,India,Netherlands,tb,5,India,Netherlands,South Asia,Europe,1,0
+Singapore--Spain#amr_hai,Singapore--Spain,Singapore,Spain,amr_hai,5,Singapore,Spain,Southeast Asia,Europe,1,1
+Spain--United Kingdom#amr_hai,Spain--United Kingdom,Spain,United Kingdom,amr_hai,5,Spain,United Kingdom,Europe,Europe,1,0
+United Kingdom--United States#amr_hai,United Kingdom--United States,United Kingdom,United States,amr_hai,5,United Kingdom,United States,Europe,North America,1,0
+Brazil--Singapore#vector_borne,Brazil--Singapore,Brazil,Singapore,vector_borne,5,Brazil,Singapore,Latin America,Southeast Asia,1,1
+Japan--Singapore#rti,Japan--Singapore,Japan,Singapore,rti,5,Japan,Singapore,East Asia,Southeast Asia,1,1
+Australia--Singapore#rti,Australia--Singapore,Australia,Singapore,rti,5,Australia,Singapore,Oceania,Southeast Asia,1,1
+Australia--Viet Nam#tb,Australia--Viet Nam,Australia,Viet Nam,tb,5,Australia,Viet Nam,Oceania,Southeast Asia,1,0
+Ethiopia--Myanmar#tb,Ethiopia--Myanmar,Ethiopia,Myanmar,tb,5,Ethiopia,Myanmar,Africa,Southeast Asia,1,0
+France--Myanmar#tb,France--Myanmar,France,Myanmar,tb,5,France,Myanmar,Europe,Southeast Asia,1,0
+Indonesia--Peru#tb,Indonesia--Peru,Indonesia,Peru,tb,5,Indonesia,Peru,Southeast Asia,Latin America,1,0
+Indonesia--South Africa#tb,Indonesia--South Africa,Indonesia,South Africa,tb,5,Indonesia,South Africa,Southeast Asia,Africa,1,0
+Myanmar--Pakistan#tb,Myanmar--Pakistan,Myanmar,Pakistan,tb,5,Myanmar,Pakistan,Southeast Asia,South Asia,1,0
+Myanmar--Peru#tb,Myanmar--Peru,Myanmar,Peru,tb,5,Myanmar,Peru,Southeast Asia,Latin America,1,0
+Myanmar--Singapore#tb,Myanmar--Singapore,Myanmar,Singapore,tb,5,Myanmar,Singapore,Southeast Asia,Southeast Asia,1,1
+Myanmar--United Kingdom#tb,Myanmar--United Kingdom,Myanmar,United Kingdom,tb,5,Myanmar,United Kingdom,Southeast Asia,Europe,1,0
+Myanmar--United States#tb,Myanmar--United States,Myanmar,United States,tb,5,Myanmar,United States,Southeast Asia,North America,1,0
+Australia--Switzerland#vector_borne,Australia--Switzerland,Australia,Switzerland,vector_borne,4,Australia,Switzerland,Oceania,Europe,1,0
+Netherlands--United Kingdom#tb,Netherlands--United Kingdom,Netherlands,United Kingdom,tb,4,Netherlands,United Kingdom,Europe,Europe,1,0
+Republic of Korea--Singapore#rti,Republic of Korea--Singapore,Republic of Korea,Singapore,rti,4,Republic of Korea,Singapore,East Asia,Southeast Asia,1,1
+Netherlands--Singapore#rti,Netherlands--Singapore,Netherlands,Singapore,rti,4,Netherlands,Singapore,Europe,Southeast Asia,1,1
+France--Italy#tb,France--Italy,France,Italy,tb,4,France,Italy,Europe,Europe,1,0
+Cambodia--Singapore#tb,Cambodia--Singapore,Cambodia,Singapore,tb,4,Cambodia,Singapore,Southeast Asia,Southeast Asia,1,1
+Australia--Singapore#sti,Australia--Singapore,Australia,Singapore,sti,4,Australia,Singapore,Oceania,Southeast Asia,1,1
+Cambodia--Singapore#sti,Cambodia--Singapore,Cambodia,Singapore,sti,4,Cambodia,Singapore,Southeast Asia,Southeast Asia,1,1
+India--Singapore#sti,India--Singapore,India,Singapore,sti,4,India,Singapore,South Asia,Southeast Asia,1,1
+Malaysia--Singapore#sti,Malaysia--Singapore,Malaysia,Singapore,sti,4,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+Singapore--Taiwan#sti,Singapore--Taiwan,Singapore,Taiwan,sti,4,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+Australia--Viet Nam#amr_hai,Australia--Viet Nam,Australia,Viet Nam,amr_hai,4,Australia,Viet Nam,Oceania,Southeast Asia,1,0
+Thailand--Viet Nam#amr_hai,Thailand--Viet Nam,Thailand,Viet Nam,amr_hai,4,Thailand,Viet Nam,Southeast Asia,Southeast Asia,1,0
+China--United States#rti,China--United States,China,United States,rti,4,China,United States,East Asia,North America,1,0
+Singapore--Thailand#rti,Singapore--Thailand,Singapore,Thailand,rti,4,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+Malaysia--Singapore#amr_hai,Malaysia--Singapore,Malaysia,Singapore,amr_hai,4,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+India--Singapore#vector_borne,India--Singapore,India,Singapore,vector_borne,4,India,Singapore,South Asia,Southeast Asia,1,1
+Japan--Singapore#amr_hai,Japan--Singapore,Japan,Singapore,amr_hai,4,Japan,Singapore,East Asia,Southeast Asia,1,1
+Singapore--Taiwan#amr_hai,Singapore--Taiwan,Singapore,Taiwan,amr_hai,4,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+Japan--United Kingdom#sti,Japan--United Kingdom,Japan,United Kingdom,sti,4,Japan,United Kingdom,East Asia,Europe,1,0
+China--United Kingdom#rti,China--United Kingdom,China,United Kingdom,rti,4,China,United Kingdom,East Asia,Europe,1,0
+Belgium--France#tb,Belgium--France,Belgium,France,tb,4,Belgium,France,Europe,Europe,1,0
+Belgium--United Kingdom#tb,Belgium--United Kingdom,Belgium,United Kingdom,tb,4,Belgium,United Kingdom,Europe,Europe,1,0
+Denmark--Singapore#tb,Denmark--Singapore,Denmark,Singapore,tb,4,Denmark,Singapore,Europe,Southeast Asia,1,1
+India--Indonesia#tb,India--Indonesia,India,Indonesia,tb,4,India,Indonesia,South Asia,Southeast Asia,1,0
+Indonesia--Netherlands#tb,Indonesia--Netherlands,Indonesia,Netherlands,tb,4,Indonesia,Netherlands,Southeast Asia,Europe,1,0
+Indonesia--Switzerland#tb,Indonesia--Switzerland,Indonesia,Switzerland,tb,4,Indonesia,Switzerland,Southeast Asia,Europe,1,0
+Italy--Switzerland#tb,Italy--Switzerland,Italy,Switzerland,tb,4,Italy,Switzerland,Europe,Europe,1,0
+Pakistan--Switzerland#tb,Pakistan--Switzerland,Pakistan,Switzerland,tb,4,Pakistan,Switzerland,South Asia,Europe,1,0
+Philippines--United Kingdom#tb,Philippines--United Kingdom,Philippines,United Kingdom,tb,4,Philippines,United Kingdom,Southeast Asia,Europe,1,0
+Philippines--United States#tb,Philippines--United States,Philippines,United States,tb,4,Philippines,United States,Southeast Asia,North America,1,0
+Germany--Singapore#amr_hai,Germany--Singapore,Germany,Singapore,amr_hai,4,Germany,Singapore,Europe,Southeast Asia,1,1
+Germany--United Kingdom#amr_hai,Germany--United Kingdom,Germany,United Kingdom,amr_hai,4,Germany,United Kingdom,Europe,Europe,1,0
+Spain--United States#amr_hai,Spain--United States,Spain,United States,amr_hai,4,Spain,United States,Europe,North America,1,0
+Switzerland--United States#vector_borne,Switzerland--United States,Switzerland,United States,vector_borne,4,Switzerland,United States,Europe,North America,1,0
+Netherlands--Singapore#amr_hai,Netherlands--Singapore,Netherlands,Singapore,amr_hai,4,Netherlands,Singapore,Europe,Southeast Asia,1,1
+Netherlands--United Kingdom#amr_hai,Netherlands--United Kingdom,Netherlands,United Kingdom,amr_hai,4,Netherlands,United Kingdom,Europe,Europe,1,0
+Singapore--Sweden#tb,Singapore--Sweden,Singapore,Sweden,tb,4,Singapore,Sweden,Southeast Asia,Europe,1,1
+Australia--China#rti,Australia--China,Australia,China,rti,4,Australia,China,Oceania,East Asia,1,0
+France--Singapore#amr_hai,France--Singapore,France,Singapore,amr_hai,4,France,Singapore,Europe,Southeast Asia,1,1
+France--United Kingdom#amr_hai,France--United Kingdom,France,United Kingdom,amr_hai,4,France,United Kingdom,Europe,Europe,1,0
+Canada--Peru#tb,Canada--Peru,Canada,Peru,tb,4,Canada,Peru,North America,Latin America,1,0
+Indonesia--Myanmar#tb,Indonesia--Myanmar,Indonesia,Myanmar,tb,4,Indonesia,Myanmar,Southeast Asia,Southeast Asia,1,0
+Myanmar--South Africa#tb,Myanmar--South Africa,Myanmar,South Africa,tb,4,Myanmar,South Africa,Southeast Asia,Africa,1,0
+Canada--Switzerland#tb,Canada--Switzerland,Canada,Switzerland,tb,4,Canada,Switzerland,North America,Europe,1,0
+Canada--Viet Nam#tb,Canada--Viet Nam,Canada,Viet Nam,tb,4,Canada,Viet Nam,North America,Southeast Asia,1,0
+France--Viet Nam#tb,France--Viet Nam,France,Viet Nam,tb,4,France,Viet Nam,Europe,Southeast Asia,1,0
+South Africa--Switzerland#tb,South Africa--Switzerland,South Africa,Switzerland,tb,4,South Africa,Switzerland,Africa,Europe,1,0
+South Africa--Viet Nam#tb,South Africa--Viet Nam,South Africa,Viet Nam,tb,4,South Africa,Viet Nam,Africa,Southeast Asia,1,0
+India--South Africa#tb,India--South Africa,India,South Africa,tb,4,India,South Africa,South Asia,Africa,1,0
+Republic of Korea--Singapore#amr_hai,Republic of Korea--Singapore,Republic of Korea,Singapore,amr_hai,3,Republic of Korea,Singapore,East Asia,Southeast Asia,1,1
+Australia--United Kingdom#vector_borne,Australia--United Kingdom,Australia,United Kingdom,vector_borne,3,Australia,United Kingdom,Oceania,Europe,1,0
+Thailand--United Kingdom#vector_borne,Thailand--United Kingdom,Thailand,United Kingdom,vector_borne,3,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+Australia--Netherlands#tb,Australia--Netherlands,Australia,Netherlands,tb,3,Australia,Netherlands,Oceania,Europe,1,0
+Germany--United States#tb,Germany--United States,Germany,United States,tb,3,Germany,United States,Europe,North America,1,0
+Australia--China#vector_borne,Australia--China,Australia,China,vector_borne,3,Australia,China,Oceania,East Asia,1,0
+New Zealand--Singapore#vector_borne,New Zealand--Singapore,New Zealand,Singapore,vector_borne,3,New Zealand,Singapore,Oceania,Southeast Asia,1,1
+China--United Kingdom#amr_hai,China--United Kingdom,China,United Kingdom,amr_hai,3,China,United Kingdom,East Asia,Europe,1,0
+Australia--Cambodia#tb,Australia--Cambodia,Australia,Cambodia,tb,3,Australia,Cambodia,Oceania,Southeast Asia,1,0
+Australia--Japan#tb,Australia--Japan,Australia,Japan,tb,3,Australia,Japan,Oceania,East Asia,1,0
+Cambodia--Japan#tb,Cambodia--Japan,Cambodia,Japan,tb,3,Cambodia,Japan,Southeast Asia,East Asia,1,0
+Cambodia--United States#tb,Cambodia--United States,Cambodia,United States,tb,3,Cambodia,United States,Southeast Asia,North America,1,0
+Australia--Japan#sti,Australia--Japan,Australia,Japan,sti,3,Australia,Japan,Oceania,East Asia,1,0
+Australia--Thailand#sti,Australia--Thailand,Australia,Thailand,sti,3,Australia,Thailand,Oceania,Southeast Asia,1,0
+Australia--Viet Nam#sti,Australia--Viet Nam,Australia,Viet Nam,sti,3,Australia,Viet Nam,Oceania,Southeast Asia,1,0
+Cambodia--Japan#sti,Cambodia--Japan,Cambodia,Japan,sti,3,Cambodia,Japan,Southeast Asia,East Asia,1,0
+Hong Kong SAR--Singapore#sti,Hong Kong SAR--Singapore,Hong Kong SAR,Singapore,sti,3,Hong Kong SAR,Singapore,East Asia,Southeast Asia,1,1
+Hong Kong SAR--Taiwan#sti,Hong Kong SAR--Taiwan,Hong Kong SAR,Taiwan,sti,3,Hong Kong SAR,Taiwan,East Asia,East Asia,1,0
+Japan--Thailand#sti,Japan--Thailand,Japan,Thailand,sti,3,Japan,Thailand,East Asia,Southeast Asia,1,0
+Malaysia--Taiwan#sti,Malaysia--Taiwan,Malaysia,Taiwan,sti,3,Malaysia,Taiwan,Southeast Asia,East Asia,1,0
+Malaysia--Thailand#sti,Malaysia--Thailand,Malaysia,Thailand,sti,3,Malaysia,Thailand,Southeast Asia,Southeast Asia,1,0
+Republic of Korea--Singapore#sti,Republic of Korea--Singapore,Republic of Korea,Singapore,sti,3,Republic of Korea,Singapore,East Asia,Southeast Asia,1,1
+Republic of Korea--Taiwan#sti,Republic of Korea--Taiwan,Republic of Korea,Taiwan,sti,3,Republic of Korea,Taiwan,East Asia,East Asia,1,0
+Thailand--Viet Nam#sti,Thailand--Viet Nam,Thailand,Viet Nam,sti,3,Thailand,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Cambodia--Singapore#amr_hai,Cambodia--Singapore,Cambodia,Singapore,amr_hai,3,Cambodia,Singapore,Southeast Asia,Southeast Asia,1,1
+Cambodia--Thailand#amr_hai,Cambodia--Thailand,Cambodia,Thailand,amr_hai,3,Cambodia,Thailand,Southeast Asia,Southeast Asia,1,0
+Cambodia--United Kingdom#amr_hai,Cambodia--United Kingdom,Cambodia,United Kingdom,amr_hai,3,Cambodia,United Kingdom,Southeast Asia,Europe,1,0
+Cambodia--Viet Nam#amr_hai,Cambodia--Viet Nam,Cambodia,Viet Nam,amr_hai,3,Cambodia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Thailand--United States#rti,Thailand--United States,Thailand,United States,rti,3,Thailand,United States,Southeast Asia,North America,1,0
+Singapore--Spain#sti,Singapore--Spain,Singapore,Spain,sti,3,Singapore,Spain,Southeast Asia,Europe,1,1
+Cambodia--United States#sti,Cambodia--United States,Cambodia,United States,sti,3,Cambodia,United States,Southeast Asia,North America,1,0
+Japan--United States#sti,Japan--United States,Japan,United States,sti,3,Japan,United States,East Asia,North America,1,0
+India--United Kingdom#amr_hai,India--United Kingdom,India,United Kingdom,amr_hai,3,India,United Kingdom,South Asia,Europe,1,0
+Philippines--Singapore#amr_hai,Philippines--Singapore,Philippines,Singapore,amr_hai,3,Philippines,Singapore,Southeast Asia,Southeast Asia,1,1
+Australia--United States#amr_hai,Australia--United States,Australia,United States,amr_hai,3,Australia,United States,Oceania,North America,1,0
+Bangladesh--Ethiopia#tb,Bangladesh--Ethiopia,Bangladesh,Ethiopia,tb,3,Bangladesh,Ethiopia,South Asia,Africa,1,0
+Bangladesh--France#tb,Bangladesh--France,Bangladesh,France,tb,3,Bangladesh,France,South Asia,Europe,1,0
+Bangladesh--Pakistan#tb,Bangladesh--Pakistan,Bangladesh,Pakistan,tb,3,Bangladesh,Pakistan,South Asia,South Asia,1,0
+Bangladesh--Switzerland#tb,Bangladesh--Switzerland,Bangladesh,Switzerland,tb,3,Bangladesh,Switzerland,South Asia,Europe,1,0
+Bangladesh--United Kingdom#tb,Bangladesh--United Kingdom,Bangladesh,United Kingdom,tb,3,Bangladesh,United Kingdom,South Asia,Europe,1,0
+Belgium--Italy#tb,Belgium--Italy,Belgium,Italy,tb,3,Belgium,Italy,Europe,Europe,1,0
+Belgium--Netherlands#tb,Belgium--Netherlands,Belgium,Netherlands,tb,3,Belgium,Netherlands,Europe,Europe,1,0
+Belgium--Switzerland#tb,Belgium--Switzerland,Belgium,Switzerland,tb,3,Belgium,Switzerland,Europe,Europe,1,0
+China--India#tb,China--India,China,India,tb,3,China,India,East Asia,South Asia,1,0
+China--United States#tb,China--United States,China,United States,tb,3,China,United States,East Asia,North America,1,0
+Denmark--France#tb,Denmark--France,Denmark,France,tb,3,Denmark,France,Europe,Europe,1,0
+Denmark--United Kingdom#tb,Denmark--United Kingdom,Denmark,United Kingdom,tb,3,Denmark,United Kingdom,Europe,Europe,1,0
+Denmark--United States#tb,Denmark--United States,Denmark,United States,tb,3,Denmark,United States,Europe,North America,1,0
+Ethiopia--India#tb,Ethiopia--India,Ethiopia,India,tb,3,Ethiopia,India,Africa,South Asia,1,0
+Ethiopia--Switzerland#tb,Ethiopia--Switzerland,Ethiopia,Switzerland,tb,3,Ethiopia,Switzerland,Africa,Europe,1,0
+India--Italy#tb,India--Italy,India,Italy,tb,3,India,Italy,South Asia,Europe,1,0
+India--Philippines#tb,India--Philippines,India,Philippines,tb,3,India,Philippines,South Asia,Southeast Asia,1,0
+India--Switzerland#tb,India--Switzerland,India,Switzerland,tb,3,India,Switzerland,South Asia,Europe,1,0
+Italy--Pakistan#tb,Italy--Pakistan,Italy,Pakistan,tb,3,Italy,Pakistan,Europe,South Asia,1,0
+Germany--Spain#amr_hai,Germany--Spain,Germany,Spain,amr_hai,3,Germany,Spain,Europe,Europe,1,0
+Germany--United States#amr_hai,Germany--United States,Germany,United States,amr_hai,3,Germany,United States,Europe,North America,1,0
+Brazil--United States#vector_borne,Brazil--United States,Brazil,United States,vector_borne,3,Brazil,United States,Latin America,North America,1,0
+Japan--United States#vector_borne,Japan--United States,Japan,United States,vector_borne,3,Japan,United States,East Asia,North America,1,0
+United Kingdom--United States#vector_borne,United Kingdom--United States,United Kingdom,United States,vector_borne,3,United Kingdom,United States,Europe,North America,1,0
+Germany--Singapore#rti,Germany--Singapore,Germany,Singapore,rti,3,Germany,Singapore,Europe,Southeast Asia,1,1
+United Kingdom--United States#rti,United Kingdom--United States,United Kingdom,United States,rti,3,United Kingdom,United States,Europe,North America,1,0
+Netherlands--New Zealand#rti,Netherlands--New Zealand,Netherlands,New Zealand,rti,3,Netherlands,New Zealand,Europe,Oceania,1,0
+Australia--New Zealand#rti,Australia--New Zealand,Australia,New Zealand,rti,3,Australia,New Zealand,Oceania,Oceania,1,0
+Australia--United Kingdom#rti,Australia--United Kingdom,Australia,United Kingdom,rti,3,Australia,United Kingdom,Oceania,Europe,1,0
+China--New Zealand#rti,China--New Zealand,China,New Zealand,rti,3,China,New Zealand,East Asia,Oceania,1,0
+Japan--United Kingdom#rti,Japan--United Kingdom,Japan,United Kingdom,rti,3,Japan,United Kingdom,East Asia,Europe,1,0
+New Zealand--United Kingdom#rti,New Zealand--United Kingdom,New Zealand,United Kingdom,rti,3,New Zealand,United Kingdom,Oceania,Europe,1,0
+Australia--France#amr_hai,Australia--France,Australia,France,amr_hai,3,Australia,France,Oceania,Europe,1,0
+France--Italy#amr_hai,France--Italy,France,Italy,amr_hai,3,France,Italy,Europe,Europe,1,0
+Italy--Singapore#amr_hai,Italy--Singapore,Italy,Singapore,amr_hai,3,Italy,Singapore,Europe,Southeast Asia,1,1
+Italy--United Kingdom#amr_hai,Italy--United Kingdom,Italy,United Kingdom,amr_hai,3,Italy,United Kingdom,Europe,Europe,1,0
+China--United Kingdom#sti,China--United Kingdom,China,United Kingdom,sti,3,China,United Kingdom,East Asia,Europe,1,0
+Portugal--Singapore#vector_borne,Portugal--Singapore,Portugal,Singapore,vector_borne,3,Portugal,Singapore,Europe,Southeast Asia,1,1
+Germany--India#tb,Germany--India,Germany,India,tb,3,Germany,India,Europe,South Asia,1,0
+India--Uganda#tb,India--Uganda,India,Uganda,tb,3,India,Uganda,South Asia,Africa,1,0
+Singapore--Uganda#tb,Singapore--Uganda,Singapore,Uganda,tb,3,Singapore,Uganda,Southeast Asia,Africa,1,1
+Canada--Ethiopia#tb,Canada--Ethiopia,Canada,Ethiopia,tb,3,Canada,Ethiopia,North America,Africa,1,0
+Canada--Indonesia#tb,Canada--Indonesia,Canada,Indonesia,tb,3,Canada,Indonesia,North America,Southeast Asia,1,0
+Ethiopia--Haiti#tb,Ethiopia--Haiti,Ethiopia,Haiti,tb,3,Ethiopia,Haiti,Africa,Latin America,1,0
+France--Haiti#tb,France--Haiti,France,Haiti,tb,3,France,Haiti,Europe,Latin America,1,0
+Haiti--Pakistan#tb,Haiti--Pakistan,Haiti,Pakistan,tb,3,Haiti,Pakistan,Latin America,South Asia,1,0
+Haiti--Peru#tb,Haiti--Peru,Haiti,Peru,tb,3,Haiti,Peru,Latin America,Latin America,1,0
+Haiti--Singapore#tb,Haiti--Singapore,Haiti,Singapore,tb,3,Haiti,Singapore,Latin America,Southeast Asia,1,1
+Haiti--United Kingdom#tb,Haiti--United Kingdom,Haiti,United Kingdom,tb,3,Haiti,United Kingdom,Latin America,Europe,1,0
+Haiti--United States#tb,Haiti--United States,Haiti,United States,tb,3,Haiti,United States,Latin America,North America,1,0
+Pakistan--Viet Nam#tb,Pakistan--Viet Nam,Pakistan,Viet Nam,tb,3,Pakistan,Viet Nam,South Asia,Southeast Asia,1,0
+Peru--Switzerland#tb,Peru--Switzerland,Peru,Switzerland,tb,3,Peru,Switzerland,Latin America,Europe,1,0
+Peru--Viet Nam#tb,Peru--Viet Nam,Peru,Viet Nam,tb,3,Peru,Viet Nam,Latin America,Southeast Asia,1,0
+Switzerland--Viet Nam#tb,Switzerland--Viet Nam,Switzerland,Viet Nam,tb,3,Switzerland,Viet Nam,Europe,Southeast Asia,1,0
+India--Taiwan#tb,India--Taiwan,India,Taiwan,tb,3,India,Taiwan,South Asia,East Asia,1,0
+Singapore--Taiwan#tb,Singapore--Taiwan,Singapore,Taiwan,tb,3,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+Sweden--United Kingdom#tb,Sweden--United Kingdom,Sweden,United Kingdom,tb,3,Sweden,United Kingdom,Europe,Europe,1,0
+Sweden--United States#tb,Sweden--United States,Sweden,United States,tb,3,Sweden,United States,Europe,North America,1,0
+Sweden--Viet Nam#tb,Sweden--Viet Nam,Sweden,Viet Nam,tb,3,Sweden,Viet Nam,Europe,Southeast Asia,1,0
+Belgium--South Africa#tb,Belgium--South Africa,Belgium,South Africa,tb,3,Belgium,South Africa,Europe,Africa,1,0
+Germany--South Africa#tb,Germany--South Africa,Germany,South Africa,tb,3,Germany,South Africa,Europe,Africa,1,0
+Germany--United Kingdom#tb,Germany--United Kingdom,Germany,United Kingdom,tb,3,Germany,United Kingdom,Europe,Europe,1,0
+Australia--Malaysia#vector_borne,Australia--Malaysia,Australia,Malaysia,vector_borne,2,Australia,Malaysia,Oceania,Southeast Asia,1,0
+Malaysia--Switzerland#vector_borne,Malaysia--Switzerland,Malaysia,Switzerland,vector_borne,2,Malaysia,Switzerland,Southeast Asia,Europe,1,0
+Malaysia--Thailand#vector_borne,Malaysia--Thailand,Malaysia,Thailand,vector_borne,2,Malaysia,Thailand,Southeast Asia,Southeast Asia,1,0
+Malaysia--United Kingdom#vector_borne,Malaysia--United Kingdom,Malaysia,United Kingdom,vector_borne,2,Malaysia,United Kingdom,Southeast Asia,Europe,1,0
+Switzerland--Thailand#vector_borne,Switzerland--Thailand,Switzerland,Thailand,vector_borne,2,Switzerland,Thailand,Europe,Southeast Asia,1,0
+Australia--Canada#tb,Australia--Canada,Australia,Canada,tb,2,Australia,Canada,Oceania,North America,1,0
+Canada--Netherlands#tb,Canada--Netherlands,Canada,Netherlands,tb,2,Canada,Netherlands,North America,Europe,1,0
+China--Republic of Korea#rti,China--Republic of Korea,China,Republic of Korea,rti,2,China,Republic of Korea,East Asia,East Asia,1,0
+France--Singapore#rti,France--Singapore,France,Singapore,rti,2,France,Singapore,Europe,Southeast Asia,1,1
+China--Switzerland#vector_borne,China--Switzerland,China,Switzerland,vector_borne,2,China,Switzerland,East Asia,Europe,1,0
+Japan--United States#tb,Japan--United States,Japan,United States,tb,2,Japan,United States,East Asia,North America,1,0
+Australia--Cambodia#sti,Australia--Cambodia,Australia,Cambodia,sti,2,Australia,Cambodia,Oceania,Southeast Asia,1,0
+Australia--China#sti,Australia--China,Australia,China,sti,2,Australia,China,Oceania,East Asia,1,0
+Australia--India#sti,Australia--India,Australia,India,sti,2,Australia,India,Oceania,South Asia,1,0
+Australia--Malaysia#sti,Australia--Malaysia,Australia,Malaysia,sti,2,Australia,Malaysia,Oceania,Southeast Asia,1,0
+Australia--Republic of Korea#sti,Australia--Republic of Korea,Australia,Republic of Korea,sti,2,Australia,Republic of Korea,Oceania,East Asia,1,0
+Australia--Taiwan#sti,Australia--Taiwan,Australia,Taiwan,sti,2,Australia,Taiwan,Oceania,East Asia,1,0
+China--Hong Kong SAR#sti,China--Hong Kong SAR,China,Hong Kong SAR,sti,2,China,Hong Kong SAR,East Asia,East Asia,1,0
+China--Malaysia#sti,China--Malaysia,China,Malaysia,sti,2,China,Malaysia,East Asia,Southeast Asia,1,0
+China--Taiwan#sti,China--Taiwan,China,Taiwan,sti,2,China,Taiwan,East Asia,East Asia,1,0
+China--Thailand#sti,China--Thailand,China,Thailand,sti,2,China,Thailand,East Asia,Southeast Asia,1,0
+China--Viet Nam#sti,China--Viet Nam,China,Viet Nam,sti,2,China,Viet Nam,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Malaysia#sti,Hong Kong SAR--Malaysia,Hong Kong SAR,Malaysia,sti,2,Hong Kong SAR,Malaysia,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Republic of Korea#sti,Hong Kong SAR--Republic of Korea,Hong Kong SAR,Republic of Korea,sti,2,Hong Kong SAR,Republic of Korea,East Asia,East Asia,1,0
+India--Japan#sti,India--Japan,India,Japan,sti,2,India,Japan,South Asia,East Asia,1,0
+India--Malaysia#sti,India--Malaysia,India,Malaysia,sti,2,India,Malaysia,South Asia,Southeast Asia,1,0
+India--Republic of Korea#sti,India--Republic of Korea,India,Republic of Korea,sti,2,India,Republic of Korea,South Asia,East Asia,1,0
+India--Taiwan#sti,India--Taiwan,India,Taiwan,sti,2,India,Taiwan,South Asia,East Asia,1,0
+India--Thailand#sti,India--Thailand,India,Thailand,sti,2,India,Thailand,South Asia,Southeast Asia,1,0
+India--Viet Nam#sti,India--Viet Nam,India,Viet Nam,sti,2,India,Viet Nam,South Asia,Southeast Asia,1,0
+Japan--Malaysia#sti,Japan--Malaysia,Japan,Malaysia,sti,2,Japan,Malaysia,East Asia,Southeast Asia,1,0
+Japan--Republic of Korea#sti,Japan--Republic of Korea,Japan,Republic of Korea,sti,2,Japan,Republic of Korea,East Asia,East Asia,1,0
+Japan--Taiwan#sti,Japan--Taiwan,Japan,Taiwan,sti,2,Japan,Taiwan,East Asia,East Asia,1,0
+Japan--Viet Nam#sti,Japan--Viet Nam,Japan,Viet Nam,sti,2,Japan,Viet Nam,East Asia,Southeast Asia,1,0
+Malaysia--Republic of Korea#sti,Malaysia--Republic of Korea,Malaysia,Republic of Korea,sti,2,Malaysia,Republic of Korea,Southeast Asia,East Asia,1,0
+Malaysia--Viet Nam#sti,Malaysia--Viet Nam,Malaysia,Viet Nam,sti,2,Malaysia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Republic of Korea--Thailand#sti,Republic of Korea--Thailand,Republic of Korea,Thailand,sti,2,Republic of Korea,Thailand,East Asia,Southeast Asia,1,0
+Republic of Korea--Viet Nam#sti,Republic of Korea--Viet Nam,Republic of Korea,Viet Nam,sti,2,Republic of Korea,Viet Nam,East Asia,Southeast Asia,1,0
+Singapore--Viet Nam#sti,Singapore--Viet Nam,Singapore,Viet Nam,sti,2,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+Taiwan--Thailand#sti,Taiwan--Thailand,Taiwan,Thailand,sti,2,Taiwan,Thailand,East Asia,Southeast Asia,1,0
+Taiwan--Viet Nam#sti,Taiwan--Viet Nam,Taiwan,Viet Nam,sti,2,Taiwan,Viet Nam,East Asia,Southeast Asia,1,0
+Australia--Cambodia#amr_hai,Australia--Cambodia,Australia,Cambodia,amr_hai,2,Australia,Cambodia,Oceania,Southeast Asia,1,0
+Japan--Malaysia#vector_borne,Japan--Malaysia,Japan,Malaysia,vector_borne,2,Japan,Malaysia,East Asia,Southeast Asia,1,0
+Japan--United Kingdom#vector_borne,Japan--United Kingdom,Japan,United Kingdom,vector_borne,2,Japan,United Kingdom,East Asia,Europe,1,0
+Singapore--Viet Nam#vector_borne,Singapore--Viet Nam,Singapore,Viet Nam,vector_borne,2,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+United Kingdom--Viet Nam#vector_borne,United Kingdom--Viet Nam,United Kingdom,Viet Nam,vector_borne,2,United Kingdom,Viet Nam,Europe,Southeast Asia,1,0
+Belgium--Singapore#rti,Belgium--Singapore,Belgium,Singapore,rti,2,Belgium,Singapore,Europe,Southeast Asia,1,1
+Belgium--United Kingdom#rti,Belgium--United Kingdom,Belgium,United Kingdom,rti,2,Belgium,United Kingdom,Europe,Europe,1,0
+Singapore--Switzerland#rti,Singapore--Switzerland,Singapore,Switzerland,rti,2,Singapore,Switzerland,Southeast Asia,Europe,1,1
+Switzerland--United Kingdom#rti,Switzerland--United Kingdom,Switzerland,United Kingdom,rti,2,Switzerland,United Kingdom,Europe,Europe,1,0
+Republic of Korea--Singapore#other_id,Republic of Korea--Singapore,Republic of Korea,Singapore,other_id,2,Republic of Korea,Singapore,East Asia,Southeast Asia,1,1
+United Kingdom--United States#other_id,United Kingdom--United States,United Kingdom,United States,other_id,2,United Kingdom,United States,Europe,North America,1,0
+China--Hong Kong SAR#rti,China--Hong Kong SAR,China,Hong Kong SAR,rti,2,China,Hong Kong SAR,East Asia,East Asia,1,0
+China--Thailand#rti,China--Thailand,China,Thailand,rti,2,China,Thailand,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Singapore#rti,Hong Kong SAR--Singapore,Hong Kong SAR,Singapore,rti,2,Hong Kong SAR,Singapore,East Asia,Southeast Asia,1,1
+Hong Kong SAR--United States#rti,Hong Kong SAR--United States,Hong Kong SAR,United States,rti,2,Hong Kong SAR,United States,East Asia,North America,1,0
+China--Pakistan#amr_hai,China--Pakistan,China,Pakistan,amr_hai,2,China,Pakistan,East Asia,South Asia,1,0
+Pakistan--Singapore#amr_hai,Pakistan--Singapore,Pakistan,Singapore,amr_hai,2,Pakistan,Singapore,South Asia,Southeast Asia,1,1
+Canada--Singapore#sti,Canada--Singapore,Canada,Singapore,sti,2,Canada,Singapore,North America,Southeast Asia,1,1
+Spain--United States#sti,Spain--United States,Spain,United States,sti,2,Spain,United States,Europe,North America,1,0
+China--Malaysia#amr_hai,China--Malaysia,China,Malaysia,amr_hai,2,China,Malaysia,East Asia,Southeast Asia,1,0
+India--Japan#amr_hai,India--Japan,India,Japan,amr_hai,2,India,Japan,South Asia,East Asia,1,0
+India--Taiwan#amr_hai,India--Taiwan,India,Taiwan,amr_hai,2,India,Taiwan,South Asia,East Asia,1,0
+India--Thailand#amr_hai,India--Thailand,India,Thailand,amr_hai,2,India,Thailand,South Asia,Southeast Asia,1,0
+Japan--Taiwan#amr_hai,Japan--Taiwan,Japan,Taiwan,amr_hai,2,Japan,Taiwan,East Asia,East Asia,1,0
+Japan--Thailand#amr_hai,Japan--Thailand,Japan,Thailand,amr_hai,2,Japan,Thailand,East Asia,Southeast Asia,1,0
+Japan--United Kingdom#amr_hai,Japan--United Kingdom,Japan,United Kingdom,amr_hai,2,Japan,United Kingdom,East Asia,Europe,1,0
+Malaysia--Thailand#amr_hai,Malaysia--Thailand,Malaysia,Thailand,amr_hai,2,Malaysia,Thailand,Southeast Asia,Southeast Asia,1,0
+Malaysia--United Kingdom#amr_hai,Malaysia--United Kingdom,Malaysia,United Kingdom,amr_hai,2,Malaysia,United Kingdom,Southeast Asia,Europe,1,0
+Malaysia--Viet Nam#amr_hai,Malaysia--Viet Nam,Malaysia,Viet Nam,amr_hai,2,Malaysia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Philippines--Thailand#amr_hai,Philippines--Thailand,Philippines,Thailand,amr_hai,2,Philippines,Thailand,Southeast Asia,Southeast Asia,1,0
+Philippines--United Kingdom#amr_hai,Philippines--United Kingdom,Philippines,United Kingdom,amr_hai,2,Philippines,United Kingdom,Southeast Asia,Europe,1,0
+Taiwan--Thailand#amr_hai,Taiwan--Thailand,Taiwan,Thailand,amr_hai,2,Taiwan,Thailand,East Asia,Southeast Asia,1,0
+Singapore--South Africa#sti,Singapore--South Africa,Singapore,South Africa,sti,2,Singapore,South Africa,Southeast Asia,Africa,1,1
+South Africa--United Kingdom#sti,South Africa--United Kingdom,South Africa,United Kingdom,sti,2,South Africa,United Kingdom,Africa,Europe,1,0
+New Zealand--United States#rti,New Zealand--United States,New Zealand,United States,rti,2,New Zealand,United States,Oceania,North America,1,0
+Chile--Singapore#amr_hai,Chile--Singapore,Chile,Singapore,amr_hai,2,Chile,Singapore,Latin America,Southeast Asia,1,1
+Bangladesh--Indonesia#tb,Bangladesh--Indonesia,Bangladesh,Indonesia,tb,2,Bangladesh,Indonesia,South Asia,Southeast Asia,1,0
+Belgium--China#tb,Belgium--China,Belgium,China,tb,2,Belgium,China,Europe,East Asia,1,0
+Belgium--Denmark#tb,Belgium--Denmark,Belgium,Denmark,tb,2,Belgium,Denmark,Europe,Europe,1,0
+Belgium--Ethiopia#tb,Belgium--Ethiopia,Belgium,Ethiopia,tb,2,Belgium,Ethiopia,Europe,Africa,1,0
+Belgium--Indonesia#tb,Belgium--Indonesia,Belgium,Indonesia,tb,2,Belgium,Indonesia,Europe,Southeast Asia,1,0
+Belgium--Pakistan#tb,Belgium--Pakistan,Belgium,Pakistan,tb,2,Belgium,Pakistan,Europe,South Asia,1,0
+China--Denmark#tb,China--Denmark,China,Denmark,tb,2,China,Denmark,East Asia,Europe,1,0
+China--France#tb,China--France,China,France,tb,2,China,France,East Asia,Europe,1,0
+China--Netherlands#tb,China--Netherlands,China,Netherlands,tb,2,China,Netherlands,East Asia,Europe,1,0
+China--Pakistan#tb,China--Pakistan,China,Pakistan,tb,2,China,Pakistan,East Asia,South Asia,1,0
+China--Philippines#tb,China--Philippines,China,Philippines,tb,2,China,Philippines,East Asia,Southeast Asia,1,0
+China--United Kingdom#tb,China--United Kingdom,China,United Kingdom,tb,2,China,United Kingdom,East Asia,Europe,1,0
+Denmark--Ethiopia#tb,Denmark--Ethiopia,Denmark,Ethiopia,tb,2,Denmark,Ethiopia,Europe,Africa,1,0
+Denmark--India#tb,Denmark--India,Denmark,India,tb,2,Denmark,India,Europe,South Asia,1,0
+Denmark--Indonesia#tb,Denmark--Indonesia,Denmark,Indonesia,tb,2,Denmark,Indonesia,Europe,Southeast Asia,1,0
+Denmark--Netherlands#tb,Denmark--Netherlands,Denmark,Netherlands,tb,2,Denmark,Netherlands,Europe,Europe,1,0
+Denmark--Pakistan#tb,Denmark--Pakistan,Denmark,Pakistan,tb,2,Denmark,Pakistan,Europe,South Asia,1,0
+Denmark--Switzerland#tb,Denmark--Switzerland,Denmark,Switzerland,tb,2,Denmark,Switzerland,Europe,Europe,1,0
+Ethiopia--Netherlands#tb,Ethiopia--Netherlands,Ethiopia,Netherlands,tb,2,Ethiopia,Netherlands,Africa,Europe,1,0
+France--Netherlands#tb,France--Netherlands,France,Netherlands,tb,2,France,Netherlands,Europe,Europe,1,0
+India--Pakistan#tb,India--Pakistan,India,Pakistan,tb,2,India,Pakistan,South Asia,South Asia,1,0
+Indonesia--Italy#tb,Indonesia--Italy,Indonesia,Italy,tb,2,Indonesia,Italy,Southeast Asia,Europe,1,0
+Indonesia--Philippines#tb,Indonesia--Philippines,Indonesia,Philippines,tb,2,Indonesia,Philippines,Southeast Asia,Southeast Asia,1,0
+Italy--Netherlands#tb,Italy--Netherlands,Italy,Netherlands,tb,2,Italy,Netherlands,Europe,Europe,1,0
+Netherlands--Switzerland#tb,Netherlands--Switzerland,Netherlands,Switzerland,tb,2,Netherlands,Switzerland,Europe,Europe,1,0
+Philippines--Switzerland#tb,Philippines--Switzerland,Philippines,Switzerland,tb,2,Philippines,Switzerland,Southeast Asia,Europe,1,0
+Austria--Germany#amr_hai,Austria--Germany,Austria,Germany,amr_hai,2,Austria,Germany,Europe,Europe,1,0
+Austria--Singapore#amr_hai,Austria--Singapore,Austria,Singapore,amr_hai,2,Austria,Singapore,Europe,Southeast Asia,1,1
+Austria--Spain#amr_hai,Austria--Spain,Austria,Spain,amr_hai,2,Austria,Spain,Europe,Europe,1,0
+Austria--United Kingdom#amr_hai,Austria--United Kingdom,Austria,United Kingdom,amr_hai,2,Austria,United Kingdom,Europe,Europe,1,0
+Austria--United States#amr_hai,Austria--United States,Austria,United States,amr_hai,2,Austria,United States,Europe,North America,1,0
+Australia--South Africa#tb,Australia--South Africa,Australia,South Africa,tb,2,Australia,South Africa,Oceania,Africa,1,0
+Australia--Brazil#vector_borne,Australia--Brazil,Australia,Brazil,vector_borne,2,Australia,Brazil,Oceania,Latin America,1,0
+Australia--Germany#vector_borne,Australia--Germany,Australia,Germany,vector_borne,2,Australia,Germany,Oceania,Europe,1,0
+Australia--United States#vector_borne,Australia--United States,Australia,United States,vector_borne,2,Australia,United States,Oceania,North America,1,0
+Bangladesh--India#vector_borne,Bangladesh--India,Bangladesh,India,vector_borne,2,Bangladesh,India,South Asia,South Asia,1,0
+Bangladesh--Singapore#vector_borne,Bangladesh--Singapore,Bangladesh,Singapore,vector_borne,2,Bangladesh,Singapore,South Asia,Southeast Asia,1,1
+Brazil--Switzerland#vector_borne,Brazil--Switzerland,Brazil,Switzerland,vector_borne,2,Brazil,Switzerland,Latin America,Europe,1,0
+Brazil--United Kingdom#vector_borne,Brazil--United Kingdom,Brazil,United Kingdom,vector_borne,2,Brazil,United Kingdom,Latin America,Europe,1,0
+Canada--Singapore#vector_borne,Canada--Singapore,Canada,Singapore,vector_borne,2,Canada,Singapore,North America,Southeast Asia,1,1
+Canada--Switzerland#vector_borne,Canada--Switzerland,Canada,Switzerland,vector_borne,2,Canada,Switzerland,North America,Europe,1,0
+Canada--United Kingdom#vector_borne,Canada--United Kingdom,Canada,United Kingdom,vector_borne,2,Canada,United Kingdom,North America,Europe,1,0
+Canada--United States#vector_borne,Canada--United States,Canada,United States,vector_borne,2,Canada,United States,North America,North America,1,0
+China--Germany#vector_borne,China--Germany,China,Germany,vector_borne,2,China,Germany,East Asia,Europe,1,0
+China--United States#vector_borne,China--United States,China,United States,vector_borne,2,China,United States,East Asia,North America,1,0
+Germany--Singapore#vector_borne,Germany--Singapore,Germany,Singapore,vector_borne,2,Germany,Singapore,Europe,Southeast Asia,1,1
+Singapore--South Africa#vector_borne,Singapore--South Africa,Singapore,South Africa,vector_borne,2,Singapore,South Africa,Southeast Asia,Africa,1,1
+South Africa--United Kingdom#vector_borne,South Africa--United Kingdom,South Africa,United Kingdom,vector_borne,2,South Africa,United Kingdom,Africa,Europe,1,0
+Australia--Germany#amr_hai,Australia--Germany,Australia,Germany,amr_hai,2,Australia,Germany,Oceania,Europe,1,0
+Australia--India#amr_hai,Australia--India,Australia,India,amr_hai,2,Australia,India,Oceania,South Asia,1,0
+Australia--Netherlands#amr_hai,Australia--Netherlands,Australia,Netherlands,amr_hai,2,Australia,Netherlands,Oceania,Europe,1,0
+India--Netherlands#amr_hai,India--Netherlands,India,Netherlands,amr_hai,2,India,Netherlands,South Asia,Europe,1,0
+Denmark--Singapore#rti,Denmark--Singapore,Denmark,Singapore,rti,2,Denmark,Singapore,Europe,Southeast Asia,1,1
+Denmark--United Kingdom#rti,Denmark--United Kingdom,Denmark,United Kingdom,rti,2,Denmark,United Kingdom,Europe,Europe,1,0
+Germany--United Kingdom#rti,Germany--United Kingdom,Germany,United Kingdom,rti,2,Germany,United Kingdom,Europe,Europe,1,0
+Republic of Korea--Singapore#tb,Republic of Korea--Singapore,Republic of Korea,Singapore,tb,2,Republic of Korea,Singapore,East Asia,Southeast Asia,1,1
+China--Sweden#tb,China--Sweden,China,Sweden,tb,2,China,Sweden,East Asia,Europe,1,0
+Australia--Japan#rti,Australia--Japan,Australia,Japan,rti,2,Australia,Japan,Oceania,East Asia,1,0
+China--Japan#rti,China--Japan,China,Japan,rti,2,China,Japan,East Asia,East Asia,1,0
+Japan--New Zealand#rti,Japan--New Zealand,Japan,New Zealand,rti,2,Japan,New Zealand,East Asia,Oceania,1,0
+Malaysia--Singapore#rti,Malaysia--Singapore,Malaysia,Singapore,rti,2,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+Australia--Netherlands#rti,Australia--Netherlands,Australia,Netherlands,rti,2,Australia,Netherlands,Oceania,Europe,1,0
+Australia--United States#rti,Australia--United States,Australia,United States,rti,2,Australia,United States,Oceania,North America,1,0
+China--Netherlands#rti,China--Netherlands,China,Netherlands,rti,2,China,Netherlands,East Asia,Europe,1,0
+Netherlands--United Kingdom#rti,Netherlands--United Kingdom,Netherlands,United Kingdom,rti,2,Netherlands,United Kingdom,Europe,Europe,1,0
+Thailand--United Kingdom#rti,Thailand--United Kingdom,Thailand,United Kingdom,rti,2,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+Australia--Italy#amr_hai,Australia--Italy,Australia,Italy,amr_hai,2,Australia,Italy,Oceania,Europe,1,0
+France--United Kingdom#vector_borne,France--United Kingdom,France,United Kingdom,vector_borne,2,France,United Kingdom,Europe,Europe,1,0
+Canada--China#tb,Canada--China,Canada,China,tb,2,Canada,China,North America,East Asia,1,0
+Singapore--Switzerland#other_id,Singapore--Switzerland,Singapore,Switzerland,other_id,2,Singapore,Switzerland,Southeast Asia,Europe,1,1
+Switzerland--United States#other_id,Switzerland--United States,Switzerland,United States,other_id,2,Switzerland,United States,Europe,North America,1,0
+Australia--New Zealand#amr_hai,Australia--New Zealand,Australia,New Zealand,amr_hai,2,Australia,New Zealand,Oceania,Oceania,1,0
+New Zealand--Singapore#amr_hai,New Zealand--Singapore,New Zealand,Singapore,amr_hai,2,New Zealand,Singapore,Oceania,Southeast Asia,1,1
+Australia--Nepal#tb,Australia--Nepal,Australia,Nepal,tb,2,Australia,Nepal,Oceania,South Asia,1,0
+Nepal--Singapore#tb,Nepal--Singapore,Nepal,Singapore,tb,2,Nepal,Singapore,South Asia,Southeast Asia,1,1
+Nepal--United Kingdom#tb,Nepal--United Kingdom,Nepal,United Kingdom,tb,2,Nepal,United Kingdom,South Asia,Europe,1,0
+Nepal--United States#tb,Nepal--United States,Nepal,United States,tb,2,Nepal,United States,South Asia,North America,1,0
+Nepal--Viet Nam#tb,Nepal--Viet Nam,Nepal,Viet Nam,tb,2,Nepal,Viet Nam,South Asia,Southeast Asia,1,0
+France--Thailand#vector_borne,France--Thailand,France,Thailand,vector_borne,2,France,Thailand,Europe,Southeast Asia,1,0
+France--United States#vector_borne,France--United States,France,United States,vector_borne,2,France,United States,Europe,North America,1,0
+New Zealand--Thailand#vector_borne,New Zealand--Thailand,New Zealand,Thailand,vector_borne,2,New Zealand,Thailand,Oceania,Southeast Asia,1,0
+Thailand--United States#vector_borne,Thailand--United States,Thailand,United States,vector_borne,2,Thailand,United States,Southeast Asia,North America,1,0
+Nepal--Singapore#other_id,Nepal--Singapore,Nepal,Singapore,other_id,2,Nepal,Singapore,South Asia,Southeast Asia,1,1
+Nepal--United Kingdom#other_id,Nepal--United Kingdom,Nepal,United Kingdom,other_id,2,Nepal,United Kingdom,South Asia,Europe,1,0
+Australia--Belgium#tb,Australia--Belgium,Australia,Belgium,tb,2,Australia,Belgium,Oceania,Europe,1,0
+Australia--India#tb,Australia--India,Australia,India,tb,2,Australia,India,Oceania,South Asia,1,0
+Australia--Switzerland#tb,Australia--Switzerland,Australia,Switzerland,tb,2,Australia,Switzerland,Oceania,Europe,1,0
+Philippines--Singapore#vector_borne,Philippines--Singapore,Philippines,Singapore,vector_borne,2,Philippines,Singapore,Southeast Asia,Southeast Asia,1,1
+Philippines--Thailand#vector_borne,Philippines--Thailand,Philippines,Thailand,vector_borne,2,Philippines,Thailand,Southeast Asia,Southeast Asia,1,0
+Canada--Italy#tb,Canada--Italy,Canada,Italy,tb,2,Canada,Italy,North America,Europe,1,0
+Singapore--Thailand#other_id,Singapore--Thailand,Singapore,Thailand,other_id,2,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+China--United States#amr_hai,China--United States,China,United States,amr_hai,2,China,United States,East Asia,North America,1,0
+Canada--Myanmar#tb,Canada--Myanmar,Canada,Myanmar,tb,2,Canada,Myanmar,North America,Southeast Asia,1,0
+France--Netherlands#amr_hai,France--Netherlands,France,Netherlands,amr_hai,2,France,Netherlands,Europe,Europe,1,0
+France--Portugal#amr_hai,France--Portugal,France,Portugal,amr_hai,2,France,Portugal,Europe,Europe,1,0
+France--Spain#amr_hai,France--Spain,France,Spain,amr_hai,2,France,Spain,Europe,Europe,1,0
+Italy--Portugal#amr_hai,Italy--Portugal,Italy,Portugal,amr_hai,2,Italy,Portugal,Europe,Europe,1,0
+Italy--Spain#amr_hai,Italy--Spain,Italy,Spain,amr_hai,2,Italy,Spain,Europe,Europe,1,0
+Portugal--Singapore#amr_hai,Portugal--Singapore,Portugal,Singapore,amr_hai,2,Portugal,Singapore,Europe,Southeast Asia,1,1
+Portugal--Spain#amr_hai,Portugal--Spain,Portugal,Spain,amr_hai,2,Portugal,Spain,Europe,Europe,1,0
+Portugal--United Kingdom#amr_hai,Portugal--United Kingdom,Portugal,United Kingdom,amr_hai,2,Portugal,United Kingdom,Europe,Europe,1,0
+Cambodia--Singapore#rti,Cambodia--Singapore,Cambodia,Singapore,rti,2,Cambodia,Singapore,Southeast Asia,Southeast Asia,1,1
+Canada--Denmark#tb,Canada--Denmark,Canada,Denmark,tb,2,Canada,Denmark,North America,Europe,1,0
+Canada--Haiti#tb,Canada--Haiti,Canada,Haiti,tb,2,Canada,Haiti,North America,Latin America,1,0
+Denmark--South Africa#tb,Denmark--South Africa,Denmark,South Africa,tb,2,Denmark,South Africa,Europe,Africa,1,0
+Denmark--Viet Nam#tb,Denmark--Viet Nam,Denmark,Viet Nam,tb,2,Denmark,Viet Nam,Europe,Southeast Asia,1,0
+Ethiopia--Viet Nam#tb,Ethiopia--Viet Nam,Ethiopia,Viet Nam,tb,2,Ethiopia,Viet Nam,Africa,Southeast Asia,1,0
+Haiti--Indonesia#tb,Haiti--Indonesia,Haiti,Indonesia,tb,2,Haiti,Indonesia,Latin America,Southeast Asia,1,0
+Haiti--South Africa#tb,Haiti--South Africa,Haiti,South Africa,tb,2,Haiti,South Africa,Latin America,Africa,1,0
+Haiti--Switzerland#tb,Haiti--Switzerland,Haiti,Switzerland,tb,2,Haiti,Switzerland,Latin America,Europe,1,0
+Haiti--Viet Nam#tb,Haiti--Viet Nam,Haiti,Viet Nam,tb,2,Haiti,Viet Nam,Latin America,Southeast Asia,1,0
+Indonesia--Viet Nam#tb,Indonesia--Viet Nam,Indonesia,Viet Nam,tb,2,Indonesia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Singapore--Taiwan#rti,Singapore--Taiwan,Singapore,Taiwan,rti,2,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+China--France#vector_borne,China--France,China,France,vector_borne,2,China,France,East Asia,Europe,1,0
+Australia--South Africa#amr_hai,Australia--South Africa,Australia,South Africa,amr_hai,2,Australia,South Africa,Oceania,Africa,1,0
+Australia--Spain#amr_hai,Australia--Spain,Australia,Spain,amr_hai,2,Australia,Spain,Oceania,Europe,1,0
+Singapore--South Africa#amr_hai,Singapore--South Africa,Singapore,South Africa,amr_hai,2,Singapore,South Africa,Southeast Asia,Africa,1,1
+South Africa--United Kingdom#amr_hai,South Africa--United Kingdom,South Africa,United Kingdom,amr_hai,2,South Africa,United Kingdom,Africa,Europe,1,0
+Australia--Japan#amr_hai,Australia--Japan,Australia,Japan,amr_hai,2,Australia,Japan,Oceania,East Asia,1,0
+Malaysia--Philippines#tb,Malaysia--Philippines,Malaysia,Philippines,tb,2,Malaysia,Philippines,Southeast Asia,Southeast Asia,1,0
+Malaysia--Singapore#tb,Malaysia--Singapore,Malaysia,Singapore,tb,2,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+Australia--Canada#amr_hai,Australia--Canada,Australia,Canada,amr_hai,2,Australia,Canada,Oceania,North America,1,0
+Australia--Israel#amr_hai,Australia--Israel,Australia,Israel,amr_hai,2,Australia,Israel,Oceania,Middle East,1,0
+Canada--France#amr_hai,Canada--France,Canada,France,amr_hai,2,Canada,France,North America,Europe,1,0
+Canada--Israel#amr_hai,Canada--Israel,Canada,Israel,amr_hai,2,Canada,Israel,North America,Middle East,1,0
+Canada--Singapore#amr_hai,Canada--Singapore,Canada,Singapore,amr_hai,2,Canada,Singapore,North America,Southeast Asia,1,1
+Canada--United Kingdom#amr_hai,Canada--United Kingdom,Canada,United Kingdom,amr_hai,2,Canada,United Kingdom,North America,Europe,1,0
+France--Israel#amr_hai,France--Israel,France,Israel,amr_hai,2,France,Israel,Europe,Middle East,1,0
+Israel--Singapore#amr_hai,Israel--Singapore,Israel,Singapore,amr_hai,2,Israel,Singapore,Middle East,Southeast Asia,1,1
+Israel--United Kingdom#amr_hai,Israel--United Kingdom,Israel,United Kingdom,amr_hai,2,Israel,United Kingdom,Middle East,Europe,1,0
+Japan--United States#amr_hai,Japan--United States,Japan,United States,amr_hai,2,Japan,United States,East Asia,North America,1,0
+Mongolia--Singapore#tb,Mongolia--Singapore,Mongolia,Singapore,tb,2,Mongolia,Singapore,East Asia,Southeast Asia,1,1
+Mongolia--United Kingdom#tb,Mongolia--United Kingdom,Mongolia,United Kingdom,tb,2,Mongolia,United Kingdom,East Asia,Europe,1,0
+Mongolia--United States#tb,Mongolia--United States,Mongolia,United States,tb,2,Mongolia,United States,East Asia,North America,1,0
+Bangladesh--Haiti#tb,Bangladesh--Haiti,Bangladesh,Haiti,tb,2,Bangladesh,Haiti,South Asia,Latin America,1,0
+Bangladesh--Myanmar#tb,Bangladesh--Myanmar,Bangladesh,Myanmar,tb,2,Bangladesh,Myanmar,South Asia,Southeast Asia,1,0
+Bangladesh--Peru#tb,Bangladesh--Peru,Bangladesh,Peru,tb,2,Bangladesh,Peru,South Asia,Latin America,1,0
+Canada--Sweden#tb,Canada--Sweden,Canada,Sweden,tb,2,Canada,Sweden,North America,Europe,1,0
+France--Sweden#tb,France--Sweden,France,Sweden,tb,2,France,Sweden,Europe,Europe,1,0
+Haiti--Myanmar#tb,Haiti--Myanmar,Haiti,Myanmar,tb,2,Haiti,Myanmar,Latin America,Southeast Asia,1,0
+South Africa--Sweden#tb,South Africa--Sweden,South Africa,Sweden,tb,2,South Africa,Sweden,Africa,Europe,1,0
+Australia--Philippines#tb,Australia--Philippines,Australia,Philippines,tb,2,Australia,Philippines,Oceania,Southeast Asia,1,0
+Australia--Sweden#tb,Australia--Sweden,Australia,Sweden,tb,2,Australia,Sweden,Oceania,Europe,1,0
+Belgium--Canada#tb,Belgium--Canada,Belgium,Canada,tb,2,Belgium,Canada,Europe,North America,1,0
+Belgium--Viet Nam#tb,Belgium--Viet Nam,Belgium,Viet Nam,tb,2,Belgium,Viet Nam,Europe,Southeast Asia,1,0
+Canada--India#tb,Canada--India,Canada,India,tb,2,Canada,India,North America,South Asia,1,0
+Canada--Zambia#tb,Canada--Zambia,Canada,Zambia,tb,2,Canada,Zambia,North America,Africa,1,0
+India--Viet Nam#tb,India--Viet Nam,India,Viet Nam,tb,2,India,Viet Nam,South Asia,Southeast Asia,1,0
+Singapore--Zambia#tb,Singapore--Zambia,Singapore,Zambia,tb,2,Singapore,Zambia,Southeast Asia,Africa,1,1
+South Africa--Zambia#tb,South Africa--Zambia,South Africa,Zambia,tb,2,South Africa,Zambia,Africa,Africa,1,0
+United Kingdom--Zambia#tb,United Kingdom--Zambia,United Kingdom,Zambia,tb,2,United Kingdom,Zambia,Europe,Africa,1,0
+Singapore--Spain#vector_borne,Singapore--Spain,Singapore,Spain,vector_borne,2,Singapore,Spain,Southeast Asia,Europe,1,1
+Philippines--Thailand#tb,Philippines--Thailand,Philippines,Thailand,tb,2,Philippines,Thailand,Southeast Asia,Southeast Asia,1,0
+Singapore--Thailand#tb,Singapore--Thailand,Singapore,Thailand,tb,2,Singapore,Thailand,Southeast Asia,Southeast Asia,1,1
+Uganda--United Kingdom#tb,Uganda--United Kingdom,Uganda,United Kingdom,tb,2,Uganda,United Kingdom,Africa,Europe,1,0
+Canada--Germany#tb,Canada--Germany,Canada,Germany,tb,2,Canada,Germany,North America,Europe,1,0
+France--Germany#tb,France--Germany,France,Germany,tb,2,France,Germany,Europe,Europe,1,0
+Germany--Switzerland#tb,Germany--Switzerland,Germany,Switzerland,tb,2,Germany,Switzerland,Europe,Europe,1,0
+France--Taiwan#tb,France--Taiwan,France,Taiwan,tb,2,France,Taiwan,Europe,East Asia,1,0
+South Africa--Taiwan#tb,South Africa--Taiwan,South Africa,Taiwan,tb,2,South Africa,Taiwan,Africa,East Asia,1,0
+Taiwan--United Kingdom#tb,Taiwan--United Kingdom,Taiwan,United Kingdom,tb,2,Taiwan,United Kingdom,East Asia,Europe,1,0
+Taiwan--United States#tb,Taiwan--United States,Taiwan,United States,tb,2,Taiwan,United States,East Asia,North America,1,0
+Australia--Cambodia#vector_borne,Australia--Cambodia,Australia,Cambodia,vector_borne,1,Australia,Cambodia,Oceania,Southeast Asia,1,0
+Australia--Thailand#vector_borne,Australia--Thailand,Australia,Thailand,vector_borne,1,Australia,Thailand,Oceania,Southeast Asia,1,0
+Cambodia--Malaysia#vector_borne,Cambodia--Malaysia,Cambodia,Malaysia,vector_borne,1,Cambodia,Malaysia,Southeast Asia,Southeast Asia,1,0
+Cambodia--Singapore#vector_borne,Cambodia--Singapore,Cambodia,Singapore,vector_borne,1,Cambodia,Singapore,Southeast Asia,Southeast Asia,1,1
+Cambodia--Switzerland#vector_borne,Cambodia--Switzerland,Cambodia,Switzerland,vector_borne,1,Cambodia,Switzerland,Southeast Asia,Europe,1,0
+Cambodia--Thailand#vector_borne,Cambodia--Thailand,Cambodia,Thailand,vector_borne,1,Cambodia,Thailand,Southeast Asia,Southeast Asia,1,0
+Cambodia--United Kingdom#vector_borne,Cambodia--United Kingdom,Cambodia,United Kingdom,vector_borne,1,Cambodia,United Kingdom,Southeast Asia,Europe,1,0
+China--France#rti,China--France,China,France,rti,1,China,France,East Asia,Europe,1,0
+China--Viet Nam#rti,China--Viet Nam,China,Viet Nam,rti,1,China,Viet Nam,East Asia,Southeast Asia,1,0
+France--Republic of Korea#rti,France--Republic of Korea,France,Republic of Korea,rti,1,France,Republic of Korea,Europe,East Asia,1,0
+France--Viet Nam#rti,France--Viet Nam,France,Viet Nam,rti,1,France,Viet Nam,Europe,Southeast Asia,1,0
+Republic of Korea--Viet Nam#rti,Republic of Korea--Viet Nam,Republic of Korea,Viet Nam,rti,1,Republic of Korea,Viet Nam,East Asia,Southeast Asia,1,0
+Singapore--Viet Nam#rti,Singapore--Viet Nam,Singapore,Viet Nam,rti,1,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+Netherlands--Sweden#rti,Netherlands--Sweden,Netherlands,Sweden,rti,1,Netherlands,Sweden,Europe,Europe,1,0
+Singapore--Sweden#rti,Singapore--Sweden,Singapore,Sweden,rti,1,Singapore,Sweden,Southeast Asia,Europe,1,1
+Botswana--Germany#tb,Botswana--Germany,Botswana,Germany,tb,1,Botswana,Germany,Africa,Europe,1,0
+Botswana--Singapore#tb,Botswana--Singapore,Botswana,Singapore,tb,1,Botswana,Singapore,Africa,Southeast Asia,1,1
+Botswana--United States#tb,Botswana--United States,Botswana,United States,tb,1,Botswana,United States,Africa,North America,1,0
+Australia--New Zealand#vector_borne,Australia--New Zealand,Australia,New Zealand,vector_borne,1,Australia,New Zealand,Oceania,Oceania,1,0
+China--New Zealand#vector_borne,China--New Zealand,China,New Zealand,vector_borne,1,China,New Zealand,East Asia,Oceania,1,0
+New Zealand--Switzerland#vector_borne,New Zealand--Switzerland,New Zealand,Switzerland,vector_borne,1,New Zealand,Switzerland,Oceania,Europe,1,0
+China--Jordan#amr_hai,China--Jordan,China,Jordan,amr_hai,1,China,Jordan,East Asia,Middle East,1,0
+Jordan--Singapore#amr_hai,Jordan--Singapore,Jordan,Singapore,amr_hai,1,Jordan,Singapore,Middle East,Southeast Asia,1,1
+Jordan--United Kingdom#amr_hai,Jordan--United Kingdom,Jordan,United Kingdom,amr_hai,1,Jordan,United Kingdom,Middle East,Europe,1,0
+Mongolia--Singapore#vector_borne,Mongolia--Singapore,Mongolia,Singapore,vector_borne,1,Mongolia,Singapore,East Asia,Southeast Asia,1,1
+Mongolia--United States#vector_borne,Mongolia--United States,Mongolia,United States,vector_borne,1,Mongolia,United States,East Asia,North America,1,0
+Australia--Hong Kong SAR#sti,Australia--Hong Kong SAR,Australia,Hong Kong SAR,sti,1,Australia,Hong Kong SAR,Oceania,East Asia,1,0
+Australia--Indonesia#sti,Australia--Indonesia,Australia,Indonesia,sti,1,Australia,Indonesia,Oceania,Southeast Asia,1,0
+Australia--Philippines#sti,Australia--Philippines,Australia,Philippines,sti,1,Australia,Philippines,Oceania,Southeast Asia,1,0
+Cambodia--China#sti,Cambodia--China,Cambodia,China,sti,1,Cambodia,China,Southeast Asia,East Asia,1,0
+Cambodia--Hong Kong SAR#sti,Cambodia--Hong Kong SAR,Cambodia,Hong Kong SAR,sti,1,Cambodia,Hong Kong SAR,Southeast Asia,East Asia,1,0
+Cambodia--India#sti,Cambodia--India,Cambodia,India,sti,1,Cambodia,India,Southeast Asia,South Asia,1,0
+Cambodia--Indonesia#sti,Cambodia--Indonesia,Cambodia,Indonesia,sti,1,Cambodia,Indonesia,Southeast Asia,Southeast Asia,1,0
+Cambodia--Malaysia#sti,Cambodia--Malaysia,Cambodia,Malaysia,sti,1,Cambodia,Malaysia,Southeast Asia,Southeast Asia,1,0
+Cambodia--Philippines#sti,Cambodia--Philippines,Cambodia,Philippines,sti,1,Cambodia,Philippines,Southeast Asia,Southeast Asia,1,0
+Cambodia--Republic of Korea#sti,Cambodia--Republic of Korea,Cambodia,Republic of Korea,sti,1,Cambodia,Republic of Korea,Southeast Asia,East Asia,1,0
+Cambodia--Taiwan#sti,Cambodia--Taiwan,Cambodia,Taiwan,sti,1,Cambodia,Taiwan,Southeast Asia,East Asia,1,0
+Cambodia--Thailand#sti,Cambodia--Thailand,Cambodia,Thailand,sti,1,Cambodia,Thailand,Southeast Asia,Southeast Asia,1,0
+Cambodia--Viet Nam#sti,Cambodia--Viet Nam,Cambodia,Viet Nam,sti,1,Cambodia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+China--India#sti,China--India,China,India,sti,1,China,India,East Asia,South Asia,1,0
+China--Indonesia#sti,China--Indonesia,China,Indonesia,sti,1,China,Indonesia,East Asia,Southeast Asia,1,0
+China--Japan#sti,China--Japan,China,Japan,sti,1,China,Japan,East Asia,East Asia,1,0
+China--Philippines#sti,China--Philippines,China,Philippines,sti,1,China,Philippines,East Asia,Southeast Asia,1,0
+China--Republic of Korea#sti,China--Republic of Korea,China,Republic of Korea,sti,1,China,Republic of Korea,East Asia,East Asia,1,0
+Hong Kong SAR--India#sti,Hong Kong SAR--India,Hong Kong SAR,India,sti,1,Hong Kong SAR,India,East Asia,South Asia,1,0
+Hong Kong SAR--Indonesia#sti,Hong Kong SAR--Indonesia,Hong Kong SAR,Indonesia,sti,1,Hong Kong SAR,Indonesia,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Japan#sti,Hong Kong SAR--Japan,Hong Kong SAR,Japan,sti,1,Hong Kong SAR,Japan,East Asia,East Asia,1,0
+Hong Kong SAR--Philippines#sti,Hong Kong SAR--Philippines,Hong Kong SAR,Philippines,sti,1,Hong Kong SAR,Philippines,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Thailand#sti,Hong Kong SAR--Thailand,Hong Kong SAR,Thailand,sti,1,Hong Kong SAR,Thailand,East Asia,Southeast Asia,1,0
+Hong Kong SAR--Viet Nam#sti,Hong Kong SAR--Viet Nam,Hong Kong SAR,Viet Nam,sti,1,Hong Kong SAR,Viet Nam,East Asia,Southeast Asia,1,0
+India--Indonesia#sti,India--Indonesia,India,Indonesia,sti,1,India,Indonesia,South Asia,Southeast Asia,1,0
+India--Philippines#sti,India--Philippines,India,Philippines,sti,1,India,Philippines,South Asia,Southeast Asia,1,0
+Indonesia--Japan#sti,Indonesia--Japan,Indonesia,Japan,sti,1,Indonesia,Japan,Southeast Asia,East Asia,1,0
+Indonesia--Malaysia#sti,Indonesia--Malaysia,Indonesia,Malaysia,sti,1,Indonesia,Malaysia,Southeast Asia,Southeast Asia,1,0
+Indonesia--Philippines#sti,Indonesia--Philippines,Indonesia,Philippines,sti,1,Indonesia,Philippines,Southeast Asia,Southeast Asia,1,0
+Indonesia--Republic of Korea#sti,Indonesia--Republic of Korea,Indonesia,Republic of Korea,sti,1,Indonesia,Republic of Korea,Southeast Asia,East Asia,1,0
+Indonesia--Singapore#sti,Indonesia--Singapore,Indonesia,Singapore,sti,1,Indonesia,Singapore,Southeast Asia,Southeast Asia,1,1
+Indonesia--Taiwan#sti,Indonesia--Taiwan,Indonesia,Taiwan,sti,1,Indonesia,Taiwan,Southeast Asia,East Asia,1,0
+Indonesia--Thailand#sti,Indonesia--Thailand,Indonesia,Thailand,sti,1,Indonesia,Thailand,Southeast Asia,Southeast Asia,1,0
+Indonesia--Viet Nam#sti,Indonesia--Viet Nam,Indonesia,Viet Nam,sti,1,Indonesia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Japan--Philippines#sti,Japan--Philippines,Japan,Philippines,sti,1,Japan,Philippines,East Asia,Southeast Asia,1,0
+Malaysia--Philippines#sti,Malaysia--Philippines,Malaysia,Philippines,sti,1,Malaysia,Philippines,Southeast Asia,Southeast Asia,1,0
+Philippines--Republic of Korea#sti,Philippines--Republic of Korea,Philippines,Republic of Korea,sti,1,Philippines,Republic of Korea,Southeast Asia,East Asia,1,0
+Philippines--Singapore#sti,Philippines--Singapore,Philippines,Singapore,sti,1,Philippines,Singapore,Southeast Asia,Southeast Asia,1,1
+Philippines--Taiwan#sti,Philippines--Taiwan,Philippines,Taiwan,sti,1,Philippines,Taiwan,Southeast Asia,East Asia,1,0
+Philippines--Thailand#sti,Philippines--Thailand,Philippines,Thailand,sti,1,Philippines,Thailand,Southeast Asia,Southeast Asia,1,0
+Philippines--Viet Nam#sti,Philippines--Viet Nam,Philippines,Viet Nam,sti,1,Philippines,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--Singapore#rti,Brunei Darussalam--Singapore,Brunei Darussalam,Singapore,rti,1,Brunei Darussalam,Singapore,Southeast Asia,Southeast Asia,1,1
+Japan--Nepal#vector_borne,Japan--Nepal,Japan,Nepal,vector_borne,1,Japan,Nepal,East Asia,South Asia,1,0
+Japan--Viet Nam#vector_borne,Japan--Viet Nam,Japan,Viet Nam,vector_borne,1,Japan,Viet Nam,East Asia,Southeast Asia,1,0
+Malaysia--Nepal#vector_borne,Malaysia--Nepal,Malaysia,Nepal,vector_borne,1,Malaysia,Nepal,Southeast Asia,South Asia,1,0
+Malaysia--Viet Nam#vector_borne,Malaysia--Viet Nam,Malaysia,Viet Nam,vector_borne,1,Malaysia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Nepal--Singapore#vector_borne,Nepal--Singapore,Nepal,Singapore,vector_borne,1,Nepal,Singapore,South Asia,Southeast Asia,1,1
+Nepal--United Kingdom#vector_borne,Nepal--United Kingdom,Nepal,United Kingdom,vector_borne,1,Nepal,United Kingdom,South Asia,Europe,1,0
+Nepal--Viet Nam#vector_borne,Nepal--Viet Nam,Nepal,Viet Nam,vector_borne,1,Nepal,Viet Nam,South Asia,Southeast Asia,1,0
+Iraq--Singapore#rti,Iraq--Singapore,Iraq,Singapore,rti,1,Iraq,Singapore,Middle East,Southeast Asia,1,1
+Iraq--United Kingdom#rti,Iraq--United Kingdom,Iraq,United Kingdom,rti,1,Iraq,United Kingdom,Middle East,Europe,1,0
+Belgium--Republic of Korea#rti,Belgium--Republic of Korea,Belgium,Republic of Korea,rti,1,Belgium,Republic of Korea,Europe,East Asia,1,0
+Belgium--Switzerland#rti,Belgium--Switzerland,Belgium,Switzerland,rti,1,Belgium,Switzerland,Europe,Europe,1,0
+Republic of Korea--Switzerland#rti,Republic of Korea--Switzerland,Republic of Korea,Switzerland,rti,1,Republic of Korea,Switzerland,East Asia,Europe,1,0
+Republic of Korea--United Kingdom#rti,Republic of Korea--United Kingdom,Republic of Korea,United Kingdom,rti,1,Republic of Korea,United Kingdom,East Asia,Europe,1,0
+Japan--Republic of Korea#other_id,Japan--Republic of Korea,Japan,Republic of Korea,other_id,1,Japan,Republic of Korea,East Asia,East Asia,1,0
+Japan--Singapore#other_id,Japan--Singapore,Japan,Singapore,other_id,1,Japan,Singapore,East Asia,Southeast Asia,1,1
+Japan--United Kingdom#other_id,Japan--United Kingdom,Japan,United Kingdom,other_id,1,Japan,United Kingdom,East Asia,Europe,1,0
+Japan--United States#other_id,Japan--United States,Japan,United States,other_id,1,Japan,United States,East Asia,North America,1,0
+Republic of Korea--United Kingdom#other_id,Republic of Korea--United Kingdom,Republic of Korea,United Kingdom,other_id,1,Republic of Korea,United Kingdom,East Asia,Europe,1,0
+Republic of Korea--United States#other_id,Republic of Korea--United States,Republic of Korea,United States,other_id,1,Republic of Korea,United States,East Asia,North America,1,0
+Hong Kong SAR--Republic of Korea#rti,Hong Kong SAR--Republic of Korea,Hong Kong SAR,Republic of Korea,rti,1,Hong Kong SAR,Republic of Korea,East Asia,East Asia,1,0
+Hong Kong SAR--Thailand#rti,Hong Kong SAR--Thailand,Hong Kong SAR,Thailand,rti,1,Hong Kong SAR,Thailand,East Asia,Southeast Asia,1,0
+Republic of Korea--Thailand#rti,Republic of Korea--Thailand,Republic of Korea,Thailand,rti,1,Republic of Korea,Thailand,East Asia,Southeast Asia,1,0
+Republic of Korea--United States#rti,Republic of Korea--United States,Republic of Korea,United States,rti,1,Republic of Korea,United States,East Asia,North America,1,0
+Malaysia--Republic of Korea#amr_hai,Malaysia--Republic of Korea,Malaysia,Republic of Korea,amr_hai,1,Malaysia,Republic of Korea,Southeast Asia,East Asia,1,0
+Canada--Senegal#sti,Canada--Senegal,Canada,Senegal,sti,1,Canada,Senegal,North America,Africa,1,0
+Canada--Spain#sti,Canada--Spain,Canada,Spain,sti,1,Canada,Spain,North America,Europe,1,0
+Canada--United States#sti,Canada--United States,Canada,United States,sti,1,Canada,United States,North America,North America,1,0
+Senegal--Singapore#sti,Senegal--Singapore,Senegal,Singapore,sti,1,Senegal,Singapore,Africa,Southeast Asia,1,1
+Senegal--Spain#sti,Senegal--Spain,Senegal,Spain,sti,1,Senegal,Spain,Africa,Europe,1,0
+Senegal--United States#sti,Senegal--United States,Senegal,United States,sti,1,Senegal,United States,Africa,North America,1,0
+France--India#vector_borne,France--India,France,India,vector_borne,1,France,India,Europe,South Asia,1,0
+Bangladesh--Brunei Darussalam#amr_hai,Bangladesh--Brunei Darussalam,Bangladesh,Brunei Darussalam,amr_hai,1,Bangladesh,Brunei Darussalam,South Asia,Southeast Asia,1,0
+Bangladesh--Cambodia#amr_hai,Bangladesh--Cambodia,Bangladesh,Cambodia,amr_hai,1,Bangladesh,Cambodia,South Asia,Southeast Asia,1,0
+Bangladesh--China#amr_hai,Bangladesh--China,Bangladesh,China,amr_hai,1,Bangladesh,China,South Asia,East Asia,1,0
+Bangladesh--India#amr_hai,Bangladesh--India,Bangladesh,India,amr_hai,1,Bangladesh,India,South Asia,South Asia,1,0
+Bangladesh--Indonesia#amr_hai,Bangladesh--Indonesia,Bangladesh,Indonesia,amr_hai,1,Bangladesh,Indonesia,South Asia,Southeast Asia,1,0
+Bangladesh--Japan#amr_hai,Bangladesh--Japan,Bangladesh,Japan,amr_hai,1,Bangladesh,Japan,South Asia,East Asia,1,0
+Bangladesh--Malaysia#amr_hai,Bangladesh--Malaysia,Bangladesh,Malaysia,amr_hai,1,Bangladesh,Malaysia,South Asia,Southeast Asia,1,0
+Bangladesh--Mongolia#amr_hai,Bangladesh--Mongolia,Bangladesh,Mongolia,amr_hai,1,Bangladesh,Mongolia,South Asia,East Asia,1,0
+Bangladesh--Nepal#amr_hai,Bangladesh--Nepal,Bangladesh,Nepal,amr_hai,1,Bangladesh,Nepal,South Asia,South Asia,1,0
+Bangladesh--Pakistan#amr_hai,Bangladesh--Pakistan,Bangladesh,Pakistan,amr_hai,1,Bangladesh,Pakistan,South Asia,South Asia,1,0
+Bangladesh--Philippines#amr_hai,Bangladesh--Philippines,Bangladesh,Philippines,amr_hai,1,Bangladesh,Philippines,South Asia,Southeast Asia,1,0
+Bangladesh--Singapore#amr_hai,Bangladesh--Singapore,Bangladesh,Singapore,amr_hai,1,Bangladesh,Singapore,South Asia,Southeast Asia,1,1
+Bangladesh--Sri Lanka#amr_hai,Bangladesh--Sri Lanka,Bangladesh,Sri Lanka,amr_hai,1,Bangladesh,Sri Lanka,South Asia,South Asia,1,0
+Bangladesh--Taiwan#amr_hai,Bangladesh--Taiwan,Bangladesh,Taiwan,amr_hai,1,Bangladesh,Taiwan,South Asia,East Asia,1,0
+Bangladesh--Thailand#amr_hai,Bangladesh--Thailand,Bangladesh,Thailand,amr_hai,1,Bangladesh,Thailand,South Asia,Southeast Asia,1,0
+Bangladesh--Timor-Leste#amr_hai,Bangladesh--Timor-Leste,Bangladesh,Timor-Leste,amr_hai,1,Bangladesh,Timor-Leste,South Asia,Southeast Asia,1,0
+Bangladesh--United Kingdom#amr_hai,Bangladesh--United Kingdom,Bangladesh,United Kingdom,amr_hai,1,Bangladesh,United Kingdom,South Asia,Europe,1,0
+Bangladesh--Viet Nam#amr_hai,Bangladesh--Viet Nam,Bangladesh,Viet Nam,amr_hai,1,Bangladesh,Viet Nam,South Asia,Southeast Asia,1,0
+Brunei Darussalam--Cambodia#amr_hai,Brunei Darussalam--Cambodia,Brunei Darussalam,Cambodia,amr_hai,1,Brunei Darussalam,Cambodia,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--China#amr_hai,Brunei Darussalam--China,Brunei Darussalam,China,amr_hai,1,Brunei Darussalam,China,Southeast Asia,East Asia,1,0
+Brunei Darussalam--India#amr_hai,Brunei Darussalam--India,Brunei Darussalam,India,amr_hai,1,Brunei Darussalam,India,Southeast Asia,South Asia,1,0
+Brunei Darussalam--Indonesia#amr_hai,Brunei Darussalam--Indonesia,Brunei Darussalam,Indonesia,amr_hai,1,Brunei Darussalam,Indonesia,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--Japan#amr_hai,Brunei Darussalam--Japan,Brunei Darussalam,Japan,amr_hai,1,Brunei Darussalam,Japan,Southeast Asia,East Asia,1,0
+Brunei Darussalam--Malaysia#amr_hai,Brunei Darussalam--Malaysia,Brunei Darussalam,Malaysia,amr_hai,1,Brunei Darussalam,Malaysia,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--Mongolia#amr_hai,Brunei Darussalam--Mongolia,Brunei Darussalam,Mongolia,amr_hai,1,Brunei Darussalam,Mongolia,Southeast Asia,East Asia,1,0
+Brunei Darussalam--Nepal#amr_hai,Brunei Darussalam--Nepal,Brunei Darussalam,Nepal,amr_hai,1,Brunei Darussalam,Nepal,Southeast Asia,South Asia,1,0
+Brunei Darussalam--Pakistan#amr_hai,Brunei Darussalam--Pakistan,Brunei Darussalam,Pakistan,amr_hai,1,Brunei Darussalam,Pakistan,Southeast Asia,South Asia,1,0
+Brunei Darussalam--Philippines#amr_hai,Brunei Darussalam--Philippines,Brunei Darussalam,Philippines,amr_hai,1,Brunei Darussalam,Philippines,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--Singapore#amr_hai,Brunei Darussalam--Singapore,Brunei Darussalam,Singapore,amr_hai,1,Brunei Darussalam,Singapore,Southeast Asia,Southeast Asia,1,1
+Brunei Darussalam--Sri Lanka#amr_hai,Brunei Darussalam--Sri Lanka,Brunei Darussalam,Sri Lanka,amr_hai,1,Brunei Darussalam,Sri Lanka,Southeast Asia,South Asia,1,0
+Brunei Darussalam--Taiwan#amr_hai,Brunei Darussalam--Taiwan,Brunei Darussalam,Taiwan,amr_hai,1,Brunei Darussalam,Taiwan,Southeast Asia,East Asia,1,0
+Brunei Darussalam--Thailand#amr_hai,Brunei Darussalam--Thailand,Brunei Darussalam,Thailand,amr_hai,1,Brunei Darussalam,Thailand,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--Timor-Leste#amr_hai,Brunei Darussalam--Timor-Leste,Brunei Darussalam,Timor-Leste,amr_hai,1,Brunei Darussalam,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--United Kingdom#amr_hai,Brunei Darussalam--United Kingdom,Brunei Darussalam,United Kingdom,amr_hai,1,Brunei Darussalam,United Kingdom,Southeast Asia,Europe,1,0
+Brunei Darussalam--Viet Nam#amr_hai,Brunei Darussalam--Viet Nam,Brunei Darussalam,Viet Nam,amr_hai,1,Brunei Darussalam,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Cambodia--China#amr_hai,Cambodia--China,Cambodia,China,amr_hai,1,Cambodia,China,Southeast Asia,East Asia,1,0
+Cambodia--India#amr_hai,Cambodia--India,Cambodia,India,amr_hai,1,Cambodia,India,Southeast Asia,South Asia,1,0
+Cambodia--Indonesia#amr_hai,Cambodia--Indonesia,Cambodia,Indonesia,amr_hai,1,Cambodia,Indonesia,Southeast Asia,Southeast Asia,1,0
+Cambodia--Japan#amr_hai,Cambodia--Japan,Cambodia,Japan,amr_hai,1,Cambodia,Japan,Southeast Asia,East Asia,1,0
+Cambodia--Malaysia#amr_hai,Cambodia--Malaysia,Cambodia,Malaysia,amr_hai,1,Cambodia,Malaysia,Southeast Asia,Southeast Asia,1,0
+Cambodia--Mongolia#amr_hai,Cambodia--Mongolia,Cambodia,Mongolia,amr_hai,1,Cambodia,Mongolia,Southeast Asia,East Asia,1,0
+Cambodia--Nepal#amr_hai,Cambodia--Nepal,Cambodia,Nepal,amr_hai,1,Cambodia,Nepal,Southeast Asia,South Asia,1,0
+Cambodia--Pakistan#amr_hai,Cambodia--Pakistan,Cambodia,Pakistan,amr_hai,1,Cambodia,Pakistan,Southeast Asia,South Asia,1,0
+Cambodia--Philippines#amr_hai,Cambodia--Philippines,Cambodia,Philippines,amr_hai,1,Cambodia,Philippines,Southeast Asia,Southeast Asia,1,0
+Cambodia--Sri Lanka#amr_hai,Cambodia--Sri Lanka,Cambodia,Sri Lanka,amr_hai,1,Cambodia,Sri Lanka,Southeast Asia,South Asia,1,0
+Cambodia--Taiwan#amr_hai,Cambodia--Taiwan,Cambodia,Taiwan,amr_hai,1,Cambodia,Taiwan,Southeast Asia,East Asia,1,0
+Cambodia--Timor-Leste#amr_hai,Cambodia--Timor-Leste,Cambodia,Timor-Leste,amr_hai,1,Cambodia,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+China--India#amr_hai,China--India,China,India,amr_hai,1,China,India,East Asia,South Asia,1,0
+China--Indonesia#amr_hai,China--Indonesia,China,Indonesia,amr_hai,1,China,Indonesia,East Asia,Southeast Asia,1,0
+China--Japan#amr_hai,China--Japan,China,Japan,amr_hai,1,China,Japan,East Asia,East Asia,1,0
+China--Mongolia#amr_hai,China--Mongolia,China,Mongolia,amr_hai,1,China,Mongolia,East Asia,East Asia,1,0
+China--Nepal#amr_hai,China--Nepal,China,Nepal,amr_hai,1,China,Nepal,East Asia,South Asia,1,0
+China--Philippines#amr_hai,China--Philippines,China,Philippines,amr_hai,1,China,Philippines,East Asia,Southeast Asia,1,0
+China--Sri Lanka#amr_hai,China--Sri Lanka,China,Sri Lanka,amr_hai,1,China,Sri Lanka,East Asia,South Asia,1,0
+China--Taiwan#amr_hai,China--Taiwan,China,Taiwan,amr_hai,1,China,Taiwan,East Asia,East Asia,1,0
+China--Thailand#amr_hai,China--Thailand,China,Thailand,amr_hai,1,China,Thailand,East Asia,Southeast Asia,1,0
+China--Timor-Leste#amr_hai,China--Timor-Leste,China,Timor-Leste,amr_hai,1,China,Timor-Leste,East Asia,Southeast Asia,1,0
+China--Viet Nam#amr_hai,China--Viet Nam,China,Viet Nam,amr_hai,1,China,Viet Nam,East Asia,Southeast Asia,1,0
+India--Indonesia#amr_hai,India--Indonesia,India,Indonesia,amr_hai,1,India,Indonesia,South Asia,Southeast Asia,1,0
+India--Malaysia#amr_hai,India--Malaysia,India,Malaysia,amr_hai,1,India,Malaysia,South Asia,Southeast Asia,1,0
+India--Mongolia#amr_hai,India--Mongolia,India,Mongolia,amr_hai,1,India,Mongolia,South Asia,East Asia,1,0
+India--Nepal#amr_hai,India--Nepal,India,Nepal,amr_hai,1,India,Nepal,South Asia,South Asia,1,0
+India--Pakistan#amr_hai,India--Pakistan,India,Pakistan,amr_hai,1,India,Pakistan,South Asia,South Asia,1,0
+India--Philippines#amr_hai,India--Philippines,India,Philippines,amr_hai,1,India,Philippines,South Asia,Southeast Asia,1,0
+India--Sri Lanka#amr_hai,India--Sri Lanka,India,Sri Lanka,amr_hai,1,India,Sri Lanka,South Asia,South Asia,1,0
+India--Timor-Leste#amr_hai,India--Timor-Leste,India,Timor-Leste,amr_hai,1,India,Timor-Leste,South Asia,Southeast Asia,1,0
+India--Viet Nam#amr_hai,India--Viet Nam,India,Viet Nam,amr_hai,1,India,Viet Nam,South Asia,Southeast Asia,1,0
+Indonesia--Japan#amr_hai,Indonesia--Japan,Indonesia,Japan,amr_hai,1,Indonesia,Japan,Southeast Asia,East Asia,1,0
+Indonesia--Malaysia#amr_hai,Indonesia--Malaysia,Indonesia,Malaysia,amr_hai,1,Indonesia,Malaysia,Southeast Asia,Southeast Asia,1,0
+Indonesia--Mongolia#amr_hai,Indonesia--Mongolia,Indonesia,Mongolia,amr_hai,1,Indonesia,Mongolia,Southeast Asia,East Asia,1,0
+Indonesia--Nepal#amr_hai,Indonesia--Nepal,Indonesia,Nepal,amr_hai,1,Indonesia,Nepal,Southeast Asia,South Asia,1,0
+Indonesia--Pakistan#amr_hai,Indonesia--Pakistan,Indonesia,Pakistan,amr_hai,1,Indonesia,Pakistan,Southeast Asia,South Asia,1,0
+Indonesia--Philippines#amr_hai,Indonesia--Philippines,Indonesia,Philippines,amr_hai,1,Indonesia,Philippines,Southeast Asia,Southeast Asia,1,0
+Indonesia--Singapore#amr_hai,Indonesia--Singapore,Indonesia,Singapore,amr_hai,1,Indonesia,Singapore,Southeast Asia,Southeast Asia,1,1
+Indonesia--Sri Lanka#amr_hai,Indonesia--Sri Lanka,Indonesia,Sri Lanka,amr_hai,1,Indonesia,Sri Lanka,Southeast Asia,South Asia,1,0
+Indonesia--Taiwan#amr_hai,Indonesia--Taiwan,Indonesia,Taiwan,amr_hai,1,Indonesia,Taiwan,Southeast Asia,East Asia,1,0
+Indonesia--Thailand#amr_hai,Indonesia--Thailand,Indonesia,Thailand,amr_hai,1,Indonesia,Thailand,Southeast Asia,Southeast Asia,1,0
+Indonesia--Timor-Leste#amr_hai,Indonesia--Timor-Leste,Indonesia,Timor-Leste,amr_hai,1,Indonesia,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+Indonesia--United Kingdom#amr_hai,Indonesia--United Kingdom,Indonesia,United Kingdom,amr_hai,1,Indonesia,United Kingdom,Southeast Asia,Europe,1,0
+Indonesia--Viet Nam#amr_hai,Indonesia--Viet Nam,Indonesia,Viet Nam,amr_hai,1,Indonesia,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Japan--Malaysia#amr_hai,Japan--Malaysia,Japan,Malaysia,amr_hai,1,Japan,Malaysia,East Asia,Southeast Asia,1,0
+Japan--Mongolia#amr_hai,Japan--Mongolia,Japan,Mongolia,amr_hai,1,Japan,Mongolia,East Asia,East Asia,1,0
+Japan--Nepal#amr_hai,Japan--Nepal,Japan,Nepal,amr_hai,1,Japan,Nepal,East Asia,South Asia,1,0
+Japan--Pakistan#amr_hai,Japan--Pakistan,Japan,Pakistan,amr_hai,1,Japan,Pakistan,East Asia,South Asia,1,0
+Japan--Philippines#amr_hai,Japan--Philippines,Japan,Philippines,amr_hai,1,Japan,Philippines,East Asia,Southeast Asia,1,0
+Japan--Sri Lanka#amr_hai,Japan--Sri Lanka,Japan,Sri Lanka,amr_hai,1,Japan,Sri Lanka,East Asia,South Asia,1,0
+Japan--Timor-Leste#amr_hai,Japan--Timor-Leste,Japan,Timor-Leste,amr_hai,1,Japan,Timor-Leste,East Asia,Southeast Asia,1,0
+Japan--Viet Nam#amr_hai,Japan--Viet Nam,Japan,Viet Nam,amr_hai,1,Japan,Viet Nam,East Asia,Southeast Asia,1,0
+Malaysia--Mongolia#amr_hai,Malaysia--Mongolia,Malaysia,Mongolia,amr_hai,1,Malaysia,Mongolia,Southeast Asia,East Asia,1,0
+Malaysia--Nepal#amr_hai,Malaysia--Nepal,Malaysia,Nepal,amr_hai,1,Malaysia,Nepal,Southeast Asia,South Asia,1,0
+Malaysia--Pakistan#amr_hai,Malaysia--Pakistan,Malaysia,Pakistan,amr_hai,1,Malaysia,Pakistan,Southeast Asia,South Asia,1,0
+Malaysia--Philippines#amr_hai,Malaysia--Philippines,Malaysia,Philippines,amr_hai,1,Malaysia,Philippines,Southeast Asia,Southeast Asia,1,0
+Malaysia--Sri Lanka#amr_hai,Malaysia--Sri Lanka,Malaysia,Sri Lanka,amr_hai,1,Malaysia,Sri Lanka,Southeast Asia,South Asia,1,0
+Malaysia--Taiwan#amr_hai,Malaysia--Taiwan,Malaysia,Taiwan,amr_hai,1,Malaysia,Taiwan,Southeast Asia,East Asia,1,0
+Malaysia--Timor-Leste#amr_hai,Malaysia--Timor-Leste,Malaysia,Timor-Leste,amr_hai,1,Malaysia,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+Mongolia--Nepal#amr_hai,Mongolia--Nepal,Mongolia,Nepal,amr_hai,1,Mongolia,Nepal,East Asia,South Asia,1,0
+Mongolia--Pakistan#amr_hai,Mongolia--Pakistan,Mongolia,Pakistan,amr_hai,1,Mongolia,Pakistan,East Asia,South Asia,1,0
+Mongolia--Philippines#amr_hai,Mongolia--Philippines,Mongolia,Philippines,amr_hai,1,Mongolia,Philippines,East Asia,Southeast Asia,1,0
+Mongolia--Singapore#amr_hai,Mongolia--Singapore,Mongolia,Singapore,amr_hai,1,Mongolia,Singapore,East Asia,Southeast Asia,1,1
+Mongolia--Sri Lanka#amr_hai,Mongolia--Sri Lanka,Mongolia,Sri Lanka,amr_hai,1,Mongolia,Sri Lanka,East Asia,South Asia,1,0
+Mongolia--Taiwan#amr_hai,Mongolia--Taiwan,Mongolia,Taiwan,amr_hai,1,Mongolia,Taiwan,East Asia,East Asia,1,0
+Mongolia--Thailand#amr_hai,Mongolia--Thailand,Mongolia,Thailand,amr_hai,1,Mongolia,Thailand,East Asia,Southeast Asia,1,0
+Mongolia--Timor-Leste#amr_hai,Mongolia--Timor-Leste,Mongolia,Timor-Leste,amr_hai,1,Mongolia,Timor-Leste,East Asia,Southeast Asia,1,0
+Mongolia--United Kingdom#amr_hai,Mongolia--United Kingdom,Mongolia,United Kingdom,amr_hai,1,Mongolia,United Kingdom,East Asia,Europe,1,0
+Mongolia--Viet Nam#amr_hai,Mongolia--Viet Nam,Mongolia,Viet Nam,amr_hai,1,Mongolia,Viet Nam,East Asia,Southeast Asia,1,0
+Nepal--Pakistan#amr_hai,Nepal--Pakistan,Nepal,Pakistan,amr_hai,1,Nepal,Pakistan,South Asia,South Asia,1,0
+Nepal--Philippines#amr_hai,Nepal--Philippines,Nepal,Philippines,amr_hai,1,Nepal,Philippines,South Asia,Southeast Asia,1,0
+Nepal--Singapore#amr_hai,Nepal--Singapore,Nepal,Singapore,amr_hai,1,Nepal,Singapore,South Asia,Southeast Asia,1,1
+Nepal--Sri Lanka#amr_hai,Nepal--Sri Lanka,Nepal,Sri Lanka,amr_hai,1,Nepal,Sri Lanka,South Asia,South Asia,1,0
+Nepal--Taiwan#amr_hai,Nepal--Taiwan,Nepal,Taiwan,amr_hai,1,Nepal,Taiwan,South Asia,East Asia,1,0
+Nepal--Thailand#amr_hai,Nepal--Thailand,Nepal,Thailand,amr_hai,1,Nepal,Thailand,South Asia,Southeast Asia,1,0
+Nepal--Timor-Leste#amr_hai,Nepal--Timor-Leste,Nepal,Timor-Leste,amr_hai,1,Nepal,Timor-Leste,South Asia,Southeast Asia,1,0
+Nepal--United Kingdom#amr_hai,Nepal--United Kingdom,Nepal,United Kingdom,amr_hai,1,Nepal,United Kingdom,South Asia,Europe,1,0
+Nepal--Viet Nam#amr_hai,Nepal--Viet Nam,Nepal,Viet Nam,amr_hai,1,Nepal,Viet Nam,South Asia,Southeast Asia,1,0
+Pakistan--Philippines#amr_hai,Pakistan--Philippines,Pakistan,Philippines,amr_hai,1,Pakistan,Philippines,South Asia,Southeast Asia,1,0
+Pakistan--Sri Lanka#amr_hai,Pakistan--Sri Lanka,Pakistan,Sri Lanka,amr_hai,1,Pakistan,Sri Lanka,South Asia,South Asia,1,0
+Pakistan--Taiwan#amr_hai,Pakistan--Taiwan,Pakistan,Taiwan,amr_hai,1,Pakistan,Taiwan,South Asia,East Asia,1,0
+Pakistan--Thailand#amr_hai,Pakistan--Thailand,Pakistan,Thailand,amr_hai,1,Pakistan,Thailand,South Asia,Southeast Asia,1,0
+Pakistan--Timor-Leste#amr_hai,Pakistan--Timor-Leste,Pakistan,Timor-Leste,amr_hai,1,Pakistan,Timor-Leste,South Asia,Southeast Asia,1,0
+Pakistan--United Kingdom#amr_hai,Pakistan--United Kingdom,Pakistan,United Kingdom,amr_hai,1,Pakistan,United Kingdom,South Asia,Europe,1,0
+Pakistan--Viet Nam#amr_hai,Pakistan--Viet Nam,Pakistan,Viet Nam,amr_hai,1,Pakistan,Viet Nam,South Asia,Southeast Asia,1,0
+Philippines--Sri Lanka#amr_hai,Philippines--Sri Lanka,Philippines,Sri Lanka,amr_hai,1,Philippines,Sri Lanka,Southeast Asia,South Asia,1,0
+Philippines--Taiwan#amr_hai,Philippines--Taiwan,Philippines,Taiwan,amr_hai,1,Philippines,Taiwan,Southeast Asia,East Asia,1,0
+Philippines--Timor-Leste#amr_hai,Philippines--Timor-Leste,Philippines,Timor-Leste,amr_hai,1,Philippines,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+Philippines--Viet Nam#amr_hai,Philippines--Viet Nam,Philippines,Viet Nam,amr_hai,1,Philippines,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Singapore--Sri Lanka#amr_hai,Singapore--Sri Lanka,Singapore,Sri Lanka,amr_hai,1,Singapore,Sri Lanka,Southeast Asia,South Asia,1,1
+Singapore--Timor-Leste#amr_hai,Singapore--Timor-Leste,Singapore,Timor-Leste,amr_hai,1,Singapore,Timor-Leste,Southeast Asia,Southeast Asia,1,1
+Sri Lanka--Taiwan#amr_hai,Sri Lanka--Taiwan,Sri Lanka,Taiwan,amr_hai,1,Sri Lanka,Taiwan,South Asia,East Asia,1,0
+Sri Lanka--Thailand#amr_hai,Sri Lanka--Thailand,Sri Lanka,Thailand,amr_hai,1,Sri Lanka,Thailand,South Asia,Southeast Asia,1,0
+Sri Lanka--Timor-Leste#amr_hai,Sri Lanka--Timor-Leste,Sri Lanka,Timor-Leste,amr_hai,1,Sri Lanka,Timor-Leste,South Asia,Southeast Asia,1,0
+Sri Lanka--United Kingdom#amr_hai,Sri Lanka--United Kingdom,Sri Lanka,United Kingdom,amr_hai,1,Sri Lanka,United Kingdom,South Asia,Europe,1,0
+Sri Lanka--Viet Nam#amr_hai,Sri Lanka--Viet Nam,Sri Lanka,Viet Nam,amr_hai,1,Sri Lanka,Viet Nam,South Asia,Southeast Asia,1,0
+Taiwan--Timor-Leste#amr_hai,Taiwan--Timor-Leste,Taiwan,Timor-Leste,amr_hai,1,Taiwan,Timor-Leste,East Asia,Southeast Asia,1,0
+Taiwan--United Kingdom#amr_hai,Taiwan--United Kingdom,Taiwan,United Kingdom,amr_hai,1,Taiwan,United Kingdom,East Asia,Europe,1,0
+Taiwan--Viet Nam#amr_hai,Taiwan--Viet Nam,Taiwan,Viet Nam,amr_hai,1,Taiwan,Viet Nam,East Asia,Southeast Asia,1,0
+Thailand--Timor-Leste#amr_hai,Thailand--Timor-Leste,Thailand,Timor-Leste,amr_hai,1,Thailand,Timor-Leste,Southeast Asia,Southeast Asia,1,0
+Timor-Leste--United Kingdom#amr_hai,Timor-Leste--United Kingdom,Timor-Leste,United Kingdom,amr_hai,1,Timor-Leste,United Kingdom,Southeast Asia,Europe,1,0
+Timor-Leste--Viet Nam#amr_hai,Timor-Leste--Viet Nam,Timor-Leste,Viet Nam,amr_hai,1,Timor-Leste,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Democratic Republic of the Congo--Japan#sti,Democratic Republic of the Congo--Japan,Democratic Republic of the Congo,Japan,sti,1,Democratic Republic of the Congo,Japan,Africa,East Asia,1,0
+Democratic Republic of the Congo--Singapore#sti,Democratic Republic of the Congo--Singapore,Democratic Republic of the Congo,Singapore,sti,1,Democratic Republic of the Congo,Singapore,Africa,Southeast Asia,1,1
+Democratic Republic of the Congo--South Africa#sti,Democratic Republic of the Congo--South Africa,Democratic Republic of the Congo,South Africa,sti,1,Democratic Republic of the Congo,South Africa,Africa,Africa,1,0
+Democratic Republic of the Congo--United Kingdom#sti,Democratic Republic of the Congo--United Kingdom,Democratic Republic of the Congo,United Kingdom,sti,1,Democratic Republic of the Congo,United Kingdom,Africa,Europe,1,0
+Democratic Republic of the Congo--United States#sti,Democratic Republic of the Congo--United States,Democratic Republic of the Congo,United States,sti,1,Democratic Republic of the Congo,United States,Africa,North America,1,0
+Japan--South Africa#sti,Japan--South Africa,Japan,South Africa,sti,1,Japan,South Africa,East Asia,Africa,1,0
+South Africa--United States#sti,South Africa--United States,South Africa,United States,sti,1,South Africa,United States,Africa,North America,1,0
+New Zealand--Tanzania#rti,New Zealand--Tanzania,New Zealand,Tanzania,rti,1,New Zealand,Tanzania,Oceania,Africa,1,0
+Singapore--Tanzania#rti,Singapore--Tanzania,Singapore,Tanzania,rti,1,Singapore,Tanzania,Southeast Asia,Africa,1,1
+Tanzania--United States#rti,Tanzania--United States,Tanzania,United States,rti,1,Tanzania,United States,Africa,North America,1,0
+Argentina--Australia#amr_hai,Argentina--Australia,Argentina,Australia,amr_hai,1,Argentina,Australia,Latin America,Oceania,1,0
+Argentina--Chile#amr_hai,Argentina--Chile,Argentina,Chile,amr_hai,1,Argentina,Chile,Latin America,Latin America,1,0
+Argentina--Colombia#amr_hai,Argentina--Colombia,Argentina,Colombia,amr_hai,1,Argentina,Colombia,Latin America,Latin America,1,0
+Argentina--Singapore#amr_hai,Argentina--Singapore,Argentina,Singapore,amr_hai,1,Argentina,Singapore,Latin America,Southeast Asia,1,1
+Argentina--United States#amr_hai,Argentina--United States,Argentina,United States,amr_hai,1,Argentina,United States,Latin America,North America,1,0
+Australia--Chile#amr_hai,Australia--Chile,Australia,Chile,amr_hai,1,Australia,Chile,Oceania,Latin America,1,0
+Australia--Colombia#amr_hai,Australia--Colombia,Australia,Colombia,amr_hai,1,Australia,Colombia,Oceania,Latin America,1,0
+Chile--Colombia#amr_hai,Chile--Colombia,Chile,Colombia,amr_hai,1,Chile,Colombia,Latin America,Latin America,1,0
+Chile--United States#amr_hai,Chile--United States,Chile,United States,amr_hai,1,Chile,United States,Latin America,North America,1,0
+Colombia--Singapore#amr_hai,Colombia--Singapore,Colombia,Singapore,amr_hai,1,Colombia,Singapore,Latin America,Southeast Asia,1,1
+Colombia--United States#amr_hai,Colombia--United States,Colombia,United States,amr_hai,1,Colombia,United States,Latin America,North America,1,0
+China--Germany#amr_hai,China--Germany,China,Germany,amr_hai,1,China,Germany,East Asia,Europe,1,0
+Germany--Malaysia#amr_hai,Germany--Malaysia,Germany,Malaysia,amr_hai,1,Germany,Malaysia,Europe,Southeast Asia,1,0
+Belgium--China#rti,Belgium--China,Belgium,China,rti,1,Belgium,China,Europe,East Asia,1,0
+Bangladesh--Belgium#tb,Bangladesh--Belgium,Bangladesh,Belgium,tb,1,Bangladesh,Belgium,South Asia,Europe,1,0
+Bangladesh--Brazil#tb,Bangladesh--Brazil,Bangladesh,Brazil,tb,1,Bangladesh,Brazil,South Asia,Latin America,1,0
+Bangladesh--China#tb,Bangladesh--China,Bangladesh,China,tb,1,Bangladesh,China,South Asia,East Asia,1,0
+Bangladesh--Denmark#tb,Bangladesh--Denmark,Bangladesh,Denmark,tb,1,Bangladesh,Denmark,South Asia,Europe,1,0
+Bangladesh--India#tb,Bangladesh--India,Bangladesh,India,tb,1,Bangladesh,India,South Asia,South Asia,1,0
+Bangladesh--Italy#tb,Bangladesh--Italy,Bangladesh,Italy,tb,1,Bangladesh,Italy,South Asia,Europe,1,0
+Bangladesh--Mexico#tb,Bangladesh--Mexico,Bangladesh,Mexico,tb,1,Bangladesh,Mexico,South Asia,Latin America,1,0
+Bangladesh--Netherlands#tb,Bangladesh--Netherlands,Bangladesh,Netherlands,tb,1,Bangladesh,Netherlands,South Asia,Europe,1,0
+Bangladesh--Oman#tb,Bangladesh--Oman,Bangladesh,Oman,tb,1,Bangladesh,Oman,South Asia,Middle East,1,0
+Bangladesh--Philippines#tb,Bangladesh--Philippines,Bangladesh,Philippines,tb,1,Bangladesh,Philippines,South Asia,Southeast Asia,1,0
+Bangladesh--Russian Federation#tb,Bangladesh--Russian Federation,Bangladesh,Russian Federation,tb,1,Bangladesh,Russian Federation,South Asia,Europe,1,0
+Bangladesh--Spain#tb,Bangladesh--Spain,Bangladesh,Spain,tb,1,Bangladesh,Spain,South Asia,Europe,1,0
+Belgium--Brazil#tb,Belgium--Brazil,Belgium,Brazil,tb,1,Belgium,Brazil,Europe,Latin America,1,0
+Belgium--Mexico#tb,Belgium--Mexico,Belgium,Mexico,tb,1,Belgium,Mexico,Europe,Latin America,1,0
+Belgium--Oman#tb,Belgium--Oman,Belgium,Oman,tb,1,Belgium,Oman,Europe,Middle East,1,0
+Belgium--Philippines#tb,Belgium--Philippines,Belgium,Philippines,tb,1,Belgium,Philippines,Europe,Southeast Asia,1,0
+Belgium--Russian Federation#tb,Belgium--Russian Federation,Belgium,Russian Federation,tb,1,Belgium,Russian Federation,Europe,Europe,1,0
+Belgium--Spain#tb,Belgium--Spain,Belgium,Spain,tb,1,Belgium,Spain,Europe,Europe,1,0
+Brazil--China#tb,Brazil--China,Brazil,China,tb,1,Brazil,China,Latin America,East Asia,1,0
+Brazil--Denmark#tb,Brazil--Denmark,Brazil,Denmark,tb,1,Brazil,Denmark,Latin America,Europe,1,0
+Brazil--Ethiopia#tb,Brazil--Ethiopia,Brazil,Ethiopia,tb,1,Brazil,Ethiopia,Latin America,Africa,1,0
+Brazil--France#tb,Brazil--France,Brazil,France,tb,1,Brazil,France,Latin America,Europe,1,0
+Brazil--India#tb,Brazil--India,Brazil,India,tb,1,Brazil,India,Latin America,South Asia,1,0
+Brazil--Indonesia#tb,Brazil--Indonesia,Brazil,Indonesia,tb,1,Brazil,Indonesia,Latin America,Southeast Asia,1,0
+Brazil--Italy#tb,Brazil--Italy,Brazil,Italy,tb,1,Brazil,Italy,Latin America,Europe,1,0
+Brazil--Mexico#tb,Brazil--Mexico,Brazil,Mexico,tb,1,Brazil,Mexico,Latin America,Latin America,1,0
+Brazil--Netherlands#tb,Brazil--Netherlands,Brazil,Netherlands,tb,1,Brazil,Netherlands,Latin America,Europe,1,0
+Brazil--Oman#tb,Brazil--Oman,Brazil,Oman,tb,1,Brazil,Oman,Latin America,Middle East,1,0
+Brazil--Pakistan#tb,Brazil--Pakistan,Brazil,Pakistan,tb,1,Brazil,Pakistan,Latin America,South Asia,1,0
+Brazil--Philippines#tb,Brazil--Philippines,Brazil,Philippines,tb,1,Brazil,Philippines,Latin America,Southeast Asia,1,0
+Brazil--Russian Federation#tb,Brazil--Russian Federation,Brazil,Russian Federation,tb,1,Brazil,Russian Federation,Latin America,Europe,1,0
+Brazil--Singapore#tb,Brazil--Singapore,Brazil,Singapore,tb,1,Brazil,Singapore,Latin America,Southeast Asia,1,1
+Brazil--Spain#tb,Brazil--Spain,Brazil,Spain,tb,1,Brazil,Spain,Latin America,Europe,1,0
+Brazil--Switzerland#tb,Brazil--Switzerland,Brazil,Switzerland,tb,1,Brazil,Switzerland,Latin America,Europe,1,0
+Brazil--United Kingdom#tb,Brazil--United Kingdom,Brazil,United Kingdom,tb,1,Brazil,United Kingdom,Latin America,Europe,1,0
+Brazil--United States#tb,Brazil--United States,Brazil,United States,tb,1,Brazil,United States,Latin America,North America,1,0
+China--Ethiopia#tb,China--Ethiopia,China,Ethiopia,tb,1,China,Ethiopia,East Asia,Africa,1,0
+China--Indonesia#tb,China--Indonesia,China,Indonesia,tb,1,China,Indonesia,East Asia,Southeast Asia,1,0
+China--Italy#tb,China--Italy,China,Italy,tb,1,China,Italy,East Asia,Europe,1,0
+China--Mexico#tb,China--Mexico,China,Mexico,tb,1,China,Mexico,East Asia,Latin America,1,0
+China--Oman#tb,China--Oman,China,Oman,tb,1,China,Oman,East Asia,Middle East,1,0
+China--Russian Federation#tb,China--Russian Federation,China,Russian Federation,tb,1,China,Russian Federation,East Asia,Europe,1,0
+China--Spain#tb,China--Spain,China,Spain,tb,1,China,Spain,East Asia,Europe,1,0
+China--Switzerland#tb,China--Switzerland,China,Switzerland,tb,1,China,Switzerland,East Asia,Europe,1,0
+Denmark--Italy#tb,Denmark--Italy,Denmark,Italy,tb,1,Denmark,Italy,Europe,Europe,1,0
+Denmark--Mexico#tb,Denmark--Mexico,Denmark,Mexico,tb,1,Denmark,Mexico,Europe,Latin America,1,0
+Denmark--Oman#tb,Denmark--Oman,Denmark,Oman,tb,1,Denmark,Oman,Europe,Middle East,1,0
+Denmark--Philippines#tb,Denmark--Philippines,Denmark,Philippines,tb,1,Denmark,Philippines,Europe,Southeast Asia,1,0
+Denmark--Russian Federation#tb,Denmark--Russian Federation,Denmark,Russian Federation,tb,1,Denmark,Russian Federation,Europe,Europe,1,0
+Denmark--Spain#tb,Denmark--Spain,Denmark,Spain,tb,1,Denmark,Spain,Europe,Europe,1,0
+Ethiopia--Italy#tb,Ethiopia--Italy,Ethiopia,Italy,tb,1,Ethiopia,Italy,Africa,Europe,1,0
+Ethiopia--Mexico#tb,Ethiopia--Mexico,Ethiopia,Mexico,tb,1,Ethiopia,Mexico,Africa,Latin America,1,0
+Ethiopia--Oman#tb,Ethiopia--Oman,Ethiopia,Oman,tb,1,Ethiopia,Oman,Africa,Middle East,1,0
+Ethiopia--Philippines#tb,Ethiopia--Philippines,Ethiopia,Philippines,tb,1,Ethiopia,Philippines,Africa,Southeast Asia,1,0
+Ethiopia--Russian Federation#tb,Ethiopia--Russian Federation,Ethiopia,Russian Federation,tb,1,Ethiopia,Russian Federation,Africa,Europe,1,0
+Ethiopia--Spain#tb,Ethiopia--Spain,Ethiopia,Spain,tb,1,Ethiopia,Spain,Africa,Europe,1,0
+France--Mexico#tb,France--Mexico,France,Mexico,tb,1,France,Mexico,Europe,Latin America,1,0
+France--Oman#tb,France--Oman,France,Oman,tb,1,France,Oman,Europe,Middle East,1,0
+France--Philippines#tb,France--Philippines,France,Philippines,tb,1,France,Philippines,Europe,Southeast Asia,1,0
+France--Russian Federation#tb,France--Russian Federation,France,Russian Federation,tb,1,France,Russian Federation,Europe,Europe,1,0
+France--Spain#tb,France--Spain,France,Spain,tb,1,France,Spain,Europe,Europe,1,0
+India--Mexico#tb,India--Mexico,India,Mexico,tb,1,India,Mexico,South Asia,Latin America,1,0
+India--Oman#tb,India--Oman,India,Oman,tb,1,India,Oman,South Asia,Middle East,1,0
+India--Russian Federation#tb,India--Russian Federation,India,Russian Federation,tb,1,India,Russian Federation,South Asia,Europe,1,0
+India--Spain#tb,India--Spain,India,Spain,tb,1,India,Spain,South Asia,Europe,1,0
+Indonesia--Mexico#tb,Indonesia--Mexico,Indonesia,Mexico,tb,1,Indonesia,Mexico,Southeast Asia,Latin America,1,0
+Indonesia--Oman#tb,Indonesia--Oman,Indonesia,Oman,tb,1,Indonesia,Oman,Southeast Asia,Middle East,1,0
+Indonesia--Russian Federation#tb,Indonesia--Russian Federation,Indonesia,Russian Federation,tb,1,Indonesia,Russian Federation,Southeast Asia,Europe,1,0
+Indonesia--Spain#tb,Indonesia--Spain,Indonesia,Spain,tb,1,Indonesia,Spain,Southeast Asia,Europe,1,0
+Italy--Mexico#tb,Italy--Mexico,Italy,Mexico,tb,1,Italy,Mexico,Europe,Latin America,1,0
+Italy--Oman#tb,Italy--Oman,Italy,Oman,tb,1,Italy,Oman,Europe,Middle East,1,0
+Italy--Philippines#tb,Italy--Philippines,Italy,Philippines,tb,1,Italy,Philippines,Europe,Southeast Asia,1,0
+Italy--Russian Federation#tb,Italy--Russian Federation,Italy,Russian Federation,tb,1,Italy,Russian Federation,Europe,Europe,1,0
+Italy--Spain#tb,Italy--Spain,Italy,Spain,tb,1,Italy,Spain,Europe,Europe,1,0
+Mexico--Netherlands#tb,Mexico--Netherlands,Mexico,Netherlands,tb,1,Mexico,Netherlands,Latin America,Europe,1,0
+Mexico--Oman#tb,Mexico--Oman,Mexico,Oman,tb,1,Mexico,Oman,Latin America,Middle East,1,0
+Mexico--Pakistan#tb,Mexico--Pakistan,Mexico,Pakistan,tb,1,Mexico,Pakistan,Latin America,South Asia,1,0
+Mexico--Philippines#tb,Mexico--Philippines,Mexico,Philippines,tb,1,Mexico,Philippines,Latin America,Southeast Asia,1,0
+Mexico--Russian Federation#tb,Mexico--Russian Federation,Mexico,Russian Federation,tb,1,Mexico,Russian Federation,Latin America,Europe,1,0
+Mexico--Singapore#tb,Mexico--Singapore,Mexico,Singapore,tb,1,Mexico,Singapore,Latin America,Southeast Asia,1,1
+Mexico--Spain#tb,Mexico--Spain,Mexico,Spain,tb,1,Mexico,Spain,Latin America,Europe,1,0
+Mexico--Switzerland#tb,Mexico--Switzerland,Mexico,Switzerland,tb,1,Mexico,Switzerland,Latin America,Europe,1,0
+Mexico--United Kingdom#tb,Mexico--United Kingdom,Mexico,United Kingdom,tb,1,Mexico,United Kingdom,Latin America,Europe,1,0
+Mexico--United States#tb,Mexico--United States,Mexico,United States,tb,1,Mexico,United States,Latin America,North America,1,0
+Netherlands--Oman#tb,Netherlands--Oman,Netherlands,Oman,tb,1,Netherlands,Oman,Europe,Middle East,1,0
+Netherlands--Pakistan#tb,Netherlands--Pakistan,Netherlands,Pakistan,tb,1,Netherlands,Pakistan,Europe,South Asia,1,0
+Netherlands--Philippines#tb,Netherlands--Philippines,Netherlands,Philippines,tb,1,Netherlands,Philippines,Europe,Southeast Asia,1,0
+Netherlands--Russian Federation#tb,Netherlands--Russian Federation,Netherlands,Russian Federation,tb,1,Netherlands,Russian Federation,Europe,Europe,1,0
+Netherlands--Spain#tb,Netherlands--Spain,Netherlands,Spain,tb,1,Netherlands,Spain,Europe,Europe,1,0
+Oman--Pakistan#tb,Oman--Pakistan,Oman,Pakistan,tb,1,Oman,Pakistan,Middle East,South Asia,1,0
+Oman--Philippines#tb,Oman--Philippines,Oman,Philippines,tb,1,Oman,Philippines,Middle East,Southeast Asia,1,0
+Oman--Russian Federation#tb,Oman--Russian Federation,Oman,Russian Federation,tb,1,Oman,Russian Federation,Middle East,Europe,1,0
+Oman--Singapore#tb,Oman--Singapore,Oman,Singapore,tb,1,Oman,Singapore,Middle East,Southeast Asia,1,1
+Oman--Spain#tb,Oman--Spain,Oman,Spain,tb,1,Oman,Spain,Middle East,Europe,1,0
+Oman--Switzerland#tb,Oman--Switzerland,Oman,Switzerland,tb,1,Oman,Switzerland,Middle East,Europe,1,0
+Oman--United Kingdom#tb,Oman--United Kingdom,Oman,United Kingdom,tb,1,Oman,United Kingdom,Middle East,Europe,1,0
+Oman--United States#tb,Oman--United States,Oman,United States,tb,1,Oman,United States,Middle East,North America,1,0
+Pakistan--Philippines#tb,Pakistan--Philippines,Pakistan,Philippines,tb,1,Pakistan,Philippines,South Asia,Southeast Asia,1,0
+Pakistan--Russian Federation#tb,Pakistan--Russian Federation,Pakistan,Russian Federation,tb,1,Pakistan,Russian Federation,South Asia,Europe,1,0
+Pakistan--Spain#tb,Pakistan--Spain,Pakistan,Spain,tb,1,Pakistan,Spain,South Asia,Europe,1,0
+Philippines--Russian Federation#tb,Philippines--Russian Federation,Philippines,Russian Federation,tb,1,Philippines,Russian Federation,Southeast Asia,Europe,1,0
+Philippines--Spain#tb,Philippines--Spain,Philippines,Spain,tb,1,Philippines,Spain,Southeast Asia,Europe,1,0
+Russian Federation--Singapore#tb,Russian Federation--Singapore,Russian Federation,Singapore,tb,1,Russian Federation,Singapore,Europe,Southeast Asia,1,1
+Russian Federation--Spain#tb,Russian Federation--Spain,Russian Federation,Spain,tb,1,Russian Federation,Spain,Europe,Europe,1,0
+Russian Federation--Switzerland#tb,Russian Federation--Switzerland,Russian Federation,Switzerland,tb,1,Russian Federation,Switzerland,Europe,Europe,1,0
+Russian Federation--United Kingdom#tb,Russian Federation--United Kingdom,Russian Federation,United Kingdom,tb,1,Russian Federation,United Kingdom,Europe,Europe,1,0
+Russian Federation--United States#tb,Russian Federation--United States,Russian Federation,United States,tb,1,Russian Federation,United States,Europe,North America,1,0
+Singapore--Spain#tb,Singapore--Spain,Singapore,Spain,tb,1,Singapore,Spain,Southeast Asia,Europe,1,1
+Spain--Switzerland#tb,Spain--Switzerland,Spain,Switzerland,tb,1,Spain,Switzerland,Europe,Europe,1,0
+Spain--United Kingdom#tb,Spain--United Kingdom,Spain,United Kingdom,tb,1,Spain,United Kingdom,Europe,Europe,1,0
+Spain--United States#tb,Spain--United States,Spain,United States,tb,1,Spain,United States,Europe,North America,1,0
+Canada--Egypt#rti,Canada--Egypt,Canada,Egypt,rti,1,Canada,Egypt,North America,Africa,1,0
+Canada--Singapore#rti,Canada--Singapore,Canada,Singapore,rti,1,Canada,Singapore,North America,Southeast Asia,1,1
+Egypt--Singapore#rti,Egypt--Singapore,Egypt,Singapore,rti,1,Egypt,Singapore,Africa,Southeast Asia,1,1
+Australia--Ireland#tb,Australia--Ireland,Australia,Ireland,tb,1,Australia,Ireland,Oceania,Europe,1,0
+Australia--Namibia#tb,Australia--Namibia,Australia,Namibia,tb,1,Australia,Namibia,Oceania,Africa,1,0
+Cambodia--Ireland#tb,Cambodia--Ireland,Cambodia,Ireland,tb,1,Cambodia,Ireland,Southeast Asia,Europe,1,0
+Cambodia--Namibia#tb,Cambodia--Namibia,Cambodia,Namibia,tb,1,Cambodia,Namibia,Southeast Asia,Africa,1,0
+Cambodia--South Africa#tb,Cambodia--South Africa,Cambodia,South Africa,tb,1,Cambodia,South Africa,Southeast Asia,Africa,1,0
+Ireland--Japan#tb,Ireland--Japan,Ireland,Japan,tb,1,Ireland,Japan,Europe,East Asia,1,0
+Ireland--Namibia#tb,Ireland--Namibia,Ireland,Namibia,tb,1,Ireland,Namibia,Europe,Africa,1,0
+Ireland--Singapore#tb,Ireland--Singapore,Ireland,Singapore,tb,1,Ireland,Singapore,Europe,Southeast Asia,1,1
+Ireland--South Africa#tb,Ireland--South Africa,Ireland,South Africa,tb,1,Ireland,South Africa,Europe,Africa,1,0
+Ireland--United States#tb,Ireland--United States,Ireland,United States,tb,1,Ireland,United States,Europe,North America,1,0
+Japan--Namibia#tb,Japan--Namibia,Japan,Namibia,tb,1,Japan,Namibia,East Asia,Africa,1,0
+Japan--South Africa#tb,Japan--South Africa,Japan,South Africa,tb,1,Japan,South Africa,East Asia,Africa,1,0
+Namibia--Singapore#tb,Namibia--Singapore,Namibia,Singapore,tb,1,Namibia,Singapore,Africa,Southeast Asia,1,1
+Namibia--South Africa#tb,Namibia--South Africa,Namibia,South Africa,tb,1,Namibia,South Africa,Africa,Africa,1,0
+Namibia--United States#tb,Namibia--United States,Namibia,United States,tb,1,Namibia,United States,Africa,North America,1,0
+India--Singapore#rti,India--Singapore,India,Singapore,rti,1,India,Singapore,South Asia,Southeast Asia,1,1
+India--United States#rti,India--United States,India,United States,rti,1,India,United States,South Asia,North America,1,0
+Australia--Bangladesh#vector_borne,Australia--Bangladesh,Australia,Bangladesh,vector_borne,1,Australia,Bangladesh,Oceania,South Asia,1,0
+Australia--Canada#vector_borne,Australia--Canada,Australia,Canada,vector_borne,1,Australia,Canada,Oceania,North America,1,0
+Australia--Cuba#vector_borne,Australia--Cuba,Australia,Cuba,vector_borne,1,Australia,Cuba,Oceania,Latin America,1,0
+Australia--Democratic Republic of the Congo#vector_borne,Australia--Democratic Republic of the Congo,Australia,Democratic Republic of the Congo,vector_borne,1,Australia,Democratic Republic of the Congo,Oceania,Africa,1,0
+Australia--India#vector_borne,Australia--India,Australia,India,vector_borne,1,Australia,India,Oceania,South Asia,1,0
+Australia--Japan#vector_borne,Australia--Japan,Australia,Japan,vector_borne,1,Australia,Japan,Oceania,East Asia,1,0
+Australia--Lebanon#vector_borne,Australia--Lebanon,Australia,Lebanon,vector_borne,1,Australia,Lebanon,Oceania,Middle East,1,0
+Australia--Netherlands#vector_borne,Australia--Netherlands,Australia,Netherlands,vector_borne,1,Australia,Netherlands,Oceania,Europe,1,0
+Australia--Nigeria#vector_borne,Australia--Nigeria,Australia,Nigeria,vector_borne,1,Australia,Nigeria,Oceania,Africa,1,0
+Australia--Qatar#vector_borne,Australia--Qatar,Australia,Qatar,vector_borne,1,Australia,Qatar,Oceania,Middle East,1,0
+Australia--Saudi Arabia#vector_borne,Australia--Saudi Arabia,Australia,Saudi Arabia,vector_borne,1,Australia,Saudi Arabia,Oceania,Middle East,1,0
+Australia--South Africa#vector_borne,Australia--South Africa,Australia,South Africa,vector_borne,1,Australia,South Africa,Oceania,Africa,1,0
+Bangladesh--Brazil#vector_borne,Bangladesh--Brazil,Bangladesh,Brazil,vector_borne,1,Bangladesh,Brazil,South Asia,Latin America,1,0
+Bangladesh--Canada#vector_borne,Bangladesh--Canada,Bangladesh,Canada,vector_borne,1,Bangladesh,Canada,South Asia,North America,1,0
+Bangladesh--China#vector_borne,Bangladesh--China,Bangladesh,China,vector_borne,1,Bangladesh,China,South Asia,East Asia,1,0
+Bangladesh--Cuba#vector_borne,Bangladesh--Cuba,Bangladesh,Cuba,vector_borne,1,Bangladesh,Cuba,South Asia,Latin America,1,0
+Bangladesh--Democratic Republic of the Congo#vector_borne,Bangladesh--Democratic Republic of the Congo,Bangladesh,Democratic Republic of the Congo,vector_borne,1,Bangladesh,Democratic Republic of the Congo,South Asia,Africa,1,0
+Bangladesh--Germany#vector_borne,Bangladesh--Germany,Bangladesh,Germany,vector_borne,1,Bangladesh,Germany,South Asia,Europe,1,0
+Bangladesh--Japan#vector_borne,Bangladesh--Japan,Bangladesh,Japan,vector_borne,1,Bangladesh,Japan,South Asia,East Asia,1,0
+Bangladesh--Lebanon#vector_borne,Bangladesh--Lebanon,Bangladesh,Lebanon,vector_borne,1,Bangladesh,Lebanon,South Asia,Middle East,1,0
+Bangladesh--Netherlands#vector_borne,Bangladesh--Netherlands,Bangladesh,Netherlands,vector_borne,1,Bangladesh,Netherlands,South Asia,Europe,1,0
+Bangladesh--Nigeria#vector_borne,Bangladesh--Nigeria,Bangladesh,Nigeria,vector_borne,1,Bangladesh,Nigeria,South Asia,Africa,1,0
+Bangladesh--Qatar#vector_borne,Bangladesh--Qatar,Bangladesh,Qatar,vector_borne,1,Bangladesh,Qatar,South Asia,Middle East,1,0
+Bangladesh--Saudi Arabia#vector_borne,Bangladesh--Saudi Arabia,Bangladesh,Saudi Arabia,vector_borne,1,Bangladesh,Saudi Arabia,South Asia,Middle East,1,0
+Bangladesh--South Africa#vector_borne,Bangladesh--South Africa,Bangladesh,South Africa,vector_borne,1,Bangladesh,South Africa,South Asia,Africa,1,0
+Bangladesh--Switzerland#vector_borne,Bangladesh--Switzerland,Bangladesh,Switzerland,vector_borne,1,Bangladesh,Switzerland,South Asia,Europe,1,0
+Bangladesh--United Kingdom#vector_borne,Bangladesh--United Kingdom,Bangladesh,United Kingdom,vector_borne,1,Bangladesh,United Kingdom,South Asia,Europe,1,0
+Bangladesh--United States#vector_borne,Bangladesh--United States,Bangladesh,United States,vector_borne,1,Bangladesh,United States,South Asia,North America,1,0
+Brazil--Canada#vector_borne,Brazil--Canada,Brazil,Canada,vector_borne,1,Brazil,Canada,Latin America,North America,1,0
+Brazil--China#vector_borne,Brazil--China,Brazil,China,vector_borne,1,Brazil,China,Latin America,East Asia,1,0
+Brazil--Cuba#vector_borne,Brazil--Cuba,Brazil,Cuba,vector_borne,1,Brazil,Cuba,Latin America,Latin America,1,0
+Brazil--Democratic Republic of the Congo#vector_borne,Brazil--Democratic Republic of the Congo,Brazil,Democratic Republic of the Congo,vector_borne,1,Brazil,Democratic Republic of the Congo,Latin America,Africa,1,0
+Brazil--Germany#vector_borne,Brazil--Germany,Brazil,Germany,vector_borne,1,Brazil,Germany,Latin America,Europe,1,0
+Brazil--India#vector_borne,Brazil--India,Brazil,India,vector_borne,1,Brazil,India,Latin America,South Asia,1,0
+Brazil--Japan#vector_borne,Brazil--Japan,Brazil,Japan,vector_borne,1,Brazil,Japan,Latin America,East Asia,1,0
+Brazil--Lebanon#vector_borne,Brazil--Lebanon,Brazil,Lebanon,vector_borne,1,Brazil,Lebanon,Latin America,Middle East,1,0
+Brazil--Netherlands#vector_borne,Brazil--Netherlands,Brazil,Netherlands,vector_borne,1,Brazil,Netherlands,Latin America,Europe,1,0
+Brazil--Nigeria#vector_borne,Brazil--Nigeria,Brazil,Nigeria,vector_borne,1,Brazil,Nigeria,Latin America,Africa,1,0
+Brazil--Qatar#vector_borne,Brazil--Qatar,Brazil,Qatar,vector_borne,1,Brazil,Qatar,Latin America,Middle East,1,0
+Brazil--Saudi Arabia#vector_borne,Brazil--Saudi Arabia,Brazil,Saudi Arabia,vector_borne,1,Brazil,Saudi Arabia,Latin America,Middle East,1,0
+Brazil--South Africa#vector_borne,Brazil--South Africa,Brazil,South Africa,vector_borne,1,Brazil,South Africa,Latin America,Africa,1,0
+Canada--China#vector_borne,Canada--China,Canada,China,vector_borne,1,Canada,China,North America,East Asia,1,0
+Canada--Cuba#vector_borne,Canada--Cuba,Canada,Cuba,vector_borne,1,Canada,Cuba,North America,Latin America,1,0
+Canada--Democratic Republic of the Congo#vector_borne,Canada--Democratic Republic of the Congo,Canada,Democratic Republic of the Congo,vector_borne,1,Canada,Democratic Republic of the Congo,North America,Africa,1,0
+Canada--Germany#vector_borne,Canada--Germany,Canada,Germany,vector_borne,1,Canada,Germany,North America,Europe,1,0
+Canada--India#vector_borne,Canada--India,Canada,India,vector_borne,1,Canada,India,North America,South Asia,1,0
+Canada--Japan#vector_borne,Canada--Japan,Canada,Japan,vector_borne,1,Canada,Japan,North America,East Asia,1,0
+Canada--Lebanon#vector_borne,Canada--Lebanon,Canada,Lebanon,vector_borne,1,Canada,Lebanon,North America,Middle East,1,0
+Canada--Netherlands#vector_borne,Canada--Netherlands,Canada,Netherlands,vector_borne,1,Canada,Netherlands,North America,Europe,1,0
+Canada--Nigeria#vector_borne,Canada--Nigeria,Canada,Nigeria,vector_borne,1,Canada,Nigeria,North America,Africa,1,0
+Canada--Qatar#vector_borne,Canada--Qatar,Canada,Qatar,vector_borne,1,Canada,Qatar,North America,Middle East,1,0
+Canada--Saudi Arabia#vector_borne,Canada--Saudi Arabia,Canada,Saudi Arabia,vector_borne,1,Canada,Saudi Arabia,North America,Middle East,1,0
+Canada--South Africa#vector_borne,Canada--South Africa,Canada,South Africa,vector_borne,1,Canada,South Africa,North America,Africa,1,0
+China--Cuba#vector_borne,China--Cuba,China,Cuba,vector_borne,1,China,Cuba,East Asia,Latin America,1,0
+China--Democratic Republic of the Congo#vector_borne,China--Democratic Republic of the Congo,China,Democratic Republic of the Congo,vector_borne,1,China,Democratic Republic of the Congo,East Asia,Africa,1,0
+China--India#vector_borne,China--India,China,India,vector_borne,1,China,India,East Asia,South Asia,1,0
+China--Japan#vector_borne,China--Japan,China,Japan,vector_borne,1,China,Japan,East Asia,East Asia,1,0
+China--Lebanon#vector_borne,China--Lebanon,China,Lebanon,vector_borne,1,China,Lebanon,East Asia,Middle East,1,0
+China--Netherlands#vector_borne,China--Netherlands,China,Netherlands,vector_borne,1,China,Netherlands,East Asia,Europe,1,0
+China--Nigeria#vector_borne,China--Nigeria,China,Nigeria,vector_borne,1,China,Nigeria,East Asia,Africa,1,0
+China--Qatar#vector_borne,China--Qatar,China,Qatar,vector_borne,1,China,Qatar,East Asia,Middle East,1,0
+China--Saudi Arabia#vector_borne,China--Saudi Arabia,China,Saudi Arabia,vector_borne,1,China,Saudi Arabia,East Asia,Middle East,1,0
+China--South Africa#vector_borne,China--South Africa,China,South Africa,vector_borne,1,China,South Africa,East Asia,Africa,1,0
+China--United Kingdom#vector_borne,China--United Kingdom,China,United Kingdom,vector_borne,1,China,United Kingdom,East Asia,Europe,1,0
+Cuba--Democratic Republic of the Congo#vector_borne,Cuba--Democratic Republic of the Congo,Cuba,Democratic Republic of the Congo,vector_borne,1,Cuba,Democratic Republic of the Congo,Latin America,Africa,1,0
+Cuba--Germany#vector_borne,Cuba--Germany,Cuba,Germany,vector_borne,1,Cuba,Germany,Latin America,Europe,1,0
+Cuba--India#vector_borne,Cuba--India,Cuba,India,vector_borne,1,Cuba,India,Latin America,South Asia,1,0
+Cuba--Japan#vector_borne,Cuba--Japan,Cuba,Japan,vector_borne,1,Cuba,Japan,Latin America,East Asia,1,0
+Cuba--Lebanon#vector_borne,Cuba--Lebanon,Cuba,Lebanon,vector_borne,1,Cuba,Lebanon,Latin America,Middle East,1,0
+Cuba--Netherlands#vector_borne,Cuba--Netherlands,Cuba,Netherlands,vector_borne,1,Cuba,Netherlands,Latin America,Europe,1,0
+Cuba--Nigeria#vector_borne,Cuba--Nigeria,Cuba,Nigeria,vector_borne,1,Cuba,Nigeria,Latin America,Africa,1,0
+Cuba--Qatar#vector_borne,Cuba--Qatar,Cuba,Qatar,vector_borne,1,Cuba,Qatar,Latin America,Middle East,1,0
+Cuba--Saudi Arabia#vector_borne,Cuba--Saudi Arabia,Cuba,Saudi Arabia,vector_borne,1,Cuba,Saudi Arabia,Latin America,Middle East,1,0
+Cuba--Singapore#vector_borne,Cuba--Singapore,Cuba,Singapore,vector_borne,1,Cuba,Singapore,Latin America,Southeast Asia,1,1
+Cuba--South Africa#vector_borne,Cuba--South Africa,Cuba,South Africa,vector_borne,1,Cuba,South Africa,Latin America,Africa,1,0
+Cuba--Switzerland#vector_borne,Cuba--Switzerland,Cuba,Switzerland,vector_borne,1,Cuba,Switzerland,Latin America,Europe,1,0
+Cuba--United Kingdom#vector_borne,Cuba--United Kingdom,Cuba,United Kingdom,vector_borne,1,Cuba,United Kingdom,Latin America,Europe,1,0
+Cuba--United States#vector_borne,Cuba--United States,Cuba,United States,vector_borne,1,Cuba,United States,Latin America,North America,1,0
+Democratic Republic of the Congo--Germany#vector_borne,Democratic Republic of the Congo--Germany,Democratic Republic of the Congo,Germany,vector_borne,1,Democratic Republic of the Congo,Germany,Africa,Europe,1,0
+Democratic Republic of the Congo--India#vector_borne,Democratic Republic of the Congo--India,Democratic Republic of the Congo,India,vector_borne,1,Democratic Republic of the Congo,India,Africa,South Asia,1,0
+Democratic Republic of the Congo--Japan#vector_borne,Democratic Republic of the Congo--Japan,Democratic Republic of the Congo,Japan,vector_borne,1,Democratic Republic of the Congo,Japan,Africa,East Asia,1,0
+Democratic Republic of the Congo--Lebanon#vector_borne,Democratic Republic of the Congo--Lebanon,Democratic Republic of the Congo,Lebanon,vector_borne,1,Democratic Republic of the Congo,Lebanon,Africa,Middle East,1,0
+Democratic Republic of the Congo--Netherlands#vector_borne,Democratic Republic of the Congo--Netherlands,Democratic Republic of the Congo,Netherlands,vector_borne,1,Democratic Republic of the Congo,Netherlands,Africa,Europe,1,0
+Democratic Republic of the Congo--Nigeria#vector_borne,Democratic Republic of the Congo--Nigeria,Democratic Republic of the Congo,Nigeria,vector_borne,1,Democratic Republic of the Congo,Nigeria,Africa,Africa,1,0
+Democratic Republic of the Congo--Qatar#vector_borne,Democratic Republic of the Congo--Qatar,Democratic Republic of the Congo,Qatar,vector_borne,1,Democratic Republic of the Congo,Qatar,Africa,Middle East,1,0
+Democratic Republic of the Congo--Saudi Arabia#vector_borne,Democratic Republic of the Congo--Saudi Arabia,Democratic Republic of the Congo,Saudi Arabia,vector_borne,1,Democratic Republic of the Congo,Saudi Arabia,Africa,Middle East,1,0
+Democratic Republic of the Congo--Singapore#vector_borne,Democratic Republic of the Congo--Singapore,Democratic Republic of the Congo,Singapore,vector_borne,1,Democratic Republic of the Congo,Singapore,Africa,Southeast Asia,1,1
+Democratic Republic of the Congo--South Africa#vector_borne,Democratic Republic of the Congo--South Africa,Democratic Republic of the Congo,South Africa,vector_borne,1,Democratic Republic of the Congo,South Africa,Africa,Africa,1,0
+Democratic Republic of the Congo--Switzerland#vector_borne,Democratic Republic of the Congo--Switzerland,Democratic Republic of the Congo,Switzerland,vector_borne,1,Democratic Republic of the Congo,Switzerland,Africa,Europe,1,0
+Democratic Republic of the Congo--United Kingdom#vector_borne,Democratic Republic of the Congo--United Kingdom,Democratic Republic of the Congo,United Kingdom,vector_borne,1,Democratic Republic of the Congo,United Kingdom,Africa,Europe,1,0
+Democratic Republic of the Congo--United States#vector_borne,Democratic Republic of the Congo--United States,Democratic Republic of the Congo,United States,vector_borne,1,Democratic Republic of the Congo,United States,Africa,North America,1,0
+Germany--India#vector_borne,Germany--India,Germany,India,vector_borne,1,Germany,India,Europe,South Asia,1,0
+Germany--Japan#vector_borne,Germany--Japan,Germany,Japan,vector_borne,1,Germany,Japan,Europe,East Asia,1,0
+Germany--Lebanon#vector_borne,Germany--Lebanon,Germany,Lebanon,vector_borne,1,Germany,Lebanon,Europe,Middle East,1,0
+Germany--Netherlands#vector_borne,Germany--Netherlands,Germany,Netherlands,vector_borne,1,Germany,Netherlands,Europe,Europe,1,0
+Germany--Nigeria#vector_borne,Germany--Nigeria,Germany,Nigeria,vector_borne,1,Germany,Nigeria,Europe,Africa,1,0
+Germany--Qatar#vector_borne,Germany--Qatar,Germany,Qatar,vector_borne,1,Germany,Qatar,Europe,Middle East,1,0
+Germany--Saudi Arabia#vector_borne,Germany--Saudi Arabia,Germany,Saudi Arabia,vector_borne,1,Germany,Saudi Arabia,Europe,Middle East,1,0
+Germany--South Africa#vector_borne,Germany--South Africa,Germany,South Africa,vector_borne,1,Germany,South Africa,Europe,Africa,1,0
+Germany--Switzerland#vector_borne,Germany--Switzerland,Germany,Switzerland,vector_borne,1,Germany,Switzerland,Europe,Europe,1,0
+Germany--United Kingdom#vector_borne,Germany--United Kingdom,Germany,United Kingdom,vector_borne,1,Germany,United Kingdom,Europe,Europe,1,0
+Germany--United States#vector_borne,Germany--United States,Germany,United States,vector_borne,1,Germany,United States,Europe,North America,1,0
+India--Japan#vector_borne,India--Japan,India,Japan,vector_borne,1,India,Japan,South Asia,East Asia,1,0
+India--Lebanon#vector_borne,India--Lebanon,India,Lebanon,vector_borne,1,India,Lebanon,South Asia,Middle East,1,0
+India--Netherlands#vector_borne,India--Netherlands,India,Netherlands,vector_borne,1,India,Netherlands,South Asia,Europe,1,0
+India--Nigeria#vector_borne,India--Nigeria,India,Nigeria,vector_borne,1,India,Nigeria,South Asia,Africa,1,0
+India--Qatar#vector_borne,India--Qatar,India,Qatar,vector_borne,1,India,Qatar,South Asia,Middle East,1,0
+India--Saudi Arabia#vector_borne,India--Saudi Arabia,India,Saudi Arabia,vector_borne,1,India,Saudi Arabia,South Asia,Middle East,1,0
+India--South Africa#vector_borne,India--South Africa,India,South Africa,vector_borne,1,India,South Africa,South Asia,Africa,1,0
+India--Switzerland#vector_borne,India--Switzerland,India,Switzerland,vector_borne,1,India,Switzerland,South Asia,Europe,1,0
+India--United Kingdom#vector_borne,India--United Kingdom,India,United Kingdom,vector_borne,1,India,United Kingdom,South Asia,Europe,1,0
+India--United States#vector_borne,India--United States,India,United States,vector_borne,1,India,United States,South Asia,North America,1,0
+Japan--Lebanon#vector_borne,Japan--Lebanon,Japan,Lebanon,vector_borne,1,Japan,Lebanon,East Asia,Middle East,1,0
+Japan--Netherlands#vector_borne,Japan--Netherlands,Japan,Netherlands,vector_borne,1,Japan,Netherlands,East Asia,Europe,1,0
+Japan--Nigeria#vector_borne,Japan--Nigeria,Japan,Nigeria,vector_borne,1,Japan,Nigeria,East Asia,Africa,1,0
+Japan--Qatar#vector_borne,Japan--Qatar,Japan,Qatar,vector_borne,1,Japan,Qatar,East Asia,Middle East,1,0
+Japan--Saudi Arabia#vector_borne,Japan--Saudi Arabia,Japan,Saudi Arabia,vector_borne,1,Japan,Saudi Arabia,East Asia,Middle East,1,0
+Japan--South Africa#vector_borne,Japan--South Africa,Japan,South Africa,vector_borne,1,Japan,South Africa,East Asia,Africa,1,0
+Japan--Switzerland#vector_borne,Japan--Switzerland,Japan,Switzerland,vector_borne,1,Japan,Switzerland,East Asia,Europe,1,0
+Lebanon--Netherlands#vector_borne,Lebanon--Netherlands,Lebanon,Netherlands,vector_borne,1,Lebanon,Netherlands,Middle East,Europe,1,0
+Lebanon--Nigeria#vector_borne,Lebanon--Nigeria,Lebanon,Nigeria,vector_borne,1,Lebanon,Nigeria,Middle East,Africa,1,0
+Lebanon--Qatar#vector_borne,Lebanon--Qatar,Lebanon,Qatar,vector_borne,1,Lebanon,Qatar,Middle East,Middle East,1,0
+Lebanon--Saudi Arabia#vector_borne,Lebanon--Saudi Arabia,Lebanon,Saudi Arabia,vector_borne,1,Lebanon,Saudi Arabia,Middle East,Middle East,1,0
+Lebanon--Singapore#vector_borne,Lebanon--Singapore,Lebanon,Singapore,vector_borne,1,Lebanon,Singapore,Middle East,Southeast Asia,1,1
+Lebanon--South Africa#vector_borne,Lebanon--South Africa,Lebanon,South Africa,vector_borne,1,Lebanon,South Africa,Middle East,Africa,1,0
+Lebanon--Switzerland#vector_borne,Lebanon--Switzerland,Lebanon,Switzerland,vector_borne,1,Lebanon,Switzerland,Middle East,Europe,1,0
+Lebanon--United Kingdom#vector_borne,Lebanon--United Kingdom,Lebanon,United Kingdom,vector_borne,1,Lebanon,United Kingdom,Middle East,Europe,1,0
+Lebanon--United States#vector_borne,Lebanon--United States,Lebanon,United States,vector_borne,1,Lebanon,United States,Middle East,North America,1,0
+Netherlands--Nigeria#vector_borne,Netherlands--Nigeria,Netherlands,Nigeria,vector_borne,1,Netherlands,Nigeria,Europe,Africa,1,0
+Netherlands--Qatar#vector_borne,Netherlands--Qatar,Netherlands,Qatar,vector_borne,1,Netherlands,Qatar,Europe,Middle East,1,0
+Netherlands--Saudi Arabia#vector_borne,Netherlands--Saudi Arabia,Netherlands,Saudi Arabia,vector_borne,1,Netherlands,Saudi Arabia,Europe,Middle East,1,0
+Netherlands--Singapore#vector_borne,Netherlands--Singapore,Netherlands,Singapore,vector_borne,1,Netherlands,Singapore,Europe,Southeast Asia,1,1
+Netherlands--South Africa#vector_borne,Netherlands--South Africa,Netherlands,South Africa,vector_borne,1,Netherlands,South Africa,Europe,Africa,1,0
+Netherlands--Switzerland#vector_borne,Netherlands--Switzerland,Netherlands,Switzerland,vector_borne,1,Netherlands,Switzerland,Europe,Europe,1,0
+Netherlands--United Kingdom#vector_borne,Netherlands--United Kingdom,Netherlands,United Kingdom,vector_borne,1,Netherlands,United Kingdom,Europe,Europe,1,0
+Netherlands--United States#vector_borne,Netherlands--United States,Netherlands,United States,vector_borne,1,Netherlands,United States,Europe,North America,1,0
+Nigeria--Qatar#vector_borne,Nigeria--Qatar,Nigeria,Qatar,vector_borne,1,Nigeria,Qatar,Africa,Middle East,1,0
+Nigeria--Saudi Arabia#vector_borne,Nigeria--Saudi Arabia,Nigeria,Saudi Arabia,vector_borne,1,Nigeria,Saudi Arabia,Africa,Middle East,1,0
+Nigeria--Singapore#vector_borne,Nigeria--Singapore,Nigeria,Singapore,vector_borne,1,Nigeria,Singapore,Africa,Southeast Asia,1,1
+Nigeria--South Africa#vector_borne,Nigeria--South Africa,Nigeria,South Africa,vector_borne,1,Nigeria,South Africa,Africa,Africa,1,0
+Nigeria--Switzerland#vector_borne,Nigeria--Switzerland,Nigeria,Switzerland,vector_borne,1,Nigeria,Switzerland,Africa,Europe,1,0
+Nigeria--United Kingdom#vector_borne,Nigeria--United Kingdom,Nigeria,United Kingdom,vector_borne,1,Nigeria,United Kingdom,Africa,Europe,1,0
+Nigeria--United States#vector_borne,Nigeria--United States,Nigeria,United States,vector_borne,1,Nigeria,United States,Africa,North America,1,0
+Qatar--Saudi Arabia#vector_borne,Qatar--Saudi Arabia,Qatar,Saudi Arabia,vector_borne,1,Qatar,Saudi Arabia,Middle East,Middle East,1,0
+Qatar--Singapore#vector_borne,Qatar--Singapore,Qatar,Singapore,vector_borne,1,Qatar,Singapore,Middle East,Southeast Asia,1,1
+Qatar--South Africa#vector_borne,Qatar--South Africa,Qatar,South Africa,vector_borne,1,Qatar,South Africa,Middle East,Africa,1,0
+Qatar--Switzerland#vector_borne,Qatar--Switzerland,Qatar,Switzerland,vector_borne,1,Qatar,Switzerland,Middle East,Europe,1,0
+Qatar--United Kingdom#vector_borne,Qatar--United Kingdom,Qatar,United Kingdom,vector_borne,1,Qatar,United Kingdom,Middle East,Europe,1,0
+Qatar--United States#vector_borne,Qatar--United States,Qatar,United States,vector_borne,1,Qatar,United States,Middle East,North America,1,0
+Saudi Arabia--Singapore#vector_borne,Saudi Arabia--Singapore,Saudi Arabia,Singapore,vector_borne,1,Saudi Arabia,Singapore,Middle East,Southeast Asia,1,1
+Saudi Arabia--South Africa#vector_borne,Saudi Arabia--South Africa,Saudi Arabia,South Africa,vector_borne,1,Saudi Arabia,South Africa,Middle East,Africa,1,0
+Saudi Arabia--Switzerland#vector_borne,Saudi Arabia--Switzerland,Saudi Arabia,Switzerland,vector_borne,1,Saudi Arabia,Switzerland,Middle East,Europe,1,0
+Saudi Arabia--United Kingdom#vector_borne,Saudi Arabia--United Kingdom,Saudi Arabia,United Kingdom,vector_borne,1,Saudi Arabia,United Kingdom,Middle East,Europe,1,0
+Saudi Arabia--United States#vector_borne,Saudi Arabia--United States,Saudi Arabia,United States,vector_borne,1,Saudi Arabia,United States,Middle East,North America,1,0
+South Africa--Switzerland#vector_borne,South Africa--Switzerland,South Africa,Switzerland,vector_borne,1,South Africa,Switzerland,Africa,Europe,1,0
+South Africa--United States#vector_borne,South Africa--United States,South Africa,United States,vector_borne,1,South Africa,United States,Africa,North America,1,0
+Singapore--Tanzania#sti,Singapore--Tanzania,Singapore,Tanzania,sti,1,Singapore,Tanzania,Southeast Asia,Africa,1,1
+Tanzania--United States#sti,Tanzania--United States,Tanzania,United States,sti,1,Tanzania,United States,Africa,North America,1,0
+Austria--Czechia#rti,Austria--Czechia,Austria,Czechia,rti,1,Austria,Czechia,Europe,Europe,1,0
+Austria--Philippines#rti,Austria--Philippines,Austria,Philippines,rti,1,Austria,Philippines,Europe,Southeast Asia,1,0
+Austria--Singapore#rti,Austria--Singapore,Austria,Singapore,rti,1,Austria,Singapore,Europe,Southeast Asia,1,1
+Czechia--Philippines#rti,Czechia--Philippines,Czechia,Philippines,rti,1,Czechia,Philippines,Europe,Southeast Asia,1,0
+Czechia--Singapore#rti,Czechia--Singapore,Czechia,Singapore,rti,1,Czechia,Singapore,Europe,Southeast Asia,1,1
+Philippines--Singapore#rti,Philippines--Singapore,Philippines,Singapore,rti,1,Philippines,Singapore,Southeast Asia,Southeast Asia,1,1
+Japan--Zambia#rti,Japan--Zambia,Japan,Zambia,rti,1,Japan,Zambia,East Asia,Africa,1,0
+Singapore--Zambia#rti,Singapore--Zambia,Singapore,Zambia,rti,1,Singapore,Zambia,Southeast Asia,Africa,1,1
+Germany--India#amr_hai,Germany--India,Germany,India,amr_hai,1,Germany,India,Europe,South Asia,1,0
+Germany--Netherlands#amr_hai,Germany--Netherlands,Germany,Netherlands,amr_hai,1,Germany,Netherlands,Europe,Europe,1,0
+Denmark--Germany#rti,Denmark--Germany,Denmark,Germany,rti,1,Denmark,Germany,Europe,Europe,1,0
+Denmark--Switzerland#rti,Denmark--Switzerland,Denmark,Switzerland,rti,1,Denmark,Switzerland,Europe,Europe,1,0
+Denmark--Türkiye#rti,Denmark--Türkiye,Denmark,Türkiye,rti,1,Denmark,Türkiye,Europe,Europe,1,0
+Denmark--United States#rti,Denmark--United States,Denmark,United States,rti,1,Denmark,United States,Europe,North America,1,0
+Germany--Switzerland#rti,Germany--Switzerland,Germany,Switzerland,rti,1,Germany,Switzerland,Europe,Europe,1,0
+Germany--Türkiye#rti,Germany--Türkiye,Germany,Türkiye,rti,1,Germany,Türkiye,Europe,Europe,1,0
+Germany--United States#rti,Germany--United States,Germany,United States,rti,1,Germany,United States,Europe,North America,1,0
+Singapore--Türkiye#rti,Singapore--Türkiye,Singapore,Türkiye,rti,1,Singapore,Türkiye,Southeast Asia,Europe,1,1
+Switzerland--Türkiye#rti,Switzerland--Türkiye,Switzerland,Türkiye,rti,1,Switzerland,Türkiye,Europe,Europe,1,0
+Switzerland--United States#rti,Switzerland--United States,Switzerland,United States,rti,1,Switzerland,United States,Europe,North America,1,0
+Türkiye--United Kingdom#rti,Türkiye--United Kingdom,Türkiye,United Kingdom,rti,1,Türkiye,United Kingdom,Europe,Europe,1,0
+Türkiye--United States#rti,Türkiye--United States,Türkiye,United States,rti,1,Türkiye,United States,Europe,North America,1,0
+China--Japan#tb,China--Japan,China,Japan,tb,1,China,Japan,East Asia,East Asia,1,0
+China--Republic of Korea#tb,China--Republic of Korea,China,Republic of Korea,tb,1,China,Republic of Korea,East Asia,East Asia,1,0
+Japan--Republic of Korea#tb,Japan--Republic of Korea,Japan,Republic of Korea,tb,1,Japan,Republic of Korea,East Asia,East Asia,1,0
+Finland--Singapore#vector_borne,Finland--Singapore,Finland,Singapore,vector_borne,1,Finland,Singapore,Europe,Southeast Asia,1,1
+Finland--United Kingdom#vector_borne,Finland--United Kingdom,Finland,United Kingdom,vector_borne,1,Finland,United Kingdom,Europe,Europe,1,0
+Finland--Ireland#amr_hai,Finland--Ireland,Finland,Ireland,amr_hai,1,Finland,Ireland,Europe,Europe,1,0
+Finland--Netherlands#amr_hai,Finland--Netherlands,Finland,Netherlands,amr_hai,1,Finland,Netherlands,Europe,Europe,1,0
+Finland--Singapore#amr_hai,Finland--Singapore,Finland,Singapore,amr_hai,1,Finland,Singapore,Europe,Southeast Asia,1,1
+Finland--United Kingdom#amr_hai,Finland--United Kingdom,Finland,United Kingdom,amr_hai,1,Finland,United Kingdom,Europe,Europe,1,0
+Ireland--Netherlands#amr_hai,Ireland--Netherlands,Ireland,Netherlands,amr_hai,1,Ireland,Netherlands,Europe,Europe,1,0
+Ireland--Singapore#amr_hai,Ireland--Singapore,Ireland,Singapore,amr_hai,1,Ireland,Singapore,Europe,Southeast Asia,1,1
+Ireland--United Kingdom#amr_hai,Ireland--United Kingdom,Ireland,United Kingdom,amr_hai,1,Ireland,United Kingdom,Europe,Europe,1,0
+Malaysia--United States#sti,Malaysia--United States,Malaysia,United States,sti,1,Malaysia,United States,Southeast Asia,North America,1,0
+Thailand--United States#sti,Thailand--United States,Thailand,United States,sti,1,Thailand,United States,Southeast Asia,North America,1,0
+Botswana--Romania#sti,Botswana--Romania,Botswana,Romania,sti,1,Botswana,Romania,Africa,Europe,1,0
+Botswana--Rwanda#sti,Botswana--Rwanda,Botswana,Rwanda,sti,1,Botswana,Rwanda,Africa,Africa,1,0
+Botswana--Singapore#sti,Botswana--Singapore,Botswana,Singapore,sti,1,Botswana,Singapore,Africa,Southeast Asia,1,1
+Botswana--Spain#sti,Botswana--Spain,Botswana,Spain,sti,1,Botswana,Spain,Africa,Europe,1,0
+Botswana--United States#sti,Botswana--United States,Botswana,United States,sti,1,Botswana,United States,Africa,North America,1,0
+Romania--Rwanda#sti,Romania--Rwanda,Romania,Rwanda,sti,1,Romania,Rwanda,Europe,Africa,1,0
+Romania--Singapore#sti,Romania--Singapore,Romania,Singapore,sti,1,Romania,Singapore,Europe,Southeast Asia,1,1
+Romania--Spain#sti,Romania--Spain,Romania,Spain,sti,1,Romania,Spain,Europe,Europe,1,0
+Romania--United States#sti,Romania--United States,Romania,United States,sti,1,Romania,United States,Europe,North America,1,0
+Rwanda--Singapore#sti,Rwanda--Singapore,Rwanda,Singapore,sti,1,Rwanda,Singapore,Africa,Southeast Asia,1,1
+Rwanda--Spain#sti,Rwanda--Spain,Rwanda,Spain,sti,1,Rwanda,Spain,Africa,Europe,1,0
+Rwanda--United States#sti,Rwanda--United States,Rwanda,United States,sti,1,Rwanda,United States,Africa,North America,1,0
+Australia--Italy#rti,Australia--Italy,Australia,Italy,rti,1,Australia,Italy,Oceania,Europe,1,0
+Australia--Malaysia#rti,Australia--Malaysia,Australia,Malaysia,rti,1,Australia,Malaysia,Oceania,Southeast Asia,1,0
+China--Italy#rti,China--Italy,China,Italy,rti,1,China,Italy,East Asia,Europe,1,0
+China--Malaysia#rti,China--Malaysia,China,Malaysia,rti,1,China,Malaysia,East Asia,Southeast Asia,1,0
+Italy--Japan#rti,Italy--Japan,Italy,Japan,rti,1,Italy,Japan,Europe,East Asia,1,0
+Italy--Malaysia#rti,Italy--Malaysia,Italy,Malaysia,rti,1,Italy,Malaysia,Europe,Southeast Asia,1,0
+Italy--New Zealand#rti,Italy--New Zealand,Italy,New Zealand,rti,1,Italy,New Zealand,Europe,Oceania,1,0
+Italy--Singapore#rti,Italy--Singapore,Italy,Singapore,rti,1,Italy,Singapore,Europe,Southeast Asia,1,1
+Italy--United Kingdom#rti,Italy--United Kingdom,Italy,United Kingdom,rti,1,Italy,United Kingdom,Europe,Europe,1,0
+Japan--Malaysia#rti,Japan--Malaysia,Japan,Malaysia,rti,1,Japan,Malaysia,East Asia,Southeast Asia,1,0
+Malaysia--New Zealand#rti,Malaysia--New Zealand,Malaysia,New Zealand,rti,1,Malaysia,New Zealand,Southeast Asia,Oceania,1,0
+Malaysia--United Kingdom#rti,Malaysia--United Kingdom,Malaysia,United Kingdom,rti,1,Malaysia,United Kingdom,Southeast Asia,Europe,1,0
+Côte d'Ivoire--Singapore#sti,Côte d'Ivoire--Singapore,Côte d'Ivoire,Singapore,sti,1,Côte d'Ivoire,Singapore,Africa,Southeast Asia,1,1
+Côte d'Ivoire--Spain#sti,Côte d'Ivoire--Spain,Côte d'Ivoire,Spain,sti,1,Côte d'Ivoire,Spain,Africa,Europe,1,0
+Australia--Indonesia#rti,Australia--Indonesia,Australia,Indonesia,rti,1,Australia,Indonesia,Oceania,Southeast Asia,1,0
+Australia--Kenya#rti,Australia--Kenya,Australia,Kenya,rti,1,Australia,Kenya,Oceania,Africa,1,0
+Australia--Thailand#rti,Australia--Thailand,Australia,Thailand,rti,1,Australia,Thailand,Oceania,Southeast Asia,1,0
+Australia--Tunisia#rti,Australia--Tunisia,Australia,Tunisia,rti,1,Australia,Tunisia,Oceania,Africa,1,0
+China--Indonesia#rti,China--Indonesia,China,Indonesia,rti,1,China,Indonesia,East Asia,Southeast Asia,1,0
+China--Kenya#rti,China--Kenya,China,Kenya,rti,1,China,Kenya,East Asia,Africa,1,0
+China--Tunisia#rti,China--Tunisia,China,Tunisia,rti,1,China,Tunisia,East Asia,Africa,1,0
+Indonesia--Kenya#rti,Indonesia--Kenya,Indonesia,Kenya,rti,1,Indonesia,Kenya,Southeast Asia,Africa,1,0
+Indonesia--Netherlands#rti,Indonesia--Netherlands,Indonesia,Netherlands,rti,1,Indonesia,Netherlands,Southeast Asia,Europe,1,0
+Indonesia--New Zealand#rti,Indonesia--New Zealand,Indonesia,New Zealand,rti,1,Indonesia,New Zealand,Southeast Asia,Oceania,1,0
+Indonesia--Singapore#rti,Indonesia--Singapore,Indonesia,Singapore,rti,1,Indonesia,Singapore,Southeast Asia,Southeast Asia,1,1
+Indonesia--Thailand#rti,Indonesia--Thailand,Indonesia,Thailand,rti,1,Indonesia,Thailand,Southeast Asia,Southeast Asia,1,0
+Indonesia--Tunisia#rti,Indonesia--Tunisia,Indonesia,Tunisia,rti,1,Indonesia,Tunisia,Southeast Asia,Africa,1,0
+Indonesia--United Kingdom#rti,Indonesia--United Kingdom,Indonesia,United Kingdom,rti,1,Indonesia,United Kingdom,Southeast Asia,Europe,1,0
+Indonesia--United States#rti,Indonesia--United States,Indonesia,United States,rti,1,Indonesia,United States,Southeast Asia,North America,1,0
+Kenya--Netherlands#rti,Kenya--Netherlands,Kenya,Netherlands,rti,1,Kenya,Netherlands,Africa,Europe,1,0
+Kenya--New Zealand#rti,Kenya--New Zealand,Kenya,New Zealand,rti,1,Kenya,New Zealand,Africa,Oceania,1,0
+Kenya--Singapore#rti,Kenya--Singapore,Kenya,Singapore,rti,1,Kenya,Singapore,Africa,Southeast Asia,1,1
+Kenya--Thailand#rti,Kenya--Thailand,Kenya,Thailand,rti,1,Kenya,Thailand,Africa,Southeast Asia,1,0
+Kenya--Tunisia#rti,Kenya--Tunisia,Kenya,Tunisia,rti,1,Kenya,Tunisia,Africa,Africa,1,0
+Kenya--United Kingdom#rti,Kenya--United Kingdom,Kenya,United Kingdom,rti,1,Kenya,United Kingdom,Africa,Europe,1,0
+Kenya--United States#rti,Kenya--United States,Kenya,United States,rti,1,Kenya,United States,Africa,North America,1,0
+Netherlands--Thailand#rti,Netherlands--Thailand,Netherlands,Thailand,rti,1,Netherlands,Thailand,Europe,Southeast Asia,1,0
+Netherlands--Tunisia#rti,Netherlands--Tunisia,Netherlands,Tunisia,rti,1,Netherlands,Tunisia,Europe,Africa,1,0
+Netherlands--United States#rti,Netherlands--United States,Netherlands,United States,rti,1,Netherlands,United States,Europe,North America,1,0
+New Zealand--Thailand#rti,New Zealand--Thailand,New Zealand,Thailand,rti,1,New Zealand,Thailand,Oceania,Southeast Asia,1,0
+New Zealand--Tunisia#rti,New Zealand--Tunisia,New Zealand,Tunisia,rti,1,New Zealand,Tunisia,Oceania,Africa,1,0
+Singapore--Tunisia#rti,Singapore--Tunisia,Singapore,Tunisia,rti,1,Singapore,Tunisia,Southeast Asia,Africa,1,1
+Thailand--Tunisia#rti,Thailand--Tunisia,Thailand,Tunisia,rti,1,Thailand,Tunisia,Southeast Asia,Africa,1,0
+Tunisia--United Kingdom#rti,Tunisia--United Kingdom,Tunisia,United Kingdom,rti,1,Tunisia,United Kingdom,Africa,Europe,1,0
+Tunisia--United States#rti,Tunisia--United States,Tunisia,United States,rti,1,Tunisia,United States,Africa,North America,1,0
+Thailand--United Kingdom#sti,Thailand--United Kingdom,Thailand,United Kingdom,sti,1,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+Australia--Brazil#amr_hai,Australia--Brazil,Australia,Brazil,amr_hai,1,Australia,Brazil,Oceania,Latin America,1,0
+Australia--Denmark#amr_hai,Australia--Denmark,Australia,Denmark,amr_hai,1,Australia,Denmark,Oceania,Europe,1,0
+Australia--Malaysia#amr_hai,Australia--Malaysia,Australia,Malaysia,amr_hai,1,Australia,Malaysia,Oceania,Southeast Asia,1,0
+Brazil--Denmark#amr_hai,Brazil--Denmark,Brazil,Denmark,amr_hai,1,Brazil,Denmark,Latin America,Europe,1,0
+Brazil--France#amr_hai,Brazil--France,Brazil,France,amr_hai,1,Brazil,France,Latin America,Europe,1,0
+Brazil--Italy#amr_hai,Brazil--Italy,Brazil,Italy,amr_hai,1,Brazil,Italy,Latin America,Europe,1,0
+Brazil--Malaysia#amr_hai,Brazil--Malaysia,Brazil,Malaysia,amr_hai,1,Brazil,Malaysia,Latin America,Southeast Asia,1,0
+Brazil--Singapore#amr_hai,Brazil--Singapore,Brazil,Singapore,amr_hai,1,Brazil,Singapore,Latin America,Southeast Asia,1,1
+Brazil--Thailand#amr_hai,Brazil--Thailand,Brazil,Thailand,amr_hai,1,Brazil,Thailand,Latin America,Southeast Asia,1,0
+Brazil--United Kingdom#amr_hai,Brazil--United Kingdom,Brazil,United Kingdom,amr_hai,1,Brazil,United Kingdom,Latin America,Europe,1,0
+Brazil--Viet Nam#amr_hai,Brazil--Viet Nam,Brazil,Viet Nam,amr_hai,1,Brazil,Viet Nam,Latin America,Southeast Asia,1,0
+Denmark--France#amr_hai,Denmark--France,Denmark,France,amr_hai,1,Denmark,France,Europe,Europe,1,0
+Denmark--Italy#amr_hai,Denmark--Italy,Denmark,Italy,amr_hai,1,Denmark,Italy,Europe,Europe,1,0
+Denmark--Malaysia#amr_hai,Denmark--Malaysia,Denmark,Malaysia,amr_hai,1,Denmark,Malaysia,Europe,Southeast Asia,1,0
+Denmark--Singapore#amr_hai,Denmark--Singapore,Denmark,Singapore,amr_hai,1,Denmark,Singapore,Europe,Southeast Asia,1,1
+Denmark--Thailand#amr_hai,Denmark--Thailand,Denmark,Thailand,amr_hai,1,Denmark,Thailand,Europe,Southeast Asia,1,0
+Denmark--United Kingdom#amr_hai,Denmark--United Kingdom,Denmark,United Kingdom,amr_hai,1,Denmark,United Kingdom,Europe,Europe,1,0
+Denmark--Viet Nam#amr_hai,Denmark--Viet Nam,Denmark,Viet Nam,amr_hai,1,Denmark,Viet Nam,Europe,Southeast Asia,1,0
+France--Malaysia#amr_hai,France--Malaysia,France,Malaysia,amr_hai,1,France,Malaysia,Europe,Southeast Asia,1,0
+France--Thailand#amr_hai,France--Thailand,France,Thailand,amr_hai,1,France,Thailand,Europe,Southeast Asia,1,0
+France--Viet Nam#amr_hai,France--Viet Nam,France,Viet Nam,amr_hai,1,France,Viet Nam,Europe,Southeast Asia,1,0
+Italy--Malaysia#amr_hai,Italy--Malaysia,Italy,Malaysia,amr_hai,1,Italy,Malaysia,Europe,Southeast Asia,1,0
+Italy--Thailand#amr_hai,Italy--Thailand,Italy,Thailand,amr_hai,1,Italy,Thailand,Europe,Southeast Asia,1,0
+Italy--Viet Nam#amr_hai,Italy--Viet Nam,Italy,Viet Nam,amr_hai,1,Italy,Viet Nam,Europe,Southeast Asia,1,0
+France--South Africa#vector_borne,France--South Africa,France,South Africa,vector_borne,1,France,South Africa,Europe,Africa,1,0
+China--Saudi Arabia#other_id,China--Saudi Arabia,China,Saudi Arabia,other_id,1,China,Saudi Arabia,East Asia,Middle East,1,0
+China--South Africa#other_id,China--South Africa,China,South Africa,other_id,1,China,South Africa,East Asia,Africa,1,0
+Saudi Arabia--Singapore#other_id,Saudi Arabia--Singapore,Saudi Arabia,Singapore,other_id,1,Saudi Arabia,Singapore,Middle East,Southeast Asia,1,1
+Saudi Arabia--South Africa#other_id,Saudi Arabia--South Africa,Saudi Arabia,South Africa,other_id,1,Saudi Arabia,South Africa,Middle East,Africa,1,0
+Singapore--South Africa#other_id,Singapore--South Africa,Singapore,South Africa,other_id,1,Singapore,South Africa,Southeast Asia,Africa,1,1
+Poland--Singapore#other_id,Poland--Singapore,Poland,Singapore,other_id,1,Poland,Singapore,Europe,Southeast Asia,1,1
+Poland--Switzerland#other_id,Poland--Switzerland,Poland,Switzerland,other_id,1,Poland,Switzerland,Europe,Europe,1,0
+Poland--United States#other_id,Poland--United States,Poland,United States,other_id,1,Poland,United States,Europe,North America,1,0
+France--Japan#vector_borne,France--Japan,France,Japan,vector_borne,1,France,Japan,Europe,East Asia,1,0
+France--New Zealand#vector_borne,France--New Zealand,France,New Zealand,vector_borne,1,France,New Zealand,Europe,Oceania,1,0
+Japan--New Zealand#vector_borne,Japan--New Zealand,Japan,New Zealand,vector_borne,1,Japan,New Zealand,East Asia,Oceania,1,0
+Japan--Thailand#vector_borne,Japan--Thailand,Japan,Thailand,vector_borne,1,Japan,Thailand,East Asia,Southeast Asia,1,0
+New Zealand--United States#vector_borne,New Zealand--United States,New Zealand,United States,vector_borne,1,New Zealand,United States,Oceania,North America,1,0
+Australia--Egypt#tb,Australia--Egypt,Australia,Egypt,tb,1,Australia,Egypt,Oceania,Africa,1,0
+Australia--Indonesia#tb,Australia--Indonesia,Australia,Indonesia,tb,1,Australia,Indonesia,Oceania,Southeast Asia,1,0
+Australia--Italy#tb,Australia--Italy,Australia,Italy,tb,1,Australia,Italy,Oceania,Europe,1,0
+Australia--United Arab Emirates#tb,Australia--United Arab Emirates,Australia,United Arab Emirates,tb,1,Australia,United Arab Emirates,Oceania,Middle East,1,0
+Belgium--Egypt#tb,Belgium--Egypt,Belgium,Egypt,tb,1,Belgium,Egypt,Europe,Africa,1,0
+Belgium--United Arab Emirates#tb,Belgium--United Arab Emirates,Belgium,United Arab Emirates,tb,1,Belgium,United Arab Emirates,Europe,Middle East,1,0
+Egypt--India#tb,Egypt--India,Egypt,India,tb,1,Egypt,India,Africa,South Asia,1,0
+Egypt--Indonesia#tb,Egypt--Indonesia,Egypt,Indonesia,tb,1,Egypt,Indonesia,Africa,Southeast Asia,1,0
+Egypt--Italy#tb,Egypt--Italy,Egypt,Italy,tb,1,Egypt,Italy,Africa,Europe,1,0
+Egypt--Netherlands#tb,Egypt--Netherlands,Egypt,Netherlands,tb,1,Egypt,Netherlands,Africa,Europe,1,0
+Egypt--Singapore#tb,Egypt--Singapore,Egypt,Singapore,tb,1,Egypt,Singapore,Africa,Southeast Asia,1,1
+Egypt--Switzerland#tb,Egypt--Switzerland,Egypt,Switzerland,tb,1,Egypt,Switzerland,Africa,Europe,1,0
+Egypt--United Arab Emirates#tb,Egypt--United Arab Emirates,Egypt,United Arab Emirates,tb,1,Egypt,United Arab Emirates,Africa,Middle East,1,0
+Egypt--United States#tb,Egypt--United States,Egypt,United States,tb,1,Egypt,United States,Africa,North America,1,0
+India--United Arab Emirates#tb,India--United Arab Emirates,India,United Arab Emirates,tb,1,India,United Arab Emirates,South Asia,Middle East,1,0
+Indonesia--United Arab Emirates#tb,Indonesia--United Arab Emirates,Indonesia,United Arab Emirates,tb,1,Indonesia,United Arab Emirates,Southeast Asia,Middle East,1,0
+Italy--United Arab Emirates#tb,Italy--United Arab Emirates,Italy,United Arab Emirates,tb,1,Italy,United Arab Emirates,Europe,Middle East,1,0
+Netherlands--United Arab Emirates#tb,Netherlands--United Arab Emirates,Netherlands,United Arab Emirates,tb,1,Netherlands,United Arab Emirates,Europe,Middle East,1,0
+Singapore--United Arab Emirates#tb,Singapore--United Arab Emirates,Singapore,United Arab Emirates,tb,1,Singapore,United Arab Emirates,Southeast Asia,Middle East,1,1
+Switzerland--United Arab Emirates#tb,Switzerland--United Arab Emirates,Switzerland,United Arab Emirates,tb,1,Switzerland,United Arab Emirates,Europe,Middle East,1,0
+United Arab Emirates--United States#tb,United Arab Emirates--United States,United Arab Emirates,United States,tb,1,United Arab Emirates,United States,Middle East,North America,1,0
+Saudi Arabia--Singapore#amr_hai,Saudi Arabia--Singapore,Saudi Arabia,Singapore,amr_hai,1,Saudi Arabia,Singapore,Middle East,Southeast Asia,1,1
+Saudi Arabia--United Kingdom#amr_hai,Saudi Arabia--United Kingdom,Saudi Arabia,United Kingdom,amr_hai,1,Saudi Arabia,United Kingdom,Middle East,Europe,1,0
+Hong Kong SAR--Singapore#tb,Hong Kong SAR--Singapore,Hong Kong SAR,Singapore,tb,1,Hong Kong SAR,Singapore,East Asia,Southeast Asia,1,1
+Hong Kong SAR--United Kingdom#tb,Hong Kong SAR--United Kingdom,Hong Kong SAR,United Kingdom,tb,1,Hong Kong SAR,United Kingdom,East Asia,Europe,1,0
+Ethiopia--Malaysia#vector_borne,Ethiopia--Malaysia,Ethiopia,Malaysia,vector_borne,1,Ethiopia,Malaysia,Africa,Southeast Asia,1,0
+Ethiopia--Philippines#vector_borne,Ethiopia--Philippines,Ethiopia,Philippines,vector_borne,1,Ethiopia,Philippines,Africa,Southeast Asia,1,0
+Ethiopia--Singapore#vector_borne,Ethiopia--Singapore,Ethiopia,Singapore,vector_borne,1,Ethiopia,Singapore,Africa,Southeast Asia,1,1
+Ethiopia--Thailand#vector_borne,Ethiopia--Thailand,Ethiopia,Thailand,vector_borne,1,Ethiopia,Thailand,Africa,Southeast Asia,1,0
+Malaysia--Philippines#vector_borne,Malaysia--Philippines,Malaysia,Philippines,vector_borne,1,Malaysia,Philippines,Southeast Asia,Southeast Asia,1,0
+Singapore--Taiwan#vector_borne,Singapore--Taiwan,Singapore,Taiwan,vector_borne,1,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+Hong Kong SAR--United Kingdom#sti,Hong Kong SAR--United Kingdom,Hong Kong SAR,United Kingdom,sti,1,Hong Kong SAR,United Kingdom,East Asia,Europe,1,0
+Republic of Korea--United Kingdom#sti,Republic of Korea--United Kingdom,Republic of Korea,United Kingdom,sti,1,Republic of Korea,United Kingdom,East Asia,Europe,1,0
+Taiwan--United Kingdom#sti,Taiwan--United Kingdom,Taiwan,United Kingdom,sti,1,Taiwan,United Kingdom,East Asia,Europe,1,0
+Australia--New Zealand#tb,Australia--New Zealand,Australia,New Zealand,tb,1,Australia,New Zealand,Oceania,Oceania,1,0
+Nepal--New Zealand#tb,Nepal--New Zealand,Nepal,New Zealand,tb,1,Nepal,New Zealand,South Asia,Oceania,1,0
+New Zealand--Singapore#tb,New Zealand--Singapore,New Zealand,Singapore,tb,1,New Zealand,Singapore,Oceania,Southeast Asia,1,1
+New Zealand--United Kingdom#tb,New Zealand--United Kingdom,New Zealand,United Kingdom,tb,1,New Zealand,United Kingdom,Oceania,Europe,1,0
+New Zealand--United States#tb,New Zealand--United States,New Zealand,United States,tb,1,New Zealand,United States,Oceania,North America,1,0
+New Zealand--Viet Nam#tb,New Zealand--Viet Nam,New Zealand,Viet Nam,tb,1,New Zealand,Viet Nam,Oceania,Southeast Asia,1,0
+Lebanon--Singapore#amr_hai,Lebanon--Singapore,Lebanon,Singapore,amr_hai,1,Lebanon,Singapore,Middle East,Southeast Asia,1,1
+Lebanon--United States#amr_hai,Lebanon--United States,Lebanon,United States,amr_hai,1,Lebanon,United States,Middle East,North America,1,0
+Estonia--Singapore#vector_borne,Estonia--Singapore,Estonia,Singapore,vector_borne,1,Estonia,Singapore,Europe,Southeast Asia,1,1
+Australia--Finland#rti,Australia--Finland,Australia,Finland,rti,1,Australia,Finland,Oceania,Europe,1,0
+Australia--Hong Kong SAR#rti,Australia--Hong Kong SAR,Australia,Hong Kong SAR,rti,1,Australia,Hong Kong SAR,Oceania,East Asia,1,0
+China--Finland#rti,China--Finland,China,Finland,rti,1,China,Finland,East Asia,Europe,1,0
+Finland--Hong Kong SAR#rti,Finland--Hong Kong SAR,Finland,Hong Kong SAR,rti,1,Finland,Hong Kong SAR,Europe,East Asia,1,0
+Finland--Singapore#rti,Finland--Singapore,Finland,Singapore,rti,1,Finland,Singapore,Europe,Southeast Asia,1,1
+Finland--United States#rti,Finland--United States,Finland,United States,rti,1,Finland,United States,Europe,North America,1,0
+Nepal--Viet Nam#other_id,Nepal--Viet Nam,Nepal,Viet Nam,other_id,1,Nepal,Viet Nam,South Asia,Southeast Asia,1,0
+Singapore--Viet Nam#other_id,Singapore--Viet Nam,Singapore,Viet Nam,other_id,1,Singapore,Viet Nam,Southeast Asia,Southeast Asia,1,1
+United Kingdom--Viet Nam#other_id,United Kingdom--Viet Nam,United Kingdom,Viet Nam,other_id,1,United Kingdom,Viet Nam,Europe,Southeast Asia,1,0
+France--Lao PDR#vector_borne,France--Lao PDR,France,Lao PDR,vector_borne,1,France,Lao PDR,Europe,Southeast Asia,1,0
+Lao PDR--Singapore#vector_borne,Lao PDR--Singapore,Lao PDR,Singapore,vector_borne,1,Lao PDR,Singapore,Southeast Asia,Southeast Asia,1,1
+Australia--Greece#vector_borne,Australia--Greece,Australia,Greece,vector_borne,1,Australia,Greece,Oceania,Europe,1,0
+Greece--Singapore#vector_borne,Greece--Singapore,Greece,Singapore,vector_borne,1,Greece,Singapore,Europe,Southeast Asia,1,1
+Germany--Netherlands#tb,Germany--Netherlands,Germany,Netherlands,tb,1,Germany,Netherlands,Europe,Europe,1,0
+Germany--Uganda#tb,Germany--Uganda,Germany,Uganda,tb,1,Germany,Uganda,Europe,Africa,1,0
+Netherlands--Uganda#tb,Netherlands--Uganda,Netherlands,Uganda,tb,1,Netherlands,Uganda,Europe,Africa,1,0
+Germany--Japan#rti,Germany--Japan,Germany,Japan,rti,1,Germany,Japan,Europe,East Asia,1,0
+Belgium--France#amr_hai,Belgium--France,Belgium,France,amr_hai,1,Belgium,France,Europe,Europe,1,0
+Belgium--India#amr_hai,Belgium--India,Belgium,India,amr_hai,1,Belgium,India,Europe,South Asia,1,0
+Belgium--Italy#amr_hai,Belgium--Italy,Belgium,Italy,amr_hai,1,Belgium,Italy,Europe,Europe,1,0
+Belgium--Netherlands#amr_hai,Belgium--Netherlands,Belgium,Netherlands,amr_hai,1,Belgium,Netherlands,Europe,Europe,1,0
+Belgium--Portugal#amr_hai,Belgium--Portugal,Belgium,Portugal,amr_hai,1,Belgium,Portugal,Europe,Europe,1,0
+Belgium--Romania#amr_hai,Belgium--Romania,Belgium,Romania,amr_hai,1,Belgium,Romania,Europe,Europe,1,0
+Belgium--Singapore#amr_hai,Belgium--Singapore,Belgium,Singapore,amr_hai,1,Belgium,Singapore,Europe,Southeast Asia,1,1
+Belgium--Spain#amr_hai,Belgium--Spain,Belgium,Spain,amr_hai,1,Belgium,Spain,Europe,Europe,1,0
+Belgium--United Kingdom#amr_hai,Belgium--United Kingdom,Belgium,United Kingdom,amr_hai,1,Belgium,United Kingdom,Europe,Europe,1,0
+France--India#amr_hai,France--India,France,India,amr_hai,1,France,India,Europe,South Asia,1,0
+France--Romania#amr_hai,France--Romania,France,Romania,amr_hai,1,France,Romania,Europe,Europe,1,0
+India--Italy#amr_hai,India--Italy,India,Italy,amr_hai,1,India,Italy,South Asia,Europe,1,0
+India--Portugal#amr_hai,India--Portugal,India,Portugal,amr_hai,1,India,Portugal,South Asia,Europe,1,0
+India--Romania#amr_hai,India--Romania,India,Romania,amr_hai,1,India,Romania,South Asia,Europe,1,0
+India--Spain#amr_hai,India--Spain,India,Spain,amr_hai,1,India,Spain,South Asia,Europe,1,0
+Italy--Netherlands#amr_hai,Italy--Netherlands,Italy,Netherlands,amr_hai,1,Italy,Netherlands,Europe,Europe,1,0
+Italy--Romania#amr_hai,Italy--Romania,Italy,Romania,amr_hai,1,Italy,Romania,Europe,Europe,1,0
+Netherlands--Portugal#amr_hai,Netherlands--Portugal,Netherlands,Portugal,amr_hai,1,Netherlands,Portugal,Europe,Europe,1,0
+Netherlands--Romania#amr_hai,Netherlands--Romania,Netherlands,Romania,amr_hai,1,Netherlands,Romania,Europe,Europe,1,0
+Netherlands--Spain#amr_hai,Netherlands--Spain,Netherlands,Spain,amr_hai,1,Netherlands,Spain,Europe,Europe,1,0
+Portugal--Romania#amr_hai,Portugal--Romania,Portugal,Romania,amr_hai,1,Portugal,Romania,Europe,Europe,1,0
+Romania--Singapore#amr_hai,Romania--Singapore,Romania,Singapore,amr_hai,1,Romania,Singapore,Europe,Southeast Asia,1,1
+Romania--Spain#amr_hai,Romania--Spain,Romania,Spain,amr_hai,1,Romania,Spain,Europe,Europe,1,0
+Romania--United Kingdom#amr_hai,Romania--United Kingdom,Romania,United Kingdom,amr_hai,1,Romania,United Kingdom,Europe,Europe,1,0
+Cambodia--United Kingdom#rti,Cambodia--United Kingdom,Cambodia,United Kingdom,rti,1,Cambodia,United Kingdom,Southeast Asia,Europe,1,0
+Denmark--Haiti#tb,Denmark--Haiti,Denmark,Haiti,tb,1,Denmark,Haiti,Europe,Latin America,1,0
+Denmark--Peru#tb,Denmark--Peru,Denmark,Peru,tb,1,Denmark,Peru,Europe,Latin America,1,0
+Colombia--Panama#vector_borne,Colombia--Panama,Colombia,Panama,vector_borne,1,Colombia,Panama,Latin America,Latin America,1,0
+Colombia--Philippines#vector_borne,Colombia--Philippines,Colombia,Philippines,vector_borne,1,Colombia,Philippines,Latin America,Southeast Asia,1,0
+Colombia--Singapore#vector_borne,Colombia--Singapore,Colombia,Singapore,vector_borne,1,Colombia,Singapore,Latin America,Southeast Asia,1,1
+Colombia--Switzerland#vector_borne,Colombia--Switzerland,Colombia,Switzerland,vector_borne,1,Colombia,Switzerland,Latin America,Europe,1,0
+Colombia--Thailand#vector_borne,Colombia--Thailand,Colombia,Thailand,vector_borne,1,Colombia,Thailand,Latin America,Southeast Asia,1,0
+Colombia--United States#vector_borne,Colombia--United States,Colombia,United States,vector_borne,1,Colombia,United States,Latin America,North America,1,0
+Panama--Philippines#vector_borne,Panama--Philippines,Panama,Philippines,vector_borne,1,Panama,Philippines,Latin America,Southeast Asia,1,0
+Panama--Singapore#vector_borne,Panama--Singapore,Panama,Singapore,vector_borne,1,Panama,Singapore,Latin America,Southeast Asia,1,1
+Panama--Switzerland#vector_borne,Panama--Switzerland,Panama,Switzerland,vector_borne,1,Panama,Switzerland,Latin America,Europe,1,0
+Panama--Thailand#vector_borne,Panama--Thailand,Panama,Thailand,vector_borne,1,Panama,Thailand,Latin America,Southeast Asia,1,0
+Panama--United States#vector_borne,Panama--United States,Panama,United States,vector_borne,1,Panama,United States,Latin America,North America,1,0
+Philippines--Switzerland#vector_borne,Philippines--Switzerland,Philippines,Switzerland,vector_borne,1,Philippines,Switzerland,Southeast Asia,Europe,1,0
+Philippines--United States#vector_borne,Philippines--United States,Philippines,United States,vector_borne,1,Philippines,United States,Southeast Asia,North America,1,0
+Cambodia--France#rti,Cambodia--France,Cambodia,France,rti,1,Cambodia,France,Southeast Asia,Europe,1,0
+Cambodia--Japan#rti,Cambodia--Japan,Cambodia,Japan,rti,1,Cambodia,Japan,Southeast Asia,East Asia,1,0
+Cambodia--Madagascar#rti,Cambodia--Madagascar,Cambodia,Madagascar,rti,1,Cambodia,Madagascar,Southeast Asia,Africa,1,0
+France--Japan#rti,France--Japan,France,Japan,rti,1,France,Japan,Europe,East Asia,1,0
+France--Madagascar#rti,France--Madagascar,France,Madagascar,rti,1,France,Madagascar,Europe,Africa,1,0
+Japan--Madagascar#rti,Japan--Madagascar,Japan,Madagascar,rti,1,Japan,Madagascar,East Asia,Africa,1,0
+Madagascar--Singapore#rti,Madagascar--Singapore,Madagascar,Singapore,rti,1,Madagascar,Singapore,Africa,Southeast Asia,1,1
+Japan--Netherlands#rti,Japan--Netherlands,Japan,Netherlands,rti,1,Japan,Netherlands,East Asia,Europe,1,0
+Australia--France#vector_borne,Australia--France,Australia,France,vector_borne,1,Australia,France,Oceania,Europe,1,0
+Australia--Portugal#vector_borne,Australia--Portugal,Australia,Portugal,vector_borne,1,Australia,Portugal,Oceania,Europe,1,0
+China--Portugal#vector_borne,China--Portugal,China,Portugal,vector_borne,1,China,Portugal,East Asia,Europe,1,0
+France--Germany#vector_borne,France--Germany,France,Germany,vector_borne,1,France,Germany,Europe,Europe,1,0
+France--Portugal#vector_borne,France--Portugal,France,Portugal,vector_borne,1,France,Portugal,Europe,Europe,1,0
+Germany--Portugal#vector_borne,Germany--Portugal,Germany,Portugal,vector_borne,1,Germany,Portugal,Europe,Europe,1,0
+Australia--Switzerland#sti,Australia--Switzerland,Australia,Switzerland,sti,1,Australia,Switzerland,Oceania,Europe,1,0
+China--Switzerland#sti,China--Switzerland,China,Switzerland,sti,1,China,Switzerland,East Asia,Europe,1,0
+Switzerland--Thailand#sti,Switzerland--Thailand,Switzerland,Thailand,sti,1,Switzerland,Thailand,Europe,Southeast Asia,1,0
+Switzerland--Viet Nam#sti,Switzerland--Viet Nam,Switzerland,Viet Nam,sti,1,Switzerland,Viet Nam,Europe,Southeast Asia,1,0
+Australia--Philippines#amr_hai,Australia--Philippines,Australia,Philippines,amr_hai,1,Australia,Philippines,Oceania,Southeast Asia,1,0
+Philippines--South Africa#amr_hai,Philippines--South Africa,Philippines,South Africa,amr_hai,1,Philippines,South Africa,Southeast Asia,Africa,1,0
+Philippines--Spain#amr_hai,Philippines--Spain,Philippines,Spain,amr_hai,1,Philippines,Spain,Southeast Asia,Europe,1,0
+Philippines--United States#amr_hai,Philippines--United States,Philippines,United States,amr_hai,1,Philippines,United States,Southeast Asia,North America,1,0
+South Africa--Spain#amr_hai,South Africa--Spain,South Africa,Spain,amr_hai,1,South Africa,Spain,Africa,Europe,1,0
+South Africa--Thailand#amr_hai,South Africa--Thailand,South Africa,Thailand,amr_hai,1,South Africa,Thailand,Africa,Southeast Asia,1,0
+South Africa--United States#amr_hai,South Africa--United States,South Africa,United States,amr_hai,1,South Africa,United States,Africa,North America,1,0
+Spain--Thailand#amr_hai,Spain--Thailand,Spain,Thailand,amr_hai,1,Spain,Thailand,Europe,Southeast Asia,1,0
+Thailand--United States#amr_hai,Thailand--United States,Thailand,United States,amr_hai,1,Thailand,United States,Southeast Asia,North America,1,0
+Cambodia--United Kingdom#tb,Cambodia--United Kingdom,Cambodia,United Kingdom,tb,1,Cambodia,United Kingdom,Southeast Asia,Europe,1,0
+Japan--United Kingdom#tb,Japan--United Kingdom,Japan,United Kingdom,tb,1,Japan,United Kingdom,East Asia,Europe,1,0
+Taiwan--Thailand#rti,Taiwan--Thailand,Taiwan,Thailand,rti,1,Taiwan,Thailand,East Asia,Southeast Asia,1,0
+Taiwan--United Kingdom#rti,Taiwan--United Kingdom,Taiwan,United Kingdom,rti,1,Taiwan,United Kingdom,East Asia,Europe,1,0
+India--Singapore#other_id,India--Singapore,India,Singapore,other_id,1,India,Singapore,South Asia,Southeast Asia,1,1
+Brunei Darussalam--Cambodia#tb,Brunei Darussalam--Cambodia,Brunei Darussalam,Cambodia,tb,1,Brunei Darussalam,Cambodia,Southeast Asia,Southeast Asia,1,0
+Brunei Darussalam--China#tb,Brunei Darussalam--China,Brunei Darussalam,China,tb,1,Brunei Darussalam,China,Southeast Asia,East Asia,1,0
+Brunei Darussalam--Singapore#tb,Brunei Darussalam--Singapore,Brunei Darussalam,Singapore,tb,1,Brunei Darussalam,Singapore,Southeast Asia,Southeast Asia,1,1
+Brunei Darussalam--United States#tb,Brunei Darussalam--United States,Brunei Darussalam,United States,tb,1,Brunei Darussalam,United States,Southeast Asia,North America,1,0
+Cambodia--China#tb,Cambodia--China,Cambodia,China,tb,1,Cambodia,China,Southeast Asia,East Asia,1,0
+Australia--Belgium#vector_borne,Australia--Belgium,Australia,Belgium,vector_borne,1,Australia,Belgium,Oceania,Europe,1,0
+Belgium--Singapore#vector_borne,Belgium--Singapore,Belgium,Singapore,vector_borne,1,Belgium,Singapore,Europe,Southeast Asia,1,1
+Australia--Lao PDR#amr_hai,Australia--Lao PDR,Australia,Lao PDR,amr_hai,1,Australia,Lao PDR,Oceania,Southeast Asia,1,0
+Cambodia--Lao PDR#amr_hai,Cambodia--Lao PDR,Cambodia,Lao PDR,amr_hai,1,Cambodia,Lao PDR,Southeast Asia,Southeast Asia,1,0
+Lao PDR--Singapore#amr_hai,Lao PDR--Singapore,Lao PDR,Singapore,amr_hai,1,Lao PDR,Singapore,Southeast Asia,Southeast Asia,1,1
+Lao PDR--Thailand#amr_hai,Lao PDR--Thailand,Lao PDR,Thailand,amr_hai,1,Lao PDR,Thailand,Southeast Asia,Southeast Asia,1,0
+Lao PDR--United Kingdom#amr_hai,Lao PDR--United Kingdom,Lao PDR,United Kingdom,amr_hai,1,Lao PDR,United Kingdom,Southeast Asia,Europe,1,0
+Lao PDR--Viet Nam#amr_hai,Lao PDR--Viet Nam,Lao PDR,Viet Nam,amr_hai,1,Lao PDR,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Australia--Hong Kong SAR#amr_hai,Australia--Hong Kong SAR,Australia,Hong Kong SAR,amr_hai,1,Australia,Hong Kong SAR,Oceania,East Asia,1,0
+Australia--Republic of Korea#amr_hai,Australia--Republic of Korea,Australia,Republic of Korea,amr_hai,1,Australia,Republic of Korea,Oceania,East Asia,1,0
+Australia--Taiwan#amr_hai,Australia--Taiwan,Australia,Taiwan,amr_hai,1,Australia,Taiwan,Oceania,East Asia,1,0
+Hong Kong SAR--India#amr_hai,Hong Kong SAR--India,Hong Kong SAR,India,amr_hai,1,Hong Kong SAR,India,East Asia,South Asia,1,0
+Hong Kong SAR--Japan#amr_hai,Hong Kong SAR--Japan,Hong Kong SAR,Japan,amr_hai,1,Hong Kong SAR,Japan,East Asia,East Asia,1,0
+Hong Kong SAR--Republic of Korea#amr_hai,Hong Kong SAR--Republic of Korea,Hong Kong SAR,Republic of Korea,amr_hai,1,Hong Kong SAR,Republic of Korea,East Asia,East Asia,1,0
+Hong Kong SAR--Singapore#amr_hai,Hong Kong SAR--Singapore,Hong Kong SAR,Singapore,amr_hai,1,Hong Kong SAR,Singapore,East Asia,Southeast Asia,1,1
+Hong Kong SAR--Taiwan#amr_hai,Hong Kong SAR--Taiwan,Hong Kong SAR,Taiwan,amr_hai,1,Hong Kong SAR,Taiwan,East Asia,East Asia,1,0
+Hong Kong SAR--Thailand#amr_hai,Hong Kong SAR--Thailand,Hong Kong SAR,Thailand,amr_hai,1,Hong Kong SAR,Thailand,East Asia,Southeast Asia,1,0
+India--Republic of Korea#amr_hai,India--Republic of Korea,India,Republic of Korea,amr_hai,1,India,Republic of Korea,South Asia,East Asia,1,0
+Japan--Republic of Korea#amr_hai,Japan--Republic of Korea,Japan,Republic of Korea,amr_hai,1,Japan,Republic of Korea,East Asia,East Asia,1,0
+Republic of Korea--Taiwan#amr_hai,Republic of Korea--Taiwan,Republic of Korea,Taiwan,amr_hai,1,Republic of Korea,Taiwan,East Asia,East Asia,1,0
+Republic of Korea--Thailand#amr_hai,Republic of Korea--Thailand,Republic of Korea,Thailand,amr_hai,1,Republic of Korea,Thailand,East Asia,Southeast Asia,1,0
+Russian Federation--Singapore#vector_borne,Russian Federation--Singapore,Russian Federation,Singapore,vector_borne,1,Russian Federation,Singapore,Europe,Southeast Asia,1,1
+Russian Federation--United Kingdom#vector_borne,Russian Federation--United Kingdom,Russian Federation,United Kingdom,vector_borne,1,Russian Federation,United Kingdom,Europe,Europe,1,0
+Russian Federation--Viet Nam#vector_borne,Russian Federation--Viet Nam,Russian Federation,Viet Nam,vector_borne,1,Russian Federation,Viet Nam,Europe,Southeast Asia,1,0
+China--Malaysia#tb,China--Malaysia,China,Malaysia,tb,1,China,Malaysia,East Asia,Southeast Asia,1,0
+China--Taiwan#tb,China--Taiwan,China,Taiwan,tb,1,China,Taiwan,East Asia,East Asia,1,0
+India--Malaysia#tb,India--Malaysia,India,Malaysia,tb,1,India,Malaysia,South Asia,Southeast Asia,1,0
+Malaysia--Taiwan#tb,Malaysia--Taiwan,Malaysia,Taiwan,tb,1,Malaysia,Taiwan,Southeast Asia,East Asia,1,0
+Philippines--Taiwan#tb,Philippines--Taiwan,Philippines,Taiwan,tb,1,Philippines,Taiwan,Southeast Asia,East Asia,1,0
+Japan--Myanmar#vector_borne,Japan--Myanmar,Japan,Myanmar,vector_borne,1,Japan,Myanmar,East Asia,Southeast Asia,1,0
+Malaysia--Myanmar#vector_borne,Malaysia--Myanmar,Malaysia,Myanmar,vector_borne,1,Malaysia,Myanmar,Southeast Asia,Southeast Asia,1,0
+Malaysia--United States#vector_borne,Malaysia--United States,Malaysia,United States,vector_borne,1,Malaysia,United States,Southeast Asia,North America,1,0
+Myanmar--Singapore#vector_borne,Myanmar--Singapore,Myanmar,Singapore,vector_borne,1,Myanmar,Singapore,Southeast Asia,Southeast Asia,1,1
+Myanmar--United States#vector_borne,Myanmar--United States,Myanmar,United States,vector_borne,1,Myanmar,United States,Southeast Asia,North America,1,0
+Canada--Netherlands#amr_hai,Canada--Netherlands,Canada,Netherlands,amr_hai,1,Canada,Netherlands,North America,Europe,1,0
+Canada--New Zealand#amr_hai,Canada--New Zealand,Canada,New Zealand,amr_hai,1,Canada,New Zealand,North America,Oceania,1,0
+Canada--South Africa#amr_hai,Canada--South Africa,Canada,South Africa,amr_hai,1,Canada,South Africa,North America,Africa,1,0
+France--New Zealand#amr_hai,France--New Zealand,France,New Zealand,amr_hai,1,France,New Zealand,Europe,Oceania,1,0
+France--South Africa#amr_hai,France--South Africa,France,South Africa,amr_hai,1,France,South Africa,Europe,Africa,1,0
+Israel--Netherlands#amr_hai,Israel--Netherlands,Israel,Netherlands,amr_hai,1,Israel,Netherlands,Middle East,Europe,1,0
+Israel--New Zealand#amr_hai,Israel--New Zealand,Israel,New Zealand,amr_hai,1,Israel,New Zealand,Middle East,Oceania,1,0
+Israel--South Africa#amr_hai,Israel--South Africa,Israel,South Africa,amr_hai,1,Israel,South Africa,Middle East,Africa,1,0
+Netherlands--New Zealand#amr_hai,Netherlands--New Zealand,Netherlands,New Zealand,amr_hai,1,Netherlands,New Zealand,Europe,Oceania,1,0
+Netherlands--South Africa#amr_hai,Netherlands--South Africa,Netherlands,South Africa,amr_hai,1,Netherlands,South Africa,Europe,Africa,1,0
+New Zealand--South Africa#amr_hai,New Zealand--South Africa,New Zealand,South Africa,amr_hai,1,New Zealand,South Africa,Oceania,Africa,1,0
+New Zealand--United Kingdom#amr_hai,New Zealand--United Kingdom,New Zealand,United Kingdom,amr_hai,1,New Zealand,United Kingdom,Oceania,Europe,1,0
+Australia--Malaysia#other_id,Australia--Malaysia,Australia,Malaysia,other_id,1,Australia,Malaysia,Oceania,Southeast Asia,1,0
+Australia--Singapore#other_id,Australia--Singapore,Australia,Singapore,other_id,1,Australia,Singapore,Oceania,Southeast Asia,1,1
+Australia--Taiwan#other_id,Australia--Taiwan,Australia,Taiwan,other_id,1,Australia,Taiwan,Oceania,East Asia,1,0
+Australia--Thailand#other_id,Australia--Thailand,Australia,Thailand,other_id,1,Australia,Thailand,Oceania,Southeast Asia,1,0
+Australia--Türkiye#other_id,Australia--Türkiye,Australia,Türkiye,other_id,1,Australia,Türkiye,Oceania,Europe,1,0
+Australia--United Kingdom#other_id,Australia--United Kingdom,Australia,United Kingdom,other_id,1,Australia,United Kingdom,Oceania,Europe,1,0
+Malaysia--Singapore#other_id,Malaysia--Singapore,Malaysia,Singapore,other_id,1,Malaysia,Singapore,Southeast Asia,Southeast Asia,1,1
+Malaysia--Taiwan#other_id,Malaysia--Taiwan,Malaysia,Taiwan,other_id,1,Malaysia,Taiwan,Southeast Asia,East Asia,1,0
+Malaysia--Thailand#other_id,Malaysia--Thailand,Malaysia,Thailand,other_id,1,Malaysia,Thailand,Southeast Asia,Southeast Asia,1,0
+Malaysia--Türkiye#other_id,Malaysia--Türkiye,Malaysia,Türkiye,other_id,1,Malaysia,Türkiye,Southeast Asia,Europe,1,0
+Malaysia--United Kingdom#other_id,Malaysia--United Kingdom,Malaysia,United Kingdom,other_id,1,Malaysia,United Kingdom,Southeast Asia,Europe,1,0
+Singapore--Taiwan#other_id,Singapore--Taiwan,Singapore,Taiwan,other_id,1,Singapore,Taiwan,Southeast Asia,East Asia,1,1
+Singapore--Türkiye#other_id,Singapore--Türkiye,Singapore,Türkiye,other_id,1,Singapore,Türkiye,Southeast Asia,Europe,1,1
+Taiwan--Thailand#other_id,Taiwan--Thailand,Taiwan,Thailand,other_id,1,Taiwan,Thailand,East Asia,Southeast Asia,1,0
+Taiwan--Türkiye#other_id,Taiwan--Türkiye,Taiwan,Türkiye,other_id,1,Taiwan,Türkiye,East Asia,Europe,1,0
+Taiwan--United Kingdom#other_id,Taiwan--United Kingdom,Taiwan,United Kingdom,other_id,1,Taiwan,United Kingdom,East Asia,Europe,1,0
+Thailand--Türkiye#other_id,Thailand--Türkiye,Thailand,Türkiye,other_id,1,Thailand,Türkiye,Southeast Asia,Europe,1,0
+Thailand--United Kingdom#other_id,Thailand--United Kingdom,Thailand,United Kingdom,other_id,1,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+Türkiye--United Kingdom#other_id,Türkiye--United Kingdom,Türkiye,United Kingdom,other_id,1,Türkiye,United Kingdom,Europe,Europe,1,0
+Cambodia--Costa Rica#sti,Cambodia--Costa Rica,Cambodia,Costa Rica,sti,1,Cambodia,Costa Rica,Southeast Asia,Latin America,1,0
+Costa Rica--Singapore#sti,Costa Rica--Singapore,Costa Rica,Singapore,sti,1,Costa Rica,Singapore,Latin America,Southeast Asia,1,1
+Costa Rica--United States#sti,Costa Rica--United States,Costa Rica,United States,sti,1,Costa Rica,United States,Latin America,North America,1,0
+Iraq--Malaysia#vector_borne,Iraq--Malaysia,Iraq,Malaysia,vector_borne,1,Iraq,Malaysia,Middle East,Southeast Asia,1,0
+Iraq--Singapore#vector_borne,Iraq--Singapore,Iraq,Singapore,vector_borne,1,Iraq,Singapore,Middle East,Southeast Asia,1,1
+Denmark--Japan#tb,Denmark--Japan,Denmark,Japan,tb,1,Denmark,Japan,Europe,East Asia,1,0
+Australia--Greece#amr_hai,Australia--Greece,Australia,Greece,amr_hai,1,Australia,Greece,Oceania,Europe,1,0
+Australia--Portugal#amr_hai,Australia--Portugal,Australia,Portugal,amr_hai,1,Australia,Portugal,Oceania,Europe,1,0
+Canada--Germany#amr_hai,Canada--Germany,Canada,Germany,amr_hai,1,Canada,Germany,North America,Europe,1,0
+Canada--Greece#amr_hai,Canada--Greece,Canada,Greece,amr_hai,1,Canada,Greece,North America,Europe,1,0
+Canada--Italy#amr_hai,Canada--Italy,Canada,Italy,amr_hai,1,Canada,Italy,North America,Europe,1,0
+Canada--Japan#amr_hai,Canada--Japan,Canada,Japan,amr_hai,1,Canada,Japan,North America,East Asia,1,0
+Canada--Portugal#amr_hai,Canada--Portugal,Canada,Portugal,amr_hai,1,Canada,Portugal,North America,Europe,1,0
+Canada--Spain#amr_hai,Canada--Spain,Canada,Spain,amr_hai,1,Canada,Spain,North America,Europe,1,0
+Canada--United States#amr_hai,Canada--United States,Canada,United States,amr_hai,1,Canada,United States,North America,North America,1,0
+France--Germany#amr_hai,France--Germany,France,Germany,amr_hai,1,France,Germany,Europe,Europe,1,0
+France--Greece#amr_hai,France--Greece,France,Greece,amr_hai,1,France,Greece,Europe,Europe,1,0
+France--Japan#amr_hai,France--Japan,France,Japan,amr_hai,1,France,Japan,Europe,East Asia,1,0
+France--United States#amr_hai,France--United States,France,United States,amr_hai,1,France,United States,Europe,North America,1,0
+Germany--Greece#amr_hai,Germany--Greece,Germany,Greece,amr_hai,1,Germany,Greece,Europe,Europe,1,0
+Germany--Israel#amr_hai,Germany--Israel,Germany,Israel,amr_hai,1,Germany,Israel,Europe,Middle East,1,0
+Germany--Italy#amr_hai,Germany--Italy,Germany,Italy,amr_hai,1,Germany,Italy,Europe,Europe,1,0
+Germany--Japan#amr_hai,Germany--Japan,Germany,Japan,amr_hai,1,Germany,Japan,Europe,East Asia,1,0
+Germany--Portugal#amr_hai,Germany--Portugal,Germany,Portugal,amr_hai,1,Germany,Portugal,Europe,Europe,1,0
+Greece--Israel#amr_hai,Greece--Israel,Greece,Israel,amr_hai,1,Greece,Israel,Europe,Middle East,1,0
+Greece--Italy#amr_hai,Greece--Italy,Greece,Italy,amr_hai,1,Greece,Italy,Europe,Europe,1,0
+Greece--Japan#amr_hai,Greece--Japan,Greece,Japan,amr_hai,1,Greece,Japan,Europe,East Asia,1,0
+Greece--Portugal#amr_hai,Greece--Portugal,Greece,Portugal,amr_hai,1,Greece,Portugal,Europe,Europe,1,0
+Greece--Singapore#amr_hai,Greece--Singapore,Greece,Singapore,amr_hai,1,Greece,Singapore,Europe,Southeast Asia,1,1
+Greece--Spain#amr_hai,Greece--Spain,Greece,Spain,amr_hai,1,Greece,Spain,Europe,Europe,1,0
+Greece--United Kingdom#amr_hai,Greece--United Kingdom,Greece,United Kingdom,amr_hai,1,Greece,United Kingdom,Europe,Europe,1,0
+Greece--United States#amr_hai,Greece--United States,Greece,United States,amr_hai,1,Greece,United States,Europe,North America,1,0
+Israel--Italy#amr_hai,Israel--Italy,Israel,Italy,amr_hai,1,Israel,Italy,Middle East,Europe,1,0
+Israel--Japan#amr_hai,Israel--Japan,Israel,Japan,amr_hai,1,Israel,Japan,Middle East,East Asia,1,0
+Israel--Portugal#amr_hai,Israel--Portugal,Israel,Portugal,amr_hai,1,Israel,Portugal,Middle East,Europe,1,0
+Israel--Spain#amr_hai,Israel--Spain,Israel,Spain,amr_hai,1,Israel,Spain,Middle East,Europe,1,0
+Israel--United States#amr_hai,Israel--United States,Israel,United States,amr_hai,1,Israel,United States,Middle East,North America,1,0
+Italy--Japan#amr_hai,Italy--Japan,Italy,Japan,amr_hai,1,Italy,Japan,Europe,East Asia,1,0
+Italy--United States#amr_hai,Italy--United States,Italy,United States,amr_hai,1,Italy,United States,Europe,North America,1,0
+Japan--Portugal#amr_hai,Japan--Portugal,Japan,Portugal,amr_hai,1,Japan,Portugal,East Asia,Europe,1,0
+Japan--Spain#amr_hai,Japan--Spain,Japan,Spain,amr_hai,1,Japan,Spain,East Asia,Europe,1,0
+Portugal--United States#amr_hai,Portugal--United States,Portugal,United States,amr_hai,1,Portugal,United States,Europe,North America,1,0
+Colombia--Ethiopia#tb,Colombia--Ethiopia,Colombia,Ethiopia,tb,1,Colombia,Ethiopia,Latin America,Africa,1,0
+Colombia--India#tb,Colombia--India,Colombia,India,tb,1,Colombia,India,Latin America,South Asia,1,0
+Colombia--Indonesia#tb,Colombia--Indonesia,Colombia,Indonesia,tb,1,Colombia,Indonesia,Latin America,Southeast Asia,1,0
+Colombia--Netherlands#tb,Colombia--Netherlands,Colombia,Netherlands,tb,1,Colombia,Netherlands,Latin America,Europe,1,0
+Colombia--Singapore#tb,Colombia--Singapore,Colombia,Singapore,tb,1,Colombia,Singapore,Latin America,Southeast Asia,1,1
+Colombia--United States#tb,Colombia--United States,Colombia,United States,tb,1,Colombia,United States,Latin America,North America,1,0
+Bangladesh--Canada#tb,Bangladesh--Canada,Bangladesh,Canada,tb,1,Bangladesh,Canada,South Asia,North America,1,0
+Bangladesh--South Africa#tb,Bangladesh--South Africa,Bangladesh,South Africa,tb,1,Bangladesh,South Africa,South Asia,Africa,1,0
+Bangladesh--Sweden#tb,Bangladesh--Sweden,Bangladesh,Sweden,tb,1,Bangladesh,Sweden,South Asia,Europe,1,0
+Bangladesh--Viet Nam#tb,Bangladesh--Viet Nam,Bangladesh,Viet Nam,tb,1,Bangladesh,Viet Nam,South Asia,Southeast Asia,1,0
+Ethiopia--Sweden#tb,Ethiopia--Sweden,Ethiopia,Sweden,tb,1,Ethiopia,Sweden,Africa,Europe,1,0
+Haiti--Sweden#tb,Haiti--Sweden,Haiti,Sweden,tb,1,Haiti,Sweden,Latin America,Europe,1,0
+Indonesia--Sweden#tb,Indonesia--Sweden,Indonesia,Sweden,tb,1,Indonesia,Sweden,Southeast Asia,Europe,1,0
+Myanmar--Sweden#tb,Myanmar--Sweden,Myanmar,Sweden,tb,1,Myanmar,Sweden,Southeast Asia,Europe,1,0
+Myanmar--Switzerland#tb,Myanmar--Switzerland,Myanmar,Switzerland,tb,1,Myanmar,Switzerland,Southeast Asia,Europe,1,0
+Myanmar--Viet Nam#tb,Myanmar--Viet Nam,Myanmar,Viet Nam,tb,1,Myanmar,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Pakistan--Sweden#tb,Pakistan--Sweden,Pakistan,Sweden,tb,1,Pakistan,Sweden,South Asia,Europe,1,0
+Peru--Sweden#tb,Peru--Sweden,Peru,Sweden,tb,1,Peru,Sweden,Latin America,Europe,1,0
+Sweden--Switzerland#tb,Sweden--Switzerland,Sweden,Switzerland,tb,1,Sweden,Switzerland,Europe,Europe,1,0
+Australia--Republic of Korea#tb,Australia--Republic of Korea,Australia,Republic of Korea,tb,1,Australia,Republic of Korea,Oceania,East Asia,1,0
+Philippines--Republic of Korea#tb,Philippines--Republic of Korea,Philippines,Republic of Korea,tb,1,Philippines,Republic of Korea,Southeast Asia,East Asia,1,0
+Republic of Korea--Switzerland#tb,Republic of Korea--Switzerland,Republic of Korea,Switzerland,tb,1,Republic of Korea,Switzerland,East Asia,Europe,1,0
+Italy--Poland#tb,Italy--Poland,Italy,Poland,tb,1,Italy,Poland,Europe,Europe,1,0
+Poland--Singapore#tb,Poland--Singapore,Poland,Singapore,tb,1,Poland,Singapore,Europe,Southeast Asia,1,1
+Poland--United Kingdom#tb,Poland--United Kingdom,Poland,United Kingdom,tb,1,Poland,United Kingdom,Europe,Europe,1,0
+Poland--United States#tb,Poland--United States,Poland,United States,tb,1,Poland,United States,Europe,North America,1,0
+China--Switzerland#amr_hai,China--Switzerland,China,Switzerland,amr_hai,1,China,Switzerland,East Asia,Europe,1,0
+Singapore--Switzerland#amr_hai,Singapore--Switzerland,Singapore,Switzerland,amr_hai,1,Singapore,Switzerland,Southeast Asia,Europe,1,1
+Switzerland--United States#amr_hai,Switzerland--United States,Switzerland,United States,amr_hai,1,Switzerland,United States,Europe,North America,1,0
+Australia--China#tb,Australia--China,Australia,China,tb,1,Australia,China,Oceania,East Asia,1,0
+Australia--Denmark#tb,Australia--Denmark,Australia,Denmark,tb,1,Australia,Denmark,Oceania,Europe,1,0
+Australia--France#tb,Australia--France,Australia,France,tb,1,Australia,France,Oceania,Europe,1,0
+Australia--Ukraine#tb,Australia--Ukraine,Australia,Ukraine,tb,1,Australia,Ukraine,Oceania,Europe,1,0
+Australia--Zambia#tb,Australia--Zambia,Australia,Zambia,tb,1,Australia,Zambia,Oceania,Africa,1,0
+Australia--Zimbabwe#tb,Australia--Zimbabwe,Australia,Zimbabwe,tb,1,Australia,Zimbabwe,Oceania,Africa,1,0
+Belgium--Sweden#tb,Belgium--Sweden,Belgium,Sweden,tb,1,Belgium,Sweden,Europe,Europe,1,0
+Belgium--Ukraine#tb,Belgium--Ukraine,Belgium,Ukraine,tb,1,Belgium,Ukraine,Europe,Europe,1,0
+Belgium--Zambia#tb,Belgium--Zambia,Belgium,Zambia,tb,1,Belgium,Zambia,Europe,Africa,1,0
+Belgium--Zimbabwe#tb,Belgium--Zimbabwe,Belgium,Zimbabwe,tb,1,Belgium,Zimbabwe,Europe,Africa,1,0
+Canada--Ukraine#tb,Canada--Ukraine,Canada,Ukraine,tb,1,Canada,Ukraine,North America,Europe,1,0
+Canada--Zimbabwe#tb,Canada--Zimbabwe,Canada,Zimbabwe,tb,1,Canada,Zimbabwe,North America,Africa,1,0
+China--South Africa#tb,China--South Africa,China,South Africa,tb,1,China,South Africa,East Asia,Africa,1,0
+China--Ukraine#tb,China--Ukraine,China,Ukraine,tb,1,China,Ukraine,East Asia,Europe,1,0
+China--Viet Nam#tb,China--Viet Nam,China,Viet Nam,tb,1,China,Viet Nam,East Asia,Southeast Asia,1,0
+China--Zambia#tb,China--Zambia,China,Zambia,tb,1,China,Zambia,East Asia,Africa,1,0
+China--Zimbabwe#tb,China--Zimbabwe,China,Zimbabwe,tb,1,China,Zimbabwe,East Asia,Africa,1,0
+Denmark--Sweden#tb,Denmark--Sweden,Denmark,Sweden,tb,1,Denmark,Sweden,Europe,Europe,1,0
+Denmark--Ukraine#tb,Denmark--Ukraine,Denmark,Ukraine,tb,1,Denmark,Ukraine,Europe,Europe,1,0
+Denmark--Zambia#tb,Denmark--Zambia,Denmark,Zambia,tb,1,Denmark,Zambia,Europe,Africa,1,0
+Denmark--Zimbabwe#tb,Denmark--Zimbabwe,Denmark,Zimbabwe,tb,1,Denmark,Zimbabwe,Europe,Africa,1,0
+France--Ukraine#tb,France--Ukraine,France,Ukraine,tb,1,France,Ukraine,Europe,Europe,1,0
+France--Zambia#tb,France--Zambia,France,Zambia,tb,1,France,Zambia,Europe,Africa,1,0
+France--Zimbabwe#tb,France--Zimbabwe,France,Zimbabwe,tb,1,France,Zimbabwe,Europe,Africa,1,0
+India--Sweden#tb,India--Sweden,India,Sweden,tb,1,India,Sweden,South Asia,Europe,1,0
+India--Ukraine#tb,India--Ukraine,India,Ukraine,tb,1,India,Ukraine,South Asia,Europe,1,0
+India--Zambia#tb,India--Zambia,India,Zambia,tb,1,India,Zambia,South Asia,Africa,1,0
+India--Zimbabwe#tb,India--Zimbabwe,India,Zimbabwe,tb,1,India,Zimbabwe,South Asia,Africa,1,0
+Netherlands--South Africa#tb,Netherlands--South Africa,Netherlands,South Africa,tb,1,Netherlands,South Africa,Europe,Africa,1,0
+Netherlands--Sweden#tb,Netherlands--Sweden,Netherlands,Sweden,tb,1,Netherlands,Sweden,Europe,Europe,1,0
+Netherlands--Ukraine#tb,Netherlands--Ukraine,Netherlands,Ukraine,tb,1,Netherlands,Ukraine,Europe,Europe,1,0
+Netherlands--Viet Nam#tb,Netherlands--Viet Nam,Netherlands,Viet Nam,tb,1,Netherlands,Viet Nam,Europe,Southeast Asia,1,0
+Netherlands--Zambia#tb,Netherlands--Zambia,Netherlands,Zambia,tb,1,Netherlands,Zambia,Europe,Africa,1,0
+Netherlands--Zimbabwe#tb,Netherlands--Zimbabwe,Netherlands,Zimbabwe,tb,1,Netherlands,Zimbabwe,Europe,Africa,1,0
+Singapore--Ukraine#tb,Singapore--Ukraine,Singapore,Ukraine,tb,1,Singapore,Ukraine,Southeast Asia,Europe,1,1
+Singapore--Zimbabwe#tb,Singapore--Zimbabwe,Singapore,Zimbabwe,tb,1,Singapore,Zimbabwe,Southeast Asia,Africa,1,1
+South Africa--Ukraine#tb,South Africa--Ukraine,South Africa,Ukraine,tb,1,South Africa,Ukraine,Africa,Europe,1,0
+South Africa--Zimbabwe#tb,South Africa--Zimbabwe,South Africa,Zimbabwe,tb,1,South Africa,Zimbabwe,Africa,Africa,1,0
+Sweden--Ukraine#tb,Sweden--Ukraine,Sweden,Ukraine,tb,1,Sweden,Ukraine,Europe,Europe,1,0
+Sweden--Zambia#tb,Sweden--Zambia,Sweden,Zambia,tb,1,Sweden,Zambia,Europe,Africa,1,0
+Sweden--Zimbabwe#tb,Sweden--Zimbabwe,Sweden,Zimbabwe,tb,1,Sweden,Zimbabwe,Europe,Africa,1,0
+Ukraine--United Kingdom#tb,Ukraine--United Kingdom,Ukraine,United Kingdom,tb,1,Ukraine,United Kingdom,Europe,Europe,1,0
+Ukraine--United States#tb,Ukraine--United States,Ukraine,United States,tb,1,Ukraine,United States,Europe,North America,1,0
+Ukraine--Viet Nam#tb,Ukraine--Viet Nam,Ukraine,Viet Nam,tb,1,Ukraine,Viet Nam,Europe,Southeast Asia,1,0
+Ukraine--Zambia#tb,Ukraine--Zambia,Ukraine,Zambia,tb,1,Ukraine,Zambia,Europe,Africa,1,0
+Ukraine--Zimbabwe#tb,Ukraine--Zimbabwe,Ukraine,Zimbabwe,tb,1,Ukraine,Zimbabwe,Europe,Africa,1,0
+United Kingdom--Zimbabwe#tb,United Kingdom--Zimbabwe,United Kingdom,Zimbabwe,tb,1,United Kingdom,Zimbabwe,Europe,Africa,1,0
+United States--Zambia#tb,United States--Zambia,United States,Zambia,tb,1,United States,Zambia,North America,Africa,1,0
+United States--Zimbabwe#tb,United States--Zimbabwe,United States,Zimbabwe,tb,1,United States,Zimbabwe,North America,Africa,1,0
+Viet Nam--Zambia#tb,Viet Nam--Zambia,Viet Nam,Zambia,tb,1,Viet Nam,Zambia,Southeast Asia,Africa,1,0
+Viet Nam--Zimbabwe#tb,Viet Nam--Zimbabwe,Viet Nam,Zimbabwe,tb,1,Viet Nam,Zimbabwe,Southeast Asia,Africa,1,0
+Zambia--Zimbabwe#tb,Zambia--Zimbabwe,Zambia,Zimbabwe,tb,1,Zambia,Zimbabwe,Africa,Africa,1,0
+Australia--United Kingdom#sti,Australia--United Kingdom,Australia,United Kingdom,sti,1,Australia,United Kingdom,Oceania,Europe,1,0
+Australia--United States#sti,Australia--United States,Australia,United States,sti,1,Australia,United States,Oceania,North America,1,0
+Cambodia--United Kingdom#sti,Cambodia--United Kingdom,Cambodia,United Kingdom,sti,1,Cambodia,United Kingdom,Southeast Asia,Europe,1,0
+Australia--Italy#vector_borne,Australia--Italy,Australia,Italy,vector_borne,1,Australia,Italy,Oceania,Europe,1,0
+Australia--Spain#vector_borne,Australia--Spain,Australia,Spain,vector_borne,1,Australia,Spain,Oceania,Europe,1,0
+Brazil--Italy#vector_borne,Brazil--Italy,Brazil,Italy,vector_borne,1,Brazil,Italy,Latin America,Europe,1,0
+Brazil--Spain#vector_borne,Brazil--Spain,Brazil,Spain,vector_borne,1,Brazil,Spain,Latin America,Europe,1,0
+Italy--Singapore#vector_borne,Italy--Singapore,Italy,Singapore,vector_borne,1,Italy,Singapore,Europe,Southeast Asia,1,1
+Italy--Spain#vector_borne,Italy--Spain,Italy,Spain,vector_borne,1,Italy,Spain,Europe,Europe,1,0
+Italy--United States#vector_borne,Italy--United States,Italy,United States,vector_borne,1,Italy,United States,Europe,North America,1,0
+Spain--United States#vector_borne,Spain--United States,Spain,United States,vector_borne,1,Spain,United States,Europe,North America,1,0
+India--Thailand#tb,India--Thailand,India,Thailand,tb,1,India,Thailand,South Asia,Southeast Asia,1,0
+Indonesia--Thailand#tb,Indonesia--Thailand,Indonesia,Thailand,tb,1,Indonesia,Thailand,Southeast Asia,Southeast Asia,1,0
+Indonesia--Uganda#tb,Indonesia--Uganda,Indonesia,Uganda,tb,1,Indonesia,Uganda,Southeast Asia,Africa,1,0
+Philippines--Uganda#tb,Philippines--Uganda,Philippines,Uganda,tb,1,Philippines,Uganda,Southeast Asia,Africa,1,0
+Thailand--Uganda#tb,Thailand--Uganda,Thailand,Uganda,tb,1,Thailand,Uganda,Southeast Asia,Africa,1,0
+Thailand--United Kingdom#tb,Thailand--United Kingdom,Thailand,United Kingdom,tb,1,Thailand,United Kingdom,Southeast Asia,Europe,1,0
+Spain--United Kingdom#vector_borne,Spain--United Kingdom,Spain,United Kingdom,vector_borne,1,Spain,United Kingdom,Europe,Europe,1,0
+Belgium--Ghana#sti,Belgium--Ghana,Belgium,Ghana,sti,1,Belgium,Ghana,Europe,Africa,1,0
+Belgium--Kenya#sti,Belgium--Kenya,Belgium,Kenya,sti,1,Belgium,Kenya,Europe,Africa,1,0
+Belgium--Singapore#sti,Belgium--Singapore,Belgium,Singapore,sti,1,Belgium,Singapore,Europe,Southeast Asia,1,1
+Belgium--South Africa#sti,Belgium--South Africa,Belgium,South Africa,sti,1,Belgium,South Africa,Europe,Africa,1,0
+Belgium--Uganda#sti,Belgium--Uganda,Belgium,Uganda,sti,1,Belgium,Uganda,Europe,Africa,1,0
+Belgium--United Kingdom#sti,Belgium--United Kingdom,Belgium,United Kingdom,sti,1,Belgium,United Kingdom,Europe,Europe,1,0
+Ghana--Kenya#sti,Ghana--Kenya,Ghana,Kenya,sti,1,Ghana,Kenya,Africa,Africa,1,0
+Ghana--Singapore#sti,Ghana--Singapore,Ghana,Singapore,sti,1,Ghana,Singapore,Africa,Southeast Asia,1,1
+Ghana--South Africa#sti,Ghana--South Africa,Ghana,South Africa,sti,1,Ghana,South Africa,Africa,Africa,1,0
+Ghana--Uganda#sti,Ghana--Uganda,Ghana,Uganda,sti,1,Ghana,Uganda,Africa,Africa,1,0
+Ghana--United Kingdom#sti,Ghana--United Kingdom,Ghana,United Kingdom,sti,1,Ghana,United Kingdom,Africa,Europe,1,0
+Kenya--Singapore#sti,Kenya--Singapore,Kenya,Singapore,sti,1,Kenya,Singapore,Africa,Southeast Asia,1,1
+Kenya--South Africa#sti,Kenya--South Africa,Kenya,South Africa,sti,1,Kenya,South Africa,Africa,Africa,1,0
+Kenya--Uganda#sti,Kenya--Uganda,Kenya,Uganda,sti,1,Kenya,Uganda,Africa,Africa,1,0
+Kenya--United Kingdom#sti,Kenya--United Kingdom,Kenya,United Kingdom,sti,1,Kenya,United Kingdom,Africa,Europe,1,0
+Singapore--Uganda#sti,Singapore--Uganda,Singapore,Uganda,sti,1,Singapore,Uganda,Southeast Asia,Africa,1,1
+South Africa--Uganda#sti,South Africa--Uganda,South Africa,Uganda,sti,1,South Africa,Uganda,Africa,Africa,1,0
+Uganda--United Kingdom#sti,Uganda--United Kingdom,Uganda,United Kingdom,sti,1,Uganda,United Kingdom,Africa,Europe,1,0
+Belgium--Germany#tb,Belgium--Germany,Belgium,Germany,tb,1,Belgium,Germany,Europe,Europe,1,0
+Belgium--Peru#tb,Belgium--Peru,Belgium,Peru,tb,1,Belgium,Peru,Europe,Latin America,1,0
+Germany--Italy#tb,Germany--Italy,Germany,Italy,tb,1,Germany,Italy,Europe,Europe,1,0
+Germany--Pakistan#tb,Germany--Pakistan,Germany,Pakistan,tb,1,Germany,Pakistan,Europe,South Asia,1,0
+Germany--Peru#tb,Germany--Peru,Germany,Peru,tb,1,Germany,Peru,Europe,Latin America,1,0
+Germany--Viet Nam#tb,Germany--Viet Nam,Germany,Viet Nam,tb,1,Germany,Viet Nam,Europe,Southeast Asia,1,0
+India--Peru#tb,India--Peru,India,Peru,tb,1,India,Peru,South Asia,Latin America,1,0
+Italy--Peru#tb,Italy--Peru,Italy,Peru,tb,1,Italy,Peru,Europe,Latin America,1,0
+Italy--South Africa#tb,Italy--South Africa,Italy,South Africa,tb,1,Italy,South Africa,Europe,Africa,1,0
+Italy--Viet Nam#tb,Italy--Viet Nam,Italy,Viet Nam,tb,1,Italy,Viet Nam,Europe,Southeast Asia,1,0
+Norway--Pakistan#tb,Norway--Pakistan,Norway,Pakistan,tb,1,Norway,Pakistan,Europe,South Asia,1,0
+Norway--Singapore#tb,Norway--Singapore,Norway,Singapore,tb,1,Norway,Singapore,Europe,Southeast Asia,1,1
+France--Singapore#other_id,France--Singapore,France,Singapore,other_id,1,France,Singapore,Europe,Southeast Asia,1,1
+France--Switzerland#other_id,France--Switzerland,France,Switzerland,other_id,1,France,Switzerland,Europe,Europe,1,0
+France--United States#other_id,France--United States,France,United States,other_id,1,France,United States,Europe,North America,1,0
+Philippines--Sweden#tb,Philippines--Sweden,Philippines,Sweden,tb,1,Philippines,Sweden,Southeast Asia,Europe,1,0
+Philippines--Viet Nam#tb,Philippines--Viet Nam,Philippines,Viet Nam,tb,1,Philippines,Viet Nam,Southeast Asia,Southeast Asia,1,0
+Belgium--Mongolia#tb,Belgium--Mongolia,Belgium,Mongolia,tb,1,Belgium,Mongolia,Europe,East Asia,1,0
+Belgium--Taiwan#tb,Belgium--Taiwan,Belgium,Taiwan,tb,1,Belgium,Taiwan,Europe,East Asia,1,0
+Belgium--Uganda#tb,Belgium--Uganda,Belgium,Uganda,tb,1,Belgium,Uganda,Europe,Africa,1,0
+Ethiopia--Mongolia#tb,Ethiopia--Mongolia,Ethiopia,Mongolia,tb,1,Ethiopia,Mongolia,Africa,East Asia,1,0
+Ethiopia--Taiwan#tb,Ethiopia--Taiwan,Ethiopia,Taiwan,tb,1,Ethiopia,Taiwan,Africa,East Asia,1,0
+Ethiopia--Uganda#tb,Ethiopia--Uganda,Ethiopia,Uganda,tb,1,Ethiopia,Uganda,Africa,Africa,1,0
+France--Mongolia#tb,France--Mongolia,France,Mongolia,tb,1,France,Mongolia,Europe,East Asia,1,0
+France--Uganda#tb,France--Uganda,France,Uganda,tb,1,France,Uganda,Europe,Africa,1,0
+India--Mongolia#tb,India--Mongolia,India,Mongolia,tb,1,India,Mongolia,South Asia,East Asia,1,0
+Mongolia--South Africa#tb,Mongolia--South Africa,Mongolia,South Africa,tb,1,Mongolia,South Africa,East Asia,Africa,1,0
+Mongolia--Taiwan#tb,Mongolia--Taiwan,Mongolia,Taiwan,tb,1,Mongolia,Taiwan,East Asia,East Asia,1,0
+Mongolia--Uganda#tb,Mongolia--Uganda,Mongolia,Uganda,tb,1,Mongolia,Uganda,East Asia,Africa,1,0
+South Africa--Uganda#tb,South Africa--Uganda,South Africa,Uganda,tb,1,South Africa,Uganda,Africa,Africa,1,0
+Taiwan--Uganda#tb,Taiwan--Uganda,Taiwan,Uganda,tb,1,Taiwan,Uganda,East Asia,Africa,1,0
+Uganda--United States#tb,Uganda--United States,Uganda,United States,tb,1,Uganda,United States,Africa,North America,1,0
+Thailand--United States#tb,Thailand--United States,Thailand,United States,tb,1,Thailand,United States,Southeast Asia,North America,1,0
+Germany--Zambia#tb,Germany--Zambia,Germany,Zambia,tb,1,Germany,Zambia,Europe,Africa,1,0
+Switzerland--Zambia#tb,Switzerland--Zambia,Switzerland,Zambia,tb,1,Switzerland,Zambia,Europe,Africa,1,0
+Germany--Taiwan#tb,Germany--Taiwan,Germany,Taiwan,tb,1,Germany,Taiwan,Europe,East Asia,1,0
+Malaysia--United Kingdom#tb,Malaysia--United Kingdom,Malaysia,United Kingdom,tb,1,Malaysia,United Kingdom,Southeast Asia,Europe,1,0

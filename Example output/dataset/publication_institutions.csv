@@ -1,0 +1,770 @@
+uid,institution,institution_short,sector,country,iso3,region,n_authors_here,year,primary_domain,is_singapore
+doi:10.1093/jambio/lxag031,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jambio/lxag031,Singapore Food Agency,SFA,government,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1128/spectrum.00627-26,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1128/spectrum.00627-26,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1128/spectrum.00627-26,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1371/journal.pntd.0014584,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,7,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014584,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,9,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014584,World Health Organization,WHO,government,Switzerland,CHE,Europe,1,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014584,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3390/ijms27031504,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1186/s12889-026-26979-0,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2026,tb,0
+doi:10.1186/s12889-026-26979-0,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1016/j.avsg.2025.12.042,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1001/jamanetworkopen.2026.28389,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,6,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,11,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,7,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,7,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1001/jamanetworkopen.2026.28389,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1002/anie.202517460,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,11,2026,amr_hai,1
+doi:10.1136/bmjopen-2025-103987,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1038/s41598-026-64190-8,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1038/s41598-026-64190-8,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1186/s12348-026-00586-x,Khoo Teck Puat Hospital,KTPH,hospital,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1186/s12348-026-00586-x,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s12942-026-00467-5,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s12942-026-00467-5,US Centers for Disease Control and Prevention,US CDC,government,United States,USA,North America,2,2026,tb,0
+doi:10.5588/ijtldopen.26.0076,Harvard University,Harvard,university,United States,USA,North America,4,2026,tb,0
+doi:10.5588/ijtldopen.26.0076,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1073/pnas.2606669123,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2026,vector_borne,0
+doi:10.3390/biom16070970,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.3390/biom16070970,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1080/07853890.2026.2714685,Johns Hopkins University,JHU,university,United States,USA,North America,1,2026,tb,0
+doi:10.1080/07853890.2026.2714685,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.64898/2026.03.19.26348865,Universitas Indonesia,UI,university,Indonesia,IDN,Southeast Asia,1,2026,sti,0
+doi:10.64898/2026.03.19.26348865,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,1,2026,sti,0
+doi:10.64898/2026.03.19.26348865,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,sti,0
+doi:10.64898/2026.03.19.26348865,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/j.celrep.2026.117286,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1016/j.celrep.2026.117286,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.ejogrb.2026.115359,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1128/aac.00748-26,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s12929-026-01277-4,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,8,2026,rti,1
+doi:10.1371/journal.pntd.0014395,Imperial College London,Imperial,university,United Kingdom,GBR,Europe,2,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014395,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014395,World Health Organization,WHO,government,Switzerland,CHE,Europe,1,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014395,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1038/s41467-026-74934-9,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,7,2026,amr_hai,0
+doi:10.1038/s41467-026-74934-9,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,4,2026,amr_hai,0
+doi:10.1038/s41467-026-74934-9,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1038/s41467-026-74934-9,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1038/s41467-026-74934-9,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,1,2026,amr_hai,0
+doi:10.1128/mbio.01075-26,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1128/mbio.01075-26,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1080/10810730.2026.2687792,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1111/scs.70292,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.3390/vaccines14060469,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,8,2026,rti,1
+doi:10.1177/08903344261475018,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,16,2026,rti,1
+doi:10.3390/ijms27167316,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1093/ofid/ofag421,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,5,2026,vector_borne,0
+doi:10.1093/ofid/ofag421,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,5,2026,vector_borne,0
+doi:10.1093/ofid/ofag421,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1093/ofid/ofag421,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1371/journal.pgph.0007105,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1371/journal.pgph.0007105,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,5,2026,rti,0
+doi:10.1016/j.jep.2026.122318,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.2196/88849,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1017/ice.2026.10526,National Cancer Centre Singapore,NCCS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1017/ice.2026.10526,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1017/ice.2026.10526,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1093/epirev/mxag011,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,other_id,0
+doi:10.1093/epirev/mxag011,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1080/21645515.2026.2661118,National University Hospital,NUH,hospital,Republic of Korea,KOR,East Asia,1,2026,rti,0
+doi:10.1080/21645515.2026.2661118,University of Hong Kong,HKU,university,Hong Kong SAR,HKG,East Asia,1,2026,rti,0
+doi:10.1088/1361-6528/ae8602,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1186/s12889-026-26538-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/s0140-6736(26)00410-1,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/s0140-6736(26)00410-1,Harvard University,Harvard,university,United States,USA,North America,1,2026,sti,0
+doi:10.1021/acsinfecdis.6c00114,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.3390/pathogens15030278,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.3390/pathogens15030278,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.2196/87909,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1080/09540121.2026.2632324,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,5,2026,sti,1
+doi:10.1016/s1473-3099(26)00357-9,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,10,2026,amr_hai,1
+doi:10.1016/s1473-3099(26)00357-9,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,2,2026,amr_hai,0
+doi:10.1016/s1473-3099(26)00357-9,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,3,2026,amr_hai,0
+doi:10.1016/s1473-3099(26)00357-9,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/s1473-3099(26)00357-9,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/s1473-3099(26)00357-9,Oxford University Clinical Research Unit,OUCRU,research_institute,Indonesia,IDN,Southeast Asia,3,2026,amr_hai,0
+doi:10.1016/s1473-3099(26)00357-9,Universitas Indonesia,UI,university,Indonesia,IDN,Southeast Asia,1,2026,amr_hai,0
+doi:10.1016/s1473-3099(26)00357-9,University of Hong Kong,HKU,university,China,CHN,East Asia,1,2026,amr_hai,0
+doi:10.1073/pnas.2532225123,University of Cambridge,Cambridge,university,United Kingdom,GBR,Europe,1,2026,other_id,0
+doi:10.1073/pnas.2532225123,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.bcp.2026.118104,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1038/s44360-026-00080-7,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,5,2026,sti,0
+doi:10.1038/s44360-026-00080-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,7,2026,sti,1
+doi:10.1038/s44360-026-00080-7,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1038/s44360-026-00080-7,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1111/camh.70112,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1111/camh.70112,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,7,2026,rti,1
+doi:10.1111/camh.70112,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1111/camh.70112,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1111/camh.70112,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,6,2026,rti,1
+doi:10.1111/camh.70112,Institute of Mental Health,IMH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1111/camh.70112,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.jhin.2026.03.009,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,8,2026,amr_hai,1
+doi:10.1016/j.jhin.2026.03.009,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,6,2026,amr_hai,1
+doi:10.1016/j.isci.2026.116736,Institute of Molecular and Cell Biology,IMCB,research_institute,Singapore,SGP,Southeast Asia,7,2026,rti,1
+doi:10.1016/j.isci.2026.116736,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1093/ofid/ofag317,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,6,2026,rti,1
+doi:10.1093/ofid/ofag317,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1093/ofid/ofag317,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1128/aac.00388-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.3389/fmicb.2026.1866307,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1136/bcr-2025-271896,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,4,2026,vector_borne,1
+doi:10.1038/s41467-026-75746-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1038/s41467-026-74190-x,University of Cambridge,Cambridge,university,United Kingdom,GBR,Europe,10,2026,rti,0
+doi:10.1038/s41467-026-74190-x,Bioinformatics Institute,BII,research_institute,United Kingdom,GBR,Europe,1,2026,rti,0
+doi:10.1038/s41467-026-74190-x,UK Health Security Agency,UKHSA,government,United Kingdom,GBR,Europe,3,2026,rti,0
+doi:10.1038/s41467-026-74190-x,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.ijid.2026.108533,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,5,2026,tb,1
+doi:10.1016/j.ijid.2026.108533,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1016/j.ijid.2026.108533,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.ijid.2026.108533,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1183/13993003.00989-2026,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1038/s41371-026-01194-x,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.3390/antibiotics15050423,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.watres.2026.126336,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.1186/s12889-026-27217-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1177/00494755261479116,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.3389/fimmu.2026.1841974,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.4269/ajtmh.26-0159,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.4269/ajtmh.26-0159,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.4269/ajtmh.26-0159,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1002/resp.70302,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1002/resp.70302,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1002/resp.70302,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.5527/wjn.v15.i2.118214,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.5527/wjn.v15.i2.118214,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.drugpo.2026.105306,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1007/s10461-026-05097-3,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,5,2026,sti,1
+doi:10.1007/s10461-026-05097-3,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,10,2026,sti,1
+doi:10.1007/s10461-026-05097-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1007/s10461-026-05097-3,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1007/s10461-026-05097-3,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1007/s10461-026-05097-3,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.1183/13993003.00858-2026,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1183/13993003.00858-2026,London School of Hygiene & Tropical Medicine,LSHTM,university,Ireland,IRL,Europe,1,2026,tb,0
+doi:10.1136/bmjph-2025-004042,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,9,2026,sti,1
+doi:10.1136/bmjph-2025-004042,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.25259/ijpc_285_2025,World Health Organization,WHO,government,India,IND,South Asia,1,2026,rti,0
+doi:10.1016/j.vaccine.2026.128983,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,10,2026,rti,1
+doi:10.1016/j.vaccine.2026.128983,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1016/j.vaccine.2026.128983,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1016/j.eclinm.2026.103871,World Health Organization,WHO,government,Switzerland,CHE,Europe,12,2026,vector_borne,0
+doi:10.1016/j.eclinm.2026.103871,University of Cambridge,Cambridge,university,United Kingdom,GBR,Europe,3,2026,vector_borne,0
+doi:10.1016/j.eclinm.2026.103871,UK Health Security Agency,UKHSA,government,United Kingdom,GBR,Europe,1,2026,vector_borne,0
+doi:10.1016/j.eclinm.2026.103871,Imperial College London,Imperial,university,United Kingdom,GBR,Europe,1,2026,vector_borne,0
+doi:10.1016/j.eclinm.2026.103871,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.eclinm.2026.103871,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.eclinm.2026.103871,National Institutes of Health,NIH,government,United States,USA,North America,1,2026,vector_borne,0
+doi:10.1016/j.eclinm.2026.103871,University of Hong Kong,HKU,university,China,CHN,East Asia,1,2026,vector_borne,0
+doi:10.1097/qai.0000000000003874,Harvard University,Harvard,university,United States,USA,North America,1,2026,sti,0
+doi:10.1097/qai.0000000000003874,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/j.jconrel.2026.115136,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,9,2026,rti,1
+doi:10.1016/j.jconrel.2026.115136,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1128/jvi.00540-26,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.jinf.2026.106765,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.jinf.2026.106765,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.jinf.2026.106765,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.3389/fpubh.2026.1838184,World Health Organization,WHO,government,Switzerland,CHE,Europe,6,2026,rti,0
+doi:10.1016/j.pedneo.2026.04.010,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1016/j.pedneo.2026.04.010,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,5,2026,rti,1
+doi:10.1016/j.pedneo.2026.04.010,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.pedneo.2026.04.010,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.pedneo.2026.04.010,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1371/journal.pntd.0014318,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,9,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014318,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,10,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014318,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.12968/jowc.2023.0112,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,5,2026,amr_hai,1
+doi:10.1038/s41467-026-74032-w,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1021/acsinfecdis.6c00309,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.1021/acsinfecdis.6c00309,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1038/s41541-026-01519-4,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1038/s41541-026-01519-4,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,vector_borne,0
+doi:10.1038/s41541-026-01519-4,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1038/s41467-026-75524-5,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,16,2026,amr_hai,1
+doi:10.1038/s41467-026-75524-5,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1038/s41467-026-75524-5,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,1,2026,amr_hai,0
+doi:10.1038/s41467-026-75524-5,Genome Institute of Singapore,GIS,research_institute,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1038/s41467-026-75524-5,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1038/s41467-026-75524-5,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1186/s12879-026-13489-y,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1186/s12879-026-13489-y,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1186/s12879-026-13489-y,Sengkang General Hospital,SKGH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s12879-026-13489-y,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1016/j.biomaterials.2026.124421,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1007/s00604-026-08340-9,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1186/s12909-026-09775-7,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1186/s12909-026-09775-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1186/s12909-026-09775-7,University of Hong Kong,HKU,university,China,CHN,East Asia,1,2026,vector_borne,0
+doi:10.1186/s13073-026-01655-5,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,19,2026,amr_hai,1
+doi:10.1186/s13073-026-01655-5,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,5,2026,amr_hai,1
+doi:10.1186/s13073-026-01655-5,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,8,2026,amr_hai,1
+doi:10.1186/s13073-026-01655-5,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,7,2026,amr_hai,1
+doi:10.1186/s13073-026-01655-5,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1186/s13073-026-01655-5,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.64898/2026.05.07.723652,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,4,2026,other_id,1
+doi:10.64898/2026.05.07.723652,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.64898/2026.05.07.723652,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1038/s41467-026-76156-5,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1038/s41467-026-74526-7,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,7,2026,rti,1
+doi:10.1038/s41467-026-74526-7,Bioinformatics Institute,BII,research_institute,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1038/s41467-026-74526-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1038/s41467-026-74526-7,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.bj.2026.101033,Sengkang General Hospital,SKGH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.vaccine.2026.128513,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1039/d6tb01365a,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.1039/d6tb01365a,Experimental Drug Development Centre,EDDC,research_institute,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.ijbiomac.2026.153475,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1177/10872914261423775,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,10,2026,sti,0
+doi:10.1177/10872914261423775,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/j.ijid.2026.109062,Bioinformatics Institute,BII,research_institute,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1016/j.ijid.2026.109062,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.ijid.2026.109062,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1016/j.mmcr.2026.100815,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,5,2026,rti,1
+doi:10.1016/j.mmcr.2026.100815,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1111/jcmm.71143,Harvard University,Harvard,university,Botswana,BWA,Africa,4,2026,sti,0
+doi:10.1111/jcmm.71143,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1007/s00210-026-05627-9,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.ijbiomac.2026.153190,Woodlands Health,WH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1128/aac.01561-25,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1016/j.ebiom.2026.106290,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,13,2026,vector_borne,1
+doi:10.1016/j.ebiom.2026.106290,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,9,2026,vector_borne,1
+doi:10.1016/j.ebiom.2026.106290,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,5,2026,vector_borne,1
+doi:10.1016/j.ebiom.2026.106290,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.eclinm.2026.104163,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.eclinm.2026.104163,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.eclinm.2026.104163,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1097/bot.0000000000003199,Johns Hopkins University,JHU,university,United States,USA,North America,2,2026,amr_hai,0
+doi:10.1097/bot.0000000000003199,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.47102/annals-acadmedsg.2025321,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,5,2026,tb,1
+doi:10.47102/annals-acadmedsg.2025321,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.47102/annals-acadmedsg.2025321,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1017/ash.2025.10149,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,18,2026,amr_hai,1
+doi:10.3390/pathogens15040437,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,6,2026,vector_borne,1
+doi:10.3390/pathogens15040437,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,vector_borne,1
+doi:10.3390/pathogens15040437,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1016/j.jhin.2026.08.011,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.4103/singaporemedj.smj-2025-222,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,16,2026,rti,1
+doi:10.4103/singaporemedj.smj-2025-222,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,22,2026,rti,1
+doi:10.4103/singaporemedj.smj-2025-222,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,11,2026,rti,1
+doi:10.1126/sciimmunol.adz5647,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1126/sciimmunol.adz5647,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1093/jimmun/vkag189,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1093/jimmun/vkag189,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,rti,0
+doi:10.3390/antibiotics15070671,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.3390/antibiotics15070671,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.3390/antibiotics15070671,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1080/21505594.2026.2711530,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,2,2026,vector_borne,0
+doi:10.1080/21505594.2026.2711530,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1080/21505594.2026.2711530,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1001/jamadermatol.2026.0308,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,8,2026,sti,1
+doi:10.1001/jamadermatol.2026.0308,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,10,2026,sti,1
+doi:10.1001/jamadermatol.2026.0308,National Cancer Centre Singapore,NCCS,hospital,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.1001/jamadermatol.2026.0308,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1001/jamadermatol.2026.0308,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1038/s44528-026-00009-2,University of Cambridge,Cambridge,university,United Kingdom,GBR,Europe,2,2026,rti,0
+doi:10.1038/s44528-026-00009-2,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1038/s44528-026-00009-2,Oxford University Clinical Research Unit,OUCRU,research_institute,Indonesia,IDN,Southeast Asia,1,2026,rti,0
+doi:10.1038/s44528-026-00009-2,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,rti,0
+doi:10.1038/s44528-026-00009-2,Johns Hopkins University,JHU,university,United States,USA,North America,1,2026,rti,0
+doi:10.1038/s44528-026-00009-2,University of Hong Kong,HKU,university,China,CHN,East Asia,2,2026,rti,0
+doi:10.1038/s44528-026-00009-2,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,2,2026,rti,0
+doi:10.1038/s44528-026-00009-2,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,rti,0
+doi:10.1038/s44528-026-00009-2,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,rti,0
+doi:10.1016/j.idm.2026.03.002,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1016/j.ijid.2026.108545,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,5,2026,tb,1
+doi:10.1016/j.ijid.2026.108545,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.mib.2026.102764,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1016/j.ssmmh.2026.100615,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1099/mgen.0.001745,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1099/mgen.0.001745,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1099/mgen.0.001745,Singapore Food Agency,SFA,government,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1099/mgen.0.001745,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,amr_hai,0
+doi:10.1177/20584601261418668,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,5,2026,tb,1
+doi:10.1371/journal.ppat.1014287,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2026,vector_borne,0
+doi:10.1371/journal.ppat.1014287,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1371/journal.ppat.1014287,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1371/journal.pcbi.1014355,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1371/journal.pcbi.1014355,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1371/journal.pcbi.1014355,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.3389/fcimb.2026.1847443,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.3390/v18030283,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.3390/v18030283,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.1039/d6ra04008j,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1128/mbio.01474-26,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,5,2026,other_id,1
+doi:10.1128/mbio.01474-26,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.jhin.2026.03.037,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.jhin.2026.03.037,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.jhin.2026.03.037,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1002/jmv.71078,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1186/s13073-026-01670-6,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,3,2026,tb,0
+doi:10.1186/s13073-026-01670-6,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,6,2026,tb,1
+doi:10.1186/s13073-026-01670-6,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1186/s13073-026-01670-6,Genome Institute of Singapore,GIS,research_institute,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1186/s13073-026-01670-6,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,2,2026,tb,0
+doi:10.1186/s13073-026-01670-6,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1186/s13073-026-01670-6,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s13073-026-01670-6,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s13073-026-01670-6,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1186/s13073-026-01670-6,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.fm.2026.105164,National University of Singapore,NUS,university,China,CHN,East Asia,6,2026,amr_hai,0
+doi:10.1016/j.lanwpc.2026.101874,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1002/jcop.70120,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,5,2026,sti,1
+doi:10.1093/cid/ciag347,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1016/j.ijpara.2026.104892,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1016/j.ijpara.2026.104892,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,3,2026,vector_borne,0
+doi:10.1016/j.ijpara.2026.104892,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.ijpara.2026.104892,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1016/j.ijid.2026.109084,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1186/s12889-026-28672-8,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,3,2026,other_id,0
+doi:10.1186/s12889-026-28672-8,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.3389/fpubh.2026.1785244,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.3389/fpubh.2026.1785244,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.oret.2026.06.023,Universitas Indonesia,UI,university,Indonesia,IDN,Southeast Asia,1,2026,tb,0
+doi:10.1016/j.oret.2026.06.023,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1016/j.oret.2026.06.023,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.oret.2026.06.023,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.oret.2026.06.023,Johns Hopkins University,JHU,university,United States,USA,North America,4,2026,tb,0
+doi:10.3390/ijms27125573,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.3390/ijms27125573,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jac/dkag263,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.1093/jac/dkag263,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1093/jac/dkag263,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,amr_hai,0
+doi:10.1093/jac/dkag263,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1186/s12889-026-26441-1,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1186/s12889-026-26441-1,University of Hong Kong,HKU,university,China,CHN,East Asia,1,2026,sti,0
+doi:10.1186/s12889-026-26441-1,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.1016/j.urolonc.2026.111091,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,7,2026,tb,1
+doi:10.1016/j.urolonc.2026.111091,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.urolonc.2026.111091,National Cancer Centre Singapore,NCCS,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1016/j.urolonc.2026.111091,University of Hong Kong,HKU,university,Hong Kong SAR,HKG,East Asia,1,2026,tb,0
+doi:10.1007/s11673-026-10573-5,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.3390/tropicalmed11070184,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,8,2026,vector_borne,0
+doi:10.3390/tropicalmed11070184,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,vector_borne,0
+doi:10.3390/tropicalmed11070184,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1093/aje/kwag024,Harvard University,Harvard,university,United States,USA,North America,9,2026,tb,0
+doi:10.1093/aje/kwag024,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2026,tb,0
+doi:10.1093/aje/kwag024,US Centers for Disease Control and Prevention,US CDC,government,Pakistan,PAK,South Asia,1,2026,tb,0
+doi:10.1371/journal.pntd.0014222,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,7,2026,vector_borne,1
+doi:10.3892/br.2026.2154,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.ajcnut.2026.101488,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.3390/v18050485,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/jpids/piag047,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,10,2026,amr_hai,1
+doi:10.1093/jpids/piag047,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,10,2026,amr_hai,1
+doi:10.1093/jpids/piag047,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,8,2026,amr_hai,1
+doi:10.1093/jpids/piag047,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,8,2026,amr_hai,1
+doi:10.1093/jpids/piag047,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1002/advs.75061,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1016/j.xcrm.2026.102714,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.3389/fpubh.2026.1857629,Johns Hopkins University,JHU,university,United States,USA,North America,1,2026,sti,0
+doi:10.3389/fpubh.2026.1857629,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.3389/fpubh.2026.1857629,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.1097/md.0000000000047358,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1097/md.0000000000047358,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1097/md.0000000000047358,National University Hospital,NUH,hospital,Republic of Korea,KOR,East Asia,1,2026,sti,0
+doi:10.1016/j.cmi.2026.01.032,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,4,2026,amr_hai,1
+doi:10.1016/j.cmi.2026.01.032,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1016/j.cmi.2026.01.032,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,3,2026,amr_hai,1
+doi:10.1016/j.cmi.2026.01.032,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,2,2026,amr_hai,0
+doi:10.1016/j.cmi.2026.01.032,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.cmi.2026.01.032,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.cmi.2026.01.032,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1016/j.lanhl.2026.100870,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1370/afm.250683,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,4,2026,sti,1
+doi:10.1370/afm.250683,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1016/j.nedt.2026.107368,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.nedt.2026.107368,Woodlands Health,WH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.nedt.2026.107368,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.nedt.2026.107368,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1007/s40273-026-01609-0,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,5,2026,amr_hai,0
+doi:10.1007/s40273-026-01609-0,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1371/journal.pcbi.1014313,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1371/journal.pcbi.1014313,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,5,2026,sti,0
+doi:10.1371/journal.pcbi.1014313,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.1038/s41467-026-71566-x,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,7,2026,tb,0
+doi:10.1038/s41467-026-71566-x,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1038/s41467-026-71566-x,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1038/s41467-026-71566-x,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1038/s41467-026-71566-x,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,1,2026,tb,0
+doi:10.1038/s41467-026-71566-x,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1186/s12879-026-13946-8,World Health Organization,WHO,government,Lebanon,LBN,Middle East,2,2026,amr_hai,0
+doi:10.1186/s12879-026-13946-8,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.64898/2026.07.03.736289,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,8,2026,vector_borne,1
+doi:10.64898/2026.07.03.736289,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.pt.2026.06.011,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,1,2026,vector_borne,0
+doi:10.1016/j.pt.2026.06.011,World Health Organization,WHO,government,Switzerland,CHE,Europe,1,2026,vector_borne,0
+doi:10.1016/j.pt.2026.06.011,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1371/journal.ppat.1013609,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,6,2026,vector_borne,1
+doi:10.1371/journal.ppat.1013609,Experimental Drug Development Centre,EDDC,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1371/journal.ppat.1013609,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3389/fimmu.2026.1921846,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,6,2026,rti,0
+doi:10.2196/87328,University of Hong Kong,HKU,university,Hong Kong SAR,HKG,East Asia,2,2026,rti,0
+doi:10.2196/87328,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.ebiom.2026.106447,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,12,2026,other_id,0
+doi:10.1016/j.ebiom.2026.106447,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,4,2026,other_id,0
+doi:10.1016/j.ebiom.2026.106447,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.ejmech.2026.119130,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1016/j.ejmech.2026.119130,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1002/biof.70105,Bioinformatics Institute,BII,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1056/nejmoa2503304,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1056/nejmoa2503304,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,17,2026,vector_borne,1
+doi:10.1056/nejmoa2503304,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,vector_borne,1
+doi:10.1111/jcmm.71353,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,6,2026,other_id,1
+doi:10.1111/jcmm.71353,Temasek Life Sciences Laboratory,TLL,research_institute,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1007/s10985-026-09690-5,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.7759/cureus.114118,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1371/journal.pone.0352661,World Health Organization,WHO,government,India,IND,South Asia,1,2026,tb,0
+doi:10.1371/journal.pone.0352661,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.lanwpc.2026.101892,University of Hong Kong,HKU,university,China,CHN,East Asia,6,2026,sti,0
+doi:10.1016/j.lanwpc.2026.101892,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.1016/j.lanwpc.2026.101892,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.2196/82143,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.2196/82143,Alexandra Hospital,AH,hospital,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.2196/82143,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.2196/82143,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1017/ice.2026.10530,Institute of Mental Health,IMH,hospital,Singapore,SGP,Southeast Asia,7,2026,amr_hai,1
+doi:10.1017/ice.2026.10530,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1017/ice.2026.10530,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1017/ice.2026.10530,National Public Health Laboratory,NPHL,government,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1128/spectrum.01906-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1177/09564624261424560,Peter Doherty Institute for Infection and Immunity,Doherty,research_institute,Australia,AUS,Oceania,1,2026,sti,0
+doi:10.1177/09564624261424560,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1002/advs.76769,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,16,2026,vector_borne,1
+doi:10.1093/cid/ciag361,Harvard University,Harvard,university,United States,USA,North America,5,2026,tb,0
+doi:10.1093/cid/ciag361,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1016/j.vaccine.2026.129079,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2026,rti,0
+doi:10.1016/j.vaccine.2026.129079,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1186/s12985-026-03231-0,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1186/s12985-026-03231-0,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3390/cells15131146,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,17,2026,rti,1
+doi:10.3390/cells15131146,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1016/j.jare.2026.09.007,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.5492/wjccm.v15.i1.110763,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.5492/wjccm.v15.i1.110763,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1038/s41598-026-59102-9,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,2,2026,other_id,1
+doi:10.1038/s41598-026-59102-9,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,2,2026,other_id,1
+doi:10.1371/journal.pone.0349232,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.3390/antibiotics15080715,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.7759/cureus.113372,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1039/d6sc00255b,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.2196/67870,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,4,2026,rti,0
+doi:10.2196/67870,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,4,2026,rti,1
+doi:10.1093/cid/ciaf467,World Health Organization,WHO,government,Denmark,DNK,Europe,2,2026,tb,0
+doi:10.1093/cid/ciaf467,Harvard University,Harvard,university,United States,USA,North America,2,2026,tb,0
+doi:10.1093/cid/ciaf467,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1016/j.vaccine.2026.128917,Takeda Pharmaceuticals,Takeda,industry,United States,USA,North America,9,2026,vector_borne,0
+doi:10.1016/j.vaccine.2026.128917,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,vector_borne,0
+doi:10.1016/j.vaccine.2026.128917,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1038/s41467-026-75954-1,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1016/j.ijid.2026.109080,University of Hong Kong,HKU,university,China,CHN,East Asia,5,2026,rti,0
+doi:10.1016/j.ijid.2026.109080,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1097/jnr.0000000000000757,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1177/09564624261440693,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,3,2026,sti,1
+doi:10.1177/09564624261440693,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1111/imcb.70135,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.3389/fimmu.2026.1824198,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,5,2026,other_id,1
+doi:10.3389/fimmu.2026.1824198,DSO National Laboratories,DSO,research_institute,Singapore,SGP,Southeast Asia,3,2026,other_id,1
+doi:10.3389/fimmu.2026.1824198,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,3,2026,other_id,1
+doi:10.3389/fimmu.2026.1824198,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,other_id,1
+doi:10.3389/fimmu.2026.1824198,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.immuni.2026.07.006,Peter Doherty Institute for Infection and Immunity,Doherty,research_institute,Australia,AUS,Oceania,5,2026,vector_borne,0
+doi:10.1016/j.immuni.2026.07.006,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1016/j.immuni.2026.07.006,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1097/qai.0000000000003852,World Health Organization,WHO,government,Switzerland,CHE,Europe,1,2026,sti,0
+doi:10.1038/s44321-026-00502-9,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.lanwpc.2026.101917,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,8,2026,amr_hai,1
+doi:10.1016/j.lanwpc.2026.101917,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1016/j.lanwpc.2026.101917,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2026,amr_hai,0
+doi:10.1016/j.lanwpc.2026.101917,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1136/bjo-2026-329771,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1136/bjo-2026-329771,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1136/bjo-2026-329771,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.21037/jtd-2025-aw-2166,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,5,2026,tb,1
+doi:10.21037/jtd-2025-aw-2166,Khoo Teck Puat Hospital,KTPH,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1002/cpz1.70454,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,6,2026,amr_hai,1
+doi:10.1002/cpz1.70454,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1128/spectrum.03617-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1186/s13046-026-03708-4,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1371/journal.pgph.0006151,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2026,sti,1
+doi:10.1038/s41564-026-02439-8,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,18,2026,vector_borne,0
+doi:10.1038/s41564-026-02439-8,Peter Doherty Institute for Infection and Immunity,Doherty,research_institute,Australia,AUS,Oceania,5,2026,vector_borne,0
+doi:10.1038/s41564-026-02439-8,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2026,vector_borne,1
+doi:10.1093/ajrccm/aamag444,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1136/bmjresp-2026-004413,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1136/bmjresp-2026-004413,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1186/s12879-026-14123-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1038/s41598-026-56516-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1016/j.actatropica.2026.108314,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,4,2026,vector_borne,0
+doi:10.1016/j.actatropica.2026.108314,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1111/irv.70269,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,2,2026,rti,1
+doi:10.1039/d6nr00924g,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1038/s41467-026-76186-z,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1016/j.ijid.2026.108860,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1016/j.ijid.2026.108860,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1016/j.ijid.2026.108860,National Cancer Centre Singapore,NCCS,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.ijid.2026.108860,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1136/fmch-2026-004076,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,5,2026,rti,1
+doi:10.1136/fmch-2026-004076,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.ijid.2026.108586,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1371/journal.ppat.1014190,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,4,2026,vector_borne,1
+doi:10.1016/j.jsb.2026.108314,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,5,2026,vector_borne,1
+doi:10.1016/j.jsb.2026.108314,Experimental Drug Development Centre,EDDC,research_institute,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1007/978-1-0716-5328-9_7,Temasek Life Sciences Laboratory,TLL,research_institute,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1007/978-1-0716-5328-9_7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1038/s43856-026-01678-4,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,9,2026,other_id,1
+doi:10.1038/s43856-026-01678-4,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,5,2026,other_id,1
+doi:10.1038/s43856-026-01678-4,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,4,2026,other_id,1
+doi:10.1038/s43856-026-01678-4,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/oxfimm/iqag010,Harvard University,Harvard,university,United States,USA,North America,1,2026,rti,0
+doi:10.1093/oxfimm/iqag010,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1155/carm/1612186,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,9,2026,rti,1
+doi:10.1155/carm/1612186,Alexandra Hospital,AH,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1016/j.ijid.2026.108932,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,14,2026,rti,1
+doi:10.1016/j.ijid.2026.108932,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.1016/j.ijid.2026.108932,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,1,2026,rti,1
+doi:10.1371/journal.pmed.1005205,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,9,2026,amr_hai,0
+doi:10.1371/journal.pmed.1005205,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,4,2026,amr_hai,0
+doi:10.1371/journal.pmed.1005205,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,1,2026,amr_hai,0
+doi:10.1371/journal.pmed.1005205,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1371/journal.pmed.1005205,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1093/pnasnexus/pgag273,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,32,2026,amr_hai,1
+doi:10.1093/pnasnexus/pgag273,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1093/ofid/ofag422,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,5,2026,vector_borne,0
+doi:10.1093/ofid/ofag422,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1093/ofid/ofag422,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,2,2026,vector_borne,0
+doi:10.1093/ofid/ofag422,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2026,vector_borne,0
+doi:10.3390/pathogens15050511,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3390/pathogens15050511,National Public Health Laboratory,NPHL,government,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1017/ash.2026.10298,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1017/ash.2026.10298,University of Hong Kong,HKU,university,Hong Kong SAR,HKG,East Asia,1,2026,amr_hai,0
+doi:10.1371/journal.pntd.0014382,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,7,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014382,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,8,2026,vector_borne,0
+doi:10.1371/journal.pntd.0014382,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,2,2026,vector_borne,1
+doi:10.1371/journal.pntd.0014382,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1371/journal.pntd.0014382,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1038/s41598-026-57407-3,University of Hong Kong,HKU,university,China,CHN,East Asia,7,2026,tb,0
+doi:10.1038/s41598-026-57407-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1016/j.actatropica.2026.108305,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,vector_borne,1
+doi:10.1016/j.actatropica.2026.108305,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,1,2026,vector_borne,0
+doi:10.1093/jac/dkag215,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,amr_hai,0
+doi:10.1093/jac/dkag215,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jac/dkag215,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jac/dkag215,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jac/dkag215,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1093/jac/dkag215,Peter Doherty Institute for Infection and Immunity,Doherty,research_institute,Australia,AUS,Oceania,1,2026,amr_hai,0
+doi:10.1093/jac/dkag215,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,2,2026,amr_hai,0
+doi:10.1093/cid/ciag538,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,7,2026,other_id,1
+doi:10.1093/cid/ciag538,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,other_id,0
+doi:10.1093/cid/ciag538,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,5,2026,other_id,0
+doi:10.1093/cid/ciag538,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2026,other_id,1
+doi:10.1093/cid/ciag538,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,2,2026,other_id,0
+doi:10.1093/cid/ciag538,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/cid/ciag538,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/cid/ciag538,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/cid/ciag538,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1093/cid/ciag538,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,2,2026,other_id,1
+doi:10.1093/cid/ciag538,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2026,other_id,1
+doi:10.1080/22221751.2026.2665001,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,6,2026,other_id,1
+doi:10.47102/annals-acadmedsg.2026237,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,7,2026,amr_hai,1
+doi:10.47102/annals-acadmedsg.2026237,Alexandra Hospital,AH,hospital,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.47102/annals-acadmedsg.2026237,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1016/j.celrep.2026.117311,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,9,2026,tb,1
+doi:10.1016/j.celrep.2026.117311,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,tb,1
+doi:10.1016/j.celrep.2026.117311,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,3,2026,tb,1
+doi:10.1016/j.celrep.2026.117311,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1038/s44321-026-00378-9,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1038/s44321-026-00378-9,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1038/s44321-026-00378-9,University of Oxford,Oxford,university,United Kingdom,GBR,Europe,1,2026,tb,0
+doi:10.1128/mbio.03518-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.3390/insects17070716,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,5,2026,vector_borne,1
+doi:10.3390/insects17070716,National Environment Agency,NEA,government,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3390/insects17070716,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.3390/insects17070716,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,vector_borne,1
+doi:10.1021/acs.jmedchem.5c01616,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,7,2026,tb,1
+doi:10.1021/acs.jmedchem.5c01616,Experimental Drug Development Centre,EDDC,research_institute,Singapore,SGP,Southeast Asia,4,2026,tb,1
+doi:10.1021/acs.jmedchem.5c01616,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2026,tb,1
+doi:10.1021/acssensors.6c00688,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2026,rti,1
+doi:10.7759/cureus.101901,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,2,2026,sti,1
+doi:10.1021/acs.est.6c03391,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2026,amr_hai,1
+doi:10.1021/acssensors.5c04309,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2026,amr_hai,1
+doi:10.1016/j.mtbio.2026.103530,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,7,2026,other_id,1
+doi:10.1016/j.socscimed.2026.119146,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2026,sti,1
+doi:10.1016/j.socscimed.2026.119146,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2026,sti,0
+doi:10.3390/insects17080770,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,5,2026,vector_borne,1
+doi:10.1080/21505594.2025.2580163,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,8,2025,vector_borne,1
+doi:10.1080/21505594.2025.2580163,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,2,2025,vector_borne,1
+doi:10.1016/s1473-3099(24)00794-1,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1016/s1473-3099(24)00794-1,World Health Organization,WHO,government,Switzerland,CHE,Europe,4,2025,vector_borne,0
+doi:10.1016/s1473-3099(24)00794-1,US Centers for Disease Control and Prevention,US CDC,government,United States,USA,North America,2,2025,vector_borne,0
+doi:10.1016/j.survophthal.2025.09.011,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,7,2025,tb,1
+doi:10.1016/j.survophthal.2025.09.011,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1016/j.survophthal.2025.09.011,Universitas Indonesia,UI,university,Indonesia,IDN,Southeast Asia,2,2025,tb,0
+doi:10.1016/j.survophthal.2025.09.011,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1016/j.survophthal.2025.09.011,Harvard University,Harvard,university,United States,USA,North America,1,2025,tb,0
+doi:10.1016/j.survophthal.2025.09.011,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1016/j.ajic.2025.11.002,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2025,rti,1
+doi:10.1007/s10461-025-04964-9,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2025,sti,1
+doi:10.1007/s10461-025-04964-9,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,6,2025,sti,1
+doi:10.1093/cid/ciae601,Harvard University,Harvard,university,United States,USA,North America,2,2025,tb,0
+doi:10.1093/cid/ciae601,World Health Organization,WHO,government,Sweden,SWE,Europe,1,2025,tb,0
+doi:10.1093/cid/ciae601,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2025,tb,0
+doi:10.1186/s13756-025-01656-w,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,4,2025,amr_hai,1
+doi:10.1186/s13756-025-01656-w,Ng Teng Fong General Hospital,NTFGH,hospital,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1038/s41598-025-86139-z,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,5,2025,vector_borne,1
+doi:10.1038/s41598-025-86139-z,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1038/s41598-025-86139-z,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1038/s41598-025-86139-z,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2025,vector_borne,0
+doi:10.1093/ofid/ofaf610,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2025,amr_hai,1
+doi:10.1128/jvi.01597-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,sti,1
+doi:10.47102/annals-acadmedsg.2025246,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,6,2025,tb,1
+doi:10.47102/annals-acadmedsg.2025246,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,6,2025,tb,1
+doi:10.47102/annals-acadmedsg.2025246,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,4,2025,tb,1
+doi:10.47102/annals-acadmedsg.2025246,Sengkang General Hospital,SKGH,hospital,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.47102/annals-acadmedsg.2025246,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.47102/annals-acadmedsg.2025246,Alexandra Hospital,AH,hospital,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1128/spectrum.01353-25,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,3,2025,tb,1
+doi:10.1128/spectrum.01353-25,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1186/s41182-025-00846-x,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1186/s41182-025-00846-x,World Health Organization,WHO,government,Philippines,PHL,Southeast Asia,9,2025,tb,0
+doi:10.1016/s2214-109x(25)00105-6,Johns Hopkins University,JHU,university,United States,USA,North America,2,2025,tb,0
+doi:10.1016/s2214-109x(25)00105-6,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1016/s2214-109x(25)00105-6,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1038/s41467-025-65976-6,National University of Singapore,NUS,university,China,CHN,East Asia,3,2025,amr_hai,0
+doi:10.47102/annals-acadmedsg.2025240,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,3,2025,sti,1
+doi:10.1016/j.vaccine.2025.126728,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,5,2025,vector_borne,1
+doi:10.1016/j.vaccine.2025.126728,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1016/s1473-3099(25)00157-4,Imperial College London,Imperial,university,United Kingdom,GBR,Europe,1,2025,tb,0
+doi:10.1016/s1473-3099(25)00157-4,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2025,tb,0
+doi:10.1016/s1473-3099(25)00157-4,Harvard University,Harvard,university,United States,USA,North America,1,2025,tb,0
+doi:10.1016/s1473-3099(25)00157-4,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,3,2025,tb,0
+doi:10.1016/s1473-3099(25)00157-4,World Health Organization,WHO,government,United Kingdom,GBR,Europe,2,2025,tb,0
+doi:10.1016/j.ijid.2025.108054,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,5,2025,tb,1
+doi:10.1016/j.ijid.2025.108054,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1016/j.intf.2025.100335,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,8,2025,other_id,1
+doi:10.1016/j.infpip.2025.100495,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,12,2025,amr_hai,1
+doi:10.1016/j.infpip.2025.100495,Sengkang General Hospital,SKGH,hospital,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1038/s41467-025-66606-x,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,7,2025,sti,1
+doi:10.1038/s41467-025-66606-x,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2025,sti,0
+doi:10.1016/j.celrep.2025.116098,"Agency for Science, Technology and Research",A*STAR,research_institute,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.3390/ijms262411784,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,sti,1
+doi:10.1186/s12889-025-25357-6,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,2,2025,sti,0
+doi:10.1186/s12889-025-25357-6,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,sti,1
+doi:10.3390/pathogens14030285,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2025,vector_borne,1
+doi:10.3390/pathogens14030285,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2025,vector_borne,0
+doi:10.1186/s12889-025-24934-z,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1128/spectrum.02725-25,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,12,2025,other_id,1
+doi:10.1128/spectrum.02725-25,Singapore Food Agency,SFA,government,Singapore,SGP,Southeast Asia,3,2025,other_id,1
+doi:10.1128/spectrum.02725-25,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,other_id,1
+doi:10.1128/spectrum.02725-25,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,2,2025,other_id,1
+doi:10.1128/spectrum.02725-25,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,2,2025,other_id,1
+doi:10.1128/spectrum.02725-25,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2025,other_id,1
+doi:10.1128/spectrum.02725-25,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,1,2025,other_id,1
+doi:10.1016/j.jhin.2025.11.043,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,16,2025,amr_hai,1
+doi:10.1016/s1473-3099(25)00151-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,5,2025,tb,1
+doi:10.1016/s1473-3099(25)00151-3,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2025,tb,0
+doi:10.1016/s1473-3099(25)00151-3,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1136/bmjresp-2025-003777,Harvard University,Harvard,university,United States,USA,North America,5,2025,tb,0
+doi:10.1136/bmjresp-2025-003777,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2025,tb,0
+doi:10.1101/2025.08.20.25334077,Harvard University,Harvard,university,United States,USA,North America,6,2025,tb,0
+doi:10.1101/2025.08.20.25334077,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,3,2025,tb,0
+doi:10.1073/pnas.2421573122,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1073/pnas.2421573122,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1038/s41467-025-66413-4,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,10,2025,amr_hai,1
+doi:10.1038/s41467-025-66413-4,Oxford University Clinical Research Unit,OUCRU,research_institute,Viet Nam,VNM,Southeast Asia,2,2025,amr_hai,0
+doi:10.1007/s00408-024-00779-y,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2025,tb,1
+doi:10.1007/s00408-024-00779-y,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,2,2025,tb,1
+doi:10.1016/j.idc.2025.11.009,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,4,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.009,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.009,Mahidol University,Mahidol,university,Thailand,THA,Southeast Asia,1,2025,amr_hai,0
+doi:10.1016/j.idc.2025.11.005,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,National University Health System,NUHS,hospital,Singapore,SGP,Southeast Asia,2,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,Communicable Diseases Agency,CDA,government,Singapore,SGP,Southeast Asia,2,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1016/j.idc.2025.11.003,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1186/s12964-025-02588-z,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,10,2025,vector_borne,1
+doi:10.1016/j.ajic.2025.10.025,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,14,2025,amr_hai,1
+doi:10.1002/jia2.70052,University of Hong Kong,HKU,university,Hong Kong SAR,HKG,East Asia,8,2025,sti,0
+doi:10.1002/jia2.70052,National University Hospital,NUH,hospital,Taiwan,TWN,East Asia,2,2025,sti,0
+doi:10.1002/jia2.70052,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,3,2025,sti,0
+doi:10.1002/jia2.70052,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2025,sti,1
+doi:10.1038/s41467-025-66411-6,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,4,2025,vector_borne,0
+doi:10.1038/s41467-025-66411-6,University of Cambridge,Cambridge,university,United Kingdom,GBR,Europe,1,2025,vector_borne,0
+doi:10.1038/s41467-025-66411-6,National Environment Agency,NEA,government,Singapore,SGP,Southeast Asia,3,2025,vector_borne,1
+doi:10.1038/s41467-025-66411-6,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2025,vector_borne,1
+doi:10.1038/s41467-025-66411-6,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2025,vector_borne,1
+doi:10.1016/j.arbres.2025.09.017,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2025,tb,1
+doi:10.1016/j.arbres.2025.09.017,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,1,2025,tb,1
+doi:10.1038/s41591-025-04041-7,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2025,sti,0
+doi:10.1038/s41591-025-04041-7,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2025,sti,1
+doi:10.7759/cureus.100362,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,3,2025,tb,1
+doi:10.1016/s2213-2600(25)00194-8,Harvard University,Harvard,university,United States,USA,North America,2,2025,tb,0
+doi:10.3389/fmicb.2025.1711400,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,1,2025,amr_hai,1
+doi:10.1073/pnas.2502522122,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,16,2025,vector_borne,1
+doi:10.1021/acs.analchem.5c05609,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2025,amr_hai,1
+doi:10.1186/s12916-025-03941-2,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2025,vector_borne,1
+doi:10.1186/s12916-025-03941-2,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,14,2025,vector_borne,1
+doi:10.1186/s12916-025-03941-2,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2025,vector_borne,1
+doi:10.1101/2025.10.26.684512,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,9,2025,other_id,1
+doi:10.1101/2025.10.26.684512,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2025,other_id,1
+doi:10.1101/2025.10.26.684512,A*STAR Infectious Diseases Labs,ID Labs,research_institute,Singapore,SGP,Southeast Asia,3,2025,other_id,1
+doi:10.1101/2025.10.26.684512,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2025,other_id,1
+doi:10.1002/pro.5142,Bioinformatics Institute,BII,research_institute,Singapore,SGP,Southeast Asia,1,2024,vector_borne,1
+doi:10.1186/s12915-024-02070-1,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2024,vector_borne,1
+doi:10.1186/s12915-024-02070-1,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1183/16000617.0208-2023,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1016/j.ijid.2024.107768,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,5,2024,tb,1
+doi:10.1016/j.ijid.2024.107768,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,4,2024,tb,1
+doi:10.1016/j.ijid.2024.107768,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1038/s41467-024-48077-8,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2024,tb,0
+doi:10.1038/s41467-024-48077-8,Harvard University,Harvard,university,United States,USA,North America,2,2024,tb,0
+doi:10.47102/annals-acadmedsg.2023391,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,2,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,6,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,15,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,Singapore General Hospital,SGH,hospital,Singapore,SGP,Southeast Asia,4,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,Changi General Hospital,CGH,hospital,Singapore,SGP,Southeast Asia,2,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,2,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.47102/annals-acadmedsg.2023391,KK Women's and Children's Hospital,KKH,hospital,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1038/s41467-024-54419-3,National University Hospital,NUH,hospital,Singapore,SGP,Southeast Asia,3,2024,tb,1
+doi:10.1038/s41467-024-54419-3,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2024,tb,1
+doi:10.1038/s41467-024-54419-3,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2024,tb,0
+doi:10.1007/s12104-024-10208-z,Experimental Drug Development Centre,EDDC,research_institute,Singapore,SGP,Southeast Asia,3,2024,vector_borne,1
+doi:10.1007/s12104-024-10208-z,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1007/s12104-024-10208-z,National Centre for Infectious Diseases,NCID,hospital,Singapore,SGP,Southeast Asia,1,2024,vector_borne,1
+doi:10.1186/s12874-024-02291-6,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,3,2024,vector_borne,1
+doi:10.1186/s12874-024-02291-6,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1186/s12874-024-02291-6,National Environment Agency,NEA,government,Singapore,SGP,Southeast Asia,1,2024,vector_borne,1
+doi:10.1186/s12874-024-02291-6,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2024,vector_borne,0
+doi:10.1016/s2542-5196(24)00169-4,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2024,vector_borne,1
+doi:10.1016/s2542-5196(24)00169-4,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,10,2024,vector_borne,1
+doi:10.1016/s2542-5196(24)00169-4,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1186/s12879-024-10027-6,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,2,2024,tb,1
+doi:10.1016/j.cell.2024.10.028,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,14,2024,vector_borne,1
+doi:10.1016/j.cell.2024.10.028,Singapore Immunology Network,SIgN,research_institute,Singapore,SGP,Southeast Asia,5,2024,vector_borne,1
+doi:10.1016/j.cell.2024.10.028,National Skin Centre,NSC,hospital,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1016/j.cell.2024.10.028,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1016/j.ijid.2024.107221,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,1,2024,tb,0
+doi:10.1016/s2666-5247(24)00149-6,SingHealth,SingHealth,hospital,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1016/j.ebiom.2024.105456,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1016/j.ebiom.2024.105456,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,3,2024,vector_borne,1
+doi:10.1016/j.ebiom.2024.105456,University of Melbourne,Melbourne,university,Australia,AUS,Oceania,1,2024,vector_borne,0
+doi:10.1093/jtm/taae103,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,2,2024,vector_borne,1
+doi:10.1093/jtm/taae103,Environmental Health Institute,EHI,government,Singapore,SGP,Southeast Asia,14,2024,vector_borne,1
+doi:10.1093/jtm/taae103,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,4,2024,vector_borne,1
+doi:10.1093/infdis/jiae104,National University of Singapore,NUS,university,Singapore,SGP,Southeast Asia,12,2024,tb,1
+doi:10.1093/infdis/jiae104,London School of Hygiene & Tropical Medicine,LSHTM,university,United Kingdom,GBR,Europe,2,2024,tb,0
+doi:10.1093/infdis/jiae104,University of Malaya,UM,university,Malaysia,MYS,Southeast Asia,1,2024,tb,0
+doi:10.1093/infdis/jiae104,GlaxoSmithKline,GSK,industry,United Kingdom,GBR,Europe,1,2024,tb,0
+doi:10.1038/s42003-024-06822-1,Universitas Indonesia,UI,university,Indonesia,IDN,Southeast Asia,2,2024,tb,0
+doi:10.1038/s42003-024-06822-1,Tan Tock Seng Hospital,TTSH,hospital,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1038/s42003-024-06822-1,Nanyang Technological University,NTU,university,Singapore,SGP,Southeast Asia,1,2024,tb,1
+doi:10.1038/s42003-024-06822-1,Duke-NUS Medical School,Duke-NUS,university,Singapore,SGP,Southeast Asia,1,2024,tb,1

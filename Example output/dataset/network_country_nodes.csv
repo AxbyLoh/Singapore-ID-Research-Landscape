@@ -1,0 +1,86 @@
+node_id,label,country,region,sector,iso3,is_singapore,x,y,degree,weighted_degree,n_publications
+Argentina,Argentina,Argentina,Latin America,,ARG,0,0.760761,0.713866,5,5,1
+Australia,Australia,Australia,Oceania,,AUS,0,0.390756,0.648197,54,263,53
+Austria,Austria,Austria,Europe,,AUT,0,0.630309,0.316021,7,13,3
+Bangladesh,Bangladesh,Bangladesh,South Asia,,BGD,0,0.325634,0.547236,45,88,8
+Belgium,Belgium,Belgium,Europe,,BEL,0,0.487025,0.572301,40,93,10
+Botswana,Botswana,Botswana,Africa,,BWA,0,0.792726,0.584919,6,8,2
+Brazil,Brazil,Brazil,Latin America,,BRA,0,0.412471,0.61443,34,59,7
+Brunei Darussalam,Brunei Darussalam,Brunei Darussalam,Southeast Asia,,BRN,0,0.268306,0.335897,19,23,3
+Cambodia,Cambodia,Cambodia,Southeast Asia,,KHM,0,0.216351,0.576345,30,84,14
+Canada,Canada,Canada,North America,,CAN,0,0.429902,0.670838,41,138,17
+Chile,Chile,Chile,Latin America,,CHL,0,0.722964,0.79092,5,6,2
+China,China,China,East Asia,,CHN,0,0.331977,0.597918,53,224,62
+Colombia,Colombia,Colombia,Latin America,,COL,0,0.61512,0.480456,13,17,3
+Costa Rica,Costa Rica,Costa Rica,Latin America,,CRI,0,0.342419,1.0,3,3,1
+Cuba,Cuba,Cuba,Latin America,,CUB,0,0.337138,0.814635,19,19,1
+Czechia,Czechia,Czechia,Europe,,CZE,0,0.625747,0.076617,3,3,1
+Côte d'Ivoire,Côte d'Ivoire,Côte d'Ivoire,Africa,,CIV,0,0.840332,0.250775,2,2,1
+Democratic Republic of the Congo,Democratic Republic of the Congo,Democratic Republic of the Congo,Africa,,COD,0,0.376327,0.815444,19,24,2
+Denmark,Denmark,Denmark,Europe,,DNK,0,0.44304,0.500047,35,68,7
+Egypt,Egypt,Egypt,Africa,,EGY,0,0.633485,0.596221,11,12,2
+Estonia,Estonia,Estonia,Europe,,EST,0,1.0,0.63969,1,1,1
+Ethiopia,Ethiopia,Ethiopia,Africa,,ETH,0,0.413066,0.448775,33,105,10
+Finland,Finland,Finland,Europe,,FIN,0,0.246851,0.866183,8,11,3
+France,France,France,Europe,,FRA,0,0.37365,0.542016,47,217,28
+Germany,Germany,Germany,Europe,,DEU,0,0.479367,0.620904,37,96,15
+Ghana,Ghana,Ghana,Africa,,GHA,0,0.566219,0.881377,6,6,1
+Greece,Greece,Greece,Europe,,GRC,0,0.58653,0.742108,12,14,2
+Haiti,Haiti,Haiti,Latin America,,HTI,0,0.197232,0.540579,16,37,3
+Hong Kong SAR,Hong Kong SAR,Hong Kong SAR,East Asia,,HKG,0,0.172647,0.597281,16,40,7
+India,India,India,South Asia,,IND,0,0.397173,0.572838,54,191,29
+Indonesia,Indonesia,Indonesia,Southeast Asia,,IDN,0,0.369414,0.492144,47,142,13
+Iraq,Iraq,Iraq,Middle East,,IRQ,0,0.105623,0.20582,3,4,2
+Ireland,Ireland,Ireland,Europe,,IRL,0,0.202061,0.805752,10,11,2
+Israel,Israel,Israel,Middle East,,ISR,0,0.535226,0.714031,15,20,2
+Italy,Italy,Italy,Europe,,ITA,0,0.491029,0.507028,37,101,12
+Japan,Japan,Japan,East Asia,,JPN,0,0.302497,0.608095,47,158,27
+Jordan,Jordan,Jordan,Middle East,,JOR,0,0.012825,0.721595,3,3,1
+Kenya,Kenya,Kenya,Africa,,KEN,0,0.39613,0.758485,14,16,2
+Lao PDR,Lao PDR,Lao PDR,Southeast Asia,,LAO,0,0.086181,0.491573,7,8,2
+Lebanon,Lebanon,Lebanon,Middle East,,LBN,0,0.412955,0.815087,19,21,2
+Madagascar,Madagascar,Madagascar,Africa,,MDG,0,0.0,0.564557,4,4,1
+Malaysia,Malaysia,Malaysia,Southeast Asia,,MYS,0,0.277414,0.425437,33,109,23
+Mexico,Mexico,Mexico,Latin America,,MEX,0,0.52358,0.407048,20,20,1
+Mongolia,Mongolia,Mongolia,East Asia,,MNG,0,0.328662,0.366715,24,33,4
+Myanmar,Myanmar,Myanmar,Southeast Asia,,MMR,0,0.19157,0.500134,17,56,6
+Namibia,Namibia,Namibia,Africa,,NAM,0,0.13264,0.794069,7,7,1
+Nepal,Nepal,Nepal,South Asia,,NPL,0,0.224864,0.407765,21,39,6
+Netherlands,Netherlands,Netherlands,Europe,,NLD,0,0.442831,0.641991,49,129,16
+New Zealand,New Zealand,New Zealand,Oceania,,NZL,0,0.267102,0.517173,21,55,11
+Nigeria,Nigeria,Nigeria,Africa,,NGA,0,0.342207,0.771426,19,19,1
+Norway,Norway,Norway,Europe,,NOR,0,0.33887,0.0,2,2,1
+Oman,Oman,Oman,Middle East,,OMN,0,0.471591,0.370701,20,20,1
+Pakistan,Pakistan,Pakistan,South Asia,,PAK,0,0.35634,0.418637,39,129,13
+Panama,Panama,Panama,Latin America,,PAN,0,0.574146,0.247071,6,6,1
+Peru,Peru,Peru,Latin America,,PER,0,0.260788,0.595863,20,78,7
+Philippines,Philippines,Philippines,Southeast Asia,,PHL,0,0.403578,0.405159,41,101,15
+Poland,Poland,Poland,Europe,,POL,0,0.501425,0.220652,5,7,2
+Portugal,Portugal,Portugal,Europe,,PRT,0,0.571774,0.657031,17,28,5
+Qatar,Qatar,Qatar,Middle East,,QAT,0,0.278094,0.747628,19,19,1
+Republic of Korea,Republic of Korea,Republic of Korea,East Asia,,KOR,0,0.226785,0.465839,18,61,14
+Romania,Romania,Romania,Europe,,ROU,0,0.664787,0.523625,12,14,2
+Russian Federation,Russian Federation,Russian Federation,Europe,,RUS,0,0.488704,0.417283,21,23,2
+Rwanda,Rwanda,Rwanda,Africa,,RWA,0,0.80956,0.425839,5,5,1
+Saudi Arabia,Saudi Arabia,Saudi Arabia,Middle East,,SAU,0,0.301902,0.78104,19,24,3
+Senegal,Senegal,Senegal,Africa,,SEN,0,0.776807,0.520625,4,4,1
+Singapore,Singapore,Singapore,Southeast Asia,,SGP,1,0.429978,0.539306,84,830,358
+South Africa,South Africa,South Africa,Africa,,ZAF,0,0.354082,0.657729,47,168,19
+Spain,Spain,Spain,Europe,,ESP,0,0.55585,0.501818,35,76,11
+Sri Lanka,Sri Lanka,Sri Lanka,South Asia,,LKA,0,0.179394,0.390155,18,18,1
+Sweden,Sweden,Sweden,Europe,,SWE,0,0.304842,0.663705,25,41,5
+Switzerland,Switzerland,Switzerland,Europe,,CHE,0,0.407049,0.531378,48,169,28
+Taiwan,Taiwan,Taiwan,East Asia,,TWN,0,0.310266,0.423686,29,89,15
+Tanzania,Tanzania,Tanzania,Africa,,TZA,0,0.324634,0.135604,3,5,2
+Thailand,Thailand,Thailand,Southeast Asia,,THA,0,0.336992,0.46232,39,155,31
+Timor-Leste,Timor-Leste,Timor-Leste,Southeast Asia,,TLS,0,0.217655,0.344437,18,18,1
+Tunisia,Tunisia,Tunisia,Africa,,TUN,0,0.18816,0.697743,10,10,1
+Türkiye,Türkiye,Türkiye,Europe,,TUR,0,0.411167,0.293179,10,12,2
+Uganda,Uganda,Uganda,Africa,,UGA,0,0.542037,0.561668,17,26,4
+Ukraine,Ukraine,Ukraine,Europe,,UKR,0,0.496983,0.760106,16,16,1
+United Arab Emirates,United Arab Emirates,United Arab Emirates,Middle East,,ARE,0,0.640317,0.658054,10,10,1
+United Kingdom,United Kingdom,United Kingdom,Europe,,GBR,0,0.355643,0.570016,67,475,91
+United States,United States,United States,North America,,USA,0,0.440022,0.576858,73,438,99
+Viet Nam,Viet Nam,Viet Nam,Southeast Asia,,VNM,0,0.306341,0.520662,43,158,21
+Zambia,Zambia,Zambia,Africa,,ZMB,0,0.452671,0.736174,19,24,3
+Zimbabwe,Zimbabwe,Zimbabwe,Africa,,ZWE,0,0.459498,0.790704,16,16,1

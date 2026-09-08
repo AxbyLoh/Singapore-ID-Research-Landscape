@@ -1,0 +1,392 @@
+uid,type_id,type_label,type_score,year,primary_domain
+doi:10.1128/spectrum.00627-26,genomics,Genomics,4,2026,tb
+doi:10.1371/journal.pntd.0014584,surveillance_epidemiology,Surveillance and epidemiology,16,2026,vector_borne
+doi:10.1371/journal.pntd.0014584,transmission,Transmission,3,2026,vector_borne
+doi:10.3390/ijms27031504,basic_research,Basic research,4,2026,vector_borne
+doi:10.1186/s12889-026-26979-0,genomics,Genomics,20,2026,tb
+doi:10.1186/s12889-026-26979-0,surveillance_epidemiology,Surveillance and epidemiology,6,2026,tb
+doi:10.1186/s12889-026-26979-0,transmission,Transmission,3,2026,tb
+doi:10.1016/j.avsg.2025.12.042,treatment,Treatment,8,2026,amr_hai
+doi:10.1016/j.avsg.2025.12.042,surveillance_epidemiology,Surveillance and epidemiology,4,2026,amr_hai
+doi:10.1001/jamanetworkopen.2026.28389,vaccine,Vaccine,11,2026,rti
+doi:10.1001/jamanetworkopen.2026.28389,clinical_studies,Clinical studies,8,2026,rti
+doi:10.1038/s41598-026-64190-8,vaccine,Vaccine,14,2026,rti
+doi:10.1038/s41598-026-64190-8,immunology,Immunology,7,2026,rti
+doi:10.1186/s12348-026-00586-x,case_study,Case study,10,2026,tb
+doi:10.1186/s12942-026-00467-5,genomics,Genomics,20,2026,tb
+doi:10.1186/s12942-026-00467-5,outbreak_management,Outbreak management,4,2026,tb
+doi:10.1186/s12942-026-00467-5,surveillance_epidemiology,Surveillance and epidemiology,4,2026,tb
+doi:10.5588/ijtldopen.26.0076,surveillance_epidemiology,Surveillance and epidemiology,4,2026,tb
+doi:10.3390/pathogens15040378,genomics,Genomics,23,2026,vector_borne
+doi:10.3390/pathogens15040378,entomology,Entomology,4,2026,vector_borne
+doi:10.1080/07853890.2026.2714685,outbreak_management,Outbreak management,12,2026,tb
+doi:10.1080/07853890.2026.2714685,surveillance_epidemiology,Surveillance and epidemiology,4,2026,tb
+doi:10.64898/2026.03.19.26348865,virology,Virology,4,2026,sti
+doi:10.1016/j.ejogrb.2026.115359,disease_management,Disease management,3,2026,sti
+doi:10.1128/aac.00748-26,clinical_studies,Clinical studies,3,2026,tb
+doi:10.1186/s12929-026-01277-4,immunology,Immunology,6,2026,rti
+doi:10.1186/s12929-026-01277-4,treatment,Treatment,3,2026,rti
+doi:10.1371/journal.pntd.0014395,entomology,Entomology,16,2026,vector_borne
+doi:10.1371/journal.pntd.0014395,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.1128/mbio.01075-26,basic_research,Basic research,9,2026,rti
+doi:10.1080/10810730.2026.2687792,vaccine,Vaccine,4,2026,vector_borne
+doi:10.3390/vaccines14060469,vaccine,Vaccine,7,2026,rti
+doi:10.1177/08903344261475018,surveillance_epidemiology,Surveillance and epidemiology,3,2026,rti
+doi:10.3390/ijms27167316,virology,Virology,6,2026,rti
+doi:10.3390/ijms27167316,treatment,Treatment,4,2026,rti
+doi:10.1016/j.jep.2026.122318,basic_research,Basic research,3,2026,other_id
+doi:10.2196/88849,surveillance_epidemiology,Surveillance and epidemiology,4,2026,rti
+doi:10.1093/epirev/mxag011,surveillance_epidemiology,Surveillance and epidemiology,3,2026,other_id
+doi:10.1093/epirev/mxag011,transmission,Transmission,3,2026,other_id
+doi:10.1080/21645515.2026.2661118,vaccine,Vaccine,20,2026,rti
+doi:10.1186/s12889-026-26538-7,clinical_studies,Clinical studies,4,2026,sti
+doi:10.1016/j.idh.2026.100423,surveillance_epidemiology,Surveillance and epidemiology,7,2026,amr_hai
+doi:10.1016/j.idh.2026.100423,clinical_studies,Clinical studies,3,2026,amr_hai
+doi:10.1016/j.idh.2026.100423,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.1016/s0140-6736(26)00410-1,modelling,Modelling,4,2026,sti
+doi:10.1016/s0140-6736(26)00410-1,surveillance_epidemiology,Surveillance and epidemiology,4,2026,sti
+doi:10.1016/s0140-6736(26)00410-1,vaccine,Vaccine,4,2026,sti
+doi:10.1021/acsinfecdis.6c00114,entomology,Entomology,12,2026,vector_borne
+doi:10.3390/pathogens15030278,outbreak_management,Outbreak management,10,2026,amr_hai
+doi:10.3390/pathogens15030278,genomics,Genomics,8,2026,amr_hai
+doi:10.3390/pathogens15030278,case_study,Case study,3,2026,amr_hai
+doi:10.3390/pathogens15030278,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.2196/87909,vaccine,Vaccine,10,2026,rti
+doi:10.1080/09540121.2026.2632324,surveillance_epidemiology,Surveillance and epidemiology,3,2026,sti
+doi:10.1016/s1473-3099(26)00357-9,surveillance_epidemiology,Surveillance and epidemiology,8,2026,amr_hai
+doi:10.1016/s1473-3099(26)00357-9,clinical_studies,Clinical studies,4,2026,amr_hai
+doi:10.1073/pnas.2532225123,basic_research,Basic research,4,2026,other_id
+doi:10.1073/pnas.2532225123,immunology,Immunology,3,2026,other_id
+doi:10.1016/j.bcp.2026.118104,basic_research,Basic research,5,2026,tb
+doi:10.1038/s44360-026-00080-7,surveillance_epidemiology,Surveillance and epidemiology,4,2026,sti
+doi:10.1038/s44360-026-00080-7,transmission,Transmission,3,2026,sti
+doi:10.1111/camh.70112,clinical_studies,Clinical studies,4,2026,rti
+doi:10.1016/j.jhin.2026.03.009,clinical_studies,Clinical studies,7,2026,amr_hai
+doi:10.1016/j.jhin.2026.03.009,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.1080/17441692.2026.2700817,vaccine,Vaccine,4,2026,rti
+doi:10.3389/fmicb.2026.1866307,entomology,Entomology,4,2026,vector_borne
+doi:10.3389/fmicb.2026.1866307,genomics,Genomics,3,2026,vector_borne
+doi:10.3389/fmicb.2026.1866307,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.1136/bcr-2025-271896,treatment,Treatment,8,2026,vector_borne
+doi:10.1136/bcr-2025-271896,case_study,Case study,3,2026,vector_borne
+doi:10.1038/s41467-026-74190-x,immunology,Immunology,3,2026,rti
+doi:10.1016/j.ijid.2026.108533,outbreak_management,Outbreak management,12,2026,tb
+doi:10.1016/j.ijid.2026.108533,genomics,Genomics,8,2026,tb
+doi:10.1016/j.ijid.2026.108533,modelling,Modelling,4,2026,tb
+doi:10.1016/j.ijid.2026.108533,transmission,Transmission,3,2026,tb
+doi:10.1016/j.transci.2026.104429,surveillance_epidemiology,Surveillance and epidemiology,9,2026,sti
+doi:10.1186/s12889-026-27217-3,detection,Detection,3,2026,sti
+doi:10.3389/fimmu.2026.1841974,virology,Virology,17,2026,rti
+doi:10.5527/wjn.v15.i2.118214,vaccine,Vaccine,7,2026,rti
+doi:10.5527/wjn.v15.i2.118214,surveillance_epidemiology,Surveillance and epidemiology,4,2026,rti
+doi:10.5527/wjn.v15.i2.118214,case_study,Case study,3,2026,rti
+doi:10.1183/13993003.00858-2026,clinical_studies,Clinical studies,4,2026,tb
+doi:10.1016/j.vaccine.2026.128983,vaccine,Vaccine,11,2026,rti
+doi:10.1016/j.vaccine.2026.128983,immunology,Immunology,3,2026,rti
+doi:10.1016/j.eclinm.2026.103871,surveillance_epidemiology,Surveillance and epidemiology,7,2026,vector_borne
+doi:10.1016/j.eclinm.2026.103871,entomology,Entomology,3,2026,vector_borne
+doi:10.1016/j.eclinm.2026.103871,transmission,Transmission,3,2026,vector_borne
+doi:10.1016/j.eclinm.2026.103871,virology,Virology,3,2026,vector_borne
+doi:10.1097/qai.0000000000003874,treatment,Treatment,8,2026,sti
+doi:10.1016/j.jconrel.2026.115136,immunology,Immunology,6,2026,rti
+doi:10.1016/j.jconrel.2026.115136,vaccine,Vaccine,5,2026,rti
+doi:10.1016/j.mimet.2026.107668,basic_research,Basic research,4,2026,rti
+doi:10.1128/jvi.00540-26,genomics,Genomics,3,2026,rti
+doi:10.1128/jvi.00540-26,surveillance_epidemiology,Surveillance and epidemiology,3,2026,rti
+doi:10.1016/j.jinf.2026.106765,infection_prevention_control,Infection prevention and control,15,2026,amr_hai
+doi:10.1016/j.jinf.2026.106765,outbreak_management,Outbreak management,10,2026,amr_hai
+doi:10.1016/j.jinf.2026.106765,surveillance_epidemiology,Surveillance and epidemiology,5,2026,amr_hai
+doi:10.1016/j.jinf.2026.106765,genomics,Genomics,4,2026,amr_hai
+doi:10.3389/fpubh.2026.1838184,genomics,Genomics,12,2026,rti
+doi:10.3389/fpubh.2026.1838184,surveillance_epidemiology,Surveillance and epidemiology,6,2026,rti
+doi:10.1016/j.pedneo.2026.04.010,surveillance_epidemiology,Surveillance and epidemiology,4,2026,rti
+doi:10.1371/journal.pntd.0014318,surveillance_epidemiology,Surveillance and epidemiology,16,2026,vector_borne
+doi:10.1371/journal.pntd.0014318,genomics,Genomics,6,2026,vector_borne
+doi:10.1128/spectrum.03669-25,detection,Detection,20,2026,vector_borne
+doi:10.1128/spectrum.03669-25,outbreak_management,Outbreak management,6,2026,vector_borne
+doi:10.1128/spectrum.03669-25,disease_management,Disease management,5,2026,vector_borne
+doi:10.1128/spectrum.03669-25,immunology,Immunology,4,2026,vector_borne
+doi:10.1038/s41541-026-01519-4,vaccine,Vaccine,8,2026,vector_borne
+doi:10.1038/s41467-026-75524-5,clinical_studies,Clinical studies,8,2026,amr_hai
+doi:10.1038/s41467-026-75524-5,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.1016/j.biomaterials.2026.124421,disease_management,Disease management,3,2026,amr_hai
+doi:10.1007/s00604-026-08340-9,detection,Detection,4,2026,sti
+doi:10.1186/s13073-026-01655-5,clinical_studies,Clinical studies,4,2026,amr_hai
+doi:10.1093/jpids/piag032,surveillance_epidemiology,Surveillance and epidemiology,6,2026,tb
+doi:10.64898/2026.05.07.723652,immunology,Immunology,3,2026,other_id
+doi:10.1038/s41467-026-74526-7,genomics,Genomics,10,2026,rti
+doi:10.1038/s41467-026-74526-7,virology,Virology,6,2026,rti
+doi:10.1016/j.bj.2026.101033,surveillance_epidemiology,Surveillance and epidemiology,7,2026,amr_hai
+doi:10.1016/j.vaccine.2026.128513,vaccine,Vaccine,14,2026,sti
+doi:10.1016/j.vaccine.2026.128513,surveillance_epidemiology,Surveillance and epidemiology,5,2026,sti
+doi:10.1016/j.vaccine.2026.128513,modelling,Modelling,4,2026,sti
+doi:10.1016/j.ijid.2026.109062,surveillance_epidemiology,Surveillance and epidemiology,6,2026,rti
+doi:10.1016/j.mmcr.2026.100815,case_study,Case study,6,2026,rti
+doi:10.1007/s00210-026-05627-9,genomics,Genomics,5,2026,amr_hai
+doi:10.1007/s00210-026-05627-9,treatment,Treatment,3,2026,amr_hai
+doi:10.1016/j.ijbiomac.2026.153190,infection_prevention_control,Infection prevention and control,6,2026,amr_hai
+doi:10.1016/j.ebiom.2026.106290,vaccine,Vaccine,8,2026,vector_borne
+doi:10.1002/jmv.70892,genomics,Genomics,6,2026,sti
+doi:10.47102/annals-acadmedsg.2025321,surveillance_epidemiology,Surveillance and epidemiology,4,2026,tb
+doi:10.1017/ash.2025.10149,surveillance_epidemiology,Surveillance and epidemiology,4,2026,amr_hai
+doi:10.1017/ash.2025.10149,clinical_studies,Clinical studies,3,2026,amr_hai
+doi:10.1017/ash.2025.10149,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.3390/pathogens15040437,case_study,Case study,6,2026,vector_borne
+doi:10.3390/pathogens15040437,treatment,Treatment,6,2026,vector_borne
+doi:10.1128/spectrum.01571-26,clinical_studies,Clinical studies,6,2026,amr_hai
+doi:10.1128/spectrum.01571-26,detection,Detection,6,2026,amr_hai
+doi:10.1128/spectrum.01571-26,disease_management,Disease management,3,2026,amr_hai
+doi:10.1016/j.jhin.2026.08.011,genomics,Genomics,8,2026,amr_hai
+doi:10.1016/j.jhin.2026.08.011,infection_prevention_control,Infection prevention and control,6,2026,amr_hai
+doi:10.1093/jimmun/vkag189,treatment,Treatment,12,2026,rti
+doi:10.1093/jimmun/vkag189,basic_research,Basic research,8,2026,rti
+doi:10.1001/jamadermatol.2026.0308,virology,Virology,8,2026,sti
+doi:10.1001/jamadermatol.2026.0308,clinical_studies,Clinical studies,6,2026,sti
+doi:10.1001/jamadermatol.2026.0308,genomics,Genomics,4,2026,sti
+doi:10.1001/jamadermatol.2026.0308,surveillance_epidemiology,Surveillance and epidemiology,4,2026,sti
+doi:10.1016/j.idm.2026.03.002,surveillance_epidemiology,Surveillance and epidemiology,4,2026,sti
+doi:10.1016/j.idm.2026.03.002,vaccine,Vaccine,4,2026,sti
+doi:10.1016/j.idm.2026.03.002,modelling,Modelling,3,2026,sti
+doi:10.1016/j.mib.2026.102764,basic_research,Basic research,6,2026,amr_hai
+doi:10.1099/mgen.0.001745,genomics,Genomics,16,2026,amr_hai
+doi:10.1371/journal.pcbi.1014355,entomology,Entomology,19,2026,vector_borne
+doi:10.3389/fcimb.2026.1847443,treatment,Treatment,5,2026,tb
+doi:10.3389/fcimb.2026.1847443,detection,Detection,3,2026,tb
+doi:10.1016/j.jhin.2026.03.037,infection_prevention_control,Infection prevention and control,9,2026,amr_hai
+doi:10.1016/j.jhin.2026.03.037,clinical_studies,Clinical studies,6,2026,amr_hai
+doi:10.1002/jmv.71078,genomics,Genomics,30,2026,vector_borne
+doi:10.1002/jmv.71078,surveillance_epidemiology,Surveillance and epidemiology,10,2026,vector_borne
+doi:10.1186/s13073-026-01670-6,genomics,Genomics,7,2026,tb
+doi:10.1016/j.fm.2026.105164,basic_research,Basic research,6,2026,amr_hai
+doi:10.1016/j.lanwpc.2026.101874,vaccine,Vaccine,13,2026,sti
+doi:10.1016/j.ijpara.2026.104892,basic_research,Basic research,4,2026,vector_borne
+doi:10.1016/j.ijid.2026.109084,clinical_studies,Clinical studies,8,2026,vector_borne
+doi:10.3389/fpubh.2026.1785244,vaccine,Vaccine,17,2026,rti
+doi:10.4103/singaporemedj.smj-2026-181,disease_management,Disease management,4,2026,rti
+doi:10.4103/singaporemedj.smj-2026-182,disease_management,Disease management,4,2026,rti
+doi:10.1093/jac/dkag263,modelling,Modelling,4,2026,amr_hai
+doi:10.1186/s12889-026-26441-1,clinical_studies,Clinical studies,9,2026,sti
+doi:10.1016/j.urolonc.2026.111091,clinical_studies,Clinical studies,3,2026,tb
+doi:10.1093/aje/kwag024,treatment,Treatment,8,2026,tb
+doi:10.1371/journal.pntd.0014222,entomology,Entomology,16,2026,vector_borne
+doi:10.1371/journal.pntd.0014222,genomics,Genomics,4,2026,vector_borne
+doi:10.3892/br.2026.2154,genomics,Genomics,4,2026,other_id
+doi:10.3390/v18050485,case_study,Case study,4,2026,other_id
+doi:10.1093/jpids/piag047,treatment,Treatment,10,2026,amr_hai
+doi:10.1093/jpids/piag047,surveillance_epidemiology,Surveillance and epidemiology,4,2026,amr_hai
+doi:10.1016/j.xcrm.2026.102714,basic_research,Basic research,8,2026,amr_hai
+doi:10.1097/md.0000000000047358,treatment,Treatment,8,2026,sti
+doi:10.1016/j.cmi.2026.01.032,treatment,Treatment,12,2026,amr_hai
+doi:10.1016/j.cmi.2026.01.032,basic_research,Basic research,4,2026,amr_hai
+doi:10.1016/j.lanhl.2026.100870,clinical_studies,Clinical studies,4,2026,rti
+doi:10.1370/afm.250683,clinical_studies,Clinical studies,6,2026,sti
+doi:10.1016/j.nedt.2026.107368,disease_management,Disease management,5,2026,rti
+doi:10.1016/j.nedt.2026.107368,surveillance_epidemiology,Surveillance and epidemiology,5,2026,rti
+doi:10.1016/j.nedt.2026.107368,infection_prevention_control,Infection prevention and control,3,2026,rti
+doi:10.1007/s40273-026-01609-0,clinical_studies,Clinical studies,3,2026,amr_hai
+doi:10.1371/journal.pcbi.1014313,modelling,Modelling,8,2026,sti
+doi:10.1038/s41467-026-71566-x,genomics,Genomics,7,2026,tb
+doi:10.1038/s41467-026-71566-x,basic_research,Basic research,5,2026,tb
+doi:10.1186/s12879-026-13946-8,surveillance_epidemiology,Surveillance and epidemiology,10,2026,amr_hai
+doi:10.1186/s12879-026-13946-8,genomics,Genomics,8,2026,amr_hai
+doi:10.64898/2026.07.03.736289,virology,Virology,3,2026,vector_borne
+doi:10.1016/j.pt.2026.06.011,entomology,Entomology,8,2026,vector_borne
+doi:10.1371/journal.ppat.1013609,virology,Virology,6,2026,vector_borne
+doi:10.1371/journal.ppat.1013609,treatment,Treatment,4,2026,vector_borne
+doi:10.3389/fimmu.2026.1921846,vaccine,Vaccine,10,2026,rti
+doi:10.3389/fimmu.2026.1921846,immunology,Immunology,6,2026,rti
+doi:10.2196/87328,clinical_studies,Clinical studies,3,2026,rti
+doi:10.1371/journal.pone.0351023,genomics,Genomics,17,2026,vector_borne
+doi:10.1371/journal.pone.0351023,entomology,Entomology,14,2026,vector_borne
+doi:10.1371/journal.pone.0351023,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.1016/j.ejmech.2026.119130,modelling,Modelling,4,2026,vector_borne
+doi:10.1016/j.ejmech.2026.119130,treatment,Treatment,4,2026,vector_borne
+doi:10.1016/j.ejmech.2026.119130,virology,Virology,3,2026,vector_borne
+doi:10.1002/biof.70105,entomology,Entomology,10,2026,vector_borne
+doi:10.1002/biof.70105,genomics,Genomics,8,2026,vector_borne
+doi:10.1056/nejmoa2503304,entomology,Entomology,16,2026,vector_borne
+doi:10.1056/nejmoa2503304,surveillance_epidemiology,Surveillance and epidemiology,4,2026,vector_borne
+doi:10.1007/s10985-026-09690-5,virology,Virology,8,2026,sti
+doi:10.1007/s10985-026-09690-5,modelling,Modelling,4,2026,sti
+doi:10.7759/cureus.114118,case_study,Case study,6,2026,tb
+doi:10.1016/j.lanwpc.2026.101892,vaccine,Vaccine,4,2026,sti
+doi:10.1017/ice.2026.10530,infection_prevention_control,Infection prevention and control,6,2026,amr_hai
+doi:10.1128/spectrum.01906-25,genomics,Genomics,10,2026,amr_hai
+doi:10.1093/cid/ciag361,treatment,Treatment,4,2026,tb
+doi:10.1016/j.vaccine.2026.129079,modelling,Modelling,6,2026,rti
+doi:10.1186/s12985-026-03231-0,entomology,Entomology,6,2026,vector_borne
+doi:10.1186/s12985-026-03231-0,genomics,Genomics,5,2026,vector_borne
+doi:10.1186/s12985-026-03231-0,basic_research,Basic research,4,2026,vector_borne
+doi:10.3390/cells15131146,virology,Virology,6,2026,rti
+doi:10.3390/cells15131146,treatment,Treatment,4,2026,rti
+doi:10.1016/j.jare.2026.09.007,treatment,Treatment,3,2026,amr_hai
+doi:10.5492/wjccm.v15.i1.110763,detection,Detection,4,2026,tb
+doi:10.1038/s41598-026-59102-9,genomics,Genomics,12,2026,other_id
+doi:10.1093/ehjqcco/qcaf145,disease_management,Disease management,6,2026,amr_hai
+doi:10.3390/ani16152314,genomics,Genomics,7,2026,rti
+doi:10.3390/ani16152314,immunology,Immunology,6,2026,rti
+doi:10.7759/cureus.113372,surveillance_epidemiology,Surveillance and epidemiology,3,2026,tb
+doi:10.2196/67870,surveillance_epidemiology,Surveillance and epidemiology,10,2026,rti
+doi:10.2196/67870,genomics,Genomics,3,2026,rti
+doi:10.1093/cid/ciaf467,treatment,Treatment,8,2026,tb
+doi:10.1093/cid/ciaf467,clinical_studies,Clinical studies,4,2026,tb
+doi:10.1016/j.vaccine.2026.128917,virology,Virology,9,2026,vector_borne
+doi:10.1016/j.vaccine.2026.128917,vaccine,Vaccine,8,2026,vector_borne
+doi:10.1038/s41467-026-75954-1,genomics,Genomics,13,2026,rti
+doi:10.1038/s41467-026-75954-1,surveillance_epidemiology,Surveillance and epidemiology,3,2026,rti
+doi:10.1038/s41467-026-75954-1,virology,Virology,3,2026,rti
+doi:10.1016/j.ijid.2026.109080,surveillance_epidemiology,Surveillance and epidemiology,10,2026,rti
+doi:10.1097/jnr.0000000000000757,infection_prevention_control,Infection prevention and control,12,2026,rti
+doi:10.1177/09564624261440693,surveillance_epidemiology,Surveillance and epidemiology,18,2026,sti
+doi:10.1177/09564624261440693,treatment,Treatment,4,2026,sti
+doi:10.1111/imcb.70135,immunology,Immunology,4,2026,other_id
+doi:10.3389/fimmu.2026.1824198,immunology,Immunology,4,2026,other_id
+doi:10.3389/fimmu.2026.1824198,disease_management,Disease management,3,2026,other_id
+doi:10.4269/ajtmh.25-0311,surveillance_epidemiology,Surveillance and epidemiology,5,2026,vector_borne
+doi:10.1016/j.lanwpc.2026.101917,clinical_studies,Clinical studies,3,2026,amr_hai
+doi:10.1016/j.lanwpc.2026.101917,infection_prevention_control,Infection prevention and control,3,2026,amr_hai
+doi:10.1136/bjo-2026-329771,treatment,Treatment,3,2026,amr_hai
+doi:10.1002/cpz1.70454,genomics,Genomics,11,2026,amr_hai
+doi:10.1128/spectrum.03617-25,detection,Detection,17,2026,amr_hai
+doi:10.1371/journal.pgph.0006151,vaccine,Vaccine,3,2026,sti
+doi:10.1038/s41564-026-02439-8,entomology,Entomology,16,2026,vector_borne
+doi:10.1038/s41564-026-02439-8,clinical_studies,Clinical studies,3,2026,vector_borne
+doi:10.1136/bmjresp-2026-004413,clinical_studies,Clinical studies,8,2026,tb
+doi:10.1186/s12879-026-14123-7,treatment,Treatment,8,2026,other_id
+doi:10.1017/s0950268826101411,surveillance_epidemiology,Surveillance and epidemiology,4,2026,rti
+doi:10.1038/s41598-026-56516-3,infection_prevention_control,Infection prevention and control,6,2026,amr_hai
+doi:10.1016/j.actatropica.2026.108314,entomology,Entomology,11,2026,vector_borne
+doi:10.1111/irv.70269,treatment,Treatment,7,2026,rti
+doi:10.1111/irv.70269,surveillance_epidemiology,Surveillance and epidemiology,6,2026,rti
+doi:10.1111/irv.70269,disease_management,Disease management,3,2026,rti
+doi:10.3389/fimmu.2026.1828107,basic_research,Basic research,4,2026,rti
+doi:10.1016/j.ijid.2026.108860,case_study,Case study,6,2026,tb
+doi:10.1136/fmch-2026-004076,clinical_studies,Clinical studies,3,2026,rti
+doi:10.1371/journal.ppat.1014190,virology,Virology,6,2026,vector_borne
+doi:10.1371/journal.ppat.1014190,entomology,Entomology,4,2026,vector_borne
+doi:10.1371/journal.ppat.1014190,treatment,Treatment,4,2026,vector_borne
+doi:10.1016/j.jsb.2026.108314,basic_research,Basic research,3,2026,vector_borne
+doi:10.1038/s43856-026-01678-4,clinical_studies,Clinical studies,6,2026,other_id
+doi:10.1038/s43856-026-01678-4,immunology,Immunology,3,2026,other_id
+doi:10.7189/jogh.16.04100,outbreak_management,Outbreak management,12,2026,tb
+doi:10.1155/carm/1612186,case_study,Case study,6,2026,rti
+doi:10.1016/j.ijid.2026.108932,immunology,Immunology,11,2026,rti
+doi:10.1371/journal.pmed.1005205,clinical_studies,Clinical studies,6,2026,amr_hai
+doi:10.1093/ofid/ofag422,detection,Detection,12,2026,vector_borne
+doi:10.1093/ofid/ofag422,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.3390/pathogens15050511,entomology,Entomology,7,2026,vector_borne
+doi:10.3390/pathogens15050511,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.1017/ash.2026.10298,infection_prevention_control,Infection prevention and control,6,2026,amr_hai
+doi:10.1017/ash.2026.10298,surveillance_epidemiology,Surveillance and epidemiology,3,2026,amr_hai
+doi:10.1371/journal.pntd.0014382,treatment,Treatment,7,2026,vector_borne
+doi:10.1016/j.actatropica.2026.108305,entomology,Entomology,4,2026,vector_borne
+doi:10.1016/j.actatropica.2026.108305,surveillance_epidemiology,Surveillance and epidemiology,3,2026,vector_borne
+doi:10.1093/jac/dkag215,clinical_studies,Clinical studies,6,2026,amr_hai
+doi:10.1093/cid/ciag538,clinical_studies,Clinical studies,7,2026,other_id
+doi:10.1080/22221751.2026.2665001,detection,Detection,12,2026,other_id
+doi:10.1080/22221751.2026.2665001,immunology,Immunology,10,2026,other_id
+doi:10.47102/annals-acadmedsg.2026237,infection_prevention_control,Infection prevention and control,18,2026,amr_hai
+doi:10.47102/annals-acadmedsg.2026237,vaccine,Vaccine,8,2026,amr_hai
+doi:10.1038/s41598-026-55917-8,treatment,Treatment,8,2026,tb
+doi:10.1038/s44321-026-00378-9,treatment,Treatment,6,2026,tb
+doi:10.1128/mbio.03518-25,surveillance_epidemiology,Surveillance and epidemiology,3,2026,amr_hai
+doi:10.3390/insects17070716,entomology,Entomology,10,2026,vector_borne
+doi:10.7759/cureus.101901,case_study,Case study,6,2026,sti
+doi:10.1016/j.mtbio.2026.103530,infection_prevention_control,Infection prevention and control,3,2026,other_id
+doi:10.1016/j.socscimed.2026.119146,surveillance_epidemiology,Surveillance and epidemiology,14,2026,sti
+doi:10.3390/insects17080770,entomology,Entomology,8,2026,vector_borne
+doi:10.1080/21505594.2025.2580163,entomology,Entomology,12,2025,vector_borne
+doi:10.1080/21505594.2025.2580163,virology,Virology,6,2025,vector_borne
+doi:10.1080/21505594.2025.2580163,basic_research,Basic research,4,2025,vector_borne
+doi:10.1016/s1473-3099(24)00794-1,outbreak_management,Outbreak management,4,2025,vector_borne
+doi:10.1016/s1473-3099(24)00794-1,surveillance_epidemiology,Surveillance and epidemiology,3,2025,vector_borne
+doi:10.1016/j.survophthal.2025.09.011,detection,Detection,3,2025,tb
+doi:10.1016/j.ajic.2025.11.002,infection_prevention_control,Infection prevention and control,18,2025,rti
+doi:10.1016/j.ajic.2025.11.002,surveillance_epidemiology,Surveillance and epidemiology,3,2025,rti
+doi:10.1186/s13063-025-08887-7,clinical_studies,Clinical studies,6,2025,tb
+doi:10.1093/cid/ciae601,surveillance_epidemiology,Surveillance and epidemiology,4,2025,tb
+doi:10.1186/s13756-025-01656-w,infection_prevention_control,Infection prevention and control,3,2025,amr_hai
+doi:10.1038/s41598-025-86139-z,entomology,Entomology,22,2025,vector_borne
+doi:10.1038/s41598-025-86139-z,surveillance_epidemiology,Surveillance and epidemiology,6,2025,vector_borne
+doi:10.1093/ofid/ofaf610,surveillance_epidemiology,Surveillance and epidemiology,9,2025,amr_hai
+doi:10.1093/ofid/ofaf610,genomics,Genomics,6,2025,amr_hai
+doi:10.1093/ofid/ofaf610,transmission,Transmission,3,2025,amr_hai
+doi:10.1128/jvi.01597-25,basic_research,Basic research,4,2025,sti
+doi:10.1016/j.infpip.2025.100492,infection_prevention_control,Infection prevention and control,6,2025,rti
+doi:10.1016/j.infpip.2025.100492,surveillance_epidemiology,Surveillance and epidemiology,5,2025,rti
+doi:10.1016/j.infpip.2025.100492,clinical_studies,Clinical studies,4,2025,rti
+doi:10.1128/spectrum.01353-25,detection,Detection,8,2025,tb
+doi:10.1016/j.vaccine.2025.126728,vaccine,Vaccine,20,2025,vector_borne
+doi:10.1016/j.vaccine.2025.126728,modelling,Modelling,12,2025,vector_borne
+doi:10.1016/j.ijid.2025.108054,surveillance_epidemiology,Surveillance and epidemiology,11,2025,tb
+doi:10.1016/j.intf.2025.100335,surveillance_epidemiology,Surveillance and epidemiology,5,2025,other_id
+doi:10.1016/j.infpip.2025.100495,infection_prevention_control,Infection prevention and control,9,2025,amr_hai
+doi:10.1038/s41467-025-66606-x,virology,Virology,8,2025,sti
+doi:10.1016/j.celrep.2025.116098,immunology,Immunology,4,2025,vector_borne
+doi:10.47102/annals-acadmedsg.2025336,disease_management,Disease management,8,2025,sti
+doi:10.47102/annals-acadmedsg.2025336,surveillance_epidemiology,Surveillance and epidemiology,8,2025,sti
+doi:10.47102/annals-acadmedsg.2025336,genomics,Genomics,4,2025,sti
+doi:10.3390/ijms262411784,detection,Detection,7,2025,sti
+doi:10.3390/pathogens14030285,entomology,Entomology,13,2025,vector_borne
+doi:10.1186/s12889-025-24934-z,genomics,Genomics,6,2025,tb
+doi:10.1186/s12889-025-24934-z,detection,Detection,4,2025,tb
+doi:10.1128/spectrum.02725-25,surveillance_epidemiology,Surveillance and epidemiology,11,2025,other_id
+doi:10.1016/j.jhin.2025.11.043,infection_prevention_control,Infection prevention and control,18,2025,amr_hai
+doi:10.1016/j.jhin.2025.11.043,surveillance_epidemiology,Surveillance and epidemiology,4,2025,amr_hai
+doi:10.1016/s1473-3099(25)00151-3,treatment,Treatment,8,2025,tb
+doi:10.1016/s1473-3099(25)00151-3,clinical_studies,Clinical studies,6,2025,tb
+doi:10.1136/bmjresp-2025-003777,treatment,Treatment,8,2025,tb
+doi:10.1136/bmjresp-2025-003777,clinical_studies,Clinical studies,4,2025,tb
+doi:10.1136/bmjresp-2025-003777,surveillance_epidemiology,Surveillance and epidemiology,4,2025,tb
+doi:10.1101/2025.08.20.25334077,clinical_studies,Clinical studies,4,2025,tb
+doi:10.1073/pnas.2421573122,virology,Virology,9,2025,vector_borne
+doi:10.1073/pnas.2421573122,treatment,Treatment,4,2025,vector_borne
+doi:10.1038/s41467-025-66413-4,genomics,Genomics,10,2025,amr_hai
+doi:10.1038/s41467-025-66413-4,surveillance_epidemiology,Surveillance and epidemiology,4,2025,amr_hai
+doi:10.1038/s41467-025-66413-4,transmission,Transmission,3,2025,amr_hai
+doi:10.1007/s00408-024-00779-y,detection,Detection,14,2025,tb
+doi:10.1016/j.idc.2025.11.005,disease_management,Disease management,6,2025,amr_hai
+doi:10.1186/s12964-025-02588-z,basic_research,Basic research,6,2025,vector_borne
+doi:10.1186/s12964-025-02588-z,immunology,Immunology,3,2025,vector_borne
+doi:10.1016/j.ajic.2025.10.025,treatment,Treatment,4,2025,amr_hai
+doi:10.1002/jia2.70052,clinical_studies,Clinical studies,9,2025,sti
+doi:10.1002/jia2.70052,surveillance_epidemiology,Surveillance and epidemiology,4,2025,sti
+doi:10.1038/s41467-025-66411-6,entomology,Entomology,8,2025,vector_borne
+doi:10.1038/s41467-025-66411-6,surveillance_epidemiology,Surveillance and epidemiology,7,2025,vector_borne
+doi:10.1038/s41467-025-66411-6,outbreak_management,Outbreak management,4,2025,vector_borne
+doi:10.1038/s41591-025-04041-7,treatment,Treatment,8,2025,sti
+doi:10.1038/s41591-025-04041-7,virology,Virology,8,2025,sti
+doi:10.7759/cureus.100362,case_study,Case study,6,2025,tb
+doi:10.1016/s2213-2600(25)00194-8,treatment,Treatment,8,2025,tb
+doi:10.3389/fmicb.2025.1711400,genomics,Genomics,4,2025,amr_hai
+doi:10.3389/fmicb.2025.1711400,surveillance_epidemiology,Surveillance and epidemiology,3,2025,amr_hai
+doi:10.1073/pnas.2502522122,immunology,Immunology,4,2025,vector_borne
+doi:10.1073/pnas.2502522122,virology,Virology,3,2025,vector_borne
+doi:10.1021/acs.analchem.5c05609,modelling,Modelling,4,2025,amr_hai
+doi:10.3390/pathogens14080741,detection,Detection,8,2025,tb
+doi:10.1186/s12916-025-03941-2,entomology,Entomology,16,2025,vector_borne
+doi:10.1002/pro.5142,basic_research,Basic research,6,2024,vector_borne
+doi:10.1002/pro.5142,virology,Virology,3,2024,vector_borne
+doi:10.1186/s12915-024-02070-1,entomology,Entomology,16,2024,vector_borne
+doi:10.1186/s12915-024-02070-1,modelling,Modelling,10,2024,vector_borne
+doi:10.1183/16000617.0208-2023,surveillance_epidemiology,Surveillance and epidemiology,5,2024,tb
+doi:10.1016/j.ijid.2024.107768,surveillance_epidemiology,Surveillance and epidemiology,4,2024,tb
+doi:10.47102/annals-acadmedsg.2023391,disease_management,Disease management,6,2024,tb
+doi:10.47102/annals-acadmedsg.2023391,treatment,Treatment,3,2024,tb
+doi:10.1038/s41467-024-54419-3,treatment,Treatment,8,2024,tb
+doi:10.1038/s41467-024-54419-3,clinical_studies,Clinical studies,6,2024,tb
+doi:10.1016/s2213-2600(24)00186-3,treatment,Treatment,8,2024,tb
+doi:10.1007/s12104-024-10208-z,virology,Virology,3,2024,vector_borne
+doi:10.1186/s12874-024-02291-6,entomology,Entomology,16,2024,vector_borne
+doi:10.1186/s12874-024-02291-6,surveillance_epidemiology,Surveillance and epidemiology,8,2024,vector_borne
+doi:10.1016/s2542-5196(24)00169-4,entomology,Entomology,16,2024,vector_borne
+doi:10.1016/s2542-5196(24)00169-4,surveillance_epidemiology,Surveillance and epidemiology,5,2024,vector_borne
+doi:10.1186/s12879-024-10027-6,detection,Detection,4,2024,tb
+doi:10.1186/s12879-024-10027-6,modelling,Modelling,3,2024,tb
+doi:10.1016/j.ijid.2024.107221,detection,Detection,11,2024,tb
+doi:10.1016/j.ebiom.2024.105456,entomology,Entomology,16,2024,vector_borne
+doi:10.1016/j.ebiom.2024.105456,surveillance_epidemiology,Surveillance and epidemiology,4,2024,vector_borne
+doi:10.1093/jtm/taae103,entomology,Entomology,16,2024,vector_borne
+doi:10.1093/infdis/jiae104,treatment,Treatment,8,2024,tb
+doi:10.1093/infdis/jiae104,clinical_studies,Clinical studies,6,2024,tb
+doi:10.1038/s42003-024-06822-1,immunology,Immunology,6,2024,tb

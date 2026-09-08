@@ -1,0 +1,676 @@
+uid,domain_id,subdomain_id,subdomain_label,is_primary,vocabulary_rank,year
+doi:10.1093/jambio/lxag031,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1093/jambio/lxag031,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1093/jambio/lxag031,amr_hai,Escherichia coli,Escherichia coli,0,8,2026
+doi:10.1093/jambio/lxag031,amr_hai,beta-Lactamases,beta-Lactamases,0,10,2026
+doi:10.1128/spectrum.00627-26,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1128/spectrum.00627-26,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2026
+doi:10.1128/spectrum.00627-26,tb,Rifampin,Rifampin,0,5,2026
+doi:10.1128/spectrum.00627-26,tb,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,9,2026
+doi:10.1371/journal.pntd.0014584,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3390/ijms27031504,vector_borne,Zika Virus,Zika Virus,1,5,2026
+doi:10.3390/ijms27031504,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1186/s12889-026-26979-0,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1186/s12889-026-26979-0,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1016/j.avsg.2025.12.042,amr_hai,Surgical Wound Infection,Surgical Wound Infection,1,7,2026
+doi:10.1001/jamanetworkopen.2026.28389,rti,"Influenza, Human","Influenza, Human",1,4,2026
+doi:10.1002/anie.202517460,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1002/anie.202517460,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1002/anie.202517460,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,0,4,2026
+doi:10.1136/bmjopen-2025-103987,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1136/bmjopen-2025-103987,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1038/s41598-026-64190-8,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1038/s41598-026-64190-8,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1038/s41598-026-64190-8,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.1038/s41598-026-64190-8,rti,"Antibodies, Neutralizing","Antibodies, Neutralizing",0,9,2026
+doi:10.1038/s41598-026-64190-8,rti,"Antibodies, Viral","Antibodies, Viral",0,10,2026
+doi:10.1186/s12348-026-00586-x,tb,other,Other/unspecified,1,,2026
+doi:10.1186/s12942-026-00467-5,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1186/s12942-026-00467-5,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.5588/ijtldopen.26.0076,tb,other,Other/unspecified,1,,2026
+doi:10.1073/pnas.2606669123,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3390/biom16070970,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.3390/biom16070970,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.3390/biom16070970,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2026
+doi:10.3390/pathogens15040378,vector_borne,"Genome, Viral","Genome, Viral",1,12,2026
+doi:10.1080/07853890.2026.2714685,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1080/07853890.2026.2714685,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1080/07853890.2026.2714685,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2026
+doi:10.64898/2026.03.19.26348865,sti,other,Other/unspecified,1,,2026
+doi:10.1016/j.celrep.2026.117286,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1016/j.celrep.2026.117286,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2026
+doi:10.1016/j.ejogrb.2026.115359,sti,other,Other/unspecified,1,,2026
+doi:10.1128/aac.00748-26,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1128/aac.00748-26,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1128/aac.00748-26,tb,Rifampin,Rifampin,0,5,2026
+doi:10.1186/s12929-026-01277-4,rti,SARS-CoV-2,SARS-CoV-2,1,2,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,Aedes,Aedes,0,2,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,Wolbachia,Wolbachia,0,6,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,Mosquito Control,Mosquito Control,0,7,2026
+doi:10.1371/journal.pntd.0014395,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2026
+doi:10.1038/s41467-026-74934-9,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1038/s41467-026-74934-9,amr_hai,Bacteria,Bacteria,0,11,2026
+doi:10.1128/mbio.01075-26,rti,other,Other/unspecified,1,,2026
+doi:10.1080/10810730.2026.2687792,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1111/scs.70292,rti,COVID-19,COVID-19,1,1,2026
+doi:10.3390/vaccines14060469,rti,other,Other/unspecified,1,,2026
+doi:10.1177/08903344261475018,rti,other,Other/unspecified,1,,2026
+doi:10.3390/ijms27167316,rti,SARS-CoV-2,SARS-CoV-2,1,2,2026
+doi:10.3390/ijms27167316,rti,Antiviral Agents,Antiviral Agents,0,5,2026
+doi:10.3390/ijms27167316,rti,Coronavirus Infections,Coronavirus Infections,0,6,2026
+doi:10.3390/ijms27167316,rti,Cytokines,Cytokines,0,7,2026
+doi:10.3390/ijms27167316,rti,Virus Replication,Virus Replication,0,8,2026
+doi:10.1093/ofid/ofag421,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pgph.0007105,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.jep.2026.122318,other_id,other,Other/unspecified,1,,2026
+doi:10.2196/88849,rti,"Influenza, Human","Influenza, Human",1,4,2026
+doi:10.1017/ice.2026.10526,rti,other,Other/unspecified,1,,2026
+doi:10.1093/epirev/mxag011,other_id,other,Other/unspecified,1,,2026
+doi:10.1080/21645515.2026.2661118,rti,other,Other/unspecified,1,,2026
+doi:10.1088/1361-6528/ae8602,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1088/1361-6528/ae8602,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1088/1361-6528/ae8602,amr_hai,Escherichia coli,Escherichia coli,0,8,2026
+doi:10.1186/s12889-026-26538-7,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1016/j.idh.2026.100423,amr_hai,Surgical Wound Infection,Surgical Wound Infection,1,7,2026
+doi:10.1016/s0140-6736(26)00410-1,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2026
+doi:10.1016/s0140-6736(26)00410-1,sti,Human Papillomavirus Viruses,Human Papillomavirus Viruses,0,5,2026
+doi:10.1016/s0140-6736(26)00410-1,sti,Uterine Cervical Neoplasms,Uterine Cervical Neoplasms,0,6,2026
+doi:10.1016/s0140-6736(26)00410-1,sti,Early Detection of Cancer,Early Detection of Cancer,0,10,2026
+doi:10.1021/acsinfecdis.6c00114,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3390/pathogens15030278,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.2196/87909,rti,other,Other/unspecified,1,,2026
+doi:10.1080/09540121.2026.2632324,sti,other,Other/unspecified,1,,2026
+doi:10.1016/s1473-3099(26)00357-9,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1073/pnas.2532225123,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.bcp.2026.118104,tb,Rifampin,Rifampin,1,5,2026
+doi:10.1038/s44360-026-00080-7,sti,other,Other/unspecified,1,,2026
+doi:10.1111/camh.70112,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.jhin.2026.03.009,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,1,3,2026
+doi:10.1016/j.jhin.2026.03.009,amr_hai,Bacteremia,Bacteremia,0,5,2026
+doi:10.1016/j.jhin.2026.03.009,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2026
+doi:10.1080/17441692.2026.2700817,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1080/17441692.2026.2700817,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.1016/j.isci.2026.116736,rti,other,Other/unspecified,1,,2026
+doi:10.1093/ofid/ofag317,rti,other,Other/unspecified,1,,2026
+doi:10.1128/aac.00388-25,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1128/aac.00388-25,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1128/aac.00388-25,amr_hai,beta-Lactamases,beta-Lactamases,0,10,2026
+doi:10.3389/fmicb.2026.1866307,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.jhin.2026.08.021,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1136/bcr-2025-271896,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1038/s41467-026-75746-7,other_id,other,Other/unspecified,1,,2026
+doi:10.1038/s41467-026-74190-x,rti,Cytokines,Cytokines,1,7,2026
+doi:10.1016/j.ijid.2026.108533,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1016/j.ijid.2026.108533,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1183/13993003.00989-2026,tb,other,Other/unspecified,1,,2026
+doi:10.1038/s41371-026-01194-x,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.transci.2026.104429,sti,other,Other/unspecified,1,,2026
+doi:10.3390/antibiotics15050423,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.watres.2026.126336,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1186/s12889-026-27217-3,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1186/s12889-026-27217-3,sti,Qualitative Research,Qualitative Research,0,7,2026
+doi:10.1186/s12889-026-27217-3,sti,Anti-Retroviral Agents,Anti-Retroviral Agents,0,9,2026
+doi:10.1186/s12889-026-27217-3,sti,Interviews as Topic,Interviews as Topic,0,12,2026
+doi:10.1177/00494755261479116,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3389/fimmu.2026.1841974,rti,Cytokines,Cytokines,1,7,2026
+doi:10.3389/fimmu.2026.1841974,rti,Virus Replication,Virus Replication,0,8,2026
+doi:10.4269/ajtmh.26-0159,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1002/resp.70302,rti,other,Other/unspecified,1,,2026
+doi:10.5527/wjn.v15.i2.118214,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.drugpo.2026.105306,sti,"Homosexuality, Male","Homosexuality, Male",1,4,2026
+doi:10.1016/j.drugpo.2026.105306,sti,Qualitative Research,Qualitative Research,0,7,2026
+doi:10.1007/s10461-026-05097-3,sti,other,Other/unspecified,1,,2026
+doi:10.1183/13993003.00858-2026,tb,other,Other/unspecified,1,,2026
+doi:10.1136/bmjph-2025-004042,sti,other,Other/unspecified,1,,2026
+doi:10.25259/ijpc_285_2025,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.vaccine.2026.128983,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1016/j.vaccine.2026.128983,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1016/j.vaccine.2026.128983,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.1016/j.eclinm.2026.103871,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1097/qai.0000000000003874,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1016/j.jconrel.2026.115136,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1016/j.jconrel.2026.115136,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.1016/j.mimet.2026.107668,rti,other,Other/unspecified,1,,2026
+doi:10.1128/jvi.00540-26,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.jinf.2026.106765,amr_hai,other,Other/unspecified,1,,2026
+doi:10.3389/fpubh.2026.1838184,rti,SARS-CoV-2,SARS-CoV-2,1,2,2026
+doi:10.1007/s13555-026-01809-8,tb,other,Other/unspecified,1,,2026
+doi:10.1016/j.pedneo.2026.04.010,rti,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pntd.0014318,vector_borne,other,Other/unspecified,1,,2026
+doi:10.12968/jowc.2023.0112,amr_hai,Surgical Wound Infection,Surgical Wound Infection,1,7,2026
+doi:10.1038/s41467-026-74032-w,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1038/s41467-026-74032-w,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1021/acsinfecdis.6c00309,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1021/acsinfecdis.6c00309,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1128/spectrum.03669-25,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1128/spectrum.03669-25,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1128/spectrum.03669-25,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1038/s41541-026-01519-4,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1038/s41467-026-75524-5,amr_hai,Escherichia coli,Escherichia coli,1,8,2026
+doi:10.1186/s12879-026-13489-y,tb,other,Other/unspecified,1,,2026
+doi:10.1016/j.biomaterials.2026.124421,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1007/s00604-026-08340-9,sti,other,Other/unspecified,1,,2026
+doi:10.1186/s12909-026-09775-7,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1186/s13073-026-01655-5,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1093/jpids/piag032,tb,other,Other/unspecified,1,,2026
+doi:10.64898/2026.05.07.723652,other_id,other,Other/unspecified,1,,2026
+doi:10.1038/s41467-026-76156-5,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1038/s41467-026-74526-7,rti,Virus Replication,Virus Replication,1,8,2026
+doi:10.1016/j.bj.2026.101033,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.vaccine.2026.128513,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2026
+doi:10.1016/j.vaccine.2026.128513,sti,Human Papillomavirus Viruses,Human Papillomavirus Viruses,0,5,2026
+doi:10.1016/j.vaccine.2026.128513,sti,Uterine Cervical Neoplasms,Uterine Cervical Neoplasms,0,6,2026
+doi:10.1039/d6tb01365a,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1039/d6tb01365a,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1016/j.ijbiomac.2026.153475,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1016/j.ijbiomac.2026.153475,amr_hai,Escherichia coli,Escherichia coli,0,8,2026
+doi:10.1177/10872914261423775,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1177/10872914261423775,sti,Qualitative Research,Qualitative Research,0,7,2026
+doi:10.1177/10872914261423775,sti,Interviews as Topic,Interviews as Topic,0,12,2026
+doi:10.1016/j.ijid.2026.109062,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.mmcr.2026.100815,rti,other,Other/unspecified,1,,2026
+doi:10.1111/jcmm.71143,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1007/s00210-026-05627-9,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijbiomac.2026.153190,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1016/j.ijbiomac.2026.153190,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2026
+doi:10.1128/aac.01561-25,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.ebiom.2026.106290,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.eclinm.2026.104163,rti,other,Other/unspecified,1,,2026
+doi:10.1002/jmv.70892,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1097/bot.0000000000003199,amr_hai,Surgical Wound Infection,Surgical Wound Infection,1,7,2026
+doi:10.47102/annals-acadmedsg.2025321,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.47102/annals-acadmedsg.2025321,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2026
+doi:10.1017/ash.2025.10149,amr_hai,other,Other/unspecified,1,,2026
+doi:10.3390/pathogens15040437,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1128/spectrum.01571-26,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1128/spectrum.01571-26,amr_hai,Bacteremia,Bacteremia,0,5,2026
+doi:10.1128/spectrum.01571-26,amr_hai,Bacteria,Bacteria,0,11,2026
+doi:10.1016/j.jhin.2026.08.011,amr_hai,other,Other/unspecified,1,,2026
+doi:10.4103/singaporemedj.smj-2025-222,rti,other,Other/unspecified,1,,2026
+doi:10.1126/sciimmunol.adz5647,vector_borne,Zika Virus,Zika Virus,1,5,2026
+doi:10.1126/sciimmunol.adz5647,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2026
+doi:10.1371/journal.pgph.0006971,tb,other,Other/unspecified,1,,2026
+doi:10.1093/jimmun/vkag189,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1093/jimmun/vkag189,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1093/jimmun/vkag189,rti,Antiviral Agents,Antiviral Agents,0,5,2026
+doi:10.1093/jimmun/vkag189,rti,B-Lymphocytes,B-Lymphocytes,0,11,2026
+doi:10.3390/antibiotics15070671,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1080/21505594.2026.2711530,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1001/jamadermatol.2026.0308,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2026
+doi:10.1001/jamadermatol.2026.0308,sti,Human Papillomavirus Viruses,Human Papillomavirus Viruses,0,5,2026
+doi:10.1001/jamadermatol.2026.0308,sti,Viral Load,Viral Load,0,8,2026
+doi:10.1038/s44528-026-00009-2,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.idm.2026.03.002,sti,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijid.2026.108545,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1016/j.ijid.2026.108545,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1016/j.mib.2026.102764,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,1,4,2026
+doi:10.1016/j.mib.2026.102764,amr_hai,Virulence,Virulence,0,9,2026
+doi:10.1016/j.mib.2026.102764,amr_hai,Klebsiella Infections,Klebsiella Infections,0,12,2026
+doi:10.1093/infdis/jiag290,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.ssmmh.2026.100615,sti,other,Other/unspecified,1,,2026
+doi:10.1099/mgen.0.001745,amr_hai,Virulence,Virulence,1,9,2026
+doi:10.1177/20584601261418668,tb,other,Other/unspecified,1,,2026
+doi:10.1371/journal.ppat.1014287,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pcbi.1014355,vector_borne,Aedes,Aedes,1,2,2026
+doi:10.1371/journal.pcbi.1014355,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2026
+doi:10.1371/journal.pcbi.1014355,vector_borne,Wolbachia,Wolbachia,0,6,2026
+doi:10.1371/journal.pcbi.1014355,vector_borne,Mosquito Control,Mosquito Control,0,7,2026
+doi:10.1371/journal.pcbi.1014355,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2026
+doi:10.3389/fcimb.2026.1847443,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.3390/v18030283,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.3390/v18030283,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2026
+doi:10.1039/d6ra04008j,other_id,other,Other/unspecified,1,,2026
+doi:10.1128/mbio.01474-26,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.jhin.2026.03.037,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1002/jmv.71078,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1002/jmv.71078,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1002/jmv.71078,vector_borne,"Genome, Viral","Genome, Viral",0,12,2026
+doi:10.1186/s13073-026-01670-6,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.1186/s13073-026-01670-6,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2026
+doi:10.1016/j.fm.2026.105164,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1016/j.fm.2026.105164,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1016/j.fm.2026.105164,amr_hai,Bacteria,Bacteria,0,11,2026
+doi:10.1016/j.lanwpc.2026.101874,sti,other,Other/unspecified,1,,2026
+doi:10.1002/jcop.70120,sti,"Homosexuality, Male","Homosexuality, Male",1,4,2026
+doi:10.1093/cid/ciag347,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijpara.2026.104892,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijid.2026.109084,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1186/s12889-026-28672-8,other_id,other,Other/unspecified,1,,2026
+doi:10.3389/fpubh.2026.1785244,rti,COVID-19,COVID-19,1,1,2026
+doi:10.3389/fpubh.2026.1785244,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.3389/fpubh.2026.1785244,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.4103/singaporemedj.smj-2026-181,rti,other,Other/unspecified,1,,2026
+doi:10.4103/singaporemedj.smj-2026-182,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.oret.2026.06.023,tb,other,Other/unspecified,1,,2026
+doi:10.3390/ijms27125573,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.3390/ijms27125573,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.3390/ijms27125573,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2026
+doi:10.3390/ijms27125573,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2026
+doi:10.1093/jac/dkag263,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1186/s12889-026-26441-1,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1186/s12889-026-26441-1,sti,"Homosexuality, Male","Homosexuality, Male",0,4,2026
+doi:10.1016/j.urolonc.2026.111091,tb,BCG Vaccine,BCG Vaccine,1,12,2026
+doi:10.1007/s11673-026-10573-5,rti,other,Other/unspecified,1,,2026
+doi:10.3390/tropicalmed11070184,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1093/aje/kwag024,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1093/aje/kwag024,tb,Rifampin,Rifampin,0,5,2026
+doi:10.1093/aje/kwag024,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Aedes,Aedes,0,2,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Wolbachia,Wolbachia,0,6,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,Mosquito Control,Mosquito Control,0,7,2026
+doi:10.1371/journal.pntd.0014222,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2026
+doi:10.3892/br.2026.2154,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.ajcnut.2026.101488,tb,other,Other/unspecified,1,,2026
+doi:10.3390/v18050485,other_id,other,Other/unspecified,1,,2026
+doi:10.1093/jpids/piag047,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1002/advs.75061,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.xcrm.2026.102714,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,1,3,2026
+doi:10.3389/fpubh.2026.1857629,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1097/md.0000000000047358,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1097/md.0000000000047358,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2026
+doi:10.1097/md.0000000000047358,sti,HIV-1,HIV-1,0,11,2026
+doi:10.1016/j.cmi.2026.01.032,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1016/j.cmi.2026.01.032,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1016/j.cmi.2026.01.032,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2026
+doi:10.1016/j.cmi.2026.01.032,amr_hai,Bacteremia,Bacteremia,0,5,2026
+doi:10.1016/j.cmi.2026.01.032,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2026
+doi:10.1016/j.lanhl.2026.100870,rti,"Influenza, Human","Influenza, Human",1,4,2026
+doi:10.1370/afm.250683,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2026
+doi:10.1370/afm.250683,sti,Human Papillomavirus Viruses,Human Papillomavirus Viruses,0,5,2026
+doi:10.1370/afm.250683,sti,Uterine Cervical Neoplasms,Uterine Cervical Neoplasms,0,6,2026
+doi:10.1370/afm.250683,sti,Early Detection of Cancer,Early Detection of Cancer,0,10,2026
+doi:10.1016/j.nedt.2026.107368,rti,other,Other/unspecified,1,,2026
+doi:10.1007/s40273-026-01609-0,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1007/s40273-026-01609-0,amr_hai,Surgical Wound Infection,Surgical Wound Infection,0,7,2026
+doi:10.1371/journal.pcbi.1014313,sti,other,Other/unspecified,1,,2026
+doi:10.1038/s41467-026-71566-x,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2026
+doi:10.1186/s12879-026-13946-8,amr_hai,other,Other/unspecified,1,,2026
+doi:10.64898/2026.07.03.736289,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1016/j.pt.2026.06.011,vector_borne,Mosquito Vectors,Mosquito Vectors,1,3,2026
+doi:10.1371/journal.ppat.1013609,vector_borne,Zika Virus,Zika Virus,1,5,2026
+doi:10.1371/journal.ppat.1013609,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2026
+doi:10.1371/journal.ppat.1013609,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1371/journal.ppat.1013609,vector_borne,Antiviral Agents,Antiviral Agents,0,11,2026
+doi:10.3389/fimmu.2026.1921846,rti,COVID-19,COVID-19,1,1,2026
+doi:10.3389/fimmu.2026.1921846,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.3389/fimmu.2026.1921846,rti,COVID-19 Vaccines,COVID-19 Vaccines,0,3,2026
+doi:10.3389/fimmu.2026.1921846,rti,Cytokines,Cytokines,0,7,2026
+doi:10.3389/fimmu.2026.1921846,rti,"Antibodies, Neutralizing","Antibodies, Neutralizing",0,9,2026
+doi:10.3389/fimmu.2026.1921846,rti,"Antibodies, Viral","Antibodies, Viral",0,10,2026
+doi:10.3389/fimmu.2026.1921846,rti,B-Lymphocytes,B-Lymphocytes,0,11,2026
+doi:10.2196/87328,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1016/j.ebiom.2026.106447,other_id,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pone.0351023,vector_borne,Mosquito Vectors,Mosquito Vectors,1,3,2026
+doi:10.1371/journal.pone.0351023,vector_borne,"Genome, Viral","Genome, Viral",0,12,2026
+doi:10.1016/j.ejmech.2026.119130,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1016/j.ejmech.2026.119130,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1016/j.ejmech.2026.119130,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1016/j.ejmech.2026.119130,vector_borne,Antiviral Agents,Antiviral Agents,0,11,2026
+doi:10.1002/biof.70105,vector_borne,Aedes,Aedes,1,2,2026
+doi:10.1002/biof.70105,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1002/biof.70105,vector_borne,"Genome, Viral","Genome, Viral",0,12,2026
+doi:10.1056/nejmoa2503304,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1056/nejmoa2503304,vector_borne,Aedes,Aedes,0,2,2026
+doi:10.1056/nejmoa2503304,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2026
+doi:10.1056/nejmoa2503304,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1056/nejmoa2503304,vector_borne,Wolbachia,Wolbachia,0,6,2026
+doi:10.1056/nejmoa2503304,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2026
+doi:10.1111/jcmm.71353,other_id,other,Other/unspecified,1,,2026
+doi:10.1007/s10985-026-09690-5,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1007/s10985-026-09690-5,sti,Viral Load,Viral Load,0,8,2026
+doi:10.7759/cureus.114118,tb,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pone.0352661,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.4103/ijo.ijo_346_26,tb,other,Other/unspecified,1,,2026
+doi:10.1016/j.lanwpc.2026.101892,sti,other,Other/unspecified,1,,2026
+doi:10.2196/82143,rti,Cost-Benefit Analysis,Cost-Benefit Analysis,1,12,2026
+doi:10.1017/ice.2026.10530,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1128/spectrum.01906-25,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1128/spectrum.01906-25,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1128/spectrum.01906-25,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,0,4,2026
+doi:10.1128/spectrum.01906-25,amr_hai,Klebsiella Infections,Klebsiella Infections,0,12,2026
+doi:10.1177/09564624261424560,sti,other,Other/unspecified,1,,2026
+doi:10.1002/advs.76769,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1093/cid/ciag361,tb,other,Other/unspecified,1,,2026
+doi:10.1016/j.vaccine.2026.129079,rti,other,Other/unspecified,1,,2026
+doi:10.1186/s12985-026-03231-0,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3390/cells15131146,rti,SARS-CoV-2,SARS-CoV-2,1,2,2026
+doi:10.3390/cells15131146,rti,Antiviral Agents,Antiviral Agents,0,5,2026
+doi:10.3390/cells15131146,rti,Coronavirus Infections,Coronavirus Infections,0,6,2026
+doi:10.3390/cells15131146,rti,Virus Replication,Virus Replication,0,8,2026
+doi:10.1016/j.jare.2026.09.007,amr_hai,other,Other/unspecified,1,,2026
+doi:10.5492/wjccm.v15.i1.110763,tb,other,Other/unspecified,1,,2026
+doi:10.1038/s41598-026-59102-9,other_id,other,Other/unspecified,1,,2026
+doi:10.1093/ehjqcco/qcaf145,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1371/journal.pone.0349232,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1371/journal.pone.0349232,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1371/journal.pone.0349232,rti,Cost-Benefit Analysis,Cost-Benefit Analysis,0,12,2026
+doi:10.3390/antibiotics15080715,amr_hai,other,Other/unspecified,1,,2026
+doi:10.3390/ani16152314,rti,other,Other/unspecified,1,,2026
+doi:10.7759/cureus.113372,tb,other,Other/unspecified,1,,2026
+doi:10.1039/d6sc00255b,amr_hai,other,Other/unspecified,1,,2026
+doi:10.2196/67870,rti,"Influenza, Human","Influenza, Human",1,4,2026
+doi:10.1093/cid/ciaf467,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1093/cid/ciaf467,tb,Rifampin,Rifampin,0,5,2026
+doi:10.1093/cid/ciaf467,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2026
+doi:10.1016/j.vaccine.2026.128917,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1016/j.vaccine.2026.128917,vector_borne,Dengue Virus,Dengue Virus,0,4,2026
+doi:10.1038/s41467-026-75954-1,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1038/s41467-026-75954-1,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1038/s41467-026-75954-1,rti,Coronavirus Infections,Coronavirus Infections,0,6,2026
+doi:10.1016/j.ijid.2026.109080,rti,other,Other/unspecified,1,,2026
+doi:10.1097/jnr.0000000000000757,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1097/jnr.0000000000000757,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1097/jnr.0000000000000757,rti,Coronavirus Infections,Coronavirus Infections,0,6,2026
+doi:10.1177/09564624261440693,sti,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pone.0351209,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1371/journal.pone.0351209,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1111/imcb.70135,other_id,other,Other/unspecified,1,,2026
+doi:10.3389/fimmu.2026.1824198,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.immuni.2026.07.006,vector_borne,other,Other/unspecified,1,,2026
+doi:10.4269/ajtmh.25-0311,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1097/qai.0000000000003852,sti,HIV Infections,HIV Infections,1,1,2026
+doi:10.1097/qai.0000000000003852,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2026
+doi:10.1097/qai.0000000000003852,sti,"Homosexuality, Male","Homosexuality, Male",0,4,2026
+doi:10.1038/s44321-026-00502-9,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.lanwpc.2026.101917,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1136/bjo-2026-329771,amr_hai,other,Other/unspecified,1,,2026
+doi:10.21037/jtd-2025-aw-2166,tb,other,Other/unspecified,1,,2026
+doi:10.1002/cpz1.70454,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1128/spectrum.03617-25,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1128/spectrum.03617-25,amr_hai,Bacteremia,Bacteremia,0,5,2026
+doi:10.1128/spectrum.03617-25,amr_hai,Bacteria,Bacteria,0,11,2026
+doi:10.1186/s13046-026-03708-4,tb,BCG Vaccine,BCG Vaccine,1,12,2026
+doi:10.1371/journal.pgph.0006151,sti,other,Other/unspecified,1,,2026
+doi:10.1038/s41564-026-02439-8,vector_borne,Aedes,Aedes,1,2,2026
+doi:10.1038/s41564-026-02439-8,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2026
+doi:10.1038/s41564-026-02439-8,vector_borne,Mosquito Control,Mosquito Control,0,7,2026
+doi:10.1093/ajrccm/aamag444,tb,other,Other/unspecified,1,,2026
+doi:10.1136/bmjresp-2026-004413,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.1136/bmjresp-2026-004413,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2026
+doi:10.1186/s12879-026-14123-7,other_id,other,Other/unspecified,1,,2026
+doi:10.1017/s0950268826101411,rti,other,Other/unspecified,1,,2026
+doi:10.2147/opth.s614679,tb,other,Other/unspecified,1,,2026
+doi:10.1038/s41598-026-56516-3,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1016/j.actatropica.2026.108314,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1111/irv.70269,rti,"Influenza, Human","Influenza, Human",1,4,2026
+doi:10.1111/irv.70269,rti,Antiviral Agents,Antiviral Agents,0,5,2026
+doi:10.1039/d6nr00924g,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1039/d6nr00924g,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1039/d6nr00924g,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2026
+doi:10.3389/fimmu.2026.1828107,rti,COVID-19,COVID-19,1,1,2026
+doi:10.3389/fimmu.2026.1828107,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.1038/s41467-026-76186-z,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijid.2026.108860,tb,other,Other/unspecified,1,,2026
+doi:10.1136/fmch-2026-004076,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1016/j.ijid.2026.108586,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1016/j.ijid.2026.108586,tb,Tuberculosis,Tuberculosis,0,3,2026
+doi:10.1016/j.ijid.2026.108586,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2026
+doi:10.1371/journal.ppat.1014190,vector_borne,Dengue Virus,Dengue Virus,1,4,2026
+doi:10.1371/journal.ppat.1014190,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1371/journal.ppat.1014190,vector_borne,Antiviral Agents,Antiviral Agents,0,11,2026
+doi:10.1016/j.jsb.2026.108314,vector_borne,Zika Virus,Zika Virus,1,5,2026
+doi:10.1016/j.jsb.2026.108314,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2026
+doi:10.1007/978-1-0716-5328-9_7,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1038/s43856-026-01678-4,other_id,other,Other/unspecified,1,,2026
+doi:10.1093/oxfimm/iqag010,rti,other,Other/unspecified,1,,2026
+doi:10.7189/jogh.16.04100,tb,Tuberculosis,Tuberculosis,1,3,2026
+doi:10.1155/carm/1612186,rti,other,Other/unspecified,1,,2026
+doi:10.1016/j.ijid.2026.108932,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1016/j.ijid.2026.108932,rti,"Antibodies, Neutralizing","Antibodies, Neutralizing",0,9,2026
+doi:10.1016/j.ijid.2026.108932,rti,"Antibodies, Viral","Antibodies, Viral",0,10,2026
+doi:10.1016/j.ijid.2026.108932,rti,B-Lymphocytes,B-Lymphocytes,0,11,2026
+doi:10.1371/journal.pmed.1005205,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1093/pnasnexus/pgag273,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1093/ofid/ofag422,vector_borne,other,Other/unspecified,1,,2026
+doi:10.3390/pathogens15050511,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1017/ash.2026.10298,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1371/journal.pntd.0014382,vector_borne,Dengue,Dengue,1,1,2026
+doi:10.1371/journal.pntd.0014382,vector_borne,Antiviral Agents,Antiviral Agents,0,11,2026
+doi:10.1038/s41598-026-57407-3,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1038/s41598-026-57407-3,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2026
+doi:10.1016/j.actatropica.2026.108305,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1093/jac/dkag215,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1093/jac/dkag215,amr_hai,Bacteremia,Bacteremia,0,5,2026
+doi:10.1093/jac/dkag215,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2026
+doi:10.1093/cid/ciag538,other_id,other,Other/unspecified,1,,2026
+doi:10.1080/22221751.2026.2665001,other_id,other,Other/unspecified,1,,2026
+doi:10.1136/bmjgh-2025-019100,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2026
+doi:10.1136/bmjgh-2025-019100,sti,Uterine Cervical Neoplasms,Uterine Cervical Neoplasms,0,6,2026
+doi:10.1136/bmjgh-2025-019100,sti,Early Detection of Cancer,Early Detection of Cancer,0,10,2026
+doi:10.47102/annals-acadmedsg.2026237,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,1,3,2026
+doi:10.47102/annals-acadmedsg.2026237,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2026
+doi:10.4103/tp.tp_51_25,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1038/s41598-026-55917-8,tb,BCG Vaccine,BCG Vaccine,1,12,2026
+doi:10.1016/j.celrep.2026.117311,tb,Microbial Sensitivity Tests,Microbial Sensitivity Tests,1,9,2026
+doi:10.1038/s44321-026-00378-9,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1038/s44321-026-00378-9,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2026
+doi:10.1038/s44321-026-00378-9,tb,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,9,2026
+doi:10.1038/s44321-026-00378-9,tb,Nitroimidazoles,Nitroimidazoles,0,10,2026
+doi:10.1128/mbio.03518-25,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2026
+doi:10.1128/mbio.03518-25,amr_hai,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,2,2026
+doi:10.1128/mbio.03518-25,amr_hai,beta-Lactamases,beta-Lactamases,0,10,2026
+doi:10.3390/insects17070716,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1021/acs.jmedchem.5c01616,tb,Antitubercular Agents,Antitubercular Agents,1,1,2026
+doi:10.1021/acs.jmedchem.5c01616,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2026
+doi:10.1021/acs.jmedchem.5c01616,tb,Microbial Sensitivity Tests,Microbial Sensitivity Tests,0,9,2026
+pmid:42525700,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1021/acssensors.6c00688,rti,COVID-19,COVID-19,1,1,2026
+doi:10.1021/acssensors.6c00688,rti,SARS-CoV-2,SARS-CoV-2,0,2,2026
+doi:10.7759/cureus.101901,sti,other,Other/unspecified,1,,2026
+doi:10.1021/acs.est.6c03391,amr_hai,other,Other/unspecified,1,,2026
+doi:10.1021/acssensors.5c04309,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,1,4,2026
+doi:10.1021/acssensors.5c04309,amr_hai,Virulence,Virulence,0,9,2026
+doi:10.1016/j.mtbio.2026.103530,other_id,other,Other/unspecified,1,,2026
+doi:10.1016/j.socscimed.2026.119146,sti,other,Other/unspecified,1,,2026
+doi:10.3390/insects17080770,vector_borne,other,Other/unspecified,1,,2026
+doi:10.1080/21505594.2025.2580163,vector_borne,Aedes,Aedes,1,2,2025
+doi:10.1080/21505594.2025.2580163,vector_borne,Dengue Virus,Dengue Virus,0,4,2025
+doi:10.1080/21505594.2025.2580163,vector_borne,Zika Virus,Zika Virus,0,5,2025
+doi:10.1016/s1473-3099(24)00794-1,vector_borne,Zika Virus,Zika Virus,1,5,2025
+doi:10.1016/s1473-3099(24)00794-1,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2025
+doi:10.1016/j.survophthal.2025.09.011,tb,other,Other/unspecified,1,,2025
+doi:10.1016/j.ajic.2025.11.002,rti,COVID-19,COVID-19,1,1,2025
+doi:10.1016/j.ajic.2025.11.002,rti,SARS-CoV-2,SARS-CoV-2,0,2,2025
+doi:10.1016/j.ajic.2025.11.002,rti,Cost-Benefit Analysis,Cost-Benefit Analysis,0,12,2025
+doi:10.1186/s13063-025-08887-7,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1186/s13063-025-08887-7,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2025
+doi:10.1007/s10461-025-04964-9,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1007/s10461-025-04964-9,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2025
+doi:10.1007/s10461-025-04964-9,sti,"Homosexuality, Male","Homosexuality, Male",0,4,2025
+doi:10.1007/s10461-025-04964-9,sti,Qualitative Research,Qualitative Research,0,7,2025
+doi:10.1007/s10461-025-04964-9,sti,Interviews as Topic,Interviews as Topic,0,12,2025
+doi:10.1093/cid/ciae601,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1093/cid/ciae601,tb,Rifampin,Rifampin,0,5,2025
+doi:10.1093/cid/ciae601,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2025
+doi:10.1093/cid/ciae601,tb,Diarylquinolines,Diarylquinolines,0,7,2025
+doi:10.1093/cid/ciae601,tb,Nitroimidazoles,Nitroimidazoles,0,10,2025
+doi:10.1186/s13756-025-01656-w,amr_hai,Surgical Wound Infection,Surgical Wound Infection,1,7,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Dengue,Dengue,1,1,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Aedes,Aedes,0,2,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Dengue Virus,Dengue Virus,0,4,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Wolbachia,Wolbachia,0,6,2025
+doi:10.1038/s41598-025-86139-z,vector_borne,Mosquito Control,Mosquito Control,0,7,2025
+doi:10.1093/ofid/ofaf610,amr_hai,other,Other/unspecified,1,,2025
+doi:10.1128/jvi.01597-25,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1128/jvi.01597-25,sti,HIV-1,HIV-1,0,11,2025
+doi:10.1016/j.infpip.2025.100492,rti,other,Other/unspecified,1,,2025
+doi:10.47102/annals-acadmedsg.2025246,tb,other,Other/unspecified,1,,2025
+doi:10.1128/spectrum.01353-25,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2025
+doi:10.1128/spectrum.01353-25,tb,Tuberculosis,Tuberculosis,0,3,2025
+doi:10.1128/spectrum.01353-25,tb,Sensitivity and Specificity,Sensitivity and Specificity,0,11,2025
+doi:10.1186/s41182-025-00846-x,tb,other,Other/unspecified,1,,2025
+doi:10.1016/s2214-109x(25)00105-6,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",1,4,2025
+doi:10.1038/s41467-025-65976-6,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1038/s41467-025-65976-6,amr_hai,Methicillin-Resistant Staphylococcus aureus,Methicillin-Resistant Staphylococcus aureus,0,3,2025
+doi:10.1038/s41467-025-65976-6,amr_hai,Staphylococcal Infections,Staphylococcal Infections,0,6,2025
+doi:10.47102/annals-acadmedsg.2025240,sti,other,Other/unspecified,1,,2025
+doi:10.1016/j.vaccine.2025.126728,vector_borne,Zika Virus,Zika Virus,1,5,2025
+doi:10.1016/j.vaccine.2025.126728,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2025
+doi:10.1016/s1473-3099(25)00157-4,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1016/s1473-3099(25)00157-4,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2025
+doi:10.1016/s1473-3099(25)00157-4,tb,Rifampin,Rifampin,0,5,2025
+doi:10.1016/s1473-3099(25)00157-4,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2025
+doi:10.1016/j.ijid.2025.108054,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",1,4,2025
+doi:10.1016/j.intf.2025.100335,other_id,other,Other/unspecified,1,,2025
+doi:10.1016/j.infpip.2025.100495,amr_hai,other,Other/unspecified,1,,2025
+doi:10.1038/s41467-025-66606-x,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1038/s41467-025-66606-x,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2025
+doi:10.1038/s41467-025-66606-x,sti,Viral Load,Viral Load,0,8,2025
+doi:10.1038/s41467-025-66606-x,sti,Anti-Retroviral Agents,Anti-Retroviral Agents,0,9,2025
+doi:10.1016/j.celrep.2025.116098,vector_borne,Dengue,Dengue,1,1,2025
+doi:10.1016/j.celrep.2025.116098,vector_borne,Dengue Virus,Dengue Virus,0,4,2025
+doi:10.1016/j.celrep.2025.116098,vector_borne,Zika Virus,Zika Virus,0,5,2025
+doi:10.1016/j.celrep.2025.116098,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2025
+doi:10.47102/annals-acadmedsg.2025336,sti,Papillomavirus Infections,Papillomavirus Infections,1,3,2025
+doi:10.47102/annals-acadmedsg.2025336,sti,Human Papillomavirus Viruses,Human Papillomavirus Viruses,0,5,2025
+doi:10.47102/annals-acadmedsg.2025336,sti,Uterine Cervical Neoplasms,Uterine Cervical Neoplasms,0,6,2025
+doi:10.3390/ijms262411784,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.3390/ijms262411784,sti,Papillomavirus Infections,Papillomavirus Infections,0,3,2025
+doi:10.1186/s12889-025-25357-6,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1186/s12889-025-25357-6,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2025
+doi:10.1186/s12889-025-25357-6,sti,Anti-Retroviral Agents,Anti-Retroviral Agents,0,9,2025
+doi:10.3390/pathogens14030285,vector_borne,Mosquito Vectors,Mosquito Vectors,1,3,2025
+doi:10.3390/pathogens14030285,vector_borne,Wolbachia,Wolbachia,0,6,2025
+doi:10.3390/pathogens14030285,vector_borne,Mosquito Control,Mosquito Control,0,7,2025
+doi:10.3390/pathogens14030285,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2025
+doi:10.1186/s12889-025-24934-z,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",1,6,2025
+doi:10.1128/spectrum.02725-25,other_id,other,Other/unspecified,1,,2025
+doi:10.1016/j.jhin.2025.11.043,amr_hai,other,Other/unspecified,1,,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,Rifampin,Rifampin,0,5,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,Diarylquinolines,Diarylquinolines,0,7,2025
+doi:10.1016/s1473-3099(25)00151-3,tb,"Drug Therapy, Combination","Drug Therapy, Combination",0,8,2025
+doi:10.1136/bmjresp-2025-003777,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1136/bmjresp-2025-003777,tb,Rifampin,Rifampin,0,5,2025
+doi:10.1136/bmjresp-2025-003777,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2025
+doi:10.1101/2025.08.20.25334077,tb,other,Other/unspecified,1,,2025
+doi:10.1073/pnas.2421573122,vector_borne,Dengue Virus,Dengue Virus,1,4,2025
+doi:10.1073/pnas.2421573122,vector_borne,Zika Virus,Zika Virus,0,5,2025
+doi:10.1073/pnas.2421573122,vector_borne,Antiviral Agents,Antiviral Agents,0,11,2025
+doi:10.1038/s41467-025-66413-4,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1038/s41467-025-66413-4,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,0,4,2025
+doi:10.1038/s41467-025-66413-4,amr_hai,Escherichia coli,Escherichia coli,0,8,2025
+doi:10.1038/s41467-025-66413-4,amr_hai,Virulence,Virulence,0,9,2025
+doi:10.1038/s41467-025-66413-4,amr_hai,Klebsiella Infections,Klebsiella Infections,0,12,2025
+doi:10.1007/s00408-024-00779-y,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",1,4,2025
+doi:10.1007/s00408-024-00779-y,tb,Sensitivity and Specificity,Sensitivity and Specificity,0,11,2025
+doi:10.1016/j.idc.2025.11.009,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1016/j.idc.2025.11.009,amr_hai,beta-Lactamases,beta-Lactamases,0,10,2025
+doi:10.1016/j.idc.2025.11.005,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1016/j.idc.2025.11.005,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,0,4,2025
+doi:10.1016/j.idc.2025.11.005,amr_hai,Virulence,Virulence,0,9,2025
+doi:10.1016/j.idc.2025.11.005,amr_hai,Klebsiella Infections,Klebsiella Infections,0,12,2025
+doi:10.1016/j.idc.2025.11.003,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1016/j.idc.2025.11.003,amr_hai,beta-Lactamases,beta-Lactamases,0,10,2025
+doi:10.1186/s12964-025-02588-z,vector_borne,Zika Virus,Zika Virus,1,5,2025
+doi:10.1186/s12964-025-02588-z,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2025
+doi:10.1016/j.ajic.2025.10.025,amr_hai,Anti-Bacterial Agents,Anti-Bacterial Agents,1,1,2025
+doi:10.1016/j.ajic.2025.10.025,amr_hai,Bacteremia,Bacteremia,0,5,2025
+doi:10.1002/jia2.70052,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1038/s41467-025-66411-6,vector_borne,Dengue,Dengue,1,1,2025
+doi:10.1038/s41467-025-66411-6,vector_borne,Aedes,Aedes,0,2,2025
+doi:10.1038/s41467-025-66411-6,vector_borne,Dengue Virus,Dengue Virus,0,4,2025
+doi:10.1038/s41467-025-66411-6,vector_borne,Wolbachia,Wolbachia,0,6,2025
+doi:10.1016/j.arbres.2025.09.017,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",1,4,2025
+doi:10.1038/s41591-025-04041-7,sti,HIV Infections,HIV Infections,1,1,2025
+doi:10.1038/s41591-025-04041-7,sti,Anti-HIV Agents,Anti-HIV Agents,0,2,2025
+doi:10.1038/s41591-025-04041-7,sti,Viral Load,Viral Load,0,8,2025
+doi:10.1038/s41591-025-04041-7,sti,HIV-1,HIV-1,0,11,2025
+doi:10.7759/cureus.100362,tb,other,Other/unspecified,1,,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,Antitubercular Agents,Antitubercular Agents,1,1,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,Rifampin,Rifampin,0,5,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,Diarylquinolines,Diarylquinolines,0,7,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,"Drug Therapy, Combination","Drug Therapy, Combination",0,8,2025
+doi:10.1016/s2213-2600(25)00194-8,tb,Nitroimidazoles,Nitroimidazoles,0,10,2025
+doi:10.3389/fmicb.2025.1711400,amr_hai,other,Other/unspecified,1,,2025
+doi:10.1073/pnas.2502522122,vector_borne,Zika Virus,Zika Virus,1,5,2025
+doi:10.1073/pnas.2502522122,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2025
+doi:10.1021/acs.analchem.5c05609,amr_hai,Klebsiella pneumoniae,Klebsiella pneumoniae,1,4,2025
+doi:10.3390/pathogens14080741,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2025
+doi:10.3390/pathogens14080741,tb,Tuberculosis,Tuberculosis,0,3,2025
+doi:10.3390/pathogens14080741,tb,Sensitivity and Specificity,Sensitivity and Specificity,0,11,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,Dengue,Dengue,1,1,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,Aedes,Aedes,0,2,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,Wolbachia,Wolbachia,0,6,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,Mosquito Control,Mosquito Control,0,7,2025
+doi:10.1186/s12916-025-03941-2,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2025
+doi:10.1101/2025.10.26.684512,other_id,other,Other/unspecified,1,,2025
+doi:10.1002/pro.5142,vector_borne,Zika Virus,Zika Virus,1,5,2024
+doi:10.1186/s12915-024-02070-1,vector_borne,Aedes,Aedes,1,2,2024
+doi:10.1186/s12915-024-02070-1,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2024
+doi:10.1186/s12915-024-02070-1,vector_borne,Wolbachia,Wolbachia,0,6,2024
+doi:10.1186/s12915-024-02070-1,vector_borne,Mosquito Control,Mosquito Control,0,7,2024
+doi:10.1186/s12915-024-02070-1,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2024
+doi:10.1183/16000617.0208-2023,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1183/16000617.0208-2023,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
+doi:10.1016/j.ijid.2024.107768,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,1,2,2024
+doi:10.1016/j.ijid.2024.107768,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
+doi:10.1038/s41467-024-48077-8,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1038/s41467-024-48077-8,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2024
+doi:10.1038/s41467-024-48077-8,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2024
+doi:10.1038/s41467-024-48077-8,tb,Diarylquinolines,Diarylquinolines,0,7,2024
+doi:10.1038/s41467-024-48077-8,tb,Nitroimidazoles,Nitroimidazoles,0,10,2024
+doi:10.47102/annals-acadmedsg.2023391,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.47102/annals-acadmedsg.2023391,tb,Tuberculosis,Tuberculosis,0,3,2024
+doi:10.47102/annals-acadmedsg.2023391,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
+doi:10.1038/s41467-024-54419-3,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1038/s41467-024-54419-3,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
+doi:10.1038/s41467-024-54419-3,tb,Rifampin,Rifampin,0,5,2024
+doi:10.1016/s2213-2600(24)00186-3,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1016/s2213-2600(24)00186-3,tb,Rifampin,Rifampin,0,5,2024
+doi:10.1016/s2213-2600(24)00186-3,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2024
+doi:10.1016/s2213-2600(24)00186-3,tb,Diarylquinolines,Diarylquinolines,0,7,2024
+doi:10.1016/s2213-2600(24)00186-3,tb,"Drug Therapy, Combination","Drug Therapy, Combination",0,8,2024
+doi:10.1007/s12104-024-10208-z,vector_borne,Zika Virus,Zika Virus,1,5,2024
+doi:10.1007/s12104-024-10208-z,vector_borne,Viral Nonstructural Proteins,Viral Nonstructural Proteins,0,10,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,Dengue,Dengue,1,1,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,Aedes,Aedes,0,2,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,Wolbachia,Wolbachia,0,6,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,Mosquito Control,Mosquito Control,0,7,2024
+doi:10.1186/s12874-024-02291-6,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2024
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,Aedes,Aedes,1,2,2024
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2024
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,Wolbachia,Wolbachia,0,6,2024
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,Mosquito Control,Mosquito Control,0,7,2024
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,"Pest Control, Biological","Pest Control, Biological",0,8,2024
+doi:10.1186/s12879-024-10027-6,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1186/s12879-024-10027-6,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2024
+doi:10.1186/s12879-024-10027-6,tb,Rifampin,Rifampin,0,5,2024
+doi:10.1186/s12879-024-10027-6,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2024
+doi:10.1016/j.cell.2024.10.028,vector_borne,Zika Virus,Zika Virus,1,5,2024
+doi:10.1016/j.cell.2024.10.028,vector_borne,Zika Virus Infection,Zika Virus Infection,0,9,2024
+doi:10.1016/j.ijid.2024.107221,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",1,4,2024
+doi:10.1016/j.ijid.2024.107221,tb,Sensitivity and Specificity,Sensitivity and Specificity,0,11,2024
+doi:10.1016/s2666-5247(24)00149-6,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1016/s2666-5247(24)00149-6,tb,Mycobacterium tuberculosis,Mycobacterium tuberculosis,0,2,2024
+doi:10.1016/s2666-5247(24)00149-6,tb,"Tuberculosis, Multidrug-Resistant","Tuberculosis, Multidrug-Resistant",0,6,2024
+doi:10.1016/s2666-5247(24)00149-6,tb,Diarylquinolines,Diarylquinolines,0,7,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Dengue,Dengue,1,1,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Aedes,Aedes,0,2,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Dengue Virus,Dengue Virus,0,4,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Wolbachia,Wolbachia,0,6,2024
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Mosquito Control,Mosquito Control,0,7,2024
+doi:10.1093/jtm/taae103,vector_borne,Dengue,Dengue,1,1,2024
+doi:10.1093/jtm/taae103,vector_borne,Aedes,Aedes,0,2,2024
+doi:10.1093/jtm/taae103,vector_borne,Mosquito Vectors,Mosquito Vectors,0,3,2024
+doi:10.1093/jtm/taae103,vector_borne,Wolbachia,Wolbachia,0,6,2024
+doi:10.1093/jtm/taae103,vector_borne,Mosquito Control,Mosquito Control,0,7,2024
+doi:10.1093/infdis/jiae104,tb,Antitubercular Agents,Antitubercular Agents,1,1,2024
+doi:10.1093/infdis/jiae104,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
+doi:10.1093/infdis/jiae104,tb,Rifampin,Rifampin,0,5,2024
+doi:10.1093/infdis/jiae104,tb,"Drug Therapy, Combination","Drug Therapy, Combination",0,8,2024
+doi:10.1038/s42003-024-06822-1,tb,Tuberculosis,Tuberculosis,1,3,2024
+doi:10.1038/s42003-024-06822-1,tb,"Tuberculosis, Pulmonary","Tuberculosis, Pulmonary",0,4,2024
