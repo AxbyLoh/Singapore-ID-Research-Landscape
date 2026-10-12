@@ -1,0 +1,61 @@
+domain_id,domain_label,subdomain_label,year,publications
+amr_hai,AMR and healthcare-associated infections,Anti-Bacterial Agents,2025,6
+amr_hai,AMR and healthcare-associated infections,Anti-Bacterial Agents,2026,27
+amr_hai,AMR and healthcare-associated infections,Escherichia coli,2026,1
+amr_hai,AMR and healthcare-associated infections,Klebsiella pneumoniae,2025,1
+amr_hai,AMR and healthcare-associated infections,Klebsiella pneumoniae,2026,2
+amr_hai,AMR and healthcare-associated infections,Methicillin-Resistant Staphylococcus aureus,2026,3
+amr_hai,AMR and healthcare-associated infections,Other/unspecified,2025,4
+amr_hai,AMR and healthcare-associated infections,Other/unspecified,2026,26
+amr_hai,AMR and healthcare-associated infections,Surgical Wound Infection,2025,1
+amr_hai,AMR and healthcare-associated infections,Surgical Wound Infection,2026,4
+amr_hai,AMR and healthcare-associated infections,Virulence,2026,1
+other_id,Other infectious disease,Other/unspecified,2025,3
+other_id,Other infectious disease,Other/unspecified,2026,22
+rti,Respiratory-tract infections,COVID-19,2025,1
+rti,Respiratory-tract infections,COVID-19,2026,19
+rti,Respiratory-tract infections,Cost-Benefit Analysis,2026,1
+rti,Respiratory-tract infections,Cytokines,2026,2
+rti,Respiratory-tract infections,"Influenza, Human",2026,5
+rti,Respiratory-tract infections,Other/unspecified,2025,1
+rti,Respiratory-tract infections,Other/unspecified,2026,32
+rti,Respiratory-tract infections,SARS-CoV-2,2026,4
+rti,Respiratory-tract infections,Virus Replication,2026,1
+sti,Sexually-transmitted infections,HIV Infections,2025,7
+sti,Sexually-transmitted infections,HIV Infections,2026,12
+sti,Sexually-transmitted infections,"Homosexuality, Male",2026,2
+sti,Sexually-transmitted infections,Other/unspecified,2025,1
+sti,Sexually-transmitted infections,Other/unspecified,2026,18
+sti,Sexually-transmitted infections,Papillomavirus Infections,2025,1
+sti,Sexually-transmitted infections,Papillomavirus Infections,2026,5
+tb,Tuberculosis,Antitubercular Agents,2024,8
+tb,Tuberculosis,Antitubercular Agents,2025,6
+tb,Tuberculosis,Antitubercular Agents,2026,10
+tb,Tuberculosis,BCG Vaccine,2026,3
+tb,Tuberculosis,Microbial Sensitivity Tests,2026,1
+tb,Tuberculosis,Mycobacterium tuberculosis,2024,1
+tb,Tuberculosis,Mycobacterium tuberculosis,2025,2
+tb,Tuberculosis,Mycobacterium tuberculosis,2026,6
+tb,Tuberculosis,Other/unspecified,2025,5
+tb,Tuberculosis,Other/unspecified,2026,20
+tb,Tuberculosis,Rifampin,2026,1
+tb,Tuberculosis,Tuberculosis,2024,1
+tb,Tuberculosis,Tuberculosis,2026,6
+tb,Tuberculosis,"Tuberculosis, Multidrug-Resistant",2025,1
+tb,Tuberculosis,"Tuberculosis, Pulmonary",2024,1
+tb,Tuberculosis,"Tuberculosis, Pulmonary",2025,4
+vector_borne,Vector-borne diseases,Aedes,2024,2
+vector_borne,Vector-borne diseases,Aedes,2025,1
+vector_borne,Vector-borne diseases,Aedes,2026,3
+vector_borne,Vector-borne diseases,Dengue,2024,3
+vector_borne,Vector-borne diseases,Dengue,2025,4
+vector_borne,Vector-borne diseases,Dengue,2026,10
+vector_borne,Vector-borne diseases,Dengue Virus,2025,1
+vector_borne,Vector-borne diseases,Dengue Virus,2026,1
+vector_borne,Vector-borne diseases,"Genome, Viral",2026,1
+vector_borne,Vector-borne diseases,Mosquito Vectors,2025,1
+vector_borne,Vector-borne diseases,Mosquito Vectors,2026,2
+vector_borne,Vector-borne diseases,Other/unspecified,2026,33
+vector_borne,Vector-borne diseases,Zika Virus,2024,3
+vector_borne,Vector-borne diseases,Zika Virus,2025,4
+vector_borne,Vector-borne diseases,Zika Virus,2026,4

@@ -1,0 +1,402 @@
+uid,domain_id,domain_label,is_primary,domain_score,year,singapore_led
+doi:10.1093/jambio/lxag031,amr_hai,AMR and healthcare-associated infections,1,22,2026,1
+doi:10.1128/spectrum.00627-26,tb,Tuberculosis,1,50,2026,1
+doi:10.1128/spectrum.00627-26,amr_hai,AMR and healthcare-associated infections,0,12,2026,1
+doi:10.1371/journal.pntd.0014584,vector_borne,Vector-borne diseases,1,6,2026,0
+doi:10.3390/ijms27031504,vector_borne,Vector-borne diseases,1,16,2026,1
+doi:10.1186/s12889-026-26979-0,tb,Tuberculosis,1,26,2026,0
+doi:10.1016/j.avsg.2025.12.042,amr_hai,AMR and healthcare-associated infections,1,8,2026,0
+doi:10.1001/jamanetworkopen.2026.28389,rti,Respiratory-tract infections,1,24,2026,1
+doi:10.1002/anie.202517460,amr_hai,AMR and healthcare-associated infections,1,18,2026,1
+doi:10.1136/bmjopen-2025-103987,rti,Respiratory-tract infections,1,40,2026,1
+doi:10.1038/s41598-026-64190-8,rti,Respiratory-tract infections,1,58,2026,0
+doi:10.1186/s12348-026-00586-x,tb,Tuberculosis,1,23,2026,1
+doi:10.1186/s12942-026-00467-5,tb,Tuberculosis,1,26,2026,0
+doi:10.5588/ijtldopen.26.0076,tb,Tuberculosis,1,13,2026,1
+doi:10.5588/ijtldopen.26.0076,sti,Sexually-transmitted infections,0,9,2026,1
+doi:10.1073/pnas.2606669123,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.3390/biom16070970,amr_hai,AMR and healthcare-associated infections,1,25,2026,0
+doi:10.3390/pathogens15040378,vector_borne,Vector-borne diseases,1,6,2026,0
+doi:10.1080/07853890.2026.2714685,tb,Tuberculosis,1,49,2026,1
+doi:10.64898/2026.03.19.26348865,sti,Sexually-transmitted infections,1,19,2026,0
+doi:10.1016/j.celrep.2026.117286,tb,Tuberculosis,1,36,2026,0
+doi:10.1016/j.ejogrb.2026.115359,sti,Sexually-transmitted infections,1,9,2026,1
+doi:10.1128/aac.00748-26,tb,Tuberculosis,1,64,2026,0
+doi:10.1128/aac.00748-26,sti,Sexually-transmitted infections,0,15,2026,0
+doi:10.1186/s12929-026-01277-4,rti,Respiratory-tract infections,1,28,2026,1
+doi:10.1371/journal.pntd.0014395,vector_borne,Vector-borne diseases,1,52,2026,1
+doi:10.1038/s41467-026-74934-9,amr_hai,AMR and healthcare-associated infections,1,19,2026,0
+doi:10.1128/mbio.01075-26,rti,Respiratory-tract infections,1,15,2026,1
+doi:10.1080/10810730.2026.2687792,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1111/scs.70292,rti,Respiratory-tract infections,1,18,2026,1
+doi:10.3390/vaccines14060469,rti,Respiratory-tract infections,1,12,2026,1
+doi:10.1177/08903344261475018,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.3390/ijms27167316,rti,Respiratory-tract infections,1,40,2026,1
+doi:10.1093/ofid/ofag421,vector_borne,Vector-borne diseases,1,6,2026,0
+doi:10.1371/journal.pgph.0007105,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.1016/j.jep.2026.122318,other_id,Other infectious disease,1,,2026,0
+doi:10.2196/88849,rti,Respiratory-tract infections,1,12,2026,1
+doi:10.1017/ice.2026.10526,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.1093/epirev/mxag011,other_id,Other infectious disease,1,,2026,1
+doi:10.1080/21645515.2026.2661118,rti,Respiratory-tract infections,1,12,2026,0
+doi:10.1088/1361-6528/ae8602,amr_hai,AMR and healthcare-associated infections,1,10,2026,1
+doi:10.1186/s12889-026-26538-7,sti,Sexually-transmitted infections,1,28,2026,0
+doi:10.1016/j.idh.2026.100423,amr_hai,AMR and healthcare-associated infections,1,17,2026,0
+doi:10.1016/s0140-6736(26)00410-1,sti,Sexually-transmitted infections,1,15,2026,1
+doi:10.1021/acsinfecdis.6c00114,vector_borne,Vector-borne diseases,1,23,2026,0
+doi:10.3390/pathogens15030278,amr_hai,AMR and healthcare-associated infections,1,35,2026,1
+doi:10.2196/87909,rti,Respiratory-tract infections,1,18,2026,1
+doi:10.1080/09540121.2026.2632324,sti,Sexually-transmitted infections,1,18,2026,1
+doi:10.1016/s1473-3099(26)00357-9,amr_hai,AMR and healthcare-associated infections,1,16,2026,1
+doi:10.1016/s1473-3099(26)00357-9,rti,Respiratory-tract infections,0,6,2026,1
+doi:10.1073/pnas.2532225123,other_id,Other infectious disease,1,,2026,1
+doi:10.1016/j.bcp.2026.118104,tb,Tuberculosis,1,15,2026,1
+doi:10.1038/s44360-026-00080-7,sti,Sexually-transmitted infections,1,7,2026,1
+doi:10.1111/camh.70112,rti,Respiratory-tract infections,1,25,2026,1
+doi:10.1016/j.jhin.2026.03.009,amr_hai,AMR and healthcare-associated infections,1,27,2026,1
+doi:10.1080/17441692.2026.2700817,rti,Respiratory-tract infections,1,30,2026,0
+doi:10.1016/j.isci.2026.116736,rti,Respiratory-tract infections,1,15,2026,1
+doi:10.1093/ofid/ofag317,rti,Respiratory-tract infections,1,19,2026,1
+doi:10.1128/aac.00388-25,amr_hai,AMR and healthcare-associated infections,1,20,2026,0
+doi:10.3389/fmicb.2026.1866307,vector_borne,Vector-borne diseases,1,12,2026,0
+doi:10.1016/j.jhin.2026.08.021,amr_hai,AMR and healthcare-associated infections,1,18,2026,0
+doi:10.1136/bcr-2025-271896,vector_borne,Vector-borne diseases,1,12,2026,1
+doi:10.1038/s41467-026-75746-7,other_id,Other infectious disease,1,,2026,0
+doi:10.1038/s41467-026-74190-x,rti,Respiratory-tract infections,1,12,2026,0
+doi:10.1016/j.ijid.2026.108533,tb,Tuberculosis,1,31,2026,1
+doi:10.1183/13993003.00989-2026,tb,Tuberculosis,1,6,2026,0
+doi:10.1038/s41371-026-01194-x,rti,Respiratory-tract infections,1,15,2026,1
+doi:10.1016/j.transci.2026.104429,sti,Sexually-transmitted infections,1,21,2026,0
+doi:10.3390/antibiotics15050423,amr_hai,AMR and healthcare-associated infections,1,15,2026,0
+doi:10.1016/j.watres.2026.126336,amr_hai,AMR and healthcare-associated infections,1,28,2026,1
+doi:10.1186/s12889-026-27217-3,sti,Sexually-transmitted infections,1,25,2026,0
+doi:10.1177/00494755261479116,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.3389/fimmu.2026.1841974,rti,Respiratory-tract infections,1,18,2026,1
+doi:10.4269/ajtmh.26-0159,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1002/resp.70302,rti,Respiratory-tract infections,1,18,2026,1
+doi:10.5527/wjn.v15.i2.118214,rti,Respiratory-tract infections,1,33,2026,1
+doi:10.1016/j.drugpo.2026.105306,sti,Sexually-transmitted infections,1,14,2026,1
+doi:10.1007/s10461-026-05097-3,sti,Sexually-transmitted infections,1,14,2026,1
+doi:10.1183/13993003.00858-2026,tb,Tuberculosis,1,6,2026,1
+doi:10.1136/bmjph-2025-004042,sti,Sexually-transmitted infections,1,15,2026,1
+doi:10.25259/ijpc_285_2025,rti,Respiratory-tract infections,1,6,2026,0
+doi:10.1016/j.vaccine.2026.128983,rti,Respiratory-tract infections,1,52,2026,1
+doi:10.1016/j.eclinm.2026.103871,vector_borne,Vector-borne diseases,1,12,2026,0
+doi:10.1097/qai.0000000000003874,sti,Sexually-transmitted infections,1,15,2026,0
+doi:10.1016/j.jconrel.2026.115136,rti,Respiratory-tract infections,1,38,2026,1
+doi:10.1016/j.mimet.2026.107668,rti,Respiratory-tract infections,1,6,2026,0
+doi:10.1128/jvi.00540-26,rti,Respiratory-tract infections,1,22,2026,1
+doi:10.1016/j.jinf.2026.106765,amr_hai,AMR and healthcare-associated infections,1,35,2026,0
+doi:10.3389/fpubh.2026.1838184,rti,Respiratory-tract infections,1,22,2026,0
+doi:10.1007/s13555-026-01809-8,tb,Tuberculosis,1,11,2026,0
+doi:10.1016/j.pedneo.2026.04.010,rti,Respiratory-tract infections,1,12,2026,1
+doi:10.1371/journal.pntd.0014318,vector_borne,Vector-borne diseases,1,15,2026,0
+doi:10.1371/journal.pntd.0014318,amr_hai,AMR and healthcare-associated infections,0,4,2026,0
+doi:10.12968/jowc.2023.0112,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.1038/s41467-026-74032-w,tb,Tuberculosis,1,26,2026,0
+doi:10.1021/acsinfecdis.6c00309,amr_hai,AMR and healthcare-associated infections,1,13,2026,1
+doi:10.1021/acsinfecdis.6c00309,tb,Tuberculosis,0,6,2026,1
+doi:10.1128/spectrum.03669-25,vector_borne,Vector-borne diseases,1,25,2026,1
+doi:10.1038/s41541-026-01519-4,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1038/s41467-026-75524-5,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1186/s12879-026-13489-y,tb,Tuberculosis,1,8,2026,1
+doi:10.1016/j.biomaterials.2026.124421,amr_hai,AMR and healthcare-associated infections,1,4,2026,1
+doi:10.1007/s00604-026-08340-9,sti,Sexually-transmitted infections,1,9,2026,0
+doi:10.1186/s12909-026-09775-7,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1186/s13073-026-01655-5,amr_hai,AMR and healthcare-associated infections,1,5,2026,1
+doi:10.1093/jpids/piag032,tb,Tuberculosis,1,16,2026,1
+doi:10.64898/2026.05.07.723652,other_id,Other infectious disease,1,,2026,1
+doi:10.1038/s41467-026-76156-5,rti,Respiratory-tract infections,1,26,2026,0
+doi:10.1038/s41467-026-74526-7,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.1016/j.bj.2026.101033,amr_hai,AMR and healthcare-associated infections,1,12,2026,0
+doi:10.1016/j.vaccine.2026.128513,sti,Sexually-transmitted infections,1,18,2026,1
+doi:10.1039/d6tb01365a,amr_hai,AMR and healthcare-associated infections,1,4,2026,1
+doi:10.1016/j.ijbiomac.2026.153475,amr_hai,AMR and healthcare-associated infections,1,4,2026,1
+doi:10.1177/10872914261423775,sti,Sexually-transmitted infections,1,22,2026,0
+doi:10.1016/j.ijid.2026.109062,rti,Respiratory-tract infections,1,22,2026,1
+doi:10.1016/j.mmcr.2026.100815,rti,Respiratory-tract infections,1,21,2026,1
+doi:10.1111/jcmm.71143,sti,Sexually-transmitted infections,1,12,2026,0
+doi:10.1007/s00210-026-05627-9,amr_hai,AMR and healthcare-associated infections,1,34,2026,0
+doi:10.1016/j.ijbiomac.2026.153190,amr_hai,AMR and healthcare-associated infections,1,31,2026,0
+doi:10.1128/aac.01561-25,vector_borne,Vector-borne diseases,1,24,2026,0
+doi:10.1016/j.ebiom.2026.106290,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1016/j.eclinm.2026.104163,rti,Respiratory-tract infections,1,14,2026,0
+doi:10.1002/jmv.70892,sti,Sexually-transmitted infections,1,12,2026,0
+doi:10.1097/bot.0000000000003199,amr_hai,AMR and healthcare-associated infections,1,14,2026,0
+doi:10.47102/annals-acadmedsg.2025321,tb,Tuberculosis,1,20,2026,1
+doi:10.1017/ash.2025.10149,amr_hai,AMR and healthcare-associated infections,1,15,2026,1
+doi:10.3390/pathogens15040437,vector_borne,Vector-borne diseases,1,9,2026,1
+doi:10.3390/pathogens15040437,amr_hai,AMR and healthcare-associated infections,0,4,2026,1
+doi:10.1128/spectrum.01571-26,amr_hai,AMR and healthcare-associated infections,1,21,2026,0
+doi:10.1016/j.jhin.2026.08.011,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.4103/singaporemedj.smj-2025-222,rti,Respiratory-tract infections,1,15,2026,1
+doi:10.1126/sciimmunol.adz5647,vector_borne,Vector-borne diseases,1,20,2026,1
+doi:10.1371/journal.pgph.0006971,tb,Tuberculosis,1,12,2026,0
+doi:10.1093/jimmun/vkag189,rti,Respiratory-tract infections,1,40,2026,0
+doi:10.3390/antibiotics15070671,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1080/21505594.2026.2711530,vector_borne,Vector-borne diseases,1,36,2026,1
+doi:10.1001/jamadermatol.2026.0308,sti,Sexually-transmitted infections,1,15,2026,1
+doi:10.1038/s44528-026-00009-2,rti,Respiratory-tract infections,1,6,2026,0
+doi:10.1016/j.idm.2026.03.002,sti,Sexually-transmitted infections,1,16,2026,0
+doi:10.1016/j.ijid.2026.108545,tb,Tuberculosis,1,20,2026,1
+doi:10.1016/j.mib.2026.102764,amr_hai,AMR and healthcare-associated infections,1,8,2026,1
+doi:10.1093/infdis/jiag290,vector_borne,Vector-borne diseases,1,15,2026,1
+doi:10.1016/j.ssmmh.2026.100615,sti,Sexually-transmitted infections,1,7,2026,0
+doi:10.1099/mgen.0.001745,amr_hai,AMR and healthcare-associated infections,1,9,2026,0
+doi:10.1177/20584601261418668,tb,Tuberculosis,1,9,2026,1
+doi:10.1371/journal.ppat.1014287,vector_borne,Vector-borne diseases,1,27,2026,0
+doi:10.1371/journal.pcbi.1014355,vector_borne,Vector-borne diseases,1,54,2026,1
+doi:10.3389/fcimb.2026.1847443,tb,Tuberculosis,1,16,2026,0
+doi:10.3389/fcimb.2026.1847443,amr_hai,AMR and healthcare-associated infections,0,6,2026,0
+doi:10.3390/v18030283,sti,Sexually-transmitted infections,1,21,2026,1
+doi:10.1039/d6ra04008j,other_id,Other infectious disease,1,,2026,1
+doi:10.1128/mbio.01474-26,other_id,Other infectious disease,1,,2026,1
+doi:10.1016/j.jhin.2026.03.037,amr_hai,AMR and healthcare-associated infections,1,15,2026,0
+doi:10.1002/jmv.71078,vector_borne,Vector-borne diseases,1,27,2026,0
+doi:10.1186/s13073-026-01670-6,tb,Tuberculosis,1,26,2026,1
+doi:10.1016/j.fm.2026.105164,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1016/j.lanwpc.2026.101874,sti,Sexually-transmitted infections,1,9,2026,1
+doi:10.1002/jcop.70120,sti,Sexually-transmitted infections,1,4,2026,1
+doi:10.1093/cid/ciag347,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.1016/j.ijpara.2026.104892,vector_borne,Vector-borne diseases,1,27,2026,0
+doi:10.1016/j.ijid.2026.109084,vector_borne,Vector-borne diseases,1,12,2026,1
+doi:10.1186/s12889-026-28672-8,other_id,Other infectious disease,1,,2026,1
+doi:10.3389/fpubh.2026.1785244,rti,Respiratory-tract infections,1,58,2026,1
+doi:10.4103/singaporemedj.smj-2026-181,rti,Respiratory-tract infections,1,30,2026,1
+doi:10.4103/singaporemedj.smj-2026-181,amr_hai,AMR and healthcare-associated infections,0,16,2026,1
+doi:10.4103/singaporemedj.smj-2026-182,rti,Respiratory-tract infections,1,5,2026,1
+doi:10.1016/j.oret.2026.06.023,tb,Tuberculosis,1,8,2026,0
+doi:10.3390/ijms27125573,amr_hai,AMR and healthcare-associated infections,1,33,2026,1
+doi:10.1093/jac/dkag263,amr_hai,AMR and healthcare-associated infections,1,19,2026,1
+doi:10.1186/s12889-026-26441-1,sti,Sexually-transmitted infections,1,24,2026,0
+doi:10.1016/j.urolonc.2026.111091,tb,Tuberculosis,1,8,2026,1
+doi:10.1007/s11673-026-10573-5,rti,Respiratory-tract infections,1,12,2026,0
+doi:10.3390/tropicalmed11070184,vector_borne,Vector-borne diseases,1,18,2026,1
+doi:10.1093/aje/kwag024,tb,Tuberculosis,1,44,2026,0
+doi:10.1093/aje/kwag024,amr_hai,AMR and healthcare-associated infections,0,6,2026,0
+doi:10.1371/journal.pntd.0014222,vector_borne,Vector-borne diseases,1,67,2026,0
+doi:10.3892/br.2026.2154,other_id,Other infectious disease,1,,2026,0
+doi:10.1016/j.ajcnut.2026.101488,tb,Tuberculosis,1,12,2026,1
+doi:10.3390/v18050485,other_id,Other infectious disease,1,,2026,1
+doi:10.1093/jpids/piag047,amr_hai,AMR and healthcare-associated infections,1,4,2026,1
+doi:10.1002/advs.75061,amr_hai,AMR and healthcare-associated infections,1,15,2026,0
+doi:10.1016/j.xcrm.2026.102714,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.3389/fpubh.2026.1857629,sti,Sexually-transmitted infections,1,27,2026,0
+doi:10.1097/md.0000000000047358,sti,Sexually-transmitted infections,1,40,2026,0
+doi:10.1016/j.cmi.2026.01.032,amr_hai,AMR and healthcare-associated infections,1,22,2026,1
+doi:10.1016/j.lanhl.2026.100870,rti,Respiratory-tract infections,1,30,2026,0
+doi:10.1370/afm.250683,sti,Sexually-transmitted infections,1,18,2026,1
+doi:10.1016/j.nedt.2026.107368,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.1007/s40273-026-01609-0,amr_hai,AMR and healthcare-associated infections,1,10,2026,0
+doi:10.1371/journal.pcbi.1014313,sti,Sexually-transmitted infections,1,18,2026,0
+doi:10.1038/s41467-026-71566-x,tb,Tuberculosis,1,20,2026,0
+doi:10.1186/s12879-026-13946-8,amr_hai,AMR and healthcare-associated infections,1,39,2026,0
+doi:10.64898/2026.07.03.736289,vector_borne,Vector-borne diseases,1,15,2026,1
+doi:10.1016/j.pt.2026.06.011,vector_borne,Vector-borne diseases,1,22,2026,1
+doi:10.1371/journal.ppat.1013609,vector_borne,Vector-borne diseases,1,26,2026,0
+doi:10.3389/fimmu.2026.1921846,rti,Respiratory-tract infections,1,52,2026,0
+doi:10.2196/87328,rti,Respiratory-tract infections,1,18,2026,0
+doi:10.1016/j.ebiom.2026.106447,other_id,Other infectious disease,1,,2026,0
+doi:10.1371/journal.pone.0351023,vector_borne,Vector-borne diseases,1,41,2026,0
+doi:10.1016/j.ejmech.2026.119130,vector_borne,Vector-borne diseases,1,22,2026,0
+doi:10.1002/biof.70105,vector_borne,Vector-borne diseases,1,29,2026,0
+doi:10.1056/nejmoa2503304,vector_borne,Vector-borne diseases,1,52,2026,1
+doi:10.1111/jcmm.71353,other_id,Other infectious disease,1,,2026,1
+doi:10.1007/s10985-026-09690-5,sti,Sexually-transmitted infections,1,12,2026,1
+doi:10.7759/cureus.114118,tb,Tuberculosis,1,9,2026,1
+doi:10.1371/journal.pone.0352661,tb,Tuberculosis,1,16,2026,0
+doi:10.4103/ijo.ijo_346_26,tb,Tuberculosis,1,6,2026,1
+doi:10.1016/j.lanwpc.2026.101892,sti,Sexually-transmitted infections,1,9,2026,0
+doi:10.2196/82143,rti,Respiratory-tract infections,1,6,2026,1
+doi:10.1017/ice.2026.10530,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1128/spectrum.01906-25,amr_hai,AMR and healthcare-associated infections,1,27,2026,0
+doi:10.1177/09564624261424560,sti,Sexually-transmitted infections,1,74,2026,0
+doi:10.1002/advs.76769,vector_borne,Vector-borne diseases,1,6,2026,1
+doi:10.1002/advs.76769,rti,Respiratory-tract infections,0,6,2026,1
+doi:10.1093/cid/ciag361,tb,Tuberculosis,1,14,2026,0
+doi:10.1093/cid/ciag361,amr_hai,AMR and healthcare-associated infections,0,6,2026,0
+doi:10.1016/j.vaccine.2026.129079,rti,Respiratory-tract infections,1,12,2026,0
+doi:10.1186/s12985-026-03231-0,vector_borne,Vector-borne diseases,1,16,2026,0
+doi:10.3390/cells15131146,rti,Respiratory-tract infections,1,46,2026,1
+doi:10.1016/j.jare.2026.09.007,amr_hai,AMR and healthcare-associated infections,1,5,2026,1
+doi:10.5492/wjccm.v15.i1.110763,tb,Tuberculosis,1,12,2026,1
+doi:10.1038/s41598-026-59102-9,other_id,Other infectious disease,1,,2026,1
+doi:10.1093/ehjqcco/qcaf145,amr_hai,AMR and healthcare-associated infections,1,10,2026,0
+doi:10.1371/journal.pone.0349232,rti,Respiratory-tract infections,1,40,2026,0
+doi:10.3390/antibiotics15080715,amr_hai,AMR and healthcare-associated infections,1,9,2026,0
+doi:10.3390/ani16152314,rti,Respiratory-tract infections,1,6,2026,0
+doi:10.7759/cureus.113372,tb,Tuberculosis,1,8,2026,1
+doi:10.7759/cureus.113372,rti,Respiratory-tract infections,0,6,2026,1
+doi:10.1039/d6sc00255b,amr_hai,AMR and healthcare-associated infections,1,6,2026,0
+doi:10.2196/67870,rti,Respiratory-tract infections,1,18,2026,0
+doi:10.1093/cid/ciaf467,tb,Tuberculosis,1,49,2026,0
+doi:10.1093/cid/ciaf467,amr_hai,AMR and healthcare-associated infections,0,6,2026,0
+doi:10.1016/j.vaccine.2026.128917,vector_borne,Vector-borne diseases,1,21,2026,0
+doi:10.1038/s41467-026-75954-1,rti,Respiratory-tract infections,1,52,2026,0
+doi:10.1016/j.ijid.2026.109080,rti,Respiratory-tract infections,1,40,2026,0
+doi:10.1097/jnr.0000000000000757,rti,Respiratory-tract infections,1,64,2026,1
+doi:10.1097/jnr.0000000000000757,amr_hai,AMR and healthcare-associated infections,0,12,2026,1
+doi:10.1177/09564624261440693,sti,Sexually-transmitted infections,1,28,2026,1
+doi:10.1177/09564624261440693,amr_hai,AMR and healthcare-associated infections,0,16,2026,1
+doi:10.1371/journal.pone.0351209,rti,Respiratory-tract infections,1,40,2026,0
+doi:10.1111/imcb.70135,other_id,Other infectious disease,1,,2026,0
+doi:10.3389/fimmu.2026.1824198,other_id,Other infectious disease,1,,2026,1
+doi:10.1016/j.immuni.2026.07.006,vector_borne,Vector-borne diseases,1,6,2026,0
+doi:10.4269/ajtmh.25-0311,vector_borne,Vector-borne diseases,1,12,2026,0
+doi:10.1097/qai.0000000000003852,sti,Sexually-transmitted infections,1,50,2026,0
+doi:10.1038/s44321-026-00502-9,other_id,Other infectious disease,1,,2026,0
+doi:10.1016/j.lanwpc.2026.101917,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1136/bjo-2026-329771,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.21037/jtd-2025-aw-2166,tb,Tuberculosis,1,6,2026,1
+doi:10.1002/cpz1.70454,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.1128/spectrum.03617-25,amr_hai,AMR and healthcare-associated infections,1,8,2026,0
+doi:10.1186/s13046-026-03708-4,tb,Tuberculosis,1,8,2026,0
+doi:10.1371/journal.pgph.0006151,sti,Sexually-transmitted infections,1,9,2026,1
+doi:10.1371/journal.pgph.0006151,rti,Respiratory-tract infections,0,6,2026,1
+doi:10.1038/s41564-026-02439-8,vector_borne,Vector-borne diseases,1,34,2026,0
+doi:10.1093/ajrccm/aamag444,tb,Tuberculosis,1,6,2026,1
+doi:10.1136/bmjresp-2026-004413,tb,Tuberculosis,1,20,2026,0
+doi:10.1186/s12879-026-14123-7,other_id,Other infectious disease,1,,2026,0
+doi:10.1017/s0950268826101411,rti,Respiratory-tract infections,1,18,2026,0
+doi:10.2147/opth.s614679,tb,Tuberculosis,1,12,2026,1
+doi:10.1038/s41598-026-56516-3,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1016/j.actatropica.2026.108314,vector_borne,Vector-borne diseases,1,25,2026,0
+doi:10.1111/irv.70269,rti,Respiratory-tract infections,1,15,2026,1
+doi:10.1039/d6nr00924g,amr_hai,AMR and healthcare-associated infections,1,26,2026,0
+doi:10.3389/fimmu.2026.1828107,rti,Respiratory-tract infections,1,43,2026,0
+doi:10.1038/s41467-026-76186-z,other_id,Other infectious disease,1,,2026,1
+doi:10.1016/j.ijid.2026.108860,tb,Tuberculosis,1,6,2026,1
+doi:10.1136/fmch-2026-004076,rti,Respiratory-tract infections,1,18,2026,1
+doi:10.1016/j.ijid.2026.108586,tb,Tuberculosis,1,28,2026,0
+doi:10.1016/j.ijid.2026.108586,amr_hai,AMR and healthcare-associated infections,0,6,2026,0
+doi:10.1371/journal.ppat.1014190,vector_borne,Vector-borne diseases,1,41,2026,0
+doi:10.1016/j.jsb.2026.108314,vector_borne,Vector-borne diseases,1,12,2026,1
+doi:10.1007/978-1-0716-5328-9_7,amr_hai,AMR and healthcare-associated infections,1,18,2026,1
+doi:10.1038/s43856-026-01678-4,other_id,Other infectious disease,1,,2026,1
+doi:10.1093/oxfimm/iqag010,rti,Respiratory-tract infections,1,15,2026,0
+doi:10.7189/jogh.16.04100,tb,Tuberculosis,1,17,2026,0
+doi:10.1155/carm/1612186,rti,Respiratory-tract infections,1,13,2026,1
+doi:10.1016/j.ijid.2026.108932,rti,Respiratory-tract infections,1,34,2026,1
+doi:10.1371/journal.pmed.1005205,amr_hai,AMR and healthcare-associated infections,1,16,2026,0
+doi:10.1093/pnasnexus/pgag273,amr_hai,AMR and healthcare-associated infections,1,6,2026,1
+doi:10.1093/ofid/ofag422,vector_borne,Vector-borne diseases,1,9,2026,0
+doi:10.3390/pathogens15050511,vector_borne,Vector-borne diseases,1,9,2026,1
+doi:10.1017/ash.2026.10298,amr_hai,AMR and healthcare-associated infections,1,12,2026,1
+doi:10.1371/journal.pntd.0014382,vector_borne,Vector-borne diseases,1,12,2026,0
+doi:10.1038/s41598-026-57407-3,tb,Tuberculosis,1,34,2026,1
+doi:10.1016/j.actatropica.2026.108305,vector_borne,Vector-borne diseases,1,21,2026,1
+doi:10.1093/jac/dkag215,amr_hai,AMR and healthcare-associated infections,1,6,2026,0
+doi:10.1093/cid/ciag538,other_id,Other infectious disease,1,,2026,0
+doi:10.1080/22221751.2026.2665001,other_id,Other infectious disease,1,,2026,1
+doi:10.1136/bmjgh-2025-019100,sti,Sexually-transmitted infections,1,12,2026,1
+doi:10.47102/annals-acadmedsg.2026237,amr_hai,AMR and healthcare-associated infections,1,39,2026,1
+doi:10.47102/annals-acadmedsg.2026237,rti,Respiratory-tract infections,0,6,2026,1
+doi:10.4103/tp.tp_51_25,vector_borne,Vector-borne diseases,1,6,2026,0
+doi:10.1038/s41598-026-55917-8,tb,Tuberculosis,1,8,2026,1
+doi:10.1016/j.celrep.2026.117311,tb,Tuberculosis,1,12,2026,1
+doi:10.1016/j.celrep.2026.117311,amr_hai,AMR and healthcare-associated infections,0,6,2026,1
+doi:10.1038/s44321-026-00378-9,tb,Tuberculosis,1,27,2026,1
+doi:10.1038/s44321-026-00378-9,amr_hai,AMR and healthcare-associated infections,0,6,2026,1
+doi:10.1128/mbio.03518-25,amr_hai,AMR and healthcare-associated infections,1,33,2026,0
+doi:10.3390/insects17070716,vector_borne,Vector-borne diseases,1,22,2026,1
+doi:10.1021/acs.jmedchem.5c01616,tb,Tuberculosis,1,24,2026,1
+pmid:42525700,vector_borne,Vector-borne diseases,1,23,2026,0
+doi:10.1021/acssensors.6c00688,rti,Respiratory-tract infections,1,46,2026,0
+doi:10.7759/cureus.101901,sti,Sexually-transmitted infections,1,6,2026,1
+doi:10.1021/acs.est.6c03391,amr_hai,AMR and healthcare-associated infections,1,12,2026,0
+doi:10.1021/acssensors.5c04309,amr_hai,AMR and healthcare-associated infections,1,8,2026,0
+doi:10.1016/j.mtbio.2026.103530,other_id,Other infectious disease,1,,2026,1
+doi:10.1016/j.socscimed.2026.119146,sti,Sexually-transmitted infections,1,22,2026,1
+doi:10.3390/insects17080770,vector_borne,Vector-borne diseases,1,10,2026,1
+doi:10.1080/21505594.2025.2580163,vector_borne,Vector-borne diseases,1,70,2025,1
+doi:10.1016/s1473-3099(24)00794-1,vector_borne,Vector-borne diseases,1,23,2025,0
+doi:10.1016/j.survophthal.2025.09.011,tb,Tuberculosis,1,6,2025,1
+doi:10.1016/j.ajic.2025.11.002,rti,Respiratory-tract infections,1,40,2025,1
+doi:10.1016/j.ajic.2025.11.002,amr_hai,AMR and healthcare-associated infections,0,24,2025,1
+doi:10.1186/s13063-025-08887-7,tb,Tuberculosis,1,31,2025,0
+doi:10.1186/s13063-025-08887-7,amr_hai,AMR and healthcare-associated infections,0,6,2025,0
+doi:10.1007/s10461-025-04964-9,sti,Sexually-transmitted infections,1,45,2025,1
+doi:10.1093/cid/ciae601,tb,Tuberculosis,1,50,2025,1
+doi:10.1093/cid/ciae601,amr_hai,AMR and healthcare-associated infections,0,6,2025,1
+doi:10.1186/s13756-025-01656-w,amr_hai,AMR and healthcare-associated infections,1,17,2025,1
+doi:10.1038/s41598-025-86139-z,vector_borne,Vector-borne diseases,1,65,2025,1
+doi:10.1093/ofid/ofaf610,amr_hai,AMR and healthcare-associated infections,1,15,2025,0
+doi:10.1128/jvi.01597-25,sti,Sexually-transmitted infections,1,28,2025,0
+doi:10.1016/j.infpip.2025.100492,rti,Respiratory-tract infections,1,20,2025,1
+doi:10.1016/j.infpip.2025.100492,amr_hai,AMR and healthcare-associated infections,0,18,2025,1
+doi:10.47102/annals-acadmedsg.2025246,tb,Tuberculosis,1,29,2025,1
+doi:10.1128/spectrum.01353-25,tb,Tuberculosis,1,42,2025,1
+doi:10.1186/s41182-025-00846-x,tb,Tuberculosis,1,11,2025,1
+doi:10.1186/s41182-025-00846-x,sti,Sexually-transmitted infections,0,6,2025,1
+doi:10.1016/s2214-109x(25)00105-6,tb,Tuberculosis,1,18,2025,0
+doi:10.1038/s41467-025-65976-6,amr_hai,AMR and healthcare-associated infections,1,22,2025,0
+doi:10.47102/annals-acadmedsg.2025240,sti,Sexually-transmitted infections,1,40,2025,1
+doi:10.1016/j.vaccine.2025.126728,vector_borne,Vector-borne diseases,1,18,2025,1
+doi:10.1016/s1473-3099(25)00157-4,tb,Tuberculosis,1,48,2025,0
+doi:10.1016/s1473-3099(25)00157-4,sti,Sexually-transmitted infections,0,12,2025,0
+doi:10.1016/s1473-3099(25)00157-4,amr_hai,AMR and healthcare-associated infections,0,6,2025,0
+doi:10.1016/j.ijid.2025.108054,tb,Tuberculosis,1,14,2025,1
+doi:10.1016/j.intf.2025.100335,other_id,Other infectious disease,1,,2025,1
+doi:10.1016/j.infpip.2025.100495,amr_hai,AMR and healthcare-associated infections,1,9,2025,1
+doi:10.1038/s41467-025-66606-x,sti,Sexually-transmitted infections,1,32,2025,1
+doi:10.1016/j.celrep.2025.116098,vector_borne,Vector-borne diseases,1,42,2025,0
+doi:10.47102/annals-acadmedsg.2025336,sti,Sexually-transmitted infections,1,18,2025,1
+doi:10.3390/ijms262411784,sti,Sexually-transmitted infections,1,39,2025,0
+doi:10.1186/s12889-025-25357-6,sti,Sexually-transmitted infections,1,29,2025,1
+doi:10.3390/pathogens14030285,vector_borne,Vector-borne diseases,1,63,2025,0
+doi:10.1186/s12889-025-24934-z,tb,Tuberculosis,1,17,2025,1
+doi:10.1186/s12889-025-24934-z,amr_hai,AMR and healthcare-associated infections,0,6,2025,1
+doi:10.1128/spectrum.02725-25,other_id,Other infectious disease,1,,2025,1
+doi:10.1016/j.jhin.2025.11.043,amr_hai,AMR and healthcare-associated infections,1,43,2025,1
+doi:10.1016/s1473-3099(25)00151-3,tb,Tuberculosis,1,85,2025,1
+doi:10.1136/bmjresp-2025-003777,tb,Tuberculosis,1,35,2025,0
+doi:10.1136/bmjresp-2025-003777,amr_hai,AMR and healthcare-associated infections,0,6,2025,0
+doi:10.1101/2025.08.20.25334077,tb,Tuberculosis,1,23,2025,0
+doi:10.1101/2025.08.20.25334077,amr_hai,AMR and healthcare-associated infections,0,6,2025,0
+doi:10.1073/pnas.2421573122,vector_borne,Vector-borne diseases,1,45,2025,0
+doi:10.1038/s41467-025-66413-4,amr_hai,AMR and healthcare-associated infections,1,21,2025,1
+doi:10.1007/s00408-024-00779-y,tb,Tuberculosis,1,20,2025,1
+doi:10.1016/j.idc.2025.11.009,amr_hai,AMR and healthcare-associated infections,1,36,2025,1
+doi:10.1016/j.idc.2025.11.005,amr_hai,AMR and healthcare-associated infections,1,21,2025,1
+doi:10.1016/j.idc.2025.11.003,amr_hai,AMR and healthcare-associated infections,1,16,2025,1
+doi:10.1186/s12964-025-02588-z,vector_borne,Vector-borne diseases,1,18,2025,1
+doi:10.1016/j.ajic.2025.10.025,amr_hai,AMR and healthcare-associated infections,1,29,2025,1
+doi:10.1002/jia2.70052,sti,Sexually-transmitted infections,1,15,2025,0
+doi:10.1038/s41467-025-66411-6,vector_borne,Vector-borne diseases,1,42,2025,1
+doi:10.1016/j.arbres.2025.09.017,tb,Tuberculosis,1,22,2025,1
+doi:10.1038/s41591-025-04041-7,sti,Sexually-transmitted infections,1,30,2025,0
+doi:10.7759/cureus.100362,tb,Tuberculosis,1,14,2025,1
+doi:10.1016/s2213-2600(25)00194-8,tb,Tuberculosis,1,57,2025,0
+doi:10.1016/s2213-2600(25)00194-8,amr_hai,AMR and healthcare-associated infections,0,9,2025,0
+doi:10.3389/fmicb.2025.1711400,amr_hai,AMR and healthcare-associated infections,1,18,2025,0
+doi:10.1073/pnas.2502522122,vector_borne,Vector-borne diseases,1,28,2025,1
+doi:10.1021/acs.analchem.5c05609,amr_hai,AMR and healthcare-associated infections,1,8,2025,1
+doi:10.1021/acs.analchem.5c05609,tb,Tuberculosis,0,4,2025,1
+doi:10.3390/pathogens14080741,tb,Tuberculosis,1,48,2025,0
+doi:10.3390/pathogens14080741,sti,Sexually-transmitted infections,0,12,2025,0
+doi:10.1186/s12916-025-03941-2,vector_borne,Vector-borne diseases,1,52,2025,1
+doi:10.1101/2025.10.26.684512,other_id,Other infectious disease,1,,2025,1
+doi:10.1002/pro.5142,vector_borne,Vector-borne diseases,1,27,2024,0
+doi:10.1186/s12915-024-02070-1,vector_borne,Vector-borne diseases,1,52,2024,1
+doi:10.1183/16000617.0208-2023,tb,Tuberculosis,1,20,2024,1
+doi:10.1016/j.ijid.2024.107768,tb,Tuberculosis,1,35,2024,1
+doi:10.1038/s41467-024-48077-8,tb,Tuberculosis,1,53,2024,0
+doi:10.1038/s41467-024-48077-8,amr_hai,AMR and healthcare-associated infections,0,6,2024,0
+doi:10.47102/annals-acadmedsg.2023391,tb,Tuberculosis,1,28,2024,1
+doi:10.1038/s41467-024-54419-3,tb,Tuberculosis,1,36,2024,1
+doi:10.1016/s2213-2600(24)00186-3,tb,Tuberculosis,1,42,2024,0
+doi:10.1016/s2213-2600(24)00186-3,amr_hai,AMR and healthcare-associated infections,0,6,2024,0
+doi:10.1016/s2213-2600(24)00186-3,sti,Sexually-transmitted infections,0,5,2024,0
+doi:10.1007/s12104-024-10208-z,vector_borne,Vector-borne diseases,1,12,2024,1
+doi:10.1186/s12874-024-02291-6,vector_borne,Vector-borne diseases,1,52,2024,1
+doi:10.1016/s2542-5196(24)00169-4,vector_borne,Vector-borne diseases,1,52,2024,1
+doi:10.1186/s12879-024-10027-6,tb,Tuberculosis,1,52,2024,1
+doi:10.1186/s12879-024-10027-6,amr_hai,AMR and healthcare-associated infections,0,6,2024,1
+doi:10.1016/j.cell.2024.10.028,vector_borne,Vector-borne diseases,1,18,2024,1
+doi:10.1016/j.ijid.2024.107221,tb,Tuberculosis,1,14,2024,0
+doi:10.1016/s2666-5247(24)00149-6,tb,Tuberculosis,1,36,2024,0
+doi:10.1016/s2666-5247(24)00149-6,amr_hai,AMR and healthcare-associated infections,0,6,2024,0
+doi:10.1016/j.ebiom.2024.105456,vector_borne,Vector-borne diseases,1,64,2024,1
+doi:10.1093/jtm/taae103,vector_borne,Vector-borne diseases,1,58,2024,1
+doi:10.1093/infdis/jiae104,tb,Tuberculosis,1,45,2024,1
+doi:10.1038/s42003-024-06822-1,tb,Tuberculosis,1,20,2024,0

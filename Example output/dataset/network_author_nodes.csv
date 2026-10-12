@@ -1,0 +1,251 @@
+node_id,label,country,region,sector,iso3,is_singapore,x,y,degree,weighted_degree,n_publications
+abad-c,"Abad, Cybele L",,,,,0,0.466855,0.588345,49,49,1
+aburaddad-l,"Abu-Raddad, Laith Jamal",,,,,0,0.530757,0.432153,42,42,1
+agrawal-a,"Agrawal, Anurag",,,,,0,0.540839,0.42829,42,42,1
+ahmed-s,"Ahmed, Saman",,,,,0,0.17223,0.408339,16,41,3
+akkerman-o,"Akkerman, Onno",,,,,0,0.415962,0.481797,34,34,1
+alyaquobi-f,"Alyaquobi, Fatma",,,,,0,0.40725,0.486678,34,34,1
+anunnatsiri-s,"Anunnatsiri, Siriluck",,,,,0,0.465824,0.582337,49,49,2
+arias-c,"Arias, Cesar A",,,,,0,0.450205,0.547047,30,36,2
+ashley-e,"Ashley, Elizabeth A",United Kingdom,Europe,university,GBR,0,0.648566,0.616323,24,27,3
+asli-r,"Asli, Rosmonaliza",,,,,0,0.474742,0.591038,49,49,1
+azhar-e,"Azhar, Esam I",,,,,0,0.534972,0.426985,42,42,1
+baljin-b,"Baljin, Bayaraa",,,,,0,0.477876,0.589487,49,49,1
+bansal-s,"Bansal, Somya",Singapore,Southeast Asia,university,SGP,1,0.315893,0.635946,17,57,6
+bastard-m,"Bastard, Mathieu",Switzerland,Europe,government,CHE,0,0.181496,0.400102,32,127,7
+baum-k,"Baum, Keri",,,,,0,0.443921,0.538761,30,30,1
+beer-m,"Beer, Martin",,,,,0,0.534588,0.436406,42,42,1
+bekele-a,"Bekele, Amsalu",,,,,0,0.171391,0.41214,12,24,2
+bellavia-a,"Bellavia, Alessandra",,,,,0,0.416734,0.489444,34,34,1
+bezerra-h,"Bezerra, Haroldo",United States,North America,government,USA,0,0.542068,0.430165,42,42,1
+blacksell-s,"Blacksell, Stuart D",Thailand,Southeast Asia,university,THA,0,0.642145,0.615535,24,31,2
+bonomo-r,"Bonomo, Robert A",,,,,0,0.444396,0.54776,30,36,2
+bory-s,"Bory, Sotharith",,,,,0,0.464712,0.584472,49,49,1
+burhan-e,"Burhan, Erlina",,,,,0,0.406899,0.483261,34,34,2
+burns-r,"Burns, Rebekah",,,,,0,0.64245,0.604816,24,24,1
+bush-r,"Bush, Russell D",,,,,0,0.645194,0.615586,24,24,1
+cai-y,"Cai, Yu",Singapore,Southeast Asia,university,SGP,1,0.469093,0.587931,49,49,2
+caly-l,"Caly, Leon",,,,,0,0.530657,0.42385,42,42,1
+cao-y,"Cao, Yang",,,,,0,0.466446,0.586295,49,49,1
+centis-r,"Centis, Rosella",,,,,0,0.407377,0.489404,34,37,2
+chain-g,"Chain, Grace",Singapore,Southeast Asia,government,SGP,1,0.32084,0.637283,17,59,4
+chambers-h,"Chambers, Henry F",,,,,0,0.441701,0.542739,30,30,1
+chan-y,"Chan, Yvonne Fu Zi",Singapore,Southeast Asia,hospital,SGP,1,0.373218,1.0,1,25,6
+chand-m,"Chand, Meera",United Kingdom,Europe,government,GBR,0,0.532308,0.43651,42,42,1
+chang-c,"Chang, Chia-Chen",Singapore,Southeast Asia,government,SGP,1,0.318524,0.642272,17,55,8
+chen-l,"Chen, Lintao",,,,,0,0.451291,0.542645,30,30,2
+chong-c,"Chong, Chee-Seng",Singapore,Southeast Asia,university,SGP,1,0.314463,0.647775,20,75,9
+chotiprasitsakul-d,"Chotiprasitsakul, Darunee",Thailand,Southeast Asia,university,THA,0,0.465895,0.590739,49,49,2
+chua-h,"Chua, Hock Hin",,,,,0,0.47881,0.587477,49,49,1
+cober-e,"Cober, Eric",,,,,0,0.437851,0.547921,30,30,1
+companioni-a,"Companioni, Ariamys",,,,,0,0.530735,0.42928,42,42,1
+conlan-j,"Conlan, James V",,,,,0,0.639059,0.616947,24,24,1
+dambrosio-l,"D'Ambrosio, Lia",,,,,0,0.409908,0.488268,34,37,2
+day-n,"Day, Nicholas P J",Thailand,Southeast Asia,university,THA,0,0.637681,0.61154,24,28,3
+deng-l,"Deng, Lu",Singapore,Southeast Asia,government,SGP,1,0.313376,0.635044,16,47,4
+deoliveira-t,"de Oliveira, Tulio",,,,,0,0.539793,0.434836,42,42,1
+dhiloo-a,"Dhiloo, Azizullah Khan",,,,,0,0.46444,0.586788,49,49,1
+dhungana-a,"Dhungana, Ashesh",,,,,0,0.464859,0.588939,49,49,1
+dickens-b,"Dickens, Borame",Singapore,Southeast Asia,university,SGP,1,0.305129,0.631392,20,94,10
+dietrich-i,"Dietrich, Isabelle",,,,,0,0.528882,0.434087,42,42,1
+ding-y,"Ding, Ying",Singapore,Southeast Asia,university,SGP,1,0.475142,0.58352,49,49,1
+dinhxuan-a,"Dinh-Xuan, Anh Tuan",,,,,0,0.417997,0.483025,34,34,1
+doi-y,"Doi, Yohei",,,,,0,0.459095,0.567498,78,91,4
+drosten-c,"Drosten, Christian",,,,,0,0.539979,0.423934,42,42,1
+duran-p,"Duran, Pablo",United States,North America,government,USA,0,0.53684,0.436246,42,42,1
+endo-a,"Endo, Akira",United Kingdom,Europe,university,GBR,0,0.274619,0.620903,3,24,4
+faria-n,"Faria, Nuno R",United Kingdom,Europe,university,GBR,0,0.542197,0.426395,42,42,1
+felker-i,"Felker, Irina",,,,,0,0.40816,0.492162,34,34,1
+figueroa-j,"Figueroa, Jairo",,,,,0,0.451593,0.545025,30,30,1
+fowler-v,"Fowler, Vance G",,,,,0,0.449042,0.544571,30,42,3
+fowotade-a,"Fowotade, Adeola",,,,,0,0.538508,0.421826,42,42,1
+franke-m,"Franke, Molly",United States,North America,university,USA,0,0.180019,0.401441,32,137,8
+fries-b,"Fries, Bettina C",,,,,0,0.440621,0.551196,30,30,1
+garciagarcia-j,"García-García, José-María",,,,,0,0.408889,0.481731,34,34,1
+gilbert-j,"Gilbert, Jeffrey",Switzerland,Europe,government,CHE,0,0.650548,0.614525,24,24,1
+gomezrestrepo-c,"Gómez-Restrepo, Camilo",,,,,0,0.181389,0.389491,21,56,3
+gottesdiener-l,"Gottesdiener, Lee S",,,,,0,0.446303,0.538803,30,30,1
+greenwoodquaintance-k,"Greenwood-Quaintance, Kerryl E",,,,,0,0.438801,0.549812,30,30,1
+gresh-l,"Gresh, Lionel",United States,North America,government,USA,0,0.533168,0.425997,42,42,1
+gualano-g,"Gualano, Gina",,,,,0,0.405291,0.485298,34,34,1
+gunasekara-s,"Gunasekara, Samanmalee",,,,,0,0.470867,0.593397,49,49,1
+gurjav-u,"Gurjav, Ulziijargal",,,,,0,0.471052,0.586365,49,49,1
+guterres-h,"Guterres, Helio",,,,,0,0.477156,0.586679,49,49,1
+hamers-r,"Hamers, Raph L",Indonesia,Southeast Asia,research_institute,IDN,0,0.474501,0.579338,49,49,1
+hao-x,"Hao, Xinxin",Singapore,Southeast Asia,university,SGP,1,0.47632,0.580001,49,49,1
+herc-e,"Herc, Erica S",,,,,0,0.439343,0.541528,30,30,1
+herreraflores-e,"Herrera Flores, Edwin",,,,,0,0.182434,0.386703,15,30,2
+hewison-c,"Hewison, Catherine",,,,,0,0.17815,0.401443,32,137,8
+hill-c,"Hill, Carol",,,,,0,0.445834,0.542896,30,30,1
+ho-r,"Ho, Roger C M",Singapore,Southeast Asia,hospital,SGP,1,0.296601,0.659776,5,28,2
+ho-s,"Ho, Soon Hoe",Singapore,Southeast Asia,university,SGP,1,0.32033,0.647356,16,33,5
+hon-h,"Hon, Huynh Ngoc",,,,,0,0.47671,0.591295,49,49,1
+honda-h,"Honda, Hitoshi",,,,,0,0.46824,0.590158,49,49,1
+hsu-l,"Hsu, Li Yang",Singapore,Southeast Asia,university,SGP,1,0.454226,0.592168,50,51,3
+huang-b,"Huang, Baoying",,,,,0,0.528905,0.43047,42,42,1
+huerga-h,"Huerga, Helena",,,,,0,0.180495,0.403451,32,137,8
+hughes-t,"Hughes, Tom",,,,,0,0.645366,0.60428,24,24,1
+huskins-w,"Huskins, W Charles",,,,,0,0.440451,0.545897,30,30,1
+isani-a,"Isani, Afshan K",Pakistan,South Asia,government,PAK,0,0.167735,0.406726,13,26,2
+islam-s,"Islam, Shirajul",,,,,0,0.178448,0.412436,12,24,2
+james-a,"James, Ananthu",,,,,0,0.414597,0.487345,34,34,1
+jin-s,"Jin, Shihui",Singapore,Southeast Asia,university,SGP,1,0.277669,0.617402,3,24,4
+karkey-a,"Karkey, Abhilasha",Nepal,South Asia,research_institute,NPL,0,0.473682,0.58917,49,49,2
+karlsson-e,"Karlsson, Erik A",,,,,0,0.647512,0.613026,24,24,2
+kaye-k,"Kaye, Keith S",,,,,0,0.444027,0.541364,30,30,1
+khalid-m,"Khalid, Muhammad Osama Rehman",,,,,0,0.478488,0.582698,49,49,1
+khan-m,"Khan, Munira",,,,,0,0.165371,0.394558,9,30,3
+khan-p,"Khan, Palwasha Y",United Kingdom,Europe,university,GBR,0,0.182363,0.402472,32,144,9
+khan-u,"Khan, Uzma",,,,,0,0.172753,0.403342,21,104,8
+khanal-b,"Khanal, Basudha",,,,,0,0.468934,0.593141,49,49,1
+kherabi-y,"Kherabi, Yousra",,,,,0,0.417569,0.486864,34,35,2
+khounsy-s,"Khounsy, Syseng",Thailand,Southeast Asia,university,THA,0,0.641316,0.618785,24,24,1
+kindrachuk-j,"Kindrachuk, Jason",,,,,0,0.526842,0.425843,42,42,1
+kirakosyan-o,"Kirakosyan, Ohanna",,,,,0,0.178714,0.39002,20,43,3
+kitsaran-s,"Kitsaran, Suwatthiya",,,,,0,0.467418,0.580897,49,49,1
+kolenchery-j,"Kolenchery, Jaison B",Thailand,Southeast Asia,university,THA,0,0.646262,0.606975,24,24,1
+komarow-l,"Komarow, Lauren",,,,,0,0.448033,0.541548,30,36,2
+kong-l,"Kong, Linghan",Thailand,Southeast Asia,university,THA,0,0.64406,0.619134,24,28,2
+koopmans-m,"Koopmans, Marion P G",,,,,0,0.536367,0.423898,42,42,2
+korber-b,"Korber, Bette",,,,,0,0.533296,0.431866,42,42,1
+kotrikadze-t,"Kotrikadze, Tina",,,,,0,0.188239,0.395452,21,56,3
+kreiswirth-b,"Kreiswirth, Barry N",,,,,0,0.448689,0.549254,30,30,1
+krisnanda-a,"Krisnanda, Aga",,,,,0,0.188285,0.400378,21,56,3
+kwa-a,"Kwa, Andrea L H",Singapore,Southeast Asia,hospital,SGP,1,0.472391,0.581788,49,49,2
+lahood-a,"LaHood, Allison",United States,North America,university,USA,0,0.181848,0.395116,24,72,4
+lai-y,"Lai, Yee Ling",Singapore,Southeast Asia,government,SGP,1,0.31864,0.635046,17,47,5
+lee-c,"Lee, Caleb",Singapore,Southeast Asia,research_institute,SGP,1,0.321507,0.643274,17,59,8
+lee-m,"Lee, Michelle Felicia",Singapore,Southeast Asia,university,SGP,1,0.36485,0.994622,1,25,2
+lee-s,"Lee, Sue J",United Kingdom,Europe,university,GBR,0,0.558694,0.601055,2,24,5
+lee-v,"Lee, Vernon",Singapore,Southeast Asia,government,SGP,1,0.311711,0.647926,20,61,5
+leo-y,"Leo, Yee-Sin",Singapore,Southeast Asia,hospital,SGP,1,0.537771,0.434611,42,42,1
+leroi-m,"Leroi, Marcel",,,,,0,0.441467,0.539911,30,30,1
+li-y,"Li, Yan",Singapore,Southeast Asia,university,SGP,1,0.428594,0.516643,64,80,9
+lienhardt-c,"Lienhardt, Christian",,,,,0,0.412881,0.489669,34,34,1
+lim-j,"Lim, Jue Tao",Singapore,Southeast Asia,university,SGP,1,0.311485,0.645288,20,114,14
+ling-l,"Ling, Lowell",China,East Asia,university,CHN,0,0.474419,0.581535,49,49,1
+liu-p,"Liu, Po-Yu",Singapore,Southeast Asia,university,SGP,1,0.4688,0.585565,49,49,3
+lubis-i,"Lubis, Inke Nadia D",,,,,0,0.470161,0.581378,49,49,1
+lye-d,"Lye, David Chien Boon",Singapore,Southeast Asia,government,SGP,1,0.303822,0.665268,5,27,6
+ma-p,"Ma, Pei",Singapore,Southeast Asia,university,SGP,1,0.317348,0.645091,17,48,4
+mahfuza-r,"Mahfuza, Rifat",,,,,0,0.419747,0.488066,34,34,1
+mahmood-s,"Mahmood, Syed Faisal",,,,,0,0.476988,0.581634,49,49,1
+mailepessov-d,"Mailepessov, Diyar",Singapore,Southeast Asia,government,SGP,1,0.314102,0.638973,17,47,3
+mamsa-s,"Mamsa, Shahid",,,,,0,0.165623,0.399207,13,26,2
+mamun-g,"Mamun, Gazi Md Salahuddin",,,,,0,0.468533,0.582891,49,49,1
+mayxay-m,"Mayxay, Mayfong",United Kingdom,Europe,university,GBR,0,0.647553,0.609756,24,27,3
+mazlan-m,"Mazlan, Mohd Zulfakar",,,,,0,0.469065,0.579458,49,49,2
+mbalakingebeni-p,"Mbala-Kingebeni, Placide",,,,,0,0.540288,0.425888,42,42,1
+mccarty-t,"McCarty, Todd P",,,,,0,0.445149,0.550876,30,30,1
+mcmenamin-m,"McMenamin, Martina",Switzerland,Europe,government,CHE,0,0.530525,0.435239,42,42,1
+melhem-n,"Melhem, Nada M",,,,,0,0.541174,0.432719,42,42,1
+melikyan-n,"Melikyan, Nara",,,,,0,0.165922,0.403171,13,26,2
+mendezrico-j,"Méndez-Rico, Jairo A",United States,North America,government,USA,0,0.538262,0.424708,42,43,2
+migliori-g,"Migliori, Giovanni Battista",,,,,0,0.413659,0.483796,34,37,2
+mitnick-c,"Mitnick, Carole D",United States,North America,university,USA,0,0.177342,0.399036,32,150,9
+mmbaga-b,"Mmbaga, Blandina T",,,,,0,0.0,0.232152,0,35,2
+mo-y,"Mo, Yin",United Kingdom,Europe,university,GBR,0,0.491453,0.588398,51,56,6
+moni-m,"Moni, Merlin",,,,,0,0.472763,0.578854,49,49,1
+munita-j,"Munita, Jose M",,,,,0,0.448615,0.539067,30,30,1
+munoztorrico-m,"Munoz-Torrico, Marcela",,,,,0,0.40801,0.494716,34,34,1
+munster-v,"Munster, Vincent J",United States,North America,government,USA,0,0.527143,0.432911,42,42,1
+naveca-f,"Naveca, Felipe G",,,,,0,0.52892,0.427172,42,42,1
+newton-p,"Newton, Paul N",Thailand,Southeast Asia,university,THA,0,0.643523,0.60798,24,31,4
+ng-d,"Ng, Deborah Hee Ling",Singapore,Southeast Asia,hospital,SGP,1,0.2892,0.651758,2,30,8
+ng-l,"Ng, Lee Ching",Singapore,Southeast Asia,government,SGP,1,0.313467,0.641842,18,80,13
+ng-y,"Ng, Youming",Singapore,Southeast Asia,hospital,SGP,1,0.32174,0.640359,17,59,5
+ngiam-j,"Ngiam, Jinghao Nicholas",Singapore,Southeast Asia,government,SGP,1,0.29922,0.663739,5,28,6
+nunes-b,"Nunes, Bruno T D",,,,,0,0.539853,0.43091,42,42,1
+ong-c,"Ong, Catherine Wei Min",Singapore,Southeast Asia,hospital,SGP,1,0.412654,0.495354,34,45,7
+otieno-j,"Otieno, James R",Switzerland,Europe,government,CHE,0,0.528397,0.42368,42,42,1
+oudemunnink-b,"Oude Munnink, Bas B",,,,,0,0.534689,0.420812,42,42,1
+oyewusi-l,"Oyewusi, Lawrence",,,,,0,0.18162,0.39282,23,63,4
+padayachee-s,"Padayachee, Shrivani",,,,,0,0.191233,0.395162,20,40,2
+palacios-g,"Palacios, Gustavo",,,,,0,0.532908,0.423917,42,42,1
+panchagnula-r,"Panchagnula, Ramesh",,,,,0,0.411351,0.480827,34,34,1
+patel-r,"Patel, Robin",,,,,0,0.446937,0.545664,30,36,2
+paterson-d,"Paterson, David L",Singapore,Southeast Asia,university,SGP,1,0.459975,0.566986,78,95,11
+peiris-m,"Peiris, Malik",China,East Asia,university,CHN,0,0.53705,0.430755,42,42,1
+pethe-k,"Pethe, Kevin",Singapore,Southeast Asia,university,SGP,1,0.300083,0.0,0,24,7
+pham-n,"Pham, Ngoc Thach",,,,,0,0.475947,0.588786,49,49,1
+phommachanh-p,"Phommachanh, Phouvong",,,,,0,0.646842,0.618562,24,24,1
+piubello-a,"Piubello, Alberto",,,,,0,0.415156,0.49157,34,35,2
+plongla-r,"Plongla, Rongpong",,,,,0,0.467262,0.59216,49,49,1
+podlekareva-d,"Podlekareva, Daria",,,,,0,0.412646,0.492837,34,34,1
+pontali-e,"Pontali, Emanuele",,,,,0,0.404955,0.4904,34,34,1
+prem-k,"Prem, Kiesha",United Kingdom,Europe,university,GBR,0,0.267416,0.594886,7,37,5
+priya-n,"Priya, N Lakshmi",,,,,0,0.470089,0.591256,49,49,1
+rabe-i,"Rabe, Ingrid B",Switzerland,Europe,government,CHE,0,0.538146,0.428619,42,43,2
+rajahram-g,"Rajahram, Giri Shan",Singapore,Southeast Asia,university,SGP,1,0.474682,0.592913,49,63,2
+rangaka-m,"Rangaka, Molebogeng X",,,,,0,0.416029,0.484804,34,34,1
+rasheed-n,"Rasheed, Najiha",,,,,0,0.418972,0.490625,34,34,1
+rashitov-m,"Rashitov, Mahmud",,,,,0,0.186052,0.392735,21,56,3
+raviglione-m,"Raviglione, Mario C",,,,,0,0.415202,0.494452,34,34,1
+refera-t,"Refera, Tsion Asfaw",,,,,0,0.411112,0.483396,34,34,1
+rendon-a,"Rendon, Adrian",,,,,0,0.413768,0.481014,34,34,1
+resende-p,"Resende, Paola",,,,,0,0.535949,0.428782,42,42,1
+reyes-j,"Reyes, Jinnethe",,,,,0,0.450597,0.540517,30,30,1
+rich-m,"Rich, Michael L",United States,North America,university,USA,0,0.179287,0.398719,32,156,10
+rioseco-m,"Rioseco, María L",,,,,0,0.438538,0.543695,30,30,1
+roberts-t,"Roberts, Tamalee",United Kingdom,Europe,university,GBR,0,0.639919,0.605977,24,24,1
+robinson-m,"Robinson, Matthew T",United Kingdom,Europe,university,GBR,0,0.650609,0.611549,24,28,2
+rodriguez-a,"Rodriguez, Angel",United States,North America,government,USA,0,0.526999,0.427838,42,42,1
+rojas-d,"Rojas, Diego",Switzerland,Europe,government,CHE,0,0.532626,0.421279,42,42,2
+roman-a,"Roman, Arthur Dessi",,,,,0,0.466823,0.584184,49,49,1
+romo-m,"Romo, Matthew L",United States,North America,university,USA,0,0.185582,0.397372,22,66,4
+ruis-c,"Ruis, Christopher",United Kingdom,Europe,university,GBR,0,0.532947,0.434152,42,42,1
+saha-s,"Saha, Senjuti",,,,,0,0.538136,0.432709,42,42,1
+satlin-m,"Satlin, Michael J",,,,,0,0.443515,0.545235,30,36,2
+seaworth-b,"Seaworth, Barbara",,,,,0,0.405882,0.49273,34,34,1
+selim-m,"Selim, Muhammad Abdul Hamid",,,,,0,0.417435,0.492825,34,34,1
+seung-k,"Seung, Kwonjune J",United States,North America,university,USA,0,0.17038,0.401059,20,87,6
+shah-s,"Shah, Syed Karam",,,,,0,0.411904,0.486375,34,34,1
+siddiqui-m,"Siddiqui, Muhammad Rafi",,,,,0,0.177127,0.395402,26,71,4
+siengsananlamont-j,"Siengsanan-Lamont, Jarunee",Thailand,Southeast Asia,university,THA,0,0.648766,0.605922,24,24,1
+silva-d,"Silva, Denise Rossato",,,,,0,0.41043,0.49136,34,34,1
+sim-s,"Sim, Shuzhen",Singapore,Southeast Asia,government,SGP,1,0.310494,0.640287,18,69,7
+sinto-r,"Sinto, Robert",Indonesia,Southeast Asia,university,IDN,0,0.471087,0.579425,49,49,1
+skrahina-a,"Skrahina, Alena",Denmark,Europe,government,DNK,0,0.169576,0.393059,10,38,4
+srilasriponnampalavanar-s,"Sri La Sri Ponnampalavanar, Sasheela",,,,,0,0.470807,0.583754,49,49,1
+stagg-h,"Stagg, Helen R",United Kingdom,Europe,university,GBR,0,0.189962,0.398533,20,50,3
+stryjewski-m,"Stryjewski, Martin E",,,,,0,0.437447,0.545724,30,30,1
+subissi-l,"Subissi, Lorenzo",Switzerland,Europe,government,CHE,0,0.526781,0.430093,42,42,1
+suzuki-t,"Suzuki, Tadaki",,,,,0,0.533263,0.429215,42,42,1
+tadolini-m,"Tadolini, Marina",,,,,0,0.419371,0.485239,34,34,1
+tan-c,"Tan, Cheong Huat",Singapore,Southeast Asia,university,SGP,1,0.340003,0.632108,18,81,15
+tan-l,"Tan, Li Yun",Singapore,Southeast Asia,government,SGP,1,0.317906,0.639091,17,59,5
+tefera-g,"Tefera, Girum Bayissa",,,,,0,0.185212,0.389799,20,50,3
+teo-a,"Teo, Alvin Kuo Jing",Singapore,Southeast Asia,university,SGP,1,0.255694,0.56539,4,26,6
+tep-s,"Tep, Sovanvorleak",,,,,0,0.256818,0.570158,4,25,3
+theppangna-w,"Theppangna, Watthana",,,,,0,0.650458,0.608607,24,24,1
+tho-p,"Tho, Phan Vinh",,,,,0,0.473213,0.586978,49,49,1
+thwaites-l,"Thwaites, Louise",United Kingdom,Europe,university,GBR,0,0.477031,0.584295,49,49,1
+tiberi-s,"Tiberi, Simon",,,,,0,0.410316,0.494857,34,34,1
+toktogonova-a,"Toktogonova, Atyrkul",,,,,0,0.188282,0.38947,20,40,2
+tran-v,"Tran, Van Giang",,,,,0,0.472721,0.593334,49,49,1
+trevisi-l,"Trevisi, Letizia",United States,North America,university,USA,0,0.189268,0.392396,21,56,3
+tum-s,"Tum, Sothyra",,,,,0,0.637931,0.60852,24,26,3
+tuot-s,"Tuot, Sovannary",,,,,0,0.249467,0.566642,4,39,5
+turner-p,"Turner, Paul",United Kingdom,Europe,university,GBR,0,0.616321,0.607377,26,31,3
+vanduin-d,"van Duin, David",,,,,0,0.446641,0.548843,30,42,3
+vankerkhove-m,"Van Kerkhove, Maria D",Switzerland,Europe,government,CHE,0,0.536053,0.42204,42,42,1
+vicari-a,"Vicari, Andrea",United States,North America,government,USA,0,0.530745,0.426159,42,42,1
+vilbrun-s,"Vilbrun, Stalz Charles",,,,,0,0.175132,0.413087,12,24,2
+vilchez-s,"Vilchez, Samuel",,,,,0,0.442843,0.550943,30,30,1
+villa-s,"Villa, Simone",,,,,0,0.40473,0.487926,34,34,1
+villanueva-c,"Villanueva, Cary Amiel G",,,,,0,0.409036,0.484902,34,34,2
+villegas-m,"Villegas, Maria Virginia",,,,,0,0.441378,0.548278,30,30,1
+vongottberg-a,"von Gottberg, Anne",,,,,0,0.53532,0.433571,42,42,1
+vongsouvath-m,"Vongsouvath, Manivanh",,,,,0,0.641016,0.612631,24,27,3
+wang-m,"Wang, Mengwen",,,,,0,0.47307,0.584403,49,49,2
+ward-m,"Ward, Michael P",,,,,0,0.644333,0.61165,24,24,1
+wijaya-h,"Wijaya, Hendri",,,,,0,0.478941,0.585025,49,49,1
+windsor-p,"Windsor, Peter A",,,,,0,0.640813,0.609347,24,24,1
+wong-k,"Wong, Ke Juin",,,,,0,0.472353,0.591063,49,49,1
+wu-s,"Wu, Sheng",,,,,0,0.471111,0.589068,49,49,1
+xiao-y,"Xiao, Yonghong",,,,,0,0.475193,0.58619,49,49,1
+yadav-p,"Yadav, Pragya",,,,,0,0.529982,0.42204,42,42,1
+yi-s,"Yi, Siyan",Singapore,Southeast Asia,university,SGP,1,0.250851,0.570715,4,29,5
+young-j,"Young, James R",,,,,0,0.637824,0.614366,24,24,1
+zhang-y,"Zhang, Yu",Singapore,Southeast Asia,research_institute,SGP,1,0.987168,0.399321,0,45,12
+zhong-y,"Zhong, Youjia",Singapore,Southeast Asia,university,SGP,1,1.0,0.530318,0,26,2

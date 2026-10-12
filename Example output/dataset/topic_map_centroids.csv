@@ -1,0 +1,22 @@
+domain_id,topic_id,topic_label,top_terms,size,x,y
+amr_hai,amr_hai_t1,"infection, hospital, included, prevention","infection, hospital, included, prevention, conducted, outcomes, january, interventions",43,0.54199,0.655509
+amr_hai,amr_hai_t2,"agents, tests, activity, sensitivity","agents, tests, activity, sensitivity, antibacterial, anti-bacterial, animals, microbial",33,0.436035,0.283235
+tb,tb_t1,"antitubercular, drug, agents, multidrug-resistant","antitubercular, drug, agents, multidrug-resistant, treatment, rifampin, drugs, mycobacterium",45,0.663792,0.536501
+tb,tb_t2,"diagnosis, diagnostic, conducted, systematic","diagnosis, diagnostic, conducted, systematic, included, characteristics, symptoms, age",31,0.29721,0.649071
+vector_borne,vector_borne_t1,"infection, fever, although, male","infection, fever, although, male, aged, adult, yellow, zikv",16,0.453403,0.475352
+vector_borne,vector_borne_t2,"surveillance, including, diversity, health","surveillance, including, diversity, health, capacity, research, evidence, integrated",15,0.41,0.480756
+vector_borne,vector_borne_t3,"malaria, plasmodium, cell, cells","malaria, plasmodium, cell, cells, responsible, parasite, erythrocytes, binding",14,0.201851,0.597789
+vector_borne,vector_borne_t4,"vectors, wolbachia, mosquito, aedes","vectors, wolbachia, mosquito, aedes, aegypti, mosquitoes, intervention, field",14,0.76718,0.280485
+vector_borne,vector_borne_t5,"leading, implications, vector-borne, mortality","leading, implications, vector-borne, mortality, region, spaces, space, sequence",8,0.387016,0.355854
+vector_borne,vector_borne_t6,"included, evaluation, rapid, settings","included, evaluation, rapid, settings, detection, southeast, positive, denv",6,0.448446,0.627825
+rti,rti_t1,"incidence, months, remained, maternal","incidence, months, remained, maternal, infants, retrospective, database, april",13,0.628754,0.53685
+rti,rti_t2,"sars-cov-2, responses, immune, vaccine","sars-cov-2, responses, immune, vaccine, vaccines, spike, humans, female",13,0.463613,0.588947
+rti,rti_t3,"evidence, clinical, health, review","evidence, clinical, health, review, outcomes, substantial, evaluation, management",13,0.74804,0.468858
+rti,rti_t4,"acute, severe, respiratory, pneumonia","acute, severe, respiratory, pneumonia, admission, syndrome, median, failure",10,0.504729,0.72701
+rti,rti_t5,"social, health, public, key","social, health, public, key, policy, diverse, based, framework",9,0.529023,0.195269
+rti,rti_t6,"viral, protein, animals, virus","viral, protein, animals, virus, replication, genetic, potential, infections",8,0.137903,0.671863
+sti,sti_t1,"hiv, therapy, male, infections","hiv, therapy, male, infections, people, living, infection, agents",33,0.578839,0.55836
+sti,sti_t2,"vaccines, health, program, national","vaccines, health, program, national, papillomavirus, vaccination, human, per",13,0.236411,0.448392
+other_id,other_id_t1,"cell, cells, vitro, reduced","cell, cells, vitro, reduced, promising, infection, demonstrate, therapeutic",10,0.536589,0.636848
+other_id,other_id_t2,"outcomes, days, clinical, infections","outcomes, days, clinical, infections, years, therapy, may, early",10,0.315962,0.46343
+other_id,other_id_t3,"understanding, environmental, humans, animals","understanding, environmental, humans, animals, often, mechanisms, health, human",5,0.847785,0.508852

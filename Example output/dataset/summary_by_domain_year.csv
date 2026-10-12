@@ -1,0 +1,17 @@
+domain_id,domain_label,year,publications,singapore_led,international
+amr_hai,AMR and healthcare-associated infections,2024,4,1,4
+amr_hai,AMR and healthcare-associated infections,2025,21,13,16
+amr_hai,AMR and healthcare-associated infections,2026,77,42,56
+other_id,Other infectious disease,2025,3,3,1
+other_id,Other infectious disease,2026,22,14,20
+rti,Respiratory-tract infections,2025,2,2,1
+rti,Respiratory-tract infections,2026,69,43,43
+sti,Sexually-transmitted infections,2024,1,0,1
+sti,Sexually-transmitted infections,2025,12,6,9
+sti,Sexually-transmitted infections,2026,39,20,33
+tb,Tuberculosis,2024,11,6,9
+tb,Tuberculosis,2025,19,12,14
+tb,Tuberculosis,2026,48,29,34
+vector_borne,Vector-borne diseases,2024,8,7,5
+vector_borne,Vector-borne diseases,2025,11,7,5
+vector_borne,Vector-borne diseases,2026,54,27,45

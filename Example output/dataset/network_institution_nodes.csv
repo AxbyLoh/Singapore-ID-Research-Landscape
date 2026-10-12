@@ -1,0 +1,53 @@
+node_id,label,country,region,sector,iso3,is_singapore,x,y,degree,weighted_degree,n_publications
+A*STAR Infectious Diseases Labs,A*STAR Infectious Diseases Labs,Singapore,Southeast Asia,research_institute,SGP,1,0.805549,0.407654,17,35,14
+"Agency for Science, Technology and Research","Agency for Science, Technology and Research",Singapore,Southeast Asia,research_institute,SGP,1,0.770378,0.467146,14,22,9
+Alexandra Hospital,Alexandra Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.348574,0.256501,6,11,4
+Bioinformatics Institute,Bioinformatics Institute,United Kingdom,Europe,research_institute,GBR,0,0.951638,0.602685,6,8,5
+Changi General Hospital,Changi General Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.384499,0.459909,13,26,9
+Communicable Diseases Agency,Communicable Diseases Agency,Singapore,Southeast Asia,government,SGP,1,0.485721,0.581763,14,34,6
+DSO National Laboratories,DSO National Laboratories,Singapore,Southeast Asia,research_institute,SGP,1,0.254378,0.530441,4,4,1
+Duke-NUS Medical School,Duke-NUS Medical School,Singapore,Southeast Asia,university,SGP,1,0.465633,0.441401,22,67,39
+Environmental Health Institute,Environmental Health Institute,Singapore,Southeast Asia,government,SGP,1,0.603339,0.790288,5,19,10
+Experimental Drug Development Centre,Experimental Drug Development Centre,Singapore,Southeast Asia,research_institute,SGP,1,0.825502,0.790908,3,8,5
+Genome Institute of Singapore,Genome Institute of Singapore,Singapore,Southeast Asia,research_institute,SGP,1,0.775324,0.298298,11,14,2
+GlaxoSmithKline,GlaxoSmithKline,United Kingdom,Europe,industry,GBR,0,0.585836,0.900267,3,3,1
+Harvard University,Harvard University,United States,North America,university,USA,0,0.690017,0.63864,11,24,15
+Imperial College London,Imperial College London,United Kingdom,Europe,university,GBR,0,0.855768,0.625981,11,14,3
+Institute of Mental Health,Institute of Mental Health,Singapore,Southeast Asia,hospital,SGP,1,0.410534,0.644783,7,9,2
+Institute of Molecular and Cell Biology,Institute of Molecular and Cell Biology,Singapore,Southeast Asia,research_institute,SGP,1,0.373079,1.0,1,1,1
+Johns Hopkins University,Johns Hopkins University,United States,North America,university,USA,0,0.616645,0.578135,13,18,6
+KK Women's and Children's Hospital,KK Women's and Children's Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.460123,0.505295,13,40,12
+Khoo Teck Puat Hospital,Khoo Teck Puat Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.27351,0.071954,2,2,2
+London School of Hygiene & Tropical Medicine,London School of Hygiene & Tropical Medicine,United Kingdom,Europe,university,GBR,0,0.690267,0.57095,23,79,38
+Mahidol University,Mahidol University,Thailand,Southeast Asia,university,THA,0,0.601502,0.392831,22,63,17
+Nanyang Technological University,Nanyang Technological University,Singapore,Southeast Asia,university,SGP,1,0.664988,0.515565,37,171,71
+National Cancer Centre Singapore,National Cancer Centre Singapore,Singapore,Southeast Asia,hospital,SGP,1,0.481842,0.196834,8,12,4
+National Centre for Infectious Diseases,National Centre for Infectious Diseases,Singapore,Southeast Asia,hospital,SGP,1,0.63178,0.485666,31,113,35
+National Environment Agency,National Environment Agency,Singapore,Southeast Asia,government,SGP,1,0.727957,0.791093,6,10,3
+National Institutes of Health,National Institutes of Health,United States,North America,government,USA,0,0.954073,0.453793,7,7,1
+National Public Health Laboratory,National Public Health Laboratory,Singapore,Southeast Asia,government,SGP,1,0.385812,0.801383,3,4,2
+National Skin Centre,National Skin Centre,Singapore,Southeast Asia,hospital,SGP,1,0.569459,0.179669,9,11,6
+National University Health System,National University Health System,Singapore,Southeast Asia,hospital,SGP,1,0.554169,0.437829,21,60,20
+National University Hospital,National University Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.51926,0.342069,28,100,33
+National University of Singapore,National University of Singapore,Singapore,Southeast Asia,university,SGP,1,0.59751,0.507684,44,327,193
+Ng Teng Fong General Hospital,Ng Teng Fong General Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.0,0.431981,1,1,1
+Oxford University Clinical Research Unit,Oxford University Clinical Research Unit,Viet Nam,Southeast Asia,research_institute,VNM,0,0.703504,0.365802,19,52,11
+Peter Doherty Institute for Infection and Immunity,Peter Doherty Institute for Infection and Immunity,Australia,Oceania,research_institute,AUS,0,0.689984,0.23488,9,11,4
+Sengkang General Hospital,Sengkang General Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.288901,0.349634,7,9,4
+SingHealth,SingHealth,Singapore,Southeast Asia,hospital,SGP,1,0.566166,0.304445,15,32,17
+Singapore Food Agency,Singapore Food Agency,Singapore,Southeast Asia,government,SGP,1,0.37064,0.381025,8,10,3
+Singapore General Hospital,Singapore General Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.475209,0.374832,26,101,31
+Singapore Immunology Network,Singapore Immunology Network,Singapore,Southeast Asia,research_institute,SGP,1,0.726572,0.281452,13,17,6
+Takeda Pharmaceuticals,Takeda Pharmaceuticals,United States,North America,industry,USA,0,0.400482,0.0,2,2,1
+Tan Tock Seng Hospital,Tan Tock Seng Hospital,Singapore,Southeast Asia,hospital,SGP,1,0.54699,0.379399,33,109,30
+Temasek Life Sciences Laboratory,Temasek Life Sciences Laboratory,Singapore,Southeast Asia,research_institute,SGP,1,1.0,0.23735,2,2,2
+UK Health Security Agency,UK Health Security Agency,United Kingdom,Europe,government,GBR,0,0.948338,0.521661,9,10,2
+US Centers for Disease Control and Prevention,US Centers for Disease Control and Prevention,United States,North America,government,USA,0,0.889454,0.787793,4,5,3
+Universitas Indonesia,Universitas Indonesia,Indonesia,Southeast Asia,university,IDN,0,0.62933,0.345326,14,22,5
+University of Cambridge,University of Cambridge,United Kingdom,Europe,university,GBR,0,0.795279,0.581232,17,23,5
+University of Hong Kong,University of Hong Kong,Hong Kong SAR,East Asia,university,HKG,0,0.711454,0.426862,22,39,13
+University of Malaya,University of Malaya,Malaysia,Southeast Asia,university,MYS,0,0.573788,0.583368,16,28,11
+University of Melbourne,University of Melbourne,Australia,Oceania,university,AUS,0,0.717864,0.499267,24,51,14
+University of Oxford,University of Oxford,United Kingdom,Europe,university,GBR,0,0.658401,0.434596,22,77,21
+Woodlands Health,Woodlands Health,Singapore,Southeast Asia,hospital,SGP,1,0.536939,0.057434,3,3,2
+World Health Organization,World Health Organization,Switzerland,Europe,government,CHE,0,0.823585,0.550849,15,28,14
